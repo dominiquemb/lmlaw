@@ -204,7 +204,7 @@ function App() {
         </div>
         <a className="get-started-button" href="#"><button className="round-button large-circle-button">Get Started</button></a>
         <div className="circle-video">
-          <video width="320" height="240" style={{width: '600px'}} loop autoPlay muted>
+          <video width="320" height="240" style={{width: '430px'}} loop autoPlay muted>
             <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
           </video>
