@@ -1,38 +1,329 @@
-.App {
+html, body, #wrapper {
+  height: 100%;
+}
+
+#wrapper {
+  overflow: scroll;
+}
+
+body .large-circle {
+  position: absolute;
+  z-index: 2;
+  width: 1300px;
+  height: 1300px !important;
+  top: 130px;
+  left: -100px;
+  border-radius: 100% !important;
+  background-color: #367bdc;
+}
+
+body .circle-container {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .circle-text {
+  color: #fff;
+  text-transform: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body .circle-header {
+  position: absolute;   
+  bottom: 920px;
+  width: 700px;
+  left: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body .circle-h1 {
+  font-size: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body .circle-h2 {
+  margin-bottom: 40px;
+}
+
+.round-button {
+  background-color: #fff;
+  border-radius: 60px;
+  padding: 12px 25px;
+  font-size: 17px;
+  font-weight: 200;
+  border: 0px solid #000;
+  color: #000;
+}
+
+.get-started-button {
+  position: absolute;
+  z-index: 3;
+  top: 545px;
+  left: 288px;
+}
+
+.get-started-button button {
+  padding: 16px 35px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.button-link {
+  margin: 0px 10px;
+}
+
+.round-button-blue {
+  background-color: #357ADC;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.round-button-light-blue {
+  background-color: #8bbafb;
+  color: white;
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.20);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body .large-circle-button {
+  bottom: 475px;
+  left: 300px;
+}
+
+.circle-video {
+  position: absolute;
+  left: 700px;
+  top: 526px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#small-circle-container {
+  right: 5px;
+  position: absolute;
+  width: 300px;
+  height: 750px;
+  top: 100px;
+}
+
+.small-circle {
+  border-radius: 100% !important;
+  background-color: #367bdc;
+  width: 290px;
+  height: 290px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+.small-circle.smallest {
+  width: 150px;
+  height: 150px;
+  font-size: 16px;
+}
+
+.small-circle-1 {
+  margin-top: 20px;
+  margin-left: -120px;
+}
+
+
+.small-circle-2 {
+  margin-top: -60px;
+  margin-left: -30px;
+  width: 350px;
+  height: 320px;
+}
+
+.small-circle-3 {
+  margin-top: -60px;
+  margin-left: -30px;
+}
+
+#wrapper {
+  background: white;
+}
+
+.custom-header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+  top: -30px;
+  background: white;
+}
+
+.custom-header .wpb_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-header .online-portal-link {
+  width: 150px;
+}
+
+.custom-header .speak-to-a-specialist-link {
+  width: 200px;
+}
+
+.custom-header .link {
+  color: #000;
+  font-size: 21px;
+  font-weight: 100;
+  margin: 0px 15px;
+}
+
+.custom-header .right {
+  display: flex;
+  width: 500px;
+  align-items: center;
+}
+
+.custom-header .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-header .center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen {
+  border-bottom: 100px solid #393939;
+}
+
+.top-semicircle {
+  width: 80%;
+  margin-left: 10%;
+  height: 300px;
+  border-radius: 100%;
+  margin-top: -170px;
+  position: relative;
+  color: white;
+  margin-bottom: 70px;
+}
+
+.bottom-semicircle {
+  width: 80%;
+  margin-left: 10%;
+  height: 300px;
+  border-radius: 100%;
+  margin-bottom: -190px;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  margin-top: 70px;
+}
+
+.semicircle-blue {
+  background-color: #367bdc;
+}
+
+.semicircle-white {
+  background-color: white;
+}
+
+.top-semicircle .circle-h2 {
+  position: absolute;
+  bottom: 14px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 100;
+  color: #2e2e2e;
+  padding: 30px;
+}
+
+.centered {
+  margin: auto;
+  display: flex;
+}
+
+.frame-2-columns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.frame-2-columns .background {
+  margin-top: -200px;
+  background: url('https://www.aaadeliveryservice.com/wp-content/uploads/2022/05/usa-map-2.jpeg') no-repeat center;
+  background-size: 600px;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.frame-2-columns .middle {
+  padding: 30px 5px 0px 5px;
+  font-weight: 500;
+}
+.frame-2-columns .middle-subheader {
+  padding: 5px 30px;
+}
+
+.column-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  position: relative;
+}
+
+.column .us-map {
+  display: none;
+}
+
+.column .us-map img {
+  width: 400px;
+  margin-top: 30px;
+}
+
+.screen-1 {
+  height: 1000px;
+}
+
+.screen-2 {
+  height: 1100px;
+}
+
+.screen-3 {
+ background-color: #367bdc;
+ height: 1100px;
+}
+
+.screen-3 .circle-h2 {
+  color: #666;
+}
+
+.screen-3 .content {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
 }
