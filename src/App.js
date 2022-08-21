@@ -12,7 +12,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import Grid from '@mui/material/Grid';
 import './App.css';
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -92,7 +92,6 @@ function App() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -212,15 +211,15 @@ function App() {
       </div>
 
       <div id="small-circle-container" className="small-circle-container">
-        <div className="small-circle small-circle-1">
+        <div className="circle small-circle small-circle-1">
           Picture insert
         </div>
 
-        <div className="small-circle small-circle-2">
+        <div className="circle small-circle small-circle-2">
           Picture insert
         </div>
 
-        <div className="small-circle small-circle-3">
+        <div className="circle small-circle small-circle-3">
           Picture insert
         </div>
       </div>
@@ -239,7 +238,7 @@ function App() {
     <div className="frame-2-columns">
       <div className="background"></div>
       <div className="column">
-        <div className="centered small-circle smallest">
+        <div className="centered circle small-circle smallest">
           Picture insert here
         </div>
         <div className="content middle">
@@ -264,7 +263,7 @@ function App() {
       </div>
 
       <div className="column">
-        <div className="centered small-circle smallest">
+        <div className="centered circle small-circle smallest">
           Picture insert here
         </div>
         <div className="content middle">
@@ -291,11 +290,12 @@ function App() {
     </div>
     <div className="content">
         We provide on-demand, reliable same-day delivery & courier service, on time critical transportation to all 48 states nationwide. Our team, technology, and company marked vehicles provide you with:
+        <br /><br />
     </div>
 
-    <div className="frame-2-columns">
-        <div className="background"></div>
-        <div className="column">
+
+    <Grid container>
+        <Grid item xs={12} lg={4}>
             <div className="content">
                 <ul>
                    <li> ✓  Customized logistics to fit and adapt to your business needs</li>
@@ -305,18 +305,72 @@ function App() {
                 </ul>
             </div>
             <div className="column-footer">
-               <a className="button-link light-blue" href="#"><button className="round-button round-button-light-blue">Get Started</button></a>
+               <a className="button-link light-blue-bg" href="#"><button className="round-button round-button">Get Started</button></a>
             </div>
-         </div>
+         </Grid>
 
 
-        <div className="column">
-            <div className="us-map">
-                  <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/05/usa-map-2.jpeg" />
+         <Grid item xs={12} lg={4}>
+            <div className="moving-circles">
+              <div 
+                className="circle light-blue-bg medium-circle moving-circle-1"
+                style={{
+                  position: 'absolute',
+                  top: 50,
+                  left: 0,
+                  zIndex: 5,
+                }}
+                >
+                Moving circle 1
+              </div>
+              <div
+               className="circle light-blue-bg medium-circle moving-circle-2"
+               style={{
+                position: 'absolute',
+                top: 140,
+                left: -50,
+                zIndex: 4,
+              }}
+               >
+                Moving circle 2
+              </div>
+              <div
+               className="circle light-blue-bg medium-circle moving-circle-3"
+               style={{
+                position: 'absolute',
+                top: 140,
+                left: 150,
+                zIndex: 2,
+              }}
+               >
+                Moving circle 3
+              </div>
+              <div
+               className="circle light-blue-bg medium-circle moving-circle-4"
+               style={{
+                position: 'absolute',
+                top: 15,
+                left: 100,
+                zIndex: 1,
+              }}
+               >
+                Moving circle 4
+              </div>
+              <div
+               className="circle light-blue-bg medium-circle moving-circle-5"
+               style={{
+                position: 'absolute',
+                top:210,
+                left: 50,
+                zIndex: 3,
+              }}
+               >
+                Moving circle 5
+              </div>
             </div>
-        </div>
+        </Grid>
 
-        <div className="column">
+        <Grid item xs={12} lg={4}>
             <div className="content">
                 <ul>
                    <li> ✓ Professional, fully vetted couriers by uniform</li>
@@ -326,10 +380,10 @@ function App() {
                 </ul>
             </div>
             <div className="column-footer">
-               <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button-light-blue">How It Works</button></a>
+               <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button light-blue-bg">How It Works</button></a>
             </div>
-         </div>
-    </div>
+         </Grid>
+    </Grid>
 
       <div className="bottom-semicircle semicircle-white">
       </div>

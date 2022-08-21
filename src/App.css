@@ -77,7 +77,11 @@ body .circle-h2 {
   color: white;
 }
 
-.round-button-light-blue {
+.light-blue-bg {
+  background-color: #8bbafb !important;
+}
+
+.round-button {
   background-color: #8bbafb;
   color: white;
   box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.20);
@@ -104,19 +108,40 @@ body .large-circle-button {
   top: 100px;
 }
 
-.small-circle {
-  border-radius: 100% !important;
-  background-color: #367bdc;
-  width: 290px;
-  height: 290px;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 100;
+.circle {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+  border-radius: 100% !important;
+  color: #fff;
+  background-color: #367bdc;
+}
+
+.small-circle {
+  width: 290px;
+  height: 290px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.medium-circle {
+  width: 330px;
+  height: 330px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.moving-circles {
+  position: relative;
+  width: 500px;
+  margin: auto;
+}
+
+.moving-circle-1 {
+  width: 440px;
+  height: 440px;
 }
 
 .small-circle.smallest {
