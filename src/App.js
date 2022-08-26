@@ -175,6 +175,7 @@ function App() {
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
           <Route path='/what-we-offer' element={<WhatWeOffer />} />
           <Route path='/how-it-works' element={<HowItWorks />} />
+          <Route path='/locations' element={<Locations />}></Route>
         </Routes>
     </Router>
 

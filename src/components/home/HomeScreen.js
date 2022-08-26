@@ -6,7 +6,7 @@ function HomeScreen() {
 
   return ( 
     <>
-    <div class="home">
+    <div className="home">
       <div className="circle-container" id="circle-container">
       <div className="screen-1 screen">
         <div className="large-circle">

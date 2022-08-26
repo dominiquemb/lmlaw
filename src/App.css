@@ -422,6 +422,10 @@ body .large-circle-button {
   border-bottom: 0px;
 }
 
+.locations .screen-1 {
+  height: 1000px;
+}
+
 video {
   margin: auto;
   display: block;
