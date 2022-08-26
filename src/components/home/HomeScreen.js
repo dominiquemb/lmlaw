@@ -92,7 +92,7 @@ function HomeScreen() {
                 We provide express, same-day delivery service, on time critical transportation to all 48 states nationwide. Expediting packages, any size shipments delivered within your city or across the country, same-day door-to-door delivery. GPS tracking in real time, adaptable logistics to fit your business needs. “Providing You Peace Of Mind”.
               </div>
               <div className="column-footer">
-                <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button-blue">Learn More</button></a>
+                <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
         </Grid>
@@ -125,7 +125,7 @@ function HomeScreen() {
                     </ul>
                 </div>
                 <div className="column-footer">
-                  <a className="button-link" href="#"><button className="round-button round-button">Get Started</button></a>
+                  <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-button">Get Started</button></a>
                 </div>
             </Grid>
 
@@ -200,7 +200,7 @@ function HomeScreen() {
                     </ul>
                 </div>
                 <div className="column-footer">
-                  <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button light-blue-bg">How It Works</button></a>
+                  <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">How It Works</button></a>
                 </div>
             </Grid>
         </Grid>
@@ -224,7 +224,7 @@ function HomeScreen() {
                     AAA is here to help and ready to step right in, whether you need to expand or supplement your fleet. Our fleet is ready to help you ramp up your operations, so you can meet the growing demands of your business.
                   </div>
                   <div className="column-footer">
-                    <a className="button-link" href="#"><button className="round-button round-button">Get Started</button></a>
+                    <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-button">Get Started</button></a>
                   </div>
               </Grid>
 
@@ -241,7 +241,7 @@ function HomeScreen() {
                     Partner with us, let us become an extension of your company. We will reduce the cost of your aging fleet by supplementing or replacing your fleet with AAA fleet replacements, propelling your same-day delivery capabilities.
                   </div>
                   <div className="column-footer">
-                    <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button light-blue-bg">How It Works</button></a>
+                    <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">How It Works</button></a>
                   </div>
               </Grid>
           </Grid>

@@ -211,16 +211,6 @@ function SpeakToASpecialist() {
                     </li>
                   </ul>
                 </div>
-                <div className="column-footer">
-                  <a
-                    className="button-link speak-to-a-specialist-link"
-                    href="#"
-                  >
-                    <button className="round-button round-button-blue">
-                      Learn More
-                    </button>
-                  </a>
-                </div>
               </Grid>
 
               {/* <Grid item xs={12} md={1}>
@@ -264,7 +254,7 @@ function SpeakToASpecialist() {
             </div>
 
             <Grid container>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={3}>
                 <div className="content">
                   <ul>
                     <li>
@@ -287,7 +277,7 @@ function SpeakToASpecialist() {
                 </div>
               </Grid>
 
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={6}>
                 <div className="moving-circles">
                   <div
                     className="circle light-blue-bg medium-circle moving-circle-1"
@@ -337,7 +327,7 @@ function SpeakToASpecialist() {
                 </div>
               </Grid>
 
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={3}>
                 <div className="content">
                   <ul>
                     <li> ✓ Professional, fully vetted couriers by uniform</li>

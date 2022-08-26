@@ -21,9 +21,10 @@ import {
 import './App.css';
 import HomeScreen from './components/home/HomeScreen';
 import SpeakToASpecialist from './components/speakToASpecialist/SpeakToASpecialist';
+import WhatWeOffer from './components/whatWeOffer/WhatWeOffer';
+import HowItWorks from './components/howItWorks/HowItWorks';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}];
 
 function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -92,11 +93,13 @@ function App() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => {
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><a href={page.url}>{page.label}</a></Typography>
                 </MenuItem>
-              ))}
+
+                console.log(page);
+              })}
             </Menu>
           </Box>
           <Typography
@@ -118,14 +121,15 @@ function App() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
+            {pages.map((page, index) => (
+              <a href={page.url}><Button
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.label}
               </Button>
+              </a>
             ))}
           </Box>
 
@@ -167,6 +171,8 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeScreen/>} />
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
+          <Route path='/what-we-offer' element={<WhatWeOffer />} />
+          <Route path='/how-it-works' element={<HowItWorks />} />
         </Routes>
     </Router>
 

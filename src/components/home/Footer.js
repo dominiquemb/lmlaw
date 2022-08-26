@@ -66,7 +66,7 @@ function Footer() {
                                 </div>
                                 <ul>
                                     <li>
-                                        Speak to a Specialist
+                                        <a href="/speak-to-a-specialist">Speak to a Specialist</a>
                                     </li>
                                     <li>
                                         info@aaadeliveryservice.com
