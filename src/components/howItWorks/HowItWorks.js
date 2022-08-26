@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 function HowItWorks() {
   return (
     <>
-      <div className="circle-container how-it-works" id="circle-container">
+      <div className="circle-container what-we-offer" id="circle-container">
         <div className="screen-1 screen">
           <div className="large-circle circle-white">
             <div className="circle-header">

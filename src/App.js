@@ -22,9 +22,11 @@ import './App.css';
 import HomeScreen from './components/home/HomeScreen';
 import SpeakToASpecialist from './components/speakToASpecialist/SpeakToASpecialist';
 import WhatWeOffer from './components/whatWeOffer/WhatWeOffer';
-import HowItWorks from './components/howItWorks/HowItWorks';
 
-const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}];
+import HowItWorks from './components/howItWorks/HowItWorks';
+import Locations from './components/locations/Locations';
+
+const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'}];
 
 function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

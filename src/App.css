@@ -504,9 +504,23 @@ ul {
   font-weight: 200;
 }
 
-.speak-to-a-specialist .screen-2 {
+.locations .screen-2 {
   height: 1100px;
 }
+
+.locations ul {
+  list-style-type: disc;
+}
+
+.location h4 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.location.screen-2 {
+  height: 1100px;
+}
+
 
 .bottom-text {
   width: 500px;
