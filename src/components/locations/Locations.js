@@ -4,6 +4,8 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import {UsaMap} from "./Map.js"
+import UsaStatesSelect from "./UsaStatesDropDown";
 
 function Locations() {
   const [firstName, setFirstName] = React.useState("");
@@ -25,7 +27,8 @@ function Locations() {
   return (
     <>
       <div className="circle-container what-we-offer" id="circle-container">
-        <div className="screen-1 screen">
+        <div className="screen-1 screen" style={{border:0}}>
+
           <div className="large-circle circle-white">
             <div className="circle-header">
               <h1 className="circle-h1 circle-text">States We Serve </h1>
@@ -37,39 +40,70 @@ function Locations() {
                 timeliness, AAA is a must-have option to stay ahead of the
                 competition".{" "}
               </h4>
+              <UsaStatesSelect></UsaStatesSelect>
+
             </div>
+            
           </div>
 
-          <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow">
+
+          <div className="speak-to-a-specialist-form  rounded-corners box-shadow">
             <div className="us-map">
-              <img
-                style={{ width: "410px" }}
-                src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/05/usa-map-2.jpeg"
-              />
+              <UsaMap></UsaMap>
             </div>
+            
           </div>
 
-          <div id="small-circle-container" className="small-circle-container">
-            <div className="circle small-circle small-circle-1">
-              Picture insert
-            </div>
-
-            <div className="circle small-circle small-circle-2">
-              Picture insert
-            </div>
-
-            <div className="circle small-circle small-circle-3">
-              Picture insert
-            </div>
-          </div>
-
-          <div className="bottom-semicircle semicircle-white">
-            <div className="bottom-text">
-              Indispensable custom-built delivery & courier services for your
-              business.
-            </div>
-          </div>
+         
         </div>
+
+
+        <div className="screen screen-4" style={{height:"fit-content" , border:0}}>
+        
+        <div >
+            <div  style={{display:"block",marginBottom:50,width:"100%"}}>
+                  <a className="button-link" href="#"  style={{marginLeft:50 , float:"left"}}>
+                    <button className="round-button round-button">
+                      Get Started2
+                    </button>
+                  </a>
+                  <a className="button-link" href="#" style={{float:"right",marginRight:50}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                </div>
+          </div>
+
+
+
+        <Container maxWidth="xl" disableGutters>
+
+
+          <Grid container>
+              <Grid item xs={12} md={3.5}>
+                <div className="content">
+                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
+                </div>
+              </Grid>
+
+
+              <Grid item xs={12} md={5}>
+                <div className="content">
+                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
+                </div>
+              </Grid>
+
+              <Grid item xs={12} md={3.5}>
+                <div className="content">
+                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
+                </div>
+              </Grid>
+          </Grid>
+        </Container>
+
+      </div>
+
       </div>
     </>
   );
