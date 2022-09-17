@@ -5,6 +5,8 @@ import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import BlueLogo from "../../assets/logo-blue.png"
+import ScrollAnimation from 'react-animate-on-scroll';
+import "../../assets/animate.css";
 
 function HowItWorks() {
   return (
@@ -190,30 +192,58 @@ function HowItWorks() {
 
 
     <div className="screen screen-4" style={{height:"fit-content" , border:0}}>
-        <div className="top-semicircle semicircle-blue">
-        </div>
+        
+        <div >
+            <div  style={{display:"block",marginBottom:50,width:"100%"}}>
+                  <a className="button-link" href="#"  style={{marginLeft:50 , float:"left"}}>
+                    <button className="round-button round-button">
+                      Get Started2
+                    </button>
+                  </a>
+                  <a className="button-link" href="#" style={{float:"right",marginRight:50}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                </div>
+          </div>
+
+
 
         <Container maxWidth="xl" disableGutters>
 
-
+      
           <Grid container>
-              <Grid item xs={12} md={3.5}>
-                <div className="content">
-                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
-                </div>
+          <Grid item xs={12} md={3.5}>
+                <ScrollAnimation animateIn='bounce' delay={300}
+                  initiallyVisible={true}
+                  animateOnce={true}>
+                    <div className="content">
+                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
+                    </div>
+                </ScrollAnimation>
               </Grid>
 
 
+             
               <Grid item xs={12} md={5}>
+              <ScrollAnimation animateIn='fadeIn' delay={300}
+              animateOut='fadeOut'>
                 <div className="content">
                   <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
                 </div>
+                </ScrollAnimation>
               </Grid>
-
+            
+              
               <Grid item xs={12} md={3.5}>
-                <div className="content">
-                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
-                </div>
+                <ScrollAnimation animateIn='bounce' delay={300}
+                  initiallyVisible={true}
+                  animateOnce={true}>
+                    <div className="content">
+                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
+                    </div>
+                </ScrollAnimation>
               </Grid>
           </Grid>
         </Container>

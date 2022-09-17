@@ -6,6 +6,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import {UsaMap} from "./Map.js"
 import UsaStatesSelect from "./UsaStatesDropDown";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "../../assets/animate.css";
 
 function Locations() {
   const [firstName, setFirstName] = React.useState("");
@@ -79,25 +81,38 @@ function Locations() {
 
         <Container maxWidth="xl" disableGutters>
 
-
+      
           <Grid container>
-              <Grid item xs={12} md={3.5}>
-                <div className="content">
-                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
-                </div>
+          <Grid item xs={12} md={3.5}>
+                <ScrollAnimation animateIn='bounce' delay={300}
+                  initiallyVisible={true}
+                  animateOnce={true}>
+                    <div className="content">
+                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
+                    </div>
+                </ScrollAnimation>
               </Grid>
 
 
+             
               <Grid item xs={12} md={5}>
+              <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
+              animateOut='fadeOut'>
                 <div className="content">
                   <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
                 </div>
+                </ScrollAnimation>
               </Grid>
-
+            
+              
               <Grid item xs={12} md={3.5}>
-                <div className="content">
-                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
-                </div>
+                <ScrollAnimation animateIn='bounce' delay={300}
+                  initiallyVisible={true}
+                  animateOnce={true}>
+                    <div className="content">
+                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
+                    </div>
+                </ScrollAnimation>
               </Grid>
           </Grid>
         </Container>
@@ -105,6 +120,7 @@ function Locations() {
       </div>
 
       </div>
+
     </>
   );
 }
