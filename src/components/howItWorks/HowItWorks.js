@@ -227,7 +227,7 @@ function HowItWorks() {
 
              
               <Grid item xs={12} md={5}>
-              <ScrollAnimation animateIn='fadeIn' delay={300}
+              <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
               animateOut='fadeOut'>
                 <div className="content">
                   <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
