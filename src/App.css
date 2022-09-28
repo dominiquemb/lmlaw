@@ -554,3 +554,64 @@ a .round-button {
 a {
   text-decoration: none;
 }
+#quarter-circle-bottom-left{
+  max-width:150vh;
+    width: 90vw;
+    height:90vw;
+    background: #367bdc;
+    border-radius: 100vw 100vw  0 0;
+  position: relative;
+    left: -5vw;
+    bottom:-5vh;
+    
+}
+#container-first-screen{
+width: 100vw;
+height: 75vw;
+max-height:90vh;
+background:white;
+overflow:hidden;
+
+}
+#circle-container-home{
+  position: relative;
+    top:10%;
+    margin:auto;
+    width:50vw;
+
+}
+
+#reliable{
+ font-size:2em;
+}
+#providing{
+ font-size:1.3em;
+
+}
+#deliver{
+ font-size:1em;
+}
+#home-first-button{
+   bottom:5vh;
+}
+#home-first-button{
+ display: inline-block;
+ margin-right:5vw;
+ 
+
+}
+#button-video{
+width:100%;
+position:relative;
+
+bottom:0;}
+#video{
+ display: inline-block;
+ width:20vw;
+}
+
+span.b {
+ display: inline;
+ margin:auto;
+
+}
