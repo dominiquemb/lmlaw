@@ -4,6 +4,8 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import back from '../../assets/blue-column.PNG';
+
 
 function WhatWeOffer() {
   const [firstName, setFirstName] = React.useState("");
@@ -24,20 +26,22 @@ function WhatWeOffer() {
 
   return (
     <>
-      <div className="circle-container what-we-offer" id="circle-container">
-        <div className="screen-1 screen">
-          <div className="large-circle circle-white">
-            <div className="circle-header">
-              <h1 className="circle-h1 circle-text">
-                Partner With AAA Reliable Same-Day Delivery & Courier Service
-              </h1>
-              <h4 className="circle-h4 circle-text">
-                Providing you peace of mind
-              </h4>
-            </div>
-          </div>
+    <div id='map-and-dropdown'>
+    <Grid container  style={{ marginBottom:"10vh" , height:"80vh"}}>
+          <Grid item xs={12} md={6} style={{ marginTop:"30vh"}}  >
 
-          <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow">
+          <h1 className="circle-h1 circle-text"  style={{color:"#666 " , width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
+              <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
+              Providing you peace of mind
+              </h2>
+            
+          
+              
+          </Grid>
+          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${back})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" }}>
+          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
+
+          <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow" style={{width:"fit-content" }}>
             <video
               width="410"
               height="230"
@@ -54,29 +58,16 @@ function WhatWeOffer() {
             </video>
           </div>
 
-          <div id="small-circle-container" className="small-circle-container">
-            <div className="circle small-circle small-circle-1">
-              Picture insert
-            </div>
+          </Box  >
 
-            <div className="circle small-circle small-circle-2">
-              Picture insert
-            </div>
+              
+          </Grid>
+    </Grid>
 
-            <div className="circle small-circle small-circle-3">
-              Picture insert
-            </div>
-          </div>
+    </div>
+      <div className="circle-container what-we-offer" id="circle-container">
 
-          <div className="bottom-semicircle semicircle-white">
-            <div className="bottom-text">
-              Indispensable custom-built delivery & courier services for your
-              business.
-            </div>
-          </div>
-        </div>
-
-        <div className="screen screen-2">
+        <div className="screen screen-2" style={{height:"fit-content" , borderBottom:0}}>
           <div className="top-semicircle semicircle-white">
             <p>
               We understand that each business requirements can change from
@@ -113,7 +104,7 @@ function WhatWeOffer() {
                   </ul>
                 </div>
 
-                <div className="column-footer">
+                <div className="column-footer"  style={{marginBottom:"15vh"}}>
                   <a
                     className="button-link speak-to-a-specialist-link"
                     href="#"
@@ -154,7 +145,7 @@ function WhatWeOffer() {
                     </li>
                   </ul>
                 </div>
-                <div className="column-footer">
+                <div className="column-footer" style={{marginBottom:"25vh"}}>
                   <a
                     className="button-link speak-to-a-specialist-link"
                     href="#"
@@ -171,128 +162,72 @@ function WhatWeOffer() {
           <div className="bottom-semicircle semicircle-blue"></div>
         </div>
 
-        <div className="screen screen-3">
-          <div className="top-semicircle semicircle-white">
-            <h2 className="circle-h2">Fleet Optimization</h2>
-          </div>
+        <div className="screen screen-3"  style={{height:"fit-content" , border:0}}>
+      <div className="top-semicircle semicircle-white">
+          <h2 className="circle-h2">Fleet Optimization</h2>
+      </div>
 
-          <Container maxWidth="xl" disableGutters>
-            <div className="content">
-              We understand how time consuming and expensive it is to own,
-              operate and manage a fleet of vehiles, and the cost of insurance
-              due to accidents, not to mention managing couriers alone is an
-              expensive undertaking. That's why at AAA our specialists take on
-              these burdens for you, providing you with responsive, flexible
-              service keeping you focused on your core business.
-              <br />
-              <br />
-            </div>
-
-            <Grid container>
-              <Grid item xs={12} md={3}>
-                <div className="content middle-subheader">
-                  <strong>Augment Your Fleet</strong>
-                </div>
-                <div className="content">
-                  AAA can step in on-demand, same-day to help you deliver your
-                  delivery needs. Partner with us, so we can augment your fleet,
-                  let us become an extension of your company. Our fleet is ready
-                  to help you ramp up your operations so you can meet the
-                  growing demands of your business.
-                </div>
-                <div className="column-footer">
-                  <a className="button-link" href="#">
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                </div>
-              </Grid>
-
-              <Grid item xs={12} md={6}>
-                <div className="moving-circles">
-                  <div
-                    className="circle light-blue-bg medium-circle moving-circle-1"
-                    style={{
-                      position: "absolute",
-                      top: 50,
-                      left: 0,
-                      zIndex: 5,
-                    }}
-                  >
-                    Moving circle 1
-                  </div>
-                  <div
-                    className="circle light-blue-bg medium-circle moving-circle-2"
-                    style={{
-                      position: "absolute",
-                      top: 140,
-                      left: -50,
-                      zIndex: 4,
-                    }}
-                  >
-                    Moving circle 2
-                  </div>
-                  <div
-                    className="circle light-blue-bg medium-circle moving-circle-3"
-                    style={{
-                      position: "absolute",
-                      top: 140,
-                      left: 150,
-                      zIndex: 2,
-                    }}
-                  >
-                    Moving circle 3
-                  </div>
-                  <div
-                    className="circle light-blue-bg medium-circle moving-circle-4"
-                    style={{
-                      position: "absolute",
-                      top: 15,
-                      left: 100,
-                      zIndex: 1,
-                    }}
-                  >
-                    Moving circle 4
-                  </div>
-                  <div
-                    className="circle light-blue-bg medium-circle moving-circle-5"
-                    style={{
-                      position: "absolute",
-                      top: 210,
-                      left: 50,
-                      zIndex: 3,
-                    }}
-                  >
-                    Moving circle 5
-                  </div>
-                </div>
-              </Grid>
-
-              <Grid item xs={12} md={3}>
-                <div className="content middle-subheader">
-                  <strong>Replace Your Fleet</strong>
-                </div>
-                <div className="content">
-                  Supplement your fleet to a team of specialists to ensure you
-                  meet the demands of your customers. We have the couriers, the
-                  right vehicles and AAA provides you with advanced technology,
-                  live tracking, proof of delivery, and the fastest, reliable
-                  delivery option in the industry.
-                </div>
-                <div className="column-footer">
-                  <a className="button-link" href="#">
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                </div>
-              </Grid>
-            </Grid>
-          </Container>
+      <Container maxWidth="xl" disableGutters>
+        <div className="content" style={{width:"80%",margin:"auto"}}>
+        We understand how time consuming and expensive it is to own, operate and manage a fleet of vehiles, and the cost of insurance due to accidents, not to mention managing couriers alone is an expensive undertaking. That's why at AAA our specialists take on these burdens for you, providing you with responsive, flexible service keeping you focused on your core business.
+            <br /><br />
         </div>
 
-        <div className="screen screen-4">
+
+        <Grid container>
+            <Grid item xs={12} md={4}>
+              <Box className="content" style={{width:"80%" , margin:"auto",marginRight:{ xs: 'auto', sm: 0, md: 0 }}} >
+                  <h3>Augment Your Fleet</h3>
+                    <div>
+                    AAA can step in on-demand, same-day to help you deliver your delivery needs. Partner with us, so we can augment your fleet, let us become an extension of your company. Our fleet is ready to help you ramp up your operations so you can meet the growing demands of your business.
+                    </div>
+                </Box>
+                
+                
+                
+                
+            </Grid>
+
+
+            <Grid item xs={0} md={4}>
+            <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
+>
+            <img  style={{width:"100%"  }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+
+            </Box>
+            </Grid>
+
+            <Grid item xs={12} md={3}>
+                <Box className="content" style={{width:"80%" , margin:"auto",marginRight:{ xs: 'auto', sm: 0, md: 0 }}} >
+                  <h3>Replace Your Fleet</h3>
+                    <div>
+                    Supplement your fleet to a team of specialists to ensure you meet the demands of your customers. We have the couriers, the right vehicles and AAA provides you with advanced technology, live tracking, proof of delivery, and the fastest, reliable delivery option in the industry.
+                    </div>
+                </Box>
+                
+                
+                
+            </Grid>
+            <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
+                  <a className="button-link" href="#"  style={{marginLeft:50}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                  <a className="button-link" href="#" style={{float:"right",marginRight:50}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                </div>
+        </Grid>
+      </Container>
+
+    </div>
+
+
+       
+        <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
           <div className="top-semicircle semicircle-white">
             <h2 className="circle-h2">
               Schedule On Demand Or Recurring Deliveries
@@ -308,7 +243,7 @@ function WhatWeOffer() {
                   help you ramp up your operations, so you can meet the growing
                   demands of your business.
                 </div>
-                <div className="column-footer">
+                <div className="column-footer" style={{marginBottom:"10vh"}}>
                   <a className="button-link" href="/speak-to-a-specialist">
                     <button className="round-button round-button">
                       Get Started
@@ -321,7 +256,7 @@ function WhatWeOffer() {
               <video
                 width="640"
                 height="320"
-                style={{ width: "640px" }}
+                style={{ width: "80%" ,height:"80%" }}
                 loop
                 autoPlay
                 muted
