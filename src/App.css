@@ -224,14 +224,11 @@ body .large-circle-button {
 
 .screen {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.screen {
-  border-bottom: 100px solid #393939;
-}
 
 .top-semicircle {
   width: 80%;
