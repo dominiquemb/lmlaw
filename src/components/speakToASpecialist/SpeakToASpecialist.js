@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import FormTextFields from "./Form";
+import BeforeFooter from "../BeforeFooter";
 
 function SpeakToASpecialist() {
 
@@ -80,67 +81,182 @@ function SpeakToASpecialist() {
       </Grid>
   </Container>
 
-  <div className="screen " style={{height:'fit-content'}}>
+  <div className="screen screen-2" style={{height:'fit-content'}}>
       <div className="background"></div>
 
       <div className="top-semicircle semicircle-blue">
-        <h2 className="circle-h2">Custom logistics. Indispensable service.</h2>
+        <h2 className="circle-h2">What You Can Expect from Us. What You Can Expect from Us.</h2>
       </div>
 
+      <p style={{
+                  fontSize:20,
+                  fontWeight:600,
+                  width:"80%",
+                  margin:"auto"
+                }}>
+                  Once you’re in our system, you are ready to start, simply place and track orders all in one place. Schedule and customize a pick up from
+                  anywhere, available from any device. Visibility and insights, order tracking & geofencing in real-time dashboard. Signature or photobase PODs for each order, alongside the scheduled an actual arrival time.
+                </p>
+
+
       <Container maxWidth="xl" disableGutters>
-        <div className="content">
-          We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
-        </div>
 
-        <Grid container>
-            <Grid item xs={12} md={4}>
-              <div className="centered circle small-circle smallest">
-                Picture insert here
+        <Grid container style={{marginTop:50,marginBottom:150}}>
+            <Grid item xs={12} md={6}>
+              <div style={{width:"80%" , margin:"auto"}} >
+                <h1>
+                Things you can do from our portal:
+                </h1>
+                <ul style={{listStyleType:"square"}}>
+                    <li style={{marginBottom:10}}>
+                      Place and track orders all in one central hub.
+                    </li>
+
+                    <li style={{marginBottom:10}}>
+                      Schedule and customize any pickup.
+                    </li>
+
+                    <li style={{marginBottom:10}}>
+                      Gain visibility and insights.
+                    </li>
+
+                    <li style={{marginBottom:10}}>
+                      View order tracking in real-time dashboard.
+                    </li>
+                    <li style={{marginBottom:10}}>
+                      View signature or photo-base PODs for each order.
+                    </li>
+                    <li style={{marginBottom:10}}>
+                      reate and maintain a private address book.
+                    </li>
+                    <li style={{marginBottom:10}}>
+                      View, customize and print reports of your shipping history.
+                    </li>
+                    <li style={{marginBottom:10}}>
+                      Create EZ-ship commands, enabling you to ship instantly with just a couple of keystrokes.
+                    </li>
+                    <li style={{marginBottom:10}}>
+                      Customize how you are notified of package delivery status.
+                    </li>
+                </ul>
               </div>
-              <div className="content middle">
-                Medical Industry
-              </div>
-              <div className="content middle-subheader">
-                Reliability
-              </div>
-              <div className="content">
-                We provide on-demand, reliable same-day delivery service, delivering medical specimens, supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time, geofencing to ensure driver is at delivery location. “You See What We See”.
-              </div>
-              <div className="column-footer" style={{marginBottom:30}}>
-                <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button-blue">Learn More</button></a>
-              </div>
+
             </Grid>
 
 
-            <Grid item xs={12} md={4}>
-              {/* <div className="us-map">
-                <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/05/usa-map-2.jpeg" />
-              </div> */}
+            <Grid item xs={12} md={6}>
+            <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}>
+                  <video
+                    style={{width:"100%" }}
+                    loop
+                    autoPlay
+                    muted
+                  >
+                    <source
+                        src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+
+                  </video>
+                </div>
             </Grid>
 
-            <Grid item xs={12} md={4}>
-              <div className="centered circle small-circle smallest">
-                Picture insert here
-              </div>
-              <div className="content middle">
-                Freight Industry
-              </div>
-              <div className="content middle-subheader">
-                Dependability
-              </div>
-              <div className="content">
-                We provide express, same-day delivery service, on time critical transportation to all 48 states nationwide. Expediting packages, any size shipments delivered within your city or across the country, same-day door-to-door delivery. GPS tracking in real time, adaptable logistics to fit your business needs. “Providing You Peace Of Mind”.
-              </div>
-              <div className="column-footer" style={{marginBottom:150}}>
-                <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
-              </div>
-            </Grid>
+            
         </Grid>
       </Container>
       
       <div className="bottom-semicircle semicircle-blue">
       </div>
+  </div>
+
+  <div className="screen screen-3" style={{height:"fit-content" , background:"#367bdc"}}>
+      <div className="top-semicircle semicircle-white">
+          <h2 className="circle-h2">Why Choose Us?</h2>
+      </div>
+
+      <Container maxWidth="xl" disableGutters style={{marginBottom:150}}>
+        <div className="content">
+          AAA is more than a delivery service. We are a business enabler, our primary objective is customer satisfaction,
+          reliability, on-time deliveries, and with our custom one-to-one approach means we always deliver on time,
+          every time. We will become your trusted business partner, delivering the things that matter most. We provide:
+          <br /><br />
+        </div>
+
+
+        <Grid container >
+            <Grid item xs={12} md={4}>
+                <div className="content" style={{width:"90%" }}>
+                    <ul>
+                      <li> ✓ Reliability, experience, one-to-one approach, delivery always on time, no excuses</li>
+                      <li> ✓  Order tracking & geofencing in real-time dashboard</li>
+                      <li> ✓  On-demand, and express same-day door-to-door delivery</li>
+                      <li> ✓  Dependable service you can always count on,and professionalism on every delivery.</li>
+                      <li> ✓  Customer support around the clock 24/7/365</li>
+                    </ul>
+                </div>
+
+            </Grid>
+
+
+            <Grid item xs={0} md={4} >
+            <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
+>
+            <img  style={{width:"100%"  }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+
+            </Box>
+            </Grid>
+
+            <Grid item xs={12} md={4} >
+                <div className="content" style={{width:"90%" }}>
+                    <ul>
+                      <li> ✓ Dedicated, fully vetted couriers by uniform</li>
+                      <li> ✓ Custom logistics to fit and adapt to your business</li>
+                      <li> ✓ Cost-efficient LTL shipping services, FTL services for large shipments that require dedicated shipping</li>
+                      <li> ✓ Transparency and visibility into every single shipment through cutting-edge technology</li>
+                      <li> ✓ Custom notification of package delivery status, based on your preference</li>
+                    </ul>
+                </div>
+
+            </Grid>
+        </Grid>
+        <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
+                  <a className="button-link" href="#"  style={{marginLeft:"15%"}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                  <a className="button-link" href="#" style={{float:"right",marginRight:"15%"}}>
+                    <button className="round-button round-button">
+                      How it works
+                    </button>
+                  </a>
+            </div>
+
+        <div className="content" style={{width:"80%",margin:"auto"}}>
+          Our goal is to provide our customers with the utmost reliable, dependable and
+          professionalism on every delivery, keeping you focus on your core business.
+          Knowing your deliveries are in good hands with AAA.
+          <br /><br />
+        </div>
+
+      </Container>
+
+        <div className="bottom-semicircle semicircle-white">
+        </div>
     </div>
+
+  <div>
+      <div className="top-semicircle semicircle-blue">
+        <h2 className="circle-h2">Delivery Always On Time! Every Time! No Excuses!</h2>
+      </div>
+
+    <BeforeFooter/>
+  </div>
+
+
+
+
 
   </>
   

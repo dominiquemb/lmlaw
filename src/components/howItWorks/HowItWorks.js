@@ -131,7 +131,7 @@ function HowItWorks() {
                       Get Started
                     </button>
                   </a>
-                </div>
+            </div>
         </Grid>
       </Container>
 
