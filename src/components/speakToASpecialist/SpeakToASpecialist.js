@@ -231,7 +231,7 @@ function SpeakToASpecialist() {
                       How it works
                     </button>
                   </a>
-            </div>
+        </div>
 
         <div className="content" style={{width:"80%",margin:"auto"}}>
           Our goal is to provide our customers with the utmost reliable, dependable and

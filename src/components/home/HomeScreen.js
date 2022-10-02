@@ -71,7 +71,7 @@ function HomeScreen() {
                 Picture insert here
               </div>
               <div className="content middle">
-                Medical Industry
+                Healthcare Industry
               </div>
               <div className="content middle-subheader">
                 Reliability
@@ -101,8 +101,13 @@ function HomeScreen() {
               <div className="content middle-subheader">
                 Dependability
               </div>
-              <div className="content">
-                We provide express, same-day delivery service, on time critical transportation to all 48 states nationwide. Expediting packages, any size shipments delivered within your city or across the country, same-day door-to-door delivery. GPS tracking in real time, adaptable logistics to fit your business needs. “Providing You Peace Of Mind”.
+              <div className="content" >
+                We blend advanced technologies with a network of carriers to
+                move your freight-simply and reliably. Put the power of AAA
+                behind your shipments, with a partner that’s here to meet the
+                demands of today, and help you navigate the road ahead.
+                We’re always there to help you propel your capabilities
+                forward. “Learn why so many companies choose AAA”.
               </div>
               <div className="column-footer" style={{marginBottom:150}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
@@ -121,13 +126,15 @@ function HomeScreen() {
       </div>
 
       <Container maxWidth="xl" disableGutters>
-        <div className="content">
-            We provide on-demand, reliable same-day delivery & courier service, on time critical transportation to all 48 states nationwide. Our team, technology, and company marked vehicles provide you with:
-            <br /><br />
+        <div className="content" style={{width:"75%", margin:"auto"}}>
+          We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
+          your logistics needs. We have the experiences that make a difference to your business and your clients. We provide
+          on-demand, reliable same-day delivery & courier service, on time critical transportation to <a style={{color:"red"}} href="/locations" > all 48 states nationwide.</a>
+          Providing you with:<br /><br />
         </div>
 
 
-        <Grid container>
+        <Grid container style={{padding:20}}>
             <Grid item xs={12} md={4}>
                 <div className="content">
                     <ul>
@@ -137,9 +144,7 @@ function HomeScreen() {
                       <li> ✓  Customer support around the clock 24/7/365</li>
                     </ul>
                 </div>
-                <div className="column-footer" style={{marginBottom:150}}>
-                  <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-button">Get Started</button></a>
-                </div>
+
             </Grid>
 
 
@@ -160,11 +165,21 @@ function HomeScreen() {
                       <li> ✓ Dependable service you can always count on, and professionalism on every delivery</li>
                     </ul>
                 </div>
-                <div className="column-footer" style={{marginBottom:150}}>
-                  <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">How It Works</button></a>
-                </div>
+
             </Grid>
         </Grid>
+        <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link" href="#"  style={{marginLeft:"15%"}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                  <a className="button-link" href="#" style={{float:"right",marginRight:"15%"}}>
+                    <button className="round-button round-button">
+                      How it works
+                    </button>
+                  </a>
+        </div>
       </Container>
 
         <div className="bottom-semicircle semicircle-white">
