@@ -100,7 +100,7 @@ function HowItWorks() {
             <Grid item xs={0} md={5}>
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-            <img  style={{width:"100%" , padding:"50px"  }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+            <img  style={{width:"100%" , padding:"50px"  }} src={require('../../assets/Mv4.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>

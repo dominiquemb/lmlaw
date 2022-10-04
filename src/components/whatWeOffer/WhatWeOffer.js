@@ -182,7 +182,7 @@ shipments that require dedicated shipping</li>
             <Grid item xs={0} md={5}>
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-            <img  style={{width:"100%" , padding:50 }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+              <img  style={{width:"100%"  }} src={require('../../assets/Mv2.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>

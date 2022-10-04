@@ -179,9 +179,13 @@ function SpeakToASpecialist() {
   </div>
 
   <div className="screen screen-3" style={{height:"fit-content" , background:"#367bdc"}}>
-      <div className="top-semicircle semicircle-white">
-          <h2 className="circle-h2">Why Choose Us?</h2>
+  <div className="top-semicircle semicircle-white">
+          <div className="circle-h2" >
+          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us.</h1>
+
+          </div>
       </div>
+
 
       <Container maxWidth="xl" disableGutters style={{marginBottom:150}}>
         <div className="content">
@@ -210,7 +214,7 @@ function SpeakToASpecialist() {
             <Grid item xs={0} md={4} >
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-            <img  style={{width:"100%"  }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+            <img  style={{width:"100%"  }} src={require('../../assets/Mv3.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>
@@ -255,9 +259,10 @@ function SpeakToASpecialist() {
     </div>
 
   <div>
-      <div className="top-semicircle semicircle-blue">
-        <h2 className="circle-h2">Delivery Always On Time! Every Time! No Excuses!</h2>
-      </div>
+  <div className="top-semicircle semicircle-blue">
+        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
+
+        </div>
 
     <BeforeFooter/>
   </div>
