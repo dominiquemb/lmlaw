@@ -4,12 +4,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import FormTextFields from "./Form";
 import BeforeFooter from "../BeforeFooter";
+import home_page_top_right from "../../assets/home_page_top_right.png"
 
 function SpeakToASpecialist() {
 
  
   return <>
-  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:80}}>
+  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:80 , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , marginTop:80 , marginRight:80}}>
       <Grid container>
           <Grid item xs={12} md={8} style={{padding:30 , height:"fit-content"}}>
           <Box  sx={{ display: { xs: 'none', md: 'block', lg: 'block' } }}  >
@@ -73,20 +74,27 @@ function SpeakToASpecialist() {
           </Grid>
 
         <Grid item xs={12} md={4} >
-          <div style={{marginTop:80 , marginRight:80}}>
+        <div  >
+        <div  style={{margin:80}}>
             <FormTextFields />
           </div>
+        </div>
+          
                 
         </Grid>
       </Grid>
   </Container>
 
-  <div className="screen screen-2" style={{height:'fit-content'}}>
-      <div className="background"></div>
+  <div className="screen screen-2" style={{height:'fit-content' , backgroundColor:"#367bdc" , color:"white"}}>
 
-      <div className="top-semicircle semicircle-blue">
-        <h2 className="circle-h2">What You Can Expect from Us. What You Can Expect from Us.</h2>
+
+      <div className="top-semicircle semicircle-white">
+          <div className="circle-h2" >
+          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us.</h1>
+
+          </div>
       </div>
+
 
       <p style={{
                   fontSize:20,
@@ -101,7 +109,7 @@ function SpeakToASpecialist() {
 
       <Container maxWidth="xl" disableGutters>
 
-        <Grid container style={{marginTop:50,marginBottom:150}}>
+        <Grid container style={{marginTop:50,marginBottom:200}}>
             <Grid item xs={12} md={6}>
               <div style={{width:"80%" , margin:"auto"}} >
                 <h1>
@@ -166,7 +174,7 @@ function SpeakToASpecialist() {
         </Grid>
       </Container>
       
-      <div className="bottom-semicircle semicircle-blue">
+      <div className="bottom-semicircle semicircle-white">
       </div>
   </div>
 
@@ -221,12 +229,12 @@ function SpeakToASpecialist() {
             </Grid>
         </Grid>
         <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="#"  style={{marginLeft:"15%"}}>
+                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"15%"}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="#" style={{float:"right",marginRight:"15%"}}>
+                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"15%"}}>
                     <button className="round-button round-button">
                       How it works
                     </button>

@@ -2,6 +2,10 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from "@mui/material/Box";
+import home_page_top_right from '../../assets/home_page_top_right.png';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "../../assets/animate.css";
+
 
 
 function HomeScreen() {
@@ -10,57 +14,52 @@ function HomeScreen() {
     <>
     <div className="home">
 
-      <div className="circle-container" id="circle-container">
-        <div id="container-first-screen">
-          <div id="quarter-circle-bottom-left">
-            <div id="circle-container-home">
-              <h1 id = "reliable" class="circle-h1 circle-text">
+    <Grid container  style={{marginTop:100 , marginBottom:"10vh" , paddingLeft:50,paddingRight:50}}>
+          <Grid item xs={12} md={6}  >
+
+            <div >
+              <h1 className="circle-h1 circle-text"  style={{color:"#666 " , marginTop:"10vh"}}>
                 Reliable Same-Day Delivery & Courier Service 
 	            </h1>
 
-              <h2 id = "providing"  class="circle-h2 circle-text">
+              <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
                 Providing you peace of mind
 	            </h2>
 
-              <Box  sx={{ display: { xs: 'none', sm: 'block' } }}>
 
-              <h4 id = "deliver"  class="circle-h4 circle-text">
+              <h4 class="circle-h4 circle-text">
                 Deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
               </h4>
-              </Box>
 
-              <div id="button-video">
-                <span class="b">
-                  <button id = 'home-first-button' class="round-button large-circle-button">
+        
+                  <button class="round-button " style={{marginLeft:"20%" , marginBottom:30}}>
                     Get Started
                   </button>
-                </span>
-                <span class="b">
-                <Box  sx={{ display: { xs: 'none', md: 'inline', lg: 'inline' } }}  >
 
-                  <video id = "video" loop autoPlay muted>
+                  <video  loop autoPlay muted style={{borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10  , width:"80%"}}>
                     <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
-                  </Box>
 
-                </span>
-
-              </div>
             </div>
-          </div>
-        </div>
+              
+          </Grid>
+          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+       
+
+              
+          </Grid>
+    </Grid>
 
 
 
     <div className="screen screen-2" style={{height:'fit-content'}}>
       <div className="background"></div>
 
-      <div className="top-semicircle semicircle-blue">
-        <h2 className="circle-h2">Custom logistics. Indispensable service.</h2>
-      </div>
 
-      <Container maxWidth="xl" disableGutters>
+      <Container maxWidth="xl" disableGutters style={{padding:40}}>
+      <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
+
         <div className="content">
           We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
         </div>
@@ -68,7 +67,7 @@ function HomeScreen() {
         <Grid container>
             <Grid item xs={12} md={4}>
               <div className="centered circle small-circle smallest">
-                Picture insert here
+                <img src={require('../../assets/medical-symbol.png')}  style={{width:"80%"}}></img>
               </div>
               <div className="content middle">
                 Healthcare Industry
@@ -77,10 +76,13 @@ function HomeScreen() {
                 Reliability
               </div>
               <div className="content">
-                We provide on-demand, reliable same-day delivery service, delivering medical specimens, supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time, geofencing to ensure driver is at delivery location. “You See What We See”.
+                We provide on-demand, reliable same-day delivery service, delivering medical specimens,
+                supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines
+                and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time,
+                 geofencing to ensure driver is at delivery location. <bold style={{fontWeight:900}}>“You See What We See”</bold>.
               </div>
               <div className="column-footer" style={{marginBottom:30}}>
-                <a className="button-link speak-to-a-specialist-link" href="#"><button className="round-button round-button-blue">Learn More</button></a>
+                <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
 
@@ -93,7 +95,7 @@ function HomeScreen() {
 
             <Grid item xs={12} md={4}>
               <div className="centered circle small-circle smallest">
-                Picture insert here
+              <img src={require('../../assets/freight-symbol.png')}  style={{width:"80%"}}></img>
               </div>
               <div className="content middle">
                 Freight Industry
@@ -116,13 +118,16 @@ function HomeScreen() {
         </Grid>
       </Container>
       
-      <div className="bottom-semicircle semicircle-blue">
-      </div>
+     
     </div>
 
     <div className="screen screen-3" style={{height:"fit-content"}}>
+
       <div className="top-semicircle semicircle-white">
-          <h2 className="circle-h2">Why We Stand Out Above The Rest</h2>
+          <div className="circle-h2">
+          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" }}>Why We Stand Out Above The Rest.</h1>
+
+          </div>
       </div>
 
       <Container maxWidth="xl" disableGutters>
@@ -169,12 +174,12 @@ function HomeScreen() {
             </Grid>
         </Grid>
         <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link" href="#"  style={{marginLeft:"15%"}}>
+                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"15%"}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="#" style={{float:"right",marginRight:"15%"}}>
+                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"15%"}}>
                     <button className="round-button round-button">
                       How it works
                     </button>
@@ -182,16 +187,16 @@ function HomeScreen() {
         </div>
       </Container>
 
-        <div className="bottom-semicircle semicircle-white">
-        </div>
+        
     </div>
 
     <div className="screen screen-4" style={{height:"fit-content"}}>
         <div className="top-semicircle semicircle-blue">
-            <h2 className="circle-h2">Adapting to your business</h2>
+        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Adapting to your business.</h1>
+
         </div>
 
-        <Container maxWidth="xl" disableGutters>
+        <Container maxWidth="xl" disableGutters style={{padding:30}}>
 
 
           <Grid container>
@@ -200,16 +205,18 @@ function HomeScreen() {
                     AAA is here to help and ready to step right in, whether you need to expand or supplement your fleet. Our fleet is ready to help you ramp up your operations, so you can meet the growing demands of your business.
                   </div>
                   <div className="column-footer" style={{marginBottom:120}}>
-                    <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-button">Get Started</button></a>
+                    <a className="button-link" href="/what-we-offer"><button className="round-button round-button">Learn more</button></a>
                   </div>
               </Grid>
 
 
               <Grid item xs={12} md={4}>
-                  <video   width="320" height="240" style={{margin: 'auto', width: '80%', display: 'block'}} loop autoPlay muted>
-                    <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                  </video>
+                <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
+                animateOut='fadeOut'>
+                  <div className="content">
+                    <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
+                  </div>
+                </ScrollAnimation>
               </Grid>
 
               <Grid item xs={12} md={4}>
@@ -217,7 +224,7 @@ function HomeScreen() {
                     Partner with us, let us become an extension of your company. We will reduce the cost of your aging fleet by supplementing or replacing your fleet with AAA fleet replacements, propelling your same-day delivery capabilities.
                   </div>
                   <div className="column-footer" style={{marginBottom:120}}>
-                    <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">How It Works</button></a>
+                    <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">Get started</button></a>
                   </div>
               </Grid>
           </Grid>
@@ -225,7 +232,7 @@ function HomeScreen() {
 
       </div>
 
-    </div>
+  
   </div>
 </>
   );

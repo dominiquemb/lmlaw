@@ -29,29 +29,26 @@ function Locations() {
   return (
     <>
     <div id='map-and-dropdown'>
+
     <Grid container  style={{marginTop:100}}>
-          <Grid item xs={12} md={6}>
+    <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+      We are currently serving all 48 states nationwide.
+    </h1>
+
+          <Grid item xs={12} md={3}>
           <div className="circle-white"
-           style={{width:"90%" , margin : "auto" , position:"relative",height:"fit-content" , top:80 , }}>
-            <div >
-              <h1 className="circle-h1 circle-text">States We Serve </h1>
-              <h3 className="circle-h3 circle-text">
-                We are currently serving all 48 states nationwide.
-              </h3>
-              <h4 className="circle-h3 circle-text">
-                "In the world of logistics, where most situations require
-                timeliness, AAA is a must-have option to stay ahead of the
-                competition".{" "}
-              </h4>
+           style={{width:"90%" , margin : "auto" ,height:"fit-content"  }}>
+            <Box sx={{ marginTop :{xs : 0 , md :"50vh"}}} >
+
               <UsaStatesSelect></UsaStatesSelect>
 
-            </div>
+            </Box>
             
           </div>
               
           </Grid>
-          <Grid item xs={12} md={6}>
-          <div className="rounded-corners box-shadow" style={{width:"90%" , margin : "auto"}}>
+          <Grid item xs={12} md={9}>
+          <div className="rounded-corners" style={{width:"90%" , margin : "auto"}}>
             <div className="us-map">
               <UsaMap></UsaMap>
             </div>
@@ -59,6 +56,10 @@ function Locations() {
           </div>
               
           </Grid>
+    <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+        In the world of logistics, where most situations require timeliness,
+        AAA is a must-have option to stay ahead of the competition.
+    </h1>
     </Grid>
 
     </div>
@@ -67,26 +68,15 @@ function Locations() {
 
         <div className="screen screen-4" style={{height:"fit-content" , border:0}}>
         
-        <div >
-            <div  style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="#"  style={{marginLeft:50 , float:"left"}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                  <a className="button-link" href="#" style={{float:"right",marginRight:50}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                </div>
-          </div>
-
+      
 
 
         <Container maxWidth="xl" disableGutters style={{maxWidth:"100%"}}>
 
-      
+        <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+        Flexibility! Adaptability! Quality! Responsibility!
+    </h1>
+
           <Grid container>
           <Grid item xs={3.5} md={3.5}>
                 <ScrollAnimation animateIn='bounce' delay={300}
@@ -120,6 +110,19 @@ function Locations() {
                 </ScrollAnimation>
               </Grid>
           </Grid>
+
+          <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"15%"}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"15%"}}>
+                    <button className="round-button round-button">
+                      How it works
+                    </button>
+                  </a>
+        </div>
         </Container>
 
       </div>

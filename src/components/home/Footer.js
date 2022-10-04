@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
         <div className="footer">
-            <Container maxWidth="xl" disableGutters>
+            <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={3}>
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
@@ -19,6 +19,8 @@ function Footer() {
                         <div class="column-footer">
                             HIPPA COMPLIANT
                         </div>
+                        <img src={require('../../assets/medical-symbol.png')}  style={{width:"50%" , marginLeft:"25%" , marginTop:10}}></img>
+
                     </Grid>
                     <Grid item xs={12} md={9}>
                         <div class="columns">
@@ -28,16 +30,16 @@ function Footer() {
                                 </div>
                                 <ul>
                                     <li>
-                                        Home
+                                    <a href="/home">Home</a>
                                     </li>
                                     <li>
-                                        What we offer
+                                    <a href="/what-we-offer"> What we offer</a>
                                     </li>
                                     <li>
-                                        How it works
+                                    <a href="/how-it-works">How it works</a>
                                     </li>
                                     <li>
-                                        Our locations
+                                        <a href="/our-locations">Our locations</a>
                                     </li>
                                 </ul>
                             </div>
@@ -47,7 +49,7 @@ function Footer() {
                                 </div>
                                 <ul>
                                     <li>
-                                        About Us
+                                        <a href="/about-us">About Us</a>
                                     </li>
                                     <li>
                                         Careers
@@ -56,7 +58,7 @@ function Footer() {
                                         Drive for us
                                     </li>
                                     <li>
-                                        Our locations
+                                        <a href="/our-locations">Our locations</a>
                                     </li>
                                 </ul>
                             </div>
@@ -69,10 +71,11 @@ function Footer() {
                                         <a href="/speak-to-a-specialist">Speak to a Specialist</a>
                                     </li>
                                     <li>
-                                        info@aaadeliveryservice.com
+                                        <a href="mailto:info@aaadeliveryservice.com">info@aaadeliveryservice.com</a>
                                     </li>
                                     <li>
-                                        1 844 AAA-0206
+                                        <a href="tel:1844 AAA-0206">1844 AAA-0206</a>
+                                        
                                     </li>
                                     <li>
                                         2101 Terminal Road
