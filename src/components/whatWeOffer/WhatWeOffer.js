@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import back from '../../assets/blue-column.PNG';
+import home_page_top_right from '../../assets/home_page_top_right.png';
 
 
 function WhatWeOffer() {
@@ -27,18 +27,18 @@ function WhatWeOffer() {
   return (
     <>
     <div id='map-and-dropdown'>
-    <Grid container  style={{ marginBottom:"10vh" , height:"80vh"}}>
+    <Grid container  style={{ marginBottom:"10vh", marginTop:"10vh" , height:"80vh"}}>
           <Grid item xs={12} md={6} style={{ marginTop:"30vh"}}  >
 
           <h1 className="circle-h1 circle-text"  style={{color:"#666 " , width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
               <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
-              Providing you peace of mind
+                Knowing your deliveries are safe and in good hands with AAA
               </h2>
             
           
               
           </Grid>
-          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${back})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" }}>
+          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
           <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow" style={{width:"fit-content" }}>
@@ -62,70 +62,67 @@ function WhatWeOffer() {
 
               
           </Grid>
+            <h1 style={{fontSize:35 , width :"80%", margin:"auto",paddingTop:40,textAlign:"center" , marginTop:80,marginBottom:30}}>
+              Indispensable Custom-Built Delivery & Courier Services for Your Business
+            </h1>
     </Grid>
+
 
     </div>
       <div className="circle-container what-we-offer" id="circle-container">
 
         <div className="screen screen-2" style={{height:"fit-content" , borderBottom:0}}>
-          <div className="top-semicircle semicircle-white">
-            <p>
+        <div className="content" style={{width:"80%",margin:"auto"}}>
               We understand that each business requirements can change from
               day-to-day, that's why AAA DELIVERY SERVICE offers indispensable
               customized logistics to fit and adapt to your business needs.
-              Providing you peace of mind.
-            </p>
-          </div>
+              Providing you peace of mind. 
+            <br /><br />
+        </div>
 
-          <Container maxWidth="xl" disableGutters>
+
+          <Container maxWidth="xl" disableGutters style={{padding:30}}>
             <Grid container>
               <Grid item xs={12} md={6}>
                 <div className="centered circle small-circle smallest">
-                  Picture insert here
+                <img src={require('../../assets/medical-symbol.png')}  style={{width:"80%"}}></img>
                 </div>
                 <div className="content middle">Medical Industry</div>
                 <div className="content middle-subheader">Reliability</div>
                 <div className="content">
                   <ul>
-                    <li>✓ Place and track orders all in one central hub</li>
+                    <li>✓ FMCSA, HIPPA compliant, and OSHA certified</li>
+                    <li>
+                      ✓ Visibility on every pick-up and delivery, GPS tracking in real-
+time, on a live map through the entire process
+                    </li>
+                    <li>
+                      ✓ Place and track shipments all in one central hub, API / EDI
+Integrations for order updates
+                    </li>
                     <li>
                       ✓ Schedule and customize a pickup, available from anywhere
-                      with any-device
+with any-device
                     </li>
-                    <li>
-                      ✓ Order tracking & geofencing in real-time dashboard
-                    </li>
-                    <li>
-                      ✓ API / EDI integrations for connected sales & real-time
-                      order updates
-                    </li>
-                    <li>✓ HIPPA compliant & OSHA certified</li>
-                    <li>✓ Customer support around the clock 24/7/365</li>
+                    <li>✓ Custom notification of package delivery status, based on
+your preference</li>
                   </ul>
                 </div>
 
-                <div className="column-footer"  style={{marginBottom:"15vh"}}>
-                  <a
-                    className="button-link speak-to-a-specialist-link"
-                    href="#"
-                  >
-                    <button className="round-button round-button-blue">
-                      Learn More
-                    </button>
-                  </a>
-                </div>
+                
               </Grid>
 
               <Grid item xs={12} md={6}>
                 <div className="centered circle small-circle smallest">
-                  Picture insert here
+                <img src={require('../../assets/freight-symbol.png')}  style={{width:"80%"}}></img>
                 </div>
                 <div className="content middle">Freight Industry</div>
                 <div className="content middle-subheader">Dependability</div>
                 <div className="content">
                   <ul>
                     <li>
-                      ✓ Customzied logistics to fit and adapt to your business
+                      ✓ Transparency and visibility into every single shipment through
+cutting-edge technology
                     </li>
                     <li>
                       ✓ Reliability, experience, one-to-one approach, delivery
@@ -135,39 +132,32 @@ function WhatWeOffer() {
                       ✓ Dependable service you can always count on, and
                       professionalism on every delivery
                     </li>
-                    <li>✓ On-demand, same-day delivery & courier service</li>
+                    <li>✓ Cost-efficient LTL shipping services, FTL services for large
+shipments that require dedicated shipping</li>
                     <li>
-                      ✓ Professional, committed fully vetted Couriers by uniform
+                      ✓ Customer support around the clock 24/7/365
                     </li>
-                    <li>
-                      ✓ Custom notification of package delivery status, based on
-                      your preference
-                    </li>
+
                   </ul>
                 </div>
-                <div className="column-footer" style={{marginBottom:"25vh"}}>
-                  <a
-                    className="button-link speak-to-a-specialist-link"
-                    href="#"
-                  >
-                    <button className="round-button round-button-blue">
-                      Learn More
-                    </button>
-                  </a>
-                </div>
+
               </Grid>
             </Grid>
           </Container>
 
-          <div className="bottom-semicircle semicircle-blue"></div>
         </div>
 
         <div className="screen screen-3"  style={{height:"fit-content" , border:0}}>
+
       <div className="top-semicircle semicircle-white">
-          <h2 className="circle-h2">Fleet Optimization</h2>
+          <div className="circle-h2">
+          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" }}>Fleet Optimization.</h1>
+
+          </div>
       </div>
 
-      <Container maxWidth="xl" disableGutters>
+
+      <Container maxWidth="xl" disableGutters style={{padding:40}}>
         <div className="content" style={{width:"80%",margin:"auto"}}>
         We understand how time consuming and expensive it is to own, operate and manage a fleet of vehiles, and the cost of insurance due to accidents, not to mention managing couriers alone is an expensive undertaking. That's why at AAA our specialists take on these burdens for you, providing you with responsive, flexible service keeping you focused on your core business.
             <br /><br />
@@ -175,8 +165,8 @@ function WhatWeOffer() {
 
 
         <Grid container>
-            <Grid item xs={12} md={4}>
-              <Box className="content" style={{width:"80%" , margin:"auto",marginRight:{ xs: 'auto', sm: 0, md: 0 }}} >
+            <Grid item xs={12} md={3.5}>
+              <Box className="content" style={{margin:"auto"}} >
                   <h3>Augment Your Fleet</h3>
                     <div>
                     AAA can step in on-demand, same-day to help you deliver your delivery needs. Partner with us, so we can augment your fleet, let us become an extension of your company. Our fleet is ready to help you ramp up your operations so you can meet the growing demands of your business.
@@ -189,34 +179,34 @@ function WhatWeOffer() {
             </Grid>
 
 
-            <Grid item xs={0} md={4}>
+            <Grid item xs={0} md={5}>
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-            <img  style={{width:"100%"  }} src={require('../../assets/blue-circles.PNG')} alt="Blue Logo" />
+              <img  style={{width:"100%"  }} src={require('../../assets/Mv2.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>
 
-            <Grid item xs={12} md={3}>
-                <Box className="content" style={{width:"80%" , margin:"auto",marginRight:{ xs: 'auto', sm: 0, md: 0 }}} >
+            <Grid item xs={12} md={3.5}>
+                <div className="content" style={{margin:"auto"}} >
                   <h3>Replace Your Fleet</h3>
                     <div>
                     Supplement your fleet to a team of specialists to ensure you meet the demands of your customers. We have the couriers, the right vehicles and AAA provides you with advanced technology, live tracking, proof of delivery, and the fastest, reliable delivery option in the industry.
                     </div>
-                </Box>
+                </div>
                 
                 
                 
             </Grid>
             <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="#"  style={{marginLeft:50}}>
+                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"20%"}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="#" style={{float:"right",marginRight:50}}>
+                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"20%"}}>
                     <button className="round-button round-button">
-                      Get Started
+                      How it works
                     </button>
                   </a>
                 </div>
@@ -228,20 +218,26 @@ function WhatWeOffer() {
 
        
         <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
-          <div className="top-semicircle semicircle-white">
-            <h2 className="circle-h2">
-              Schedule On Demand Or Recurring Deliveries
-            </h2>
-          </div>
+          
+          <div className="top-semicircle semicircle-blue">
+        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Schedule On Demand Or Recurring Deliveries.</h1>
 
-          <Container maxWidth="xl" disableGutters>
+        </div>
+
+
+          <Container maxWidth="xl" disableGutters style={{padding:40}}> 
             <Grid container>
               <Grid item xs={12} md={3}>
                 <div className="content">
-                  AAA is here to help and ready to step right in, whether you
-                  need to expand or supplement your fleet. Our fleet is ready to
-                  help you ramp up your operations, so you can meet the growing
-                  demands of your business.
+                  Our portal is easy and convenient to use,
+                  whether it’s on-demand or on a recurring
+                  scheduling. We customize and adapt our
+                  logistics service for your day-to-day, minute-
+                  to-minute operational delivery needs. We
+                  provide you with upfront pricing, accurate
+                  ETA on every pickup and delivery, real-time
+                  package tracking and instant delivery
+                  confirmation, based on your preference
                 </div>
                 <div className="column-footer" style={{marginBottom:"10vh"}}>
                   <a className="button-link" href="/speak-to-a-specialist">
@@ -253,14 +249,8 @@ function WhatWeOffer() {
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video
-                width="640"
-                height="320"
-                style={{ width: "80%" ,height:"80%" }}
-                loop
-                autoPlay
-                muted
-              >
+              <video  loop autoPlay muted style={{borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10  , width:"80%"}}>
+                
                 <source
                   src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
                   type="video/mp4"
@@ -271,10 +261,15 @@ function WhatWeOffer() {
 
               <Grid item xs={12} md={3}>
                 <div className="content">
-                  Partner with us, let us become an extension of your company.
-                  We will reduce cost of your aging fleet by supplementing or
-                  replacing your fleet with AAA fleet replacement propelling
-                  your same-day deliveries capabilities.
+                  We give you total control over the sending
+                  and receiving of your packages, without
+                  the added stress of managing each
+                  delivery. Simply place and track orders all
+                  in one place. Reduce your costs, save
+                  money, and improve inter-office
+                  productivity. Knowing your deliveries are
+                  safe and in good hands with AAA. Providing
+                  you peace of mind.
                 </div>
                 <div className="column-footer">
                   <a

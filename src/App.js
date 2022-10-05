@@ -25,8 +25,8 @@ import WhatWeOffer from './components/whatWeOffer/WhatWeOffer';
 
 import HowItWorks from './components/howItWorks/HowItWorks';
 import Locations from './components/locations/Locations';
-
-const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'}];
+import AboutUs from './components/aboutUs/AboutUs';
+const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'}];
 
 function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-    <AppBar position="fixed">
+    <AppBar position="fixed" style={{backgroundColor:"white"}}>
       {/* <Container maxWidth="xl"> */}
         <Toolbar 
         sx={{
@@ -59,11 +59,11 @@ function App() {
         }}
         disableGutters>
           <a href="https://www.aaadeliveryservice.com/" style={{
-            width: 200,
+            width: "inherit",
             marginRight: 45,
             display: 'flex'
             }}>
-            <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1" /> 
+            <img src={require('./assets/header-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -75,10 +75,9 @@ function App() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon style =  {{color:"black"}} />
             </IconButton>
             <Menu
-              id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
@@ -91,17 +90,17 @@ function App() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
             >
               {pages.map((page, index) => {
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center"><a href={page.url}>{page.label}</a></Typography>
                 </MenuItem>
-
-                console.log(page);
               })}
+            {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center"><a href={page.url}>{page.label}</a></Typography>
+              </MenuItem>
+            ))}
             </Menu>
           </Box>
           <Typography
@@ -127,7 +126,7 @@ function App() {
               <a href={page.url}><Button
                 key={index}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#090B27', display: 'block' }}
               >
                 {page.label}
               </Button>
@@ -135,12 +134,11 @@ function App() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
+          <Box sx={{ flexGrow: 1  ,display: { xs: 'none', md: 'flex' }}}>
+                  <button class="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10}}>
+                    Online Portal
+                  </button>
+
             {/* <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -175,6 +173,7 @@ function App() {
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
           <Route path='/what-we-offer' element={<WhatWeOffer />} />
           <Route path='/how-it-works' element={<HowItWorks />} />
+          <Route path='/about-us' element={<AboutUs />} />
           <Route path='/locations' element={<Locations />}></Route>
         </Routes>
     </Router>

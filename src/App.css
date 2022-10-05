@@ -224,34 +224,29 @@ body .large-circle-button {
 
 .screen {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.screen {
-  border-bottom: 100px solid #393939;
-}
 
 .top-semicircle {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   height: 300px;
   border-radius: 100%;
-  margin-top: -170px;
+  margin-top: -150px;
   position: relative;
   color: white;
   margin-bottom: 70px;
 }
 
 .bottom-semicircle {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   height: 300px;
   border-radius: 100%;
-  margin-bottom: -190px;
+  margin-bottom: -170px;
   position: absolute;
-  bottom: 10px;
+  bottom: 18px;
   color: white;
   margin-top: 70px;
 }
@@ -459,9 +454,11 @@ ul {
 
 .footer .content {
   color: #fff;
+  
   font-weight: 300;
 }
 
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active { color:white; }
 .footer .logo {
   margin: auto;
   display: block;
@@ -566,7 +563,7 @@ a {
     
 }
 #container-first-screen{
-width: 100vw;
+width:100%;
 height: 75vw;
 max-height:90vh;
 background:white;
@@ -591,27 +588,24 @@ overflow:hidden;
 #deliver{
  font-size:1em;
 }
-#home-first-button{
-   bottom:5vh;
-}
+
 #home-first-button{
  display: inline-block;
  margin-right:5vw;
  
 
 }
-#button-video{
-width:100%;
-position:relative;
 
-bottom:0;}
-#video{
- display: inline-block;
- width:20vw;
-}
+
 
 span.b {
  display: inline;
  margin:auto;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body{
+  font-family: 'Rubik', sans-serif !important;
 }
