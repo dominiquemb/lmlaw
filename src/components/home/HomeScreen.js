@@ -32,11 +32,14 @@ function HomeScreen() {
               </h4>
 
         
-                  <button class="round-button " style={{marginLeft:"20%" , marginBottom:30}}>
-                    Get Started
-                  </button>
+                 
+                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"20%" , marginBottom:30}}>
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
 
-                  <video  loop autoPlay muted style={{borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10  , width:"80%"}}>
+                  <video  loop autoPlay muted style={{borderRadius:10  , width:"80%" , marginTop:30}}>
                     <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
@@ -58,7 +61,7 @@ function HomeScreen() {
 
 
       <Container maxWidth="xl" disableGutters style={{padding:40}}>
-      <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
+      <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
 
         <div className="content">
           We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
@@ -125,7 +128,7 @@ function HomeScreen() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2">
-          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" }}>Why We Stand Out Above The Rest.</h1>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Why We Stand Out Above The Rest</h1>
 
           </div>
       </div>
@@ -174,12 +177,12 @@ function HomeScreen() {
             </Grid>
         </Grid>
         <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"15%"}}>
+                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"8%" , marginRight:0}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"15%"}}>
+                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
                     <button className="round-button round-button">
                       How it works
                     </button>
@@ -192,7 +195,7 @@ function HomeScreen() {
 
     <div className="screen screen-4" style={{height:"fit-content"}}>
         <div className="top-semicircle semicircle-blue">
-        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Adapting to your business.</h1>
+        <h1  className="circle-h2" style={{textAlign:"center" , padding:"0 10%" }}>Adapting to your business</h1>
 
         </div>
 

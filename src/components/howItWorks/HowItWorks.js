@@ -23,7 +23,7 @@ function HowItWorks() {
               <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
                 Seamlessly Place and Track Orders All In One Place
               </h2>
-              <img style={{width:400 , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
+              <img style={{width:"100%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
               <h3 className="circle-h3 circle-text" style={{color:"#666 "}}>Get Started Here</h3>
               <h4 className="circle-h4 circle-text" style={{color:"#666 "}}>
                 Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
@@ -36,7 +36,7 @@ function HowItWorks() {
           <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
           <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
-          <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow" style={{width:"fit-content" }}>
+          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"fit-content" }}>
             <video
               width="410"
               height="230"
@@ -66,8 +66,8 @@ function HowItWorks() {
     <div className="screen screen-3"  style={{height:"fit-content" , border:0}}>
 
       <div className="top-semicircle semicircle-white">
-          <div className="circle-h2">
-            <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" }}>Schedule And Customize A Delivery</h1>
+          <div className="circle-h2" style={{bottom:0}}>
+            <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Schedule And Customize A Delivery</h1>
           </div>
       </div>
 
@@ -121,27 +121,33 @@ function HowItWorks() {
               </div>
                 
             </Grid>
-            <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"15%"}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                  <a className="button-link"  href="/speak-to-a-specialist"  style={{float:"right",marginRight:"15%"}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-            </div>
+
         </Grid>
       </Container>
+
+      <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link"  href="/speak-to-a-specialist"  style={{marginLeft:"6%" , marginRight:0}}>
+                    <button className="round-button round-button">
+                      How it works
+                    </button>
+                  </a>
+                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"6%" , marginLeft:0}}>
+                    <button className="round-button round-button">
+                      How it works
+                    </button>
+                  </a>
+        </div>
 
     </div>
 
 
     <div className="screen screen-4" style={{height:"fit-content" , border:0}}>
         
-    
+    <div className="top-semicircle semicircle-blue">
+          <div className="circle-h2" style={{bottom:0}}>
+            <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Transparency! Visibility! Safety! Professionalism!</h1>
+          </div>
+      </div>
 
 
         <BeforeFooter>

@@ -54,19 +54,20 @@ function App() {
         <Toolbar 
         sx={{
           display: 'flex',
-          padding: '0px 45px',
+          padding: '0px 15px',
           justifyContent: 'space-between'
         }}
         disableGutters>
           <a href="https://www.aaadeliveryservice.com/" style={{
             width: "inherit",
-            marginRight: 45,
+            marginRight: 0,
             display: 'flex'
             }}>
+
             <img src={require('./assets/header-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}> 
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -74,8 +75,9 @@ function App() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              style =  {{color:"black" , padding:0}}
             >
-              <MenuIcon style =  {{color:"black"}} />
+              <MenuIcon style =  {{color:"black" , padding:0}} />
             </IconButton>
             <Menu
               anchorEl={anchorElNav}
@@ -91,36 +93,15 @@ function App() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
             >
-              {pages.map((page, index) => {
-                <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><a href={page.url}>{page.label}</a></Typography>
-                </MenuItem>
-              })}
+
             {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"><a href={page.url}>{page.label}</a></Typography>
+                <a style={{ width:"100%"}}href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
               </MenuItem>
             ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) => (
               <a href={page.url}><Button

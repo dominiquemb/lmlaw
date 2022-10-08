@@ -41,7 +41,7 @@ function WhatWeOffer() {
           <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
           <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
-          <div className="speak-to-a-specialist-form light-blue-bg rounded-corners box-shadow" style={{width:"fit-content" }}>
+          <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>
             <video
               width="410"
               height="230"
@@ -62,10 +62,11 @@ function WhatWeOffer() {
 
               
           </Grid>
-            <h1 style={{fontSize:35 , width :"80%", margin:"auto",paddingTop:40,textAlign:"center" , marginTop:80,marginBottom:30}}>
-              Indispensable Custom-Built Delivery & Courier Services for Your Business
-            </h1>
+
     </Grid>
+    <h1 style={{ width :"80%", margin:"auto",paddingTop:40,textAlign:"center" , marginTop:80,marginBottom:30}}>
+      Indispensable Custom-Built Delivery & Courier Services for Your Business
+    </h1>
 
 
     </div>
@@ -151,7 +152,7 @@ shipments that require dedicated shipping</li>
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2">
-          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" }}>Fleet Optimization.</h1>
+          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" }}>Fleet Optimization</h1>
 
           </div>
       </div>
@@ -198,20 +199,21 @@ shipments that require dedicated shipping</li>
                 
                 
             </Grid>
-            <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"20%"}}>
+        </Grid>
+
+      </Container>
+          <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"8%" , marginRight:0}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"20%"}}>
+                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
                     <button className="round-button round-button">
                       How it works
                     </button>
                   </a>
-                </div>
-        </Grid>
-      </Container>
+        </div>
 
     </div>
 
@@ -220,7 +222,7 @@ shipments that require dedicated shipping</li>
         <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
           
           <div className="top-semicircle semicircle-blue">
-        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Schedule On Demand Or Recurring Deliveries.</h1>
+        <h2  className="circle-h2" style={{padding:20,textAlign:"center" }}>Schedule On Demand Or Recurring Deliveries</h2>
 
         </div>
 
@@ -249,7 +251,7 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video  loop autoPlay muted style={{borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10  , width:"80%"}}>
+              <video  loop autoPlay muted style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
                   src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"

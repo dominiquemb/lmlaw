@@ -8,6 +8,7 @@ import {UsaMap} from "./Map.js"
 import UsaStatesSelect from "./UsaStatesDropDown";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
+import BeforeFooter from "../BeforeFooter.js";
 
 function Locations() {
   const [firstName, setFirstName] = React.useState("");
@@ -31,7 +32,7 @@ function Locations() {
     <div id='map-and-dropdown'>
 
     <Grid container  style={{marginTop:100}}>
-    <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+    <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
       We are currently serving all 48 states nationwide.
     </h1>
 
@@ -56,7 +57,7 @@ function Locations() {
           </div>
               
           </Grid>
-    <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+    <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
         In the world of logistics, where most situations require timeliness,
         AAA is a must-have option to stay ahead of the competition.
     </h1>
@@ -73,57 +74,26 @@ function Locations() {
 
         <Container maxWidth="xl" disableGutters style={{maxWidth:"100%"}}>
 
-        <h1 style={{fontSize:50 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+        <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
         Flexibility! Adaptability! Quality! Responsibility!
     </h1>
 
-          <Grid container>
-          <Grid item xs={3.5} md={3.5}>
-                <ScrollAnimation animateIn='bounce' delay={300}
-                  initiallyVisible={true}
-                  animateOnce={true}>
-                    <div className="content">
-                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-left.jpg')} alt="Blue Logo" />
-                    </div>
-                </ScrollAnimation>
-              </Grid>
+          <BeforeFooter></BeforeFooter>
 
 
-             
-              <Grid item xs={5} md={5}>
-              <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
-              animateOut='fadeOut'>
-                <div className="content">
-                  <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
-                </div>
-                </ScrollAnimation>
-              </Grid>
-            
-              
-              <Grid item xs={3.5} md={3.5}>
-                <ScrollAnimation animateIn='bounce' delay={300}
-                  initiallyVisible={true}
-                  animateOnce={true}>
-                    <div className="content">
-                      <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/warehouse-right.jpg')} alt="Blue Logo" />
-                    </div>
-                </ScrollAnimation>
-              </Grid>
-          </Grid>
-
-          <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"15%"}}>
+        </Container>
+        <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"8%" , marginRight:0}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"15%"}}>
+                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
                     <button className="round-button round-button">
-                      How it works
+                      Get Started
                     </button>
                   </a>
         </div>
-        </Container>
 
       </div>
 
