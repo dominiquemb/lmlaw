@@ -85,12 +85,12 @@ function SpeakToASpecialist() {
       </Grid>
   </Container>
 
-  <div className="screen screen-2" style={{height:'fit-content' , backgroundColor:"#367bdc" , color:"white"}}>
+  <div className="screen screen-2" style={{height:'fit-content' , backgroundColor:"#367bdc" , color:"white", marginBottom:20}}>
 
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us.</h1>
+          <h2 style={{width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us</h2>
 
           </div>
       </div>
@@ -153,7 +153,7 @@ function SpeakToASpecialist() {
 
 
             <Grid item xs={12} md={6}>
-            <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}>
+            <div  style={{width:"80%" , margin:"auto"  ,  borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
                     loop
@@ -181,7 +181,7 @@ function SpeakToASpecialist() {
   <div className="screen screen-3" style={{height:"fit-content" , background:"#367bdc"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us.</h1>
+          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us</h1>
 
           </div>
       </div>
@@ -232,13 +232,13 @@ function SpeakToASpecialist() {
 
             </Grid>
         </Grid>
-        <div className="column-footer" style={{display:"block",marginBottom:50,width:"100%"}}>
-                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"15%"}}>
+        <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
+                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"8%" , marginRight:0}}>
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
-                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"15%"}}>
+                  <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
                     <button className="round-button round-button">
                       How it works
                     </button>
@@ -260,7 +260,7 @@ function SpeakToASpecialist() {
 
   <div>
   <div className="top-semicircle semicircle-blue">
-        <h1  className="circle-h2" style={{fontSize:40 ,textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
+        <h1  className="circle-h2" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
 
         </div>
 

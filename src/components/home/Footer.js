@@ -6,10 +6,11 @@ function Footer() {
 
   return (
     <>
-        <div className="footer">
+        <div className="footer" style={{height:"fit-content" , paddingBottom:20}}>
             <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={12} md={3} alignItems="center">
+                        
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
                             <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1" /> 
                         </a>
@@ -19,12 +20,13 @@ function Footer() {
                         <div class="column-footer">
                             HIPPA COMPLIANT
                         </div>
-                        <img src={require('../../assets/medical-symbol.png')}  style={{width:"50%" , marginLeft:"25%" , marginTop:10}}></img>
-
+                        <div>
+                            <img src={require('../../assets/medical-symbol.png')}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10}}></img>
+                        </div>
                     </Grid>
                     <Grid item xs={12} md={9}>
-                        <div class="columns">
-                            <div class="col">
+                        <div class="columns" >
+                            <div class="col" style={{padding:5}}>
                                 <div class="footer-col-header">
                                     Get Started
                                 </div>
@@ -43,7 +45,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col">
+                            <div class="col" style={{padding:5}}>
                                 <div class="footer-col-header">
                                     About Us
                                 </div>
@@ -62,7 +64,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col">
+                            <div class="col" style={{padding:5}}>
                                 <div class="footer-col-header">
                                     Contact Us
                                 </div>
