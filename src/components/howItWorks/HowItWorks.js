@@ -16,10 +16,10 @@ function HowItWorks() {
     <>
 
 <div id='map-and-dropdown'>
-    <Grid container  style={{marginTop:100 , marginBottom:"10vh" , padding : 50}}>
+    <Grid container  style={{marginTop:80 , marginBottom:"10vh" , padding : 50}}>
           <Grid item xs={12} md={6}  >
 
-          <h1 className="circle-h1 circle-text"  style={{color:"#666 " , marginTop:"10vh"}}>How It Works</h1>
+          <h1 className="circle-h1 circle-text"  style={{color:"#666 " , marginTop:"5vh"}}>How It Works</h1>
               <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
                 Seamlessly Place and Track Orders All In One Place
               </h2>
@@ -67,7 +67,7 @@ function HowItWorks() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2" style={{bottom:0}}>
-            <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Schedule And Customize A Delivery</h1>
+            <h1 style={{width :"70%", margin:"auto",textAlign:"center" }}>Schedule And Customize A Delivery</h1>
           </div>
       </div>
 
@@ -145,7 +145,7 @@ function HowItWorks() {
         
     <div className="top-semicircle semicircle-blue">
           <div className="circle-h2" style={{bottom:0}}>
-            <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Transparency! Visibility! Safety! Professionalism!</h1>
+            <h1 style={{width :"70%", margin:"auto",textAlign:"center" }}>Transparency! Visibility! Safety! Professionalism!</h1>
           </div>
       </div>
 

@@ -32,7 +32,7 @@ function Locations() {
     <div id='map-and-dropdown'>
 
     <Grid container  style={{marginTop:100}}>
-    <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+    <h1 className="circle-text" style={{width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
       We are currently serving all 48 states nationwide.
     </h1>
 
@@ -57,7 +57,7 @@ function Locations() {
           </div>
               
           </Grid>
-    <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+    <h1 className="circle-text" style={{width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
         In the world of logistics, where most situations require timeliness,
         AAA is a must-have option to stay ahead of the competition.
     </h1>
@@ -74,7 +74,7 @@ function Locations() {
 
         <Container maxWidth="xl" disableGutters style={{maxWidth:"100%"}}>
 
-        <h1 style={{fontSize:35 , width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+        <h1 className="circle-text" style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
         Flexibility! Adaptability! Quality! Responsibility!
     </h1>
 

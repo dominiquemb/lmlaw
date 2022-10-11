@@ -64,15 +64,16 @@ function WhatWeOffer() {
           </Grid>
 
     </Grid>
-    <h1 style={{ width :"80%", margin:"auto",paddingTop:40,textAlign:"center" , marginTop:80,marginBottom:30}}>
-      Indispensable Custom-Built Delivery & Courier Services for Your Business
-    </h1>
-
 
     </div>
       <div className="circle-container what-we-offer" id="circle-container">
 
         <div className="screen screen-2" style={{height:"fit-content" , borderBottom:0}}>
+        <h1 style={{ width :"80%", margin:"auto",paddingTop:40,textAlign:"center" ,marginBottom:30}}>
+      Indispensable Custom-Built Delivery & Courier Services for Your Business
+    </h1>
+
+
         <div className="content" style={{width:"80%",margin:"auto"}}>
               We understand that each business requirements can change from
               day-to-day, that's why AAA DELIVERY SERVICE offers indispensable

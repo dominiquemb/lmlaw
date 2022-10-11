@@ -8,11 +8,11 @@ function Footer() {
     <>
         <div className="footer" style={{height:"fit-content" , paddingBottom:20}}>
             <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={3} alignItems="center">
+                <Grid container spacing={1} alignContent="center">
+                    <Grid item xs={12} sm={12} md = {3} alignItems="center">
                         
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
-                            <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1" /> 
+                            <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
                         </a>
                         <div class="content">
                             In the world of logistics, where most situations require timeliness, AAA is a must-have option to stay ahead of the competition.
@@ -21,12 +21,10 @@ function Footer() {
                             HIPPA COMPLIANT
                         </div>
                         <div>
-                            <img src={require('../../assets/medical-symbol.png')}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10}}></img>
+                            <img src={require('../../assets/medical-symbol.png')}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={9}>
-                        <div class="columns" >
-                            <div class="col" style={{padding:5}}>
+                    <Grid item xs={12} sm={3}  style={{padding:5}}>
                                 <div class="footer-col-header">
                                     Get Started
                                 </div>
@@ -44,8 +42,8 @@ function Footer() {
                                         <a href="/our-locations">Our locations</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="col" style={{padding:5}}>
+                    </Grid>
+                    <Grid item xs={12} sm={3}  style={{padding:5}}>
                                 <div class="footer-col-header">
                                     About Us
                                 </div>
@@ -63,8 +61,8 @@ function Footer() {
                                         <a href="/our-locations">Our locations</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="col" style={{padding:5}}>
+                    </Grid>
+                    <Grid item xs={12} sm={3} style={{padding:5}}>
                                 <div class="footer-col-header">
                                     Contact Us
                                 </div>
@@ -85,8 +83,6 @@ function Footer() {
                                         Fort Worth, Texas 76106
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
                     </Grid>
                 </Grid>
             </Container>

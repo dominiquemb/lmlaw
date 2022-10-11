@@ -75,7 +75,7 @@ function SpeakToASpecialist() {
 
         <Grid item xs={12} md={4} >
         <div  >
-        <div  style={{margin:80}}>
+        <div  style={{margin:"10%"}}>
             <FormTextFields />
           </div>
         </div>
@@ -96,11 +96,11 @@ function SpeakToASpecialist() {
       </div>
 
 
-      <p style={{
-                  fontSize:20,
+      <p className="content" style={{
                   fontWeight:600,
                   width:"80%",
-                  margin:"auto"
+                  margin:"auto",
+                  color:"white"
                 }}>
                   Once you’re in our system, you are ready to start, simply place and track orders all in one place. Schedule and customize a pick up from
                   anywhere, available from any device. Visibility and insights, order tracking & geofencing in real-time dashboard. Signature or photobase PODs for each order, alongside the scheduled an actual arrival time.
@@ -112,9 +112,9 @@ function SpeakToASpecialist() {
         <Grid container style={{marginTop:50,marginBottom:200}}>
             <Grid item xs={12} md={6}>
               <div style={{width:"80%" , margin:"auto"}} >
-                <h1>
+                <h2>
                 Things you can do from our portal:
-                </h1>
+                </h2>
                 <ul style={{listStyleType:"square"}}>
                     <li style={{marginBottom:10}}>
                       Place and track orders all in one central hub.
@@ -181,7 +181,7 @@ function SpeakToASpecialist() {
   <div className="screen screen-3" style={{height:"fit-content" , background:"#367bdc"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{fontSize:40 , width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us</h1>
+          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us</h1>
 
           </div>
       </div>
