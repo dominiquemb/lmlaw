@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer" style={{height:"fit-content" , paddingBottom:20}}>
             <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
                 <Grid container spacing={1} alignContent="center">
-                    <Grid item xs={12} sm={12} md = {3} alignItems="center">
+                    <Grid item xs={12} sm={12} md = {3} alignItems="center" style={{ padding:10}}>
                         
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
                             <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
@@ -24,13 +24,13 @@ function Footer() {
                             <img src={require('../../assets/medical-symbol.png')}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={3}  style={{padding:5}}>
+                    <Grid item xs={12} sm={3}  >
                                 <div class="footer-col-header">
                                     Get Started
                                 </div>
                                 <ul>
                                     <li>
-                                    <a href="/home">Home</a>
+                                    <a href="/">Home</a>
                                     </li>
                                     <li>
                                     <a href="/what-we-offer"> What we offer</a>

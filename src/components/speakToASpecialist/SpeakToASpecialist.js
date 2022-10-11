@@ -90,7 +90,7 @@ function SpeakToASpecialist() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h2 style={{width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us</h2>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us</h1>
 
           </div>
       </div>
