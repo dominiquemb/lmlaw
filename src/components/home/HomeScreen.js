@@ -14,7 +14,7 @@ function HomeScreen() {
     <>
     <div className="home">
 
-    <Grid container  style={{marginTop:100 , marginBottom:"10vh" , paddingLeft:50,paddingRight:50}}>
+    <Grid container  style={{marginTop:100 , marginBottom:"10vh" , paddingLeft:30,paddingRight:30}}>
           <Grid item xs={12} md={6}  >
 
             <div >
@@ -60,7 +60,7 @@ function HomeScreen() {
       <div className="background"></div>
 
 
-      <Container maxWidth="xl" disableGutters style={{padding:40}}>
+      <Container maxWidth="xl" disableGutters style={{padding:30}}>
       <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
 
         <div className="content">

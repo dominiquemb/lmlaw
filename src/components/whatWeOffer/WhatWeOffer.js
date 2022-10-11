@@ -27,8 +27,8 @@ function WhatWeOffer() {
   return (
     <>
     <div id='map-and-dropdown'>
-    <Grid container  style={{ marginBottom:"10vh", marginTop:"10vh" , height:"80vh"}}>
-          <Grid item xs={12} md={6} style={{ marginTop:"30vh"}}  >
+    <Grid container  style={{ marginBottom:0, marginTop:150 , height:"fit-content"}}>
+          <Grid item xs={12} md={6} style={{ marginTop:0}}  >
 
           <h1 className="circle-h1 circle-text"  style={{color:"#666 " , width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
               <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
@@ -38,8 +38,8 @@ function WhatWeOffer() {
           
               
           </Grid>
-          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
-          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
+          <Grid item xs={0} md={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+          <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>
             <video
@@ -64,15 +64,16 @@ function WhatWeOffer() {
           </Grid>
 
     </Grid>
-    <h1 style={{ width :"80%", margin:"auto",paddingTop:40,textAlign:"center" , marginTop:80,marginBottom:30}}>
-      Indispensable Custom-Built Delivery & Courier Services for Your Business
-    </h1>
-
 
     </div>
       <div className="circle-container what-we-offer" id="circle-container">
 
         <div className="screen screen-2" style={{height:"fit-content" , borderBottom:0}}>
+        <h1 style={{ width :"80%", margin:"auto",paddingTop:40,textAlign:"center" ,marginBottom:30}}>
+      Indispensable Custom-Built Delivery & Courier Services for Your Business
+    </h1>
+
+
         <div className="content" style={{width:"80%",margin:"auto"}}>
               We understand that each business requirements can change from
               day-to-day, that's why AAA DELIVERY SERVICE offers indispensable
@@ -222,7 +223,7 @@ shipments that require dedicated shipping</li>
         <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
           
           <div className="top-semicircle semicircle-blue">
-        <h2  className="circle-h2" style={{padding:20,textAlign:"center" }}>Schedule On Demand Or Recurring Deliveries</h2>
+        <h2  className="circle-h2" style={{textAlign:"center"  }}>Schedule On Demand Or Recurring Deliveries</h2>
 
         </div>
 
