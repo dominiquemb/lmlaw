@@ -67,7 +67,7 @@ function App() {
             <img src={require('./assets/header-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
 
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}> 
+          <Box sx={{ display: { xs: 'flex', lg: 'none' } }}> 
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -102,7 +102,7 @@ function App() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
             {pages.map((page, index) => (
               <a href={page.url}><Button
                 key={index}
@@ -115,7 +115,7 @@ function App() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 1  ,display: { xs: 'none', md: 'flex' }}}>
+          <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
                   <button class="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10}}>
                     Online Portal
                   </button>

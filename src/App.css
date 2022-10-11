@@ -654,6 +654,11 @@ video {
       padding: 0;
       font-size: 1.6em;
   }
+  .top-semicircle  h2 {
+    padding: 0px 30px;
+
+}
+
 
   .round-button{
     border-radius: 40px;
