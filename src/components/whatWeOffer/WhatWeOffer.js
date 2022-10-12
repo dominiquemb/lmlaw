@@ -205,12 +205,12 @@ shipments that require dedicated shipping</li>
       </Container>
           <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
                   <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"8%" , marginRight:0}}>
-                    <button className="round-button round-button">
+                    <button className="round-button round-button light-blue-bg">
                       Get Started
                     </button>
                   </a>
                   <a className="button-link" href="/how-it-works" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
-                    <button className="round-button round-button">
+                    <button className="round-button round-button light-blue-bg">
                       How it works
                     </button>
                   </a>
@@ -279,7 +279,7 @@ shipments that require dedicated shipping</li>
                     className="button-link speak-to-a-specialist-link"
                     href="/speak-to-a-specialist"
                   >
-                    <button className="round-button round-button light-blue-bg">
+                    <button className="round-button round-button ">
                       Get started
                     </button>
                   </a>

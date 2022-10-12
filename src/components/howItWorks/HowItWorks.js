@@ -125,17 +125,13 @@ function HowItWorks() {
         </Grid>
       </Container>
 
-      <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link"  href="/speak-to-a-specialist"  style={{marginLeft:"6%" , marginRight:0}}>
-                    <button className="round-button round-button">
+      <div className="column-footer" style={{display:"flex", marginBottom:150,width:"100%" , alignItems:"center" }}>
+                  <a className="button-link"  href="/speak-to-a-specialist"  style={{ marginRight:0}}>
+                    <button className="round-button round-button light-blue-bg">
                       How it works
                     </button>
                   </a>
-                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"6%" , marginLeft:0}}>
-                    <button className="round-button round-button">
-                      How it works
-                    </button>
-                  </a>
+                  
         </div>
 
     </div>

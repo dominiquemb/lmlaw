@@ -141,7 +141,7 @@ function HomeScreen() {
         <div className="content" style={{width:"75%", margin:"auto"}}>
           We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
           your logistics needs. We have the experiences that make a difference to your business and your clients. We provide
-          on-demand, reliable same-day delivery & courier service, on time critical transportation to <a style={{color:"red"}} href="/locations" > all 48 states nationwide.</a>
+          on-demand, reliable same-day delivery & courier service, on time critical transportation to <a style={{color:"#c00"}} href="/locations" > all 48 states nationwide. </a>
           Providing you with:<br /><br />
         </div>
 
@@ -181,13 +181,13 @@ function HomeScreen() {
             </Grid>
         </Grid>
         <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"8%" , marginRight:0}}>
-                    <button className="round-button round-button">
+                  <a className="button-link " href="/what-we-offer"  style={{marginLeft:"8%" , marginRight:0}}>
+                    <button className="round-button round-button light-blue-bg">
                       Get Started
                     </button>
                   </a>
                   <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
-                    <button className="round-button round-button">
+                    <button className="round-button round-button light-blue-bg">
                       How it works
                     </button>
                   </a>
