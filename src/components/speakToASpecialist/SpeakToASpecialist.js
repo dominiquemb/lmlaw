@@ -25,7 +25,7 @@ function SpeakToASpecialist() {
                 <div style={{
                   position:"relative",
                   top:"20%",
-                  left:"15%",
+                  left:"20%",
                   width:"60%",
                   right:0,
 
@@ -34,7 +34,6 @@ function SpeakToASpecialist() {
                   fontSize:"50px",
                   color:"white",
                   letterSpacing:3,
-                  fontFamily:'fantasy',
                   fontWeight:500,
                   textShadow:"-3px 3px #000000",
                   textAlign:"center"
@@ -50,7 +49,7 @@ function SpeakToASpecialist() {
 
                 <Box  sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
-                <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}>
+                <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
                     loop
@@ -178,7 +177,7 @@ function SpeakToASpecialist() {
       </div>
   </div>
 
-  <div className="screen screen-3" style={{height:"fit-content" , background:"#367bdc"}}>
+  <div className="screen screen-2" style={{height:"fit-content"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
           <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us</h1>
@@ -245,21 +244,27 @@ function SpeakToASpecialist() {
                   </a>
         </div>
 
-        <div className="content" style={{width:"80%",margin:"auto"}}>
+
+
+      </Container>
+
+
+
+    </div>
+
+
+  <div>
+
+<div style={{width:"100%", backgroundColor:"#367bdc" }}>
+  <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
           Our goal is to provide our customers with the utmost reliable, dependable and
           professionalism on every delivery, keeping you focus on your core business.
           Knowing your deliveries are in good hands with AAA.
           <br /><br />
-        </div>
-
-      </Container>
-
-        <div className="bottom-semicircle semicircle-white">
-        </div>
     </div>
-
-  <div>
+</div>
   <div className="top-semicircle semicircle-blue">
+  
         <h1  className="circle-h2" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
 
         </div>

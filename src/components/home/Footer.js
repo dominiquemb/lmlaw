@@ -21,10 +21,15 @@ function Footer() {
                             HIPPA COMPLIANT
                         </div>
                         <div>
-                            <img src={require('../../assets/medical-symbol.png')}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
+                            <img src={require('../../assets/medical.svg').default}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={3}  >
+                    <Grid item xs={0} sm={0} md={2}  >
+                                <div style={{width:"100%"}}>
+                                </div>
+                               
+                    </Grid>
+                    <Grid item xs={12} sm={3} md = {2}  >
                                 <div class="footer-col-header">
                                     Get Started
                                 </div>
@@ -43,7 +48,7 @@ function Footer() {
                                     </li>
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3}  style={{padding:5}}>
+                    <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
                                 <div class="footer-col-header">
                                     About Us
                                 </div>
@@ -62,7 +67,7 @@ function Footer() {
                                     </li>
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3} style={{padding:5}}>
+                    <Grid item xs={12} sm={3} md = {3} style={{padding:5}}>
                                 <div class="footer-col-header">
                                     Contact Us
                                 </div>
