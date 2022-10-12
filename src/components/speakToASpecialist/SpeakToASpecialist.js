@@ -35,12 +35,12 @@ function SpeakToASpecialist() {
                   color:"white",
                   letterSpacing:3,
                   fontWeight:500,
-                  textShadow:"-3px 3px #000000",
                   textAlign:"center"
                 }}>Ready To Speak To A Specialist?</h1>
                 <p style={{
                   fontSize:20,
                   fontWeight:600,
+                  color:"white"
                 }}>
                   Provide us with some basic information so we can learn more about
                   your business delivery needs, so one of our logistics specialists
@@ -256,6 +256,10 @@ function SpeakToASpecialist() {
   <div>
 
 <div style={{width:"100%", backgroundColor:"#367bdc" }}>
+  
+<div className="top-semicircle semicircle-white" style={{borderRadius:"0px 0px 100% 100%"}}>
+
+          </div>
   <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
           Our goal is to provide our customers with the utmost reliable, dependable and
           professionalism on every delivery, keeping you focus on your core business.
@@ -263,7 +267,7 @@ function SpeakToASpecialist() {
           <br /><br />
     </div>
 </div>
-  <div className="top-semicircle semicircle-blue">
+  <div className="top-semicircle semicircle-blue" style={{borderRadius:"0px 0px 100% 100%"}}>
   
         <h1  className="circle-h2" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
 
