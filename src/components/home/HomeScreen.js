@@ -14,15 +14,15 @@ function HomeScreen() {
     <>
     <div className="home">
 
-    <Grid container  style={{marginTop:100 , marginBottom:"10vh" , paddingLeft:30,paddingRight:30}}>
+    <Grid container  style={{marginBottom:"10vh" , paddingLeft:30,paddingRight:30}}>
           <Grid item xs={12} md={6}  >
 
             <div >
-              <h1 className="circle-h1 circle-text"  style={{color:"#666 " , marginTop:"10vh"}}>
+              <h1 className="circle-h1 circle-text"  >
                 Reliable Same-Day Delivery & Courier Service 
 	            </h1>
 
-              <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
+              <h2 className="circle-h2 circle-text" style={{color:"black "}}>
                 Providing you peace of mind
 	            </h2>
 
@@ -31,18 +31,18 @@ function HomeScreen() {
                 Deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
               </h4>
 
-        
+                  <video  loop autoPlay muted style={{borderRadius:10  , width:"80%" ,marginBottom:30 }}>
+                    <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
                  
-                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"20%" , marginBottom:30}}>
+                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"20%" , marginTop:30}} >
                     <button className="round-button round-button">
                       Get Started
                     </button>
                   </a>
 
-                  <video  loop autoPlay muted style={{borderRadius:10  , width:"80%" , marginTop:30}}>
-                    <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                  </video>
+                  
 
             </div>
               

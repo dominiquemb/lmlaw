@@ -36,7 +36,7 @@ function Locations() {
       We are currently serving all 48 states nationwide.
     </h1>
 
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
           <div className="circle-white"
            style={{width:"90%" , margin : "auto" ,height:"fit-content"  }}>
             <Box sx={{ marginTop :{xs : 0 , md :"50vh"}}} >
@@ -48,7 +48,7 @@ function Locations() {
           </div>
               
           </Grid>
-          <Grid item xs={12} md={9}>
+          <Grid item xs={12} md={8}>
           <div className="rounded-corners" style={{width:"90%" , margin : "auto"}}>
             <div className="us-map">
               <UsaMap></UsaMap>

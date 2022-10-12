@@ -16,15 +16,15 @@ function HowItWorks() {
     <>
 
 <div id='map-and-dropdown'>
-    <Grid container  style={{marginTop:80 , marginBottom:"10vh" , padding : 50}}>
+    <Grid container  style={{marginBottom:"10vh" , padding :"0px 20px"}}>
           <Grid item xs={12} md={6}  >
 
-          <h1 className="circle-h1 circle-text"  style={{color:"#666 " , marginTop:"5vh"}}>How It Works</h1>
-              <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
+          <h1 className="circle-h1 circle-text"  style={{ marginTop:"5vh"}}>How It Works</h1>
+              <h2 className="circle-h2 circle-text">
                 Seamlessly Place and Track Orders All In One Place
               </h2>
               <img style={{width:"100%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
-              <h3 className="circle-h3 circle-text" style={{color:"#666 "}}>Get Started Here</h3>
+              <h3 className="circle-h3 circle-text" >Get Started Here</h3>
               <h4 className="circle-h4 circle-text" style={{color:"#666 "}}>
                 Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
                 today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery. We take

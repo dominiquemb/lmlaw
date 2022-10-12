@@ -27,18 +27,18 @@ function WhatWeOffer() {
   return (
     <>
     <div id='map-and-dropdown'>
-    <Grid container  style={{ marginBottom:0, marginTop:150 , height:"fit-content"}}>
-          <Grid item xs={12} md={6} style={{ marginTop:0}}  >
+    <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
+          <Grid item xs={12} lg={6} style={{ marginTop:"5%"}}  >
 
-          <h1 className="circle-h1 circle-text"  style={{color:"#666 " , width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
-              <h2 className="circle-h2 circle-text" style={{color:"#666 "}}>
+          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
+              <h2 className="circle-h2 circle-text" >
                 Knowing your deliveries are safe and in good hands with AAA
               </h2>
             
           
               
           </Grid>
-          <Grid item xs={0} md={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>

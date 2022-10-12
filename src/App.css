@@ -628,8 +628,19 @@ video {
   font-size: 1.6em;
 }
 
+
 /* For small devices */
 @media only screen and (max-width: 40em) {
+
+  .logo-1{
+    width: 70%;
+  }
+
+  
+  body{
+    margin-top: 2em;
+  }
+    
   .content{
     font-size: 14px;
     width: 90%;
@@ -639,9 +650,7 @@ video {
     padding:0 !important;
 
   }
-  .logo-1{
-    width: 70%;
-  }
+
   .circle-h1{
     font-size:1.8em;
   }
@@ -675,4 +684,19 @@ video {
   .circle-h4{
     font-size: 1.2em;
   }
+}
+
+body{
+  margin-top: 5em;
+}
+
+.footer li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.footer-col-header {
+  padding-left: 20px;
+
+
 }
