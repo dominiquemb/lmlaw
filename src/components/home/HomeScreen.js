@@ -35,12 +35,16 @@ function HomeScreen() {
                     <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
+
+                  <div style={{width:"100%",display:"flex"}}>
+                    <a className="button-link" href="/what-we-offer"  style={{margin:"auto" , marginTop:30}} >
+                      <button className="round-button round-button">
+                        Get Started
+                      </button>
+                    </a>
+                  </div>
                  
-                  <a className="button-link" href="/what-we-offer"  style={{marginLeft:"20%" , marginTop:30}} >
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
+
 
                   
 
@@ -70,7 +74,7 @@ function HomeScreen() {
         <Grid container>
             <Grid item xs={12} md={4}>
               <div className="centered circle small-circle smallest">
-                <img src={require('../../assets/medical-symbol.png')}  style={{width:"80%"}}></img>
+                <img src={require('../../assets/medical.svg').default}  style={{width:"80%",margin:"auto"}}></img>
               </div>
               <div className="content middle">
                 Healthcare Industry
@@ -227,7 +231,7 @@ function HomeScreen() {
                     Partner with us, let us become an extension of your company. We will reduce the cost of your aging fleet by supplementing or replacing your fleet with AAA fleet replacements, propelling your same-day delivery capabilities.
                   </div>
                   <div className="column-footer" style={{marginBottom:120}}>
-                    <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button light-blue-bg">Get started</button></a>
+                    <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-buttons">Get started</button></a>
                   </div>
               </Grid>
           </Grid>

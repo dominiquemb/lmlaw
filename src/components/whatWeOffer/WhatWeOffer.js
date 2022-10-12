@@ -87,7 +87,7 @@ function WhatWeOffer() {
             <Grid container>
               <Grid item xs={12} md={6}>
                 <div className="centered circle small-circle smallest">
-                <img src={require('../../assets/medical-symbol.png')}  style={{width:"80%"}}></img>
+                <img src={require('../../assets/medical.svg').default}   style={{width:"80%",margin:"auto"}}></img>
                 </div>
                 <div className="content middle">Medical Industry</div>
                 <div className="content middle-subheader">Reliability</div>
