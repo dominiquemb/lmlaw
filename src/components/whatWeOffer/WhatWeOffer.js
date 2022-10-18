@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import home_page_top_right from '../../assets/home_page_top_right.png';
+import home_page_top_right from '../../assets/blue-column.png';
 
 
 function WhatWeOffer() {
@@ -38,7 +38,7 @@ function WhatWeOffer() {
           
               
           </Grid>
-          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>
@@ -252,10 +252,10 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video  loop autoPlay muted style={{  borderRadius:10  , width:"80%"}}>
+              <video controls style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
-                  src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                  src={require('../../assets/promo-video.mp4')}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
