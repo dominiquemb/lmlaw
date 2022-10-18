@@ -7,9 +7,8 @@ import Grid from "@mui/material/Grid";
 import BlueLogo from "../../assets/logo-blue.png"
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
-import back from '../../assets/blue-column.PNG';
 import BeforeFooter from "../BeforeFooter";
-import home_page_top_right from '../../assets/home_page_top_right.png';
+import home_page_top_right from '../../assets/blue-column.png';
 
 function HowItWorks() {
   return (
@@ -33,7 +32,7 @@ function HowItWorks() {
           
               
           </Grid>
-          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+          <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
           <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"fit-content" }}>

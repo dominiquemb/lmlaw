@@ -14,7 +14,7 @@ function Footer() {
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
                             <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
                         </a>
-                        <div class="content">
+                        <div class="content" style={{textAlign:"left",fontSize:"1rem"}}>
                             In the world of logistics, where most situations require timeliness, AAA is a must-have option to stay ahead of the competition.
                         </div>
                         <div class="column-footer">

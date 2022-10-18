@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import home_page_top_right from '../../assets/home_page_top_right.png';
+import home_page_top_right from '../../assets/blue-column.png';
 
 
 function WhatWeOffer() {
@@ -38,7 +38,7 @@ function WhatWeOffer() {
           
               
           </Grid>
-          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" }}>
+          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>

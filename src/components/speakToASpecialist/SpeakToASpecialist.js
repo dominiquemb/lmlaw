@@ -4,13 +4,13 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import FormTextFields from "./Form";
 import BeforeFooter from "../BeforeFooter";
-import home_page_top_right from "../../assets/home_page_top_right.png"
+import home_page_top_right from "../../assets/blue-column.png"
 
 function SpeakToASpecialist() {
 
  
   return <>
-  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:80 , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , marginTop:80 , marginRight:80}}>
+  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:80 , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" , marginTop:80 , marginRight:80}}>
       <Grid container>
           <Grid item xs={12} md={8} style={{padding:30 , height:"fit-content"}}>
           <Box  sx={{ display: { xs: 'none', md: 'block', lg: 'block' } }}  >
@@ -89,7 +89,7 @@ function SpeakToASpecialist() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>What You Can Expect from Us</h1>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" , color:"black" }}>What You Can Expect from Us</h1>
 
           </div>
       </div>
@@ -180,7 +180,7 @@ function SpeakToASpecialist() {
   <div className="screen screen-2" style={{height:"fit-content"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"#666" }}>Why choose Us</h1>
+          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"black" }}>Why choose Us</h1>
 
           </div>
       </div>

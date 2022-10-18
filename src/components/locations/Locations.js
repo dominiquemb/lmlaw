@@ -36,7 +36,7 @@ function Locations() {
       We are currently serving all 48 states nationwide.
     </h1>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
           <div className="circle-white"
            style={{width:"90%" , margin : "auto" ,height:"fit-content"  }}>
             <Box sx={{ marginTop :{xs : 0 , md :"50vh"}}} >
@@ -48,7 +48,7 @@ function Locations() {
           </div>
               
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={6}>
           <div className="rounded-corners" style={{width:"90%" , margin : "auto"}}>
             <div className="us-map">
               <UsaMap></UsaMap>
@@ -57,6 +57,15 @@ function Locations() {
           </div>
               
           </Grid>
+          <Grid item xs={12} md={3}>
+          <div className="circle-white"
+           style={{width:"90%" , margin : "auto" ,height:"fit-content"  }}>
+          
+            
+          </div>
+              
+          </Grid>
+          
     <h1 className="circle-text" style={{width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
         In the world of logistics, where most situations require timeliness,
         AAA is a must-have option to stay ahead of the competition.
