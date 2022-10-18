@@ -252,10 +252,10 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video  loop autoPlay muted style={{  borderRadius:10  , width:"80%"}}>
+              <video controls style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
-                  src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                  src={require('../../assets/promo-video.mp4')}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
