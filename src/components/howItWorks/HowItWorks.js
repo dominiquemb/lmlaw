@@ -24,7 +24,7 @@ function HowItWorks() {
               </h2>
               <img style={{width:"100%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
               <h3 className="circle-h3 circle-text" >Get Started Here</h3>
-              <h4 className="circle-h4 circle-text" style={{color:"#666 "}}>
+              <h4 className="circle-h4 circle-text" style={{color:"black"}}>
                 Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
                 today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery. We take
                 the stress out of shipping, giving you more time to focus on your core business.
