@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import home_page_top_right from '../../assets/home_page_top_right.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
+import {UsaMap} from "../locations/Map.js"
 
 
 
@@ -61,15 +62,14 @@ function HomeScreen() {
 
 
     <div className="screen screen-2" style={{height:'fit-content'}}>
-      <div className="background"></div>
 
 
       <Container maxWidth="xl" disableGutters style={{padding:30}}>
       <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
 
-        <div className="content">
+        <p className="content">
           We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
-        </div>
+        </p>
 
         <Grid container>
             <Grid item xs={12} md={4}>
@@ -82,12 +82,12 @@ function HomeScreen() {
               <div className="content middle-subheader">
                 Reliability
               </div>
-              <div className="content">
+              <p className="content">
                 We provide on-demand, reliable same-day delivery service, delivering medical specimens,
                 supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines
                 and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time,
                  geofencing to ensure driver is at delivery location. <bold style={{fontWeight:900}}>“You See What We See”</bold>.
-              </div>
+              </p>
               <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
@@ -95,9 +95,7 @@ function HomeScreen() {
 
 
             <Grid item xs={12} md={4}>
-              {/* <div className="us-map">
-                <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/05/usa-map-2.jpeg" />
-              </div> */}
+              <UsaMap/>
             </Grid>
 
             <Grid item xs={12} md={4}>
@@ -110,14 +108,14 @@ function HomeScreen() {
               <div className="content middle-subheader">
                 Dependability
               </div>
-              <div className="content" >
+              <p className="content" >
                 We blend advanced technologies with a network of carriers to
                 move your freight-simply and reliably. Put the power of AAA
                 behind your shipments, with a partner that’s here to meet the
                 demands of today, and help you navigate the road ahead.
                 We’re always there to help you propel your capabilities
-                forward. “Learn why so many companies choose AAA”.
-              </div>
+                forward. <bold style={{fontWeight:700,fontFamily:"sans-serif" }} >“Learn why so many companies choose AAA”.</bold>
+              </p>
               <div className="column-footer" style={{marginBottom:150}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
@@ -138,12 +136,12 @@ function HomeScreen() {
       </div>
 
       <Container maxWidth="xl" disableGutters>
-        <div className="content" style={{width:"75%", margin:"auto"}}>
+        <p className="content" style={{width:"75%", margin:"auto"}}>
           We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
           your logistics needs. We have the experiences that make a difference to your business and your clients. We provide
           on-demand, reliable same-day delivery & courier service, on time critical transportation to <a style={{color:"#c00"}} href="/locations" > all 48 states nationwide. </a>
           Providing you with:<br /><br />
-        </div>
+        </p>
 
 
         <Grid container style={{padding:20}}>
@@ -208,9 +206,9 @@ function HomeScreen() {
 
           <Grid container>
               <Grid item xs={12} md={4}>
-                  <div className="content">
+                  <p className="content">
                     AAA is here to help and ready to step right in, whether you need to expand or supplement your fleet. Our fleet is ready to help you ramp up your operations, so you can meet the growing demands of your business.
-                  </div>
+                  </p>
                   <div className="column-footer" style={{marginBottom:120}}>
                     <a className="button-link" href="/what-we-offer"><button className="round-button round-button">Learn more</button></a>
                   </div>
@@ -227,9 +225,9 @@ function HomeScreen() {
               </Grid>
 
               <Grid item xs={12} md={4}>
-                  <div className="content">
+                  <p className="content">
                     Partner with us, let us become an extension of your company. We will reduce the cost of your aging fleet by supplementing or replacing your fleet with AAA fleet replacements, propelling your same-day delivery capabilities.
-                  </div>
+                  </p>
                   <div className="column-footer" style={{marginBottom:120}}>
                     <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-buttons">Get started</button></a>
                   </div>

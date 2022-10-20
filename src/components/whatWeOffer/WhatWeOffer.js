@@ -41,7 +41,7 @@ function WhatWeOffer() {
           <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
-          <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" }}>
+          <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" , marginTop:"20vh" }}>
             <video
               width="410"
               height="230"
@@ -74,13 +74,13 @@ function WhatWeOffer() {
     </h1>
 
 
-        <div className="content" style={{width:"80%",margin:"auto"}}>
+        <p className="content" style={{width:"80%",margin:"auto", paddingBottom:40}}>
               We understand that each business requirements can change from
               day-to-day, that's why AAA DELIVERY SERVICE offers indispensable
               customized logistics to fit and adapt to your business needs.
               Providing you peace of mind. 
             <br /><br />
-        </div>
+        </p>
 
 
           <Container maxWidth="xl" disableGutters style={{padding:30}}>
@@ -160,19 +160,19 @@ shipments that require dedicated shipping</li>
 
 
       <Container maxWidth="xl" disableGutters style={{padding:40}}>
-        <div className="content" style={{width:"80%",margin:"auto"}}>
+        <p className="content" style={{width:"80%",margin:"auto",paddingBottom:40}}>
         We understand how time consuming and expensive it is to own, operate and manage a fleet of vehiles, and the cost of insurance due to accidents, not to mention managing couriers alone is an expensive undertaking. That's why at AAA our specialists take on these burdens for you, providing you with responsive, flexible service keeping you focused on your core business.
             <br /><br />
-        </div>
+        </p>
 
 
         <Grid container>
             <Grid item xs={12} md={3.5}>
               <Box className="content" style={{margin:"auto"}} >
                   <h3>Augment Your Fleet</h3>
-                    <div>
+                    <p>
                     AAA can step in on-demand, same-day to help you deliver your delivery needs. Partner with us, so we can augment your fleet, let us become an extension of your company. Our fleet is ready to help you ramp up your operations so you can meet the growing demands of your business.
-                    </div>
+                    </p>
                 </Box>
                 
                 
@@ -184,7 +184,7 @@ shipments that require dedicated shipping</li>
             <Grid item xs={0} md={5}>
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-              <img  style={{width:"100%"  }} src={require('../../assets/Mv2.png')} alt="Blue Logo" />
+              <img  style={{width:"100%" , padding:20  }} src={require('../../assets/Mv2.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>
@@ -192,9 +192,9 @@ shipments that require dedicated shipping</li>
             <Grid item xs={12} md={3.5}>
                 <div className="content" style={{margin:"auto"}} >
                   <h3>Replace Your Fleet</h3>
-                    <div>
+                    <p>
                     Supplement your fleet to a team of specialists to ensure you meet the demands of your customers. We have the couriers, the right vehicles and AAA provides you with advanced technology, live tracking, proof of delivery, and the fastest, reliable delivery option in the industry.
-                    </div>
+                    </p>
                 </div>
                 
                 
@@ -231,7 +231,7 @@ shipments that require dedicated shipping</li>
           <Container maxWidth="xl" disableGutters style={{padding:40}}> 
             <Grid container>
               <Grid item xs={12} md={3}>
-                <div className="content">
+                <p className="content">
                   Our portal is easy and convenient to use,
                   whether it’s on-demand or on a recurring
                   scheduling. We customize and adapt our
@@ -241,7 +241,7 @@ shipments that require dedicated shipping</li>
                   ETA on every pickup and delivery, real-time
                   package tracking and instant delivery
                   confirmation, based on your preference
-                </div>
+                </p>
                 <div className="column-footer" style={{marginBottom:"10vh"}}>
                   <a className="button-link" href="/speak-to-a-specialist">
                     <button className="round-button round-button">
@@ -263,7 +263,7 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={3}>
-                <div className="content">
+                <p className="content">
                   We give you total control over the sending
                   and receiving of your packages, without
                   the added stress of managing each
@@ -273,7 +273,7 @@ shipments that require dedicated shipping</li>
                   productivity. Knowing your deliveries are
                   safe and in good hands with AAA. Providing
                   you peace of mind.
-                </div>
+                </p>
                 <div className="column-footer">
                   <a
                     className="button-link speak-to-a-specialist-link"
