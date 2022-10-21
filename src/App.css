@@ -648,6 +648,10 @@ ul li {
   
 }
 
+h3{
+  padding-bottom: 2rem;
+}
+
 
 /* For small devices */
 @media only screen and (max-width: 40em) {
