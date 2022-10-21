@@ -35,7 +35,7 @@ function HowItWorks() {
           <Grid item xs={0} md={6} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
           <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
-          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"fit-content" }}>
+          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"fit-content" , marginTop:"20vh" }}>
             <video
               width="410"
               height="230"
@@ -71,10 +71,10 @@ function HowItWorks() {
       </div>
 
       <Container maxWidth="xl" disableGutters>
-        <div className="content" style={{width:"80%",margin:"auto"}}>
+        <p className="content subheading" >
         Our online portal is easy and convenient to use, seamlessly place and track orders all in one place. Schedule and customize a pickup from anywhere with accurate ETA, available from any-device. View signature or photo-based PODs for each order and actual arrival time.
             <br /><br />
-        </div>
+        </p>
 
 
         <Grid container style={{padding:25}}>
@@ -82,14 +82,14 @@ function HowItWorks() {
             <div className="content"  >
 
                   <h3>What To Expect On Every Pick Up</h3>
-                    <div>
+                    <p>
                     Accurate, in-depth order tracking, POD capture, audit trails, and geofencing to ensure physical delivery. Professionalism on every delivery with our fully vetted Couriers by uniform and identification badges. "Delivery always on time, no excuses".
-                    </div>
+                    </p>
                 
                   <h3>Order Tracking In Real-Time</h3>
-                    <div>
+                    <p>
                     Gain visibility on every pick-up and delivery on our display monitor, GPS tracking in real-time on a live map. Automatic order alerts and updates via text or email, signature or photo-based PODs for each order and actual arrival time. 
-                    </div>
+                    </p>
                     
                 </div>
                 
@@ -108,14 +108,14 @@ function HowItWorks() {
             <div className="content"  >
 
                   <h3>Customize Your Order Confirmation</h3>
-                    <div>
+                    <p>
                     API / EDI integrations, automatic order alerts and updates via text or email. In-depth order tracking, signature or photo-based PODs capture for each order. "Customize how you receive Order Confirmation"
-                    </div>
+                    </p>
                 
                   <h3>Rate Your Experience</h3>
-                    <div>
+                    <p>
                     Let us know how we are doing, because we are committed to continue being the leading logistics solutions provider to our customers. Constantly improving & implementing quality management to achieve it.
-                    </div>
+                    </p>
                    
               </div>
                 

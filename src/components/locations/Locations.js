@@ -39,7 +39,7 @@ function Locations() {
           <Grid item xs={12} md={3}>
           <div className="circle-white"
            style={{width:"90%" , margin : "auto" ,height:"fit-content"  }}>
-            <Box sx={{ marginTop :{xs : 0 , md :"50vh"}}} >
+            <Box sx={{ marginTop :{xs : 0 , md :"20vh"}}} >
 
               <UsaStatesSelect></UsaStatesSelect>
 

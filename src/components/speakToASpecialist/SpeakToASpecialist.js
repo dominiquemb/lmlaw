@@ -187,7 +187,7 @@ function SpeakToASpecialist() {
 
 
       <Container maxWidth="xl" disableGutters style={{marginBottom:150}}>
-        <div className="content">
+        <div className="content" style={{width:"80%" , margin:"auto"}}>
           AAA is more than a delivery service. We are a business enabler, our primary objective is customer satisfaction,
           reliability, on-time deliveries, and with our custom one-to-one approach means we always deliver on time,
           every time. We will become your trusted business partner, delivering the things that matter most. We provide:
