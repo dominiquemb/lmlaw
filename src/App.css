@@ -637,6 +637,18 @@ p{
 }
 
 
+.subheading{
+  margin: auto;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+  width:80%;
+}
+ul li {
+  padding:10px
+  
+}
+
+
 /* For small devices */
 @media only screen and (max-width: 40em) {
   h1{
@@ -645,6 +657,13 @@ p{
 
   .logo-1{
     width: 70%;
+  }
+
+  .subheading{
+    margin: auto;
+    margin-top: 3rem;
+    padding-bottom: rem;
+    width:80%;
   }
 
   

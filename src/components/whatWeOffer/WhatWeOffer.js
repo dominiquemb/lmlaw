@@ -74,7 +74,7 @@ function WhatWeOffer() {
     </h1>
 
 
-        <p className="content" style={{width:"80%",margin:"auto", paddingBottom:40}}>
+        <p className="content subheading" >
               We understand that each business requirements can change from
               day-to-day, that's why AAA DELIVERY SERVICE offers indispensable
               customized logistics to fit and adapt to your business needs.

@@ -71,10 +71,10 @@ function HowItWorks() {
       </div>
 
       <Container maxWidth="xl" disableGutters>
-        <div className="content" style={{width:"80%",margin:"auto"}}>
+        <p className="content subheading" >
         Our online portal is easy and convenient to use, seamlessly place and track orders all in one place. Schedule and customize a pickup from anywhere with accurate ETA, available from any-device. View signature or photo-based PODs for each order and actual arrival time.
             <br /><br />
-        </div>
+        </p>
 
 
         <Grid container style={{padding:25}}>

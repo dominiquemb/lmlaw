@@ -67,7 +67,7 @@ function HomeScreen() {
       <Container maxWidth="xl" disableGutters style={{padding:30}}>
       <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
 
-        <p className="content">
+        <p className="subheading content">
           We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
         </p>
 
