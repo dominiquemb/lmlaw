@@ -80,7 +80,7 @@ function HomeScreen() {
                 Healthcare Industry
               </div>
               <div className="content middle-subheader">
-                Reliability
+                Medical Industry
               </div>
               <p className="content">
                 We provide on-demand, reliable same-day delivery service, delivering medical specimens,
