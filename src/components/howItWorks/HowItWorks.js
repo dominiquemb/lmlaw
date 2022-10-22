@@ -43,9 +43,10 @@ function HowItWorks() {
               loop
               autoPlay
               muted
+              controls
             >
               <source
-                src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                src={require('../../assets/videos/AAA 3-1080p-221015.mp4')} 
                 type="video/mp4"
               />
               Your browser does not support the video tag.
