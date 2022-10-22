@@ -42,19 +42,9 @@ function WhatWeOffer() {
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" , marginTop:"20vh" }}>
-            <video
-              width="410"
-              height="230"
-              style={{ width: "410px" }}
-              loop
-              autoPlay
-              muted
-            >
-              <source
-                src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
+            <video  controls  autoPlay muted style={{borderRadius:10  , width:"410px"  }}>
+                      <source src={require('../../assets/videos/aaa 2-1080p-221014.mp4')}  type="video/mp4" />
+                        Your browser does not support the video tag.
             </video>
           </div>
 
@@ -255,7 +245,7 @@ shipments that require dedicated shipping</li>
               <video controls style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
-                  src={require('../../assets/promo-video.mp4')}
+                  src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

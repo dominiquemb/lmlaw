@@ -52,12 +52,12 @@ function SpeakToASpecialist() {
                 <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
-                    loop
+                    
                     autoPlay
                     muted
                   >
                     <source
-                        src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                        src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -155,12 +155,13 @@ function SpeakToASpecialist() {
             <div  style={{width:"80%" , margin:"auto"  ,  borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
-                    loop
+                    
                     autoPlay
                     muted
+                    controls
                   >
                     <source
-                        src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4"
+                        src={require('../../assets/videos/aaa4-1080p-221016.mp4')}
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.

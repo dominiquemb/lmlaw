@@ -32,7 +32,7 @@ function HomeScreen() {
                 Deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
               </h4>
 
-                  <video  loop autoPlay muted style={{borderRadius:10  , width:"80%" ,marginBottom:30 }}>
+                  <video   autoPlay muted style={{borderRadius:10  , width:"80%" ,marginBottom:30 }}>
                     <source src="https://www.aaadeliveryservice.com/wp-content/uploads/2022/07/AAADeliveryService-Final-V2.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
@@ -216,12 +216,10 @@ function HomeScreen() {
 
 
               <Grid item xs={12} md={4}>
-                <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
-                animateOut='fadeOut'>
-                  <div className="content">
-                    <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../../assets/plane.jpg')} alt="Blue Logo" />
-                  </div>
-                </ScrollAnimation>
+              <video controls  autoPlay muted style={{borderRadius:10  , width:"80%" ,marginBottom:30 }}>
+                    <source src={require('../../assets/videos/aaalogistics 1-1080p-221014.mp4')}  type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
               </Grid>
 
               <Grid item xs={12} md={4}>
