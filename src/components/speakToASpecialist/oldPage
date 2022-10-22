@@ -24,7 +24,7 @@ function old(){
                 height="320"
                 style={{ width: "640px" }}
                 loop
-                autoPlay
+                  autoPlay loop 
                 muted
               >
                 <source
@@ -199,7 +199,7 @@ function old(){
                   height="240"
                   style={{ width: "430px", margin: "auto", display: "block" }}
                   loop
-                  autoPlay
+                    autoPlay loop 
                   muted
                 >
                   <source
