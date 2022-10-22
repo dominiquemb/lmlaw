@@ -40,8 +40,8 @@ function HowItWorks() {
               width="410"
               height="230"
               style={{ width: "410px" }}
-              
-              autoPlay
+              loop
+               autoPlay 
               muted
               controls
             >

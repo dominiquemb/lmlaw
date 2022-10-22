@@ -42,7 +42,7 @@ function WhatWeOffer() {
           <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
           <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" , marginTop:"20vh" }}>
-            <video  controls  autoPlay muted style={{borderRadius:10  , width:"410px"  }}>
+            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"410px"  }}>
                       <source src={require('../../assets/videos/aaa 2-1080p-221014.mp4')}  type="video/mp4" />
                         Your browser does not support the video tag.
             </video>

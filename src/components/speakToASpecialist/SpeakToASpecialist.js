@@ -52,8 +52,8 @@ function SpeakToASpecialist() {
                 <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
-                    
-                    autoPlay
+                    loop
+                     autoPlay 
                     muted
                   >
                     <source
@@ -155,8 +155,8 @@ function SpeakToASpecialist() {
             <div  style={{width:"80%" , margin:"auto"  ,  borderRadius:10 }}>
                   <video
                     style={{width:"100%" }}
-                    
-                    autoPlay
+                    loop
+                     autoPlay
                     muted
                     controls
                   >
