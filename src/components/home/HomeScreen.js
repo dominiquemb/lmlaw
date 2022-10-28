@@ -77,17 +77,17 @@ function HomeScreen() {
                 <img src={require('../../assets/medical.svg').default}  style={{width:"80%",margin:"auto"}}></img>
               </div>
               <div className="content middle">
-                Healthcare Industry
-              </div>
-              <div className="content middle-subheader">
                 Medical Industry
               </div>
-              <p className="content">
+              <div className="content middle-subheader">
+                Reliability
+              </div>
+              <div className="content textLeft">
                 We provide on-demand, reliable same-day delivery service, delivering medical specimens,
                 supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines
                 and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time,
-                 geofencing to ensure driver is at delivery location. <bold style={{fontWeight:900}}>“You See What We See”</bold>.
-              </p>
+                 geofencing to ensure driver is at delivery location. <bold style={{fontWeight:700 , fontFamily:"sans-serif"}}>“You See What We See”</bold>.
+              </div>
               <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
@@ -108,14 +108,14 @@ function HomeScreen() {
               <div className="content middle-subheader">
                 Dependability
               </div>
-              <p className="content" >
+              <div className="content textLeft" >
                 We blend advanced technologies with a network of carriers to
                 move your freight-simply and reliably. Put the power of AAA
                 behind your shipments, with a partner that’s here to meet the
                 demands of today, and help you navigate the road ahead.
                 We’re always there to help you propel your capabilities
                 forward. <bold style={{fontWeight:700,fontFamily:"sans-serif" }} >“Learn why so many companies choose AAA”.</bold>
-              </p>
+              </div>
               <div className="column-footer" style={{marginBottom:150}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
@@ -146,12 +146,12 @@ function HomeScreen() {
 
         <Grid container style={{padding:20}}>
             <Grid item xs={12} md={4}>
-                <div className="content">
+                <div className="content checked">
                     <ul>
-                      <li> ✓  Customized logistics to fit and adapt to your business needs</li>
-                      <li> ✓  Order tracking & geofencing in real-time dashboard</li>
-                      <li> ✓  Delivery always on time, no excuses</li>
-                      <li> ✓  Customer support around the clock 24/7/365</li>
+                      <li>   Customized logistics to fit and adapt to your business needs</li>
+                      <li>   Order tracking & geofencing in real-time dashboard</li>
+                      <li>   Delivery always on time, no excuses</li>
+                      <li>   Customer support around the clock 24/7/365</li>
                     </ul>
                 </div>
 
@@ -167,12 +167,12 @@ function HomeScreen() {
             </Grid>
 
             <Grid item xs={12} md={4}>
-                <div className="content">
+                <div className="content checked">
                     <ul>
-                      <li> ✓ Professional, fully vetted couriers by uniform</li>
-                      <li> ✓ Reliable same-day delivery & courier service</li>
-                      <li> ✓ On demand, and express same-day door-to-door delivery</li>
-                      <li> ✓ Dependable service you can always count on, and professionalism on every delivery</li>
+                      <li>  Professional, fully vetted couriers by uniform</li>
+                      <li>  Reliable same-day delivery & courier service</li>
+                      <li>  On demand, and express same-day door-to-door delivery</li>
+                      <li>  Dependable service you can always count on, and professionalism on every delivery</li>
                     </ul>
                 </div>
 

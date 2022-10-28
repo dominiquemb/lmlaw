@@ -478,10 +478,7 @@ ul {
 }
 
 .speak-to-a-specialist-form {
-  right: 180px;
-  top: 200px;
-  position: absolute;
-  width: 415px;
+
   z-index: 3;
 }
 
@@ -621,7 +618,7 @@ video {
 }
 p{
   text-align: justify !important;
-  text-justify: inter-word;
+  text-justify: distribute;
 }
 
 
@@ -644,12 +641,19 @@ p{
   width:80%;
 }
 ul li {
-  padding:10px
-  
+  padding:4px;
 }
 
-h3{
-  padding-bottom: 2rem;
+.checked li{
+  list-style-type: '\2713 \00a0';
+}
+.checked li:before {
+  content:"";
+}
+
+
+.textLeft{
+  text-align: left !important;
 }
 
 
@@ -744,5 +748,11 @@ body{
     font-size: 1.5rem;
   }
 
+  .schedule {
+    font-size: 2.5rem !important;
+  }
+  .transparency {
+    font-size: 1.2rem !important;
+  }
 }
 

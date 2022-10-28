@@ -15,8 +15,8 @@ export default function AboutUs(){
                         People Led,<br/>
                         Innovation Driven
                     </h1>
-                <Box sx={{ display: { xs: 'none', md: 'block'} }} style={{fontWeight:"lighter" }}  >         
-                    <p>
+                <Box sx={{ display: { xs: 'none', md: 'block'} }} style={{fontWeight:"bold"  }}  >         
+                    <p style={{fontWeight:"bold" , fontFamily:"sans-serif" }}>
                             AAA Delivery Service specializes in customer satisfaction, reliability, and professionalism on every
                             delivery. We consistently inspire our team members to stay focused on safety, and the highest
                             ethical and professional standards, and the needs of our customers and communities. Providing
@@ -134,8 +134,7 @@ export default function AboutUs(){
                 follow the link. <a style={{fontWeight:"bolder"}} href="/portal">Online Portal</a>
             </p>
             <div>
-            <h3> Roger Sepulveda's</h3>
-            Owner, Founder & Chief Executive Officer
+            <TextMobileStepper/>
             </div>
             
 

@@ -30,7 +30,7 @@ function WhatWeOffer() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
           <Grid item xs={12} lg={6} style={{ marginTop:"5%"}}  >
 
-          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA Reliable Same-Day Delivery & Courier Service</h1>
+          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA Reliable For Same-Day Delivery & Courier Service</h1>
               <h2 className="circle-h2 circle-text" >
                 Knowing your deliveries are safe and in good hands with AAA
               </h2>
@@ -38,11 +38,11 @@ function WhatWeOffer() {
           
               
           </Grid>
-          <Grid item xs={0} lg={6} style={{ height:"fit-content", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" }}>
-          <Box className="content"style={{ height:"80vh" ,}} sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
+          <Grid item xs={0} lg={6} >
+          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"50px 0"}} >
 
-          <div className="speak-to-a-specialist-form rounded-corners" style={{width:"fit-content" , marginTop:"20vh" }}>
-            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"410px"  }}>
+          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
+            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
                       <source src={require('../../assets/videos/aaa 2-1080p-221014.mp4')}  type="video/mp4" />
                         Your browser does not support the video tag.
             </video>
@@ -80,23 +80,23 @@ function WhatWeOffer() {
                 <img src={require('../../assets/medical.svg').default}   style={{width:"80%",margin:"auto"}}></img>
                 </div>
                 <div className="content middle">Medical Industry</div>
-                <div className="content middle-subheader">Reliability</div>
-                <div className="content">
+                <div className="content middle-subheader" style={{marginBottom:0}}>Reliability</div>
+                <div className="content checked">
                   <ul>
-                    <li>✓ FMCSA, HIPPA compliant, and OSHA certified</li>
+                    <li> FMCSA, HIPPA compliant, and OSHA certified</li>
                     <li>
-                      ✓ Visibility on every pick-up and delivery, GPS tracking in real-
+                       Visibility on every pick-up and delivery, GPS tracking in real-
 time, on a live map through the entire process
                     </li>
                     <li>
-                      ✓ Place and track shipments all in one central hub, API / EDI
+                       Place and track shipments all in one central hub, API / EDI
 Integrations for order updates
                     </li>
                     <li>
-                      ✓ Schedule and customize a pickup, available from anywhere
+                       Schedule and customize a pickup, available from anywhere
 with any-device
                     </li>
-                    <li>✓ Custom notification of package delivery status, based on
+                    <li> Custom notification of package delivery status, based on
 your preference</li>
                   </ul>
                 </div>
@@ -109,25 +109,25 @@ your preference</li>
                 <img src={require('../../assets/freight-symbol.png')}  style={{width:"80%"}}></img>
                 </div>
                 <div className="content middle">Freight Industry</div>
-                <div className="content middle-subheader">Dependability</div>
-                <div className="content">
+                <div className="content middle-subheader" style={{marginBottom:0}}>Dependability</div>
+                <div className="content checked">
                   <ul>
                     <li>
-                      ✓ Transparency and visibility into every single shipment through
+                       Transparency and visibility into every single shipment through
 cutting-edge technology
                     </li>
                     <li>
-                      ✓ Reliability, experience, one-to-one approach, delivery
+                       Reliability, experience, one-to-one approach, delivery
                       always on time, no excuses
                     </li>
                     <li>
-                      ✓ Dependable service you can always count on, and
+                       Dependable service you can always count on, and
                       professionalism on every delivery
                     </li>
-                    <li>✓ Cost-efficient LTL shipping services, FTL services for large
+                    <li> Cost-efficient LTL shipping services, FTL services for large
 shipments that require dedicated shipping</li>
                     <li>
-                      ✓ Customer support around the clock 24/7/365
+                       Customer support around the clock 24/7/365
                     </li>
 
                   </ul>
@@ -213,7 +213,7 @@ shipments that require dedicated shipping</li>
         <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
           
           <div className="top-semicircle semicircle-blue">
-        <h2  className="circle-h2" style={{textAlign:"center"  }}>Schedule On Demand Or Recurring Deliveries</h2>
+        <h2  className="circle-h2 schedule" style={{textAlign:"center"  }}>Schedule On Demand Or Recurring Deliveries</h2>
 
         </div>
 
@@ -242,7 +242,7 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video controls style={{  borderRadius:10  , width:"80%"}}>
+              <video autoPlay controls style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
                   src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}
