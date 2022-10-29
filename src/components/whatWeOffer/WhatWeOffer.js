@@ -160,9 +160,9 @@ shipments that require dedicated shipping</li>
             <Grid item xs={12} md={3.5}>
               <Box className="content" style={{margin:"auto"}} >
                   <h3>Augment Your Fleet</h3>
-                    <p>
+                    <div className="content textLeft" >
                     AAA can step in on-demand, same-day to help you deliver your delivery needs. Partner with us, so we can augment your fleet, let us become an extension of your company. Our fleet is ready to help you ramp up your operations so you can meet the growing demands of your business.
-                    </p>
+                    </div>
                 </Box>
                 
                 
@@ -182,9 +182,9 @@ shipments that require dedicated shipping</li>
             <Grid item xs={12} md={3.5}>
                 <div className="content" style={{margin:"auto"}} >
                   <h3>Replace Your Fleet</h3>
-                    <p>
+                    <div className="content textLeft" >
                     Supplement your fleet to a team of specialists to ensure you meet the demands of your customers. We have the couriers, the right vehicles and AAA provides you with advanced technology, live tracking, proof of delivery, and the fastest, reliable delivery option in the industry.
-                    </p>
+                    </div>
                 </div>
                 
                 
@@ -221,7 +221,7 @@ shipments that require dedicated shipping</li>
           <Container maxWidth="xl" disableGutters style={{padding:40}}> 
             <Grid container>
               <Grid item xs={12} md={3}>
-                <p className="content">
+               <div className="content textLeft" >
                   Our portal is easy and convenient to use,
                   whether it’s on-demand or on a recurring
                   scheduling. We customize and adapt our
@@ -231,7 +231,7 @@ shipments that require dedicated shipping</li>
                   ETA on every pickup and delivery, real-time
                   package tracking and instant delivery
                   confirmation, based on your preference
-                </p>
+                </div>
                 <div className="column-footer" style={{marginBottom:"10vh"}}>
                   <a className="button-link" href="/speak-to-a-specialist">
                     <button className="round-button round-button">
@@ -253,7 +253,7 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={3}>
-                <p className="content">
+                <div className="content textLeft" >
                   We give you total control over the sending
                   and receiving of your packages, without
                   the added stress of managing each
@@ -263,7 +263,7 @@ shipments that require dedicated shipping</li>
                   productivity. Knowing your deliveries are
                   safe and in good hands with AAA. Providing
                   you peace of mind.
-                </p>
+                </div>
                 <div className="column-footer">
                   <a
                     className="button-link speak-to-a-specialist-link"
