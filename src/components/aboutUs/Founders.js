@@ -10,17 +10,35 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
 const steps = [
   {
-    label: 'Roger Sepúlveda',
-    description: `Owner, Founder & Chief Executive Officer.`,
+    label: 'Roger Sepulveda ',
+    description: `Founder & Chief Executive Officer`,
+  }, 
+  {
+    label: 'Joshua Sepulveda',
+    description: `General Manager`,
   },
   {
-    label: 'Frank green',
-    description:
-      'Tech cofounder .',
+    label: 'Aaron Thompson ',
+    description: 'Director Of Logistics ',
   },
   {
-    label: 'Albert Einstein',
-    description: `Marketing expert.`,
+    label: 'Leticia Gonzalez',
+    description: `Director Of People Operations`,
+  },
+  {
+    label: 'Jordan Kincaid ',
+    description: 'Director Of Marketing',
+  },
+  {
+    label: 'Ashley leery',
+    description: `Chief Marketing Officer`,
+  },
+ {
+    label: 'Ben Martinez',
+    description: `Chief Technology Officer`,
+  },  {
+    label: 'Melody Ryna',
+    description: `Chief Financial Officer `,
   },
 ];
 
@@ -52,7 +70,7 @@ export default function TextMobileStepper() {
       >
         <Typography>{steps[activeStep].label}</Typography>
       </Paper>
-      <Box sx={{ height: 150, maxWidth: 400, width: '100%', p: 2  , backgroundColor:"#fffceb"}}>
+      <Box sx={{ height: 150, maxWidth: 400, width: '100%', p: 2  , backgroundColor:"#eeeeee"}}>
         {steps[activeStep].description}
       </Box>
       <MobileStepper

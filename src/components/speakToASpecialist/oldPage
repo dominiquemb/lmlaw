@@ -236,15 +236,15 @@ function old(){
                   <ul>
                     <li>
                       {" "}
-                      ✓ Customized logistics to fit and adapt to your business
+                       Customized logistics to fit and adapt to your business
                       needs
                     </li>
                     <li>
                       {" "}
-                      ✓ Order tracking & geofencing in real-time dashboard
+                       Order tracking & geofencing in real-time dashboard
                     </li>
-                    <li> ✓ Delivery always on time, no excuses</li>
-                    <li> ✓ Customer support around the clock 24/7/365</li>
+                    <li>  Delivery always on time, no excuses</li>
+                    <li>  Customer support around the clock 24/7/365</li>
                   </ul>
                 </div>
                 <div className="column-footer">
@@ -307,15 +307,15 @@ function old(){
               <Grid item xs={12} md={3}>
                 <div className="content">
                   <ul>
-                    <li> ✓ Professional, fully vetted couriers by uniform</li>
-                    <li> ✓ Reliable same-day delivery & courier service</li>
+                    <li>  Professional, fully vetted couriers by uniform</li>
+                    <li>  Reliable same-day delivery & courier service</li>
                     <li>
                       {" "}
-                      ✓ On demand, and express same-day door-to-door delivery
+                       On demand, and express same-day door-to-door delivery
                     </li>
                     <li>
                       {" "}
-                      ✓ Dependable service you can always count on, and
+                       Dependable service you can always count on, and
                       professionalism on every delivery
                     </li>
                   </ul>

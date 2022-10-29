@@ -30,8 +30,7 @@ function SpeakToASpecialist() {
                   right:0,
 
                 }}>
-                <h1 style={{
-                  fontSize:"50px",
+                <h1  class = "circle-h1" style={{
                   color:"white",
                   letterSpacing:3,
                   fontWeight:500,
@@ -115,34 +114,34 @@ function SpeakToASpecialist() {
                 Things you can do from our portal:
                 </h2>
                 <ul style={{listStyleType:"square"}}>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       Place and track orders all in one central hub.
                     </li>
 
-                    <li style={{marginBottom:10}}>
+                    <li >
                       Schedule and customize any pickup.
                     </li>
 
-                    <li style={{marginBottom:10}}>
+                    <li >
                       Gain visibility and insights.
                     </li>
 
-                    <li style={{marginBottom:10}}>
+                    <li >
                       View order tracking in real-time dashboard.
                     </li>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       View signature or photo-base PODs for each order.
                     </li>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       reate and maintain a private address book.
                     </li>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       View, customize and print reports of your shipping history.
                     </li>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       Create EZ-ship commands, enabling you to ship instantly with just a couple of keystrokes.
                     </li>
-                    <li style={{marginBottom:10}}>
+                    <li >
                       Customize how you are notified of package delivery status.
                     </li>
                 </ul>
@@ -200,11 +199,11 @@ function SpeakToASpecialist() {
             <Grid item xs={12} md={4}>
                 <div className="content" style={{width:"90%" }}>
                     <ul>
-                      <li> ✓ Reliability, experience, one-to-one approach, delivery always on time, no excuses</li>
-                      <li> ✓  Order tracking & geofencing in real-time dashboard</li>
-                      <li> ✓  On-demand, and express same-day door-to-door delivery</li>
-                      <li> ✓  Dependable service you can always count on,and professionalism on every delivery.</li>
-                      <li> ✓  Customer support around the clock 24/7/365</li>
+                      <li>  Reliability, experience, one-to-one approach, delivery always on time, no excuses</li>
+                      <li>   Order tracking & geofencing in real-time dashboard</li>
+                      <li>   On-demand, and express same-day door-to-door delivery</li>
+                      <li>   Dependable service you can always count on,and professionalism on every delivery.</li>
+                      <li>   Customer support around the clock 24/7/365</li>
                     </ul>
                 </div>
 
@@ -222,11 +221,11 @@ function SpeakToASpecialist() {
             <Grid item xs={12} md={4} >
                 <div className="content" style={{width:"90%" }}>
                     <ul>
-                      <li> ✓ Dedicated, fully vetted couriers by uniform</li>
-                      <li> ✓ Custom logistics to fit and adapt to your business</li>
-                      <li> ✓ Cost-efficient LTL shipping services, FTL services for large shipments that require dedicated shipping</li>
-                      <li> ✓ Transparency and visibility into every single shipment through cutting-edge technology</li>
-                      <li> ✓ Custom notification of package delivery status, based on your preference</li>
+                      <li>  Dedicated, fully vetted couriers by uniform</li>
+                      <li>  Custom logistics to fit and adapt to your business</li>
+                      <li>  Cost-efficient LTL shipping services, FTL services for large shipments that require dedicated shipping</li>
+                      <li>  Transparency and visibility into every single shipment through cutting-edge technology</li>
+                      <li>  Custom notification of package delivery status, based on your preference</li>
                     </ul>
                 </div>
 

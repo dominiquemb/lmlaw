@@ -31,7 +31,7 @@ function Footer() {
                     </Grid>
                     <Grid item xs={12} sm={3} md = {2}  >
                                 <div class="footer-col-header">
-                                    Get Started
+                                    Our services
                                 </div>
                                 <ul>
                                     <li>
@@ -50,7 +50,7 @@ function Footer() {
                     </Grid>
                     <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
                                 <div class="footer-col-header">
-                                    About Us
+                                Our Company
                                 </div>
                                 <ul>
                                     <li>

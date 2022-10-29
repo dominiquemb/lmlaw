@@ -32,7 +32,7 @@ function Locations() {
     <div id='map-and-dropdown'>
 
     <Grid container  style={{marginTop:100}}>
-    <h1 className="circle-text" style={{width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+    <h1 className="circle-text" style={{fontSize:"2.5rem",width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
       We are currently serving all 48 states nationwide.
     </h1>
 
