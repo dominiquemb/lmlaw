@@ -206,9 +206,9 @@ function HomeScreen() {
 
           <Grid container>
               <Grid item xs={12} md={4}>
-                  <p className="content">
+                  <div className="content textLeft" >
                     AAA is here to help and ready to step right in, whether you need to expand or supplement your fleet. Our fleet is ready to help you ramp up your operations, so you can meet the growing demands of your business.
-                  </p>
+                  </div>
                   <div className="column-footer" style={{marginBottom:120}}>
                     <a className="button-link" href="/what-we-offer"><button className="round-button round-button">Learn more</button></a>
                   </div>
@@ -223,9 +223,9 @@ function HomeScreen() {
               </Grid>
 
               <Grid item xs={12} md={4}>
-                  <p className="content">
+                  <div className="content textLeft" >
                     Partner with us, let us become an extension of your company. We will reduce the cost of your aging fleet by supplementing or replacing your fleet with AAA fleet replacements, propelling your same-day delivery capabilities.
-                  </p>
+                  </div>
                   <div className="column-footer" style={{marginBottom:120}}>
                     <a className="button-link" href="/speak-to-a-specialist"><button className="round-button round-buttons">Get started</button></a>
                   </div>
