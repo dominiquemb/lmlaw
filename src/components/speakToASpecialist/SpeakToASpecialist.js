@@ -269,7 +269,7 @@ function SpeakToASpecialist() {
 </div>
   <div className="top-semicircle semicircle-blue" style={{borderRadius:"0px 0px 100% 100%"}}>
   
-        <h1  className="circle-h2" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
+        <h1  className="circle-h2 schedule" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
 
         </div>
 
