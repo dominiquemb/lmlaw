@@ -27,7 +27,17 @@ export default function FormTextFields() {
       style={{backgroundColor:"#8bbafb" , width:"100%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}
 
     >
-            <form>
+            <form action="https://formsubmit.co/info@aaadeliveryservice.com" method="POST"> 
+            <input type="hidden" name="_captcha" value="false"></input>                 
+                  <div style={{display:"none"}}>
+                    <input type="hidden" name="name" value = {firstName} required/>
+                    <input type="text" name="phone" value = {phone} required/>
+                    <input type="hidden" name="company" value = {company} required/>
+                    <input type="hidden" name="address" value = {address} required/>
+                    <input type="hidden" name="message" value = {message} required/>
+                    <input type="email" name="email" value={email} placeholder="Email Address"/>
+                    <input type="hidden" name="_captcha" value="false"></input>
+                  </div>              
                 <TextField
                   fullWidth 
                   id="first-name"
@@ -94,7 +104,7 @@ export default function FormTextFields() {
                 />
               
                 <a className="submit" href="#">
-                  <button className="round-button large-circle-button">
+                  <button className="round-button large-circle-button" type="submit" >
                     Submit
                   </button>
                 </a>

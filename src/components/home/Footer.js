@@ -44,7 +44,7 @@ function Footer() {
                                     <a href="/how-it-works">How it works</a>
                                     </li>
                                     <li>
-                                        <a href="/our-locations">Our locations</a>
+                                    <a href="/locations">Our locations</a>
                                     </li>
                                 </ul>
                     </Grid>

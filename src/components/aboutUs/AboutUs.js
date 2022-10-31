@@ -62,7 +62,7 @@ export default function AboutUs(){
                 <h1>MISSION & VISION</h1>
                 <hr style={{ border: "3px solid red" , width:"50%" , marginRight:"50%"}}></hr>
                 <h2>MISSION</h2>
-                <p>
+                <div className="leftText">
                     To create, implement, and manage logistics solutions.
                     Achieve excellence with unwavering commitment, superior
                     management, processes, and technology. Providing our
@@ -71,15 +71,15 @@ export default function AboutUs(){
                     Commitment, Excellence, Safety and Professionalism. We
                     strengthen communities and enhance lives by delivering
                     the things that matter.
-                </p>
+                </div>
                 <h2>VISION</h2>
-                <p>
+                <div className="leftText">
                     To provide our customers with the utmost reliable,
                     dependable, professional, and technologically advanced
                     delivery service nationwide. Keeping you focus on your core
                     business. Knowing your deliveries are in good hands with
                     AAA. “To Be Indispensable to Our Customers”.
-                </p>
+                </div>
 
             </Grid>
             <Grid item xs={12} md={4} style={{padding:30}}>
@@ -121,7 +121,7 @@ export default function AboutUs(){
             </Grid>
             <Grid item xs={12} md={4} style={{padding:30}}>
             <h1>OUR OBJECTIVE</h1>
-            <p>
+            <div className="leftText">
                 Our primary objective is customer satisfaction,
                 reliability, on time deliveries, and save our clients
                 10-30% in courier cost within our coverage area.
@@ -132,7 +132,7 @@ export default function AboutUs(){
                 be combined and configured to meet changing
                 needs and requirements. To learn more, please
                 follow the link. <a style={{fontWeight:"bolder"}} href="/portal">Online Portal</a>
-            </p>
+            </div>
             <div>
             <TextMobileStepper/>
             </div>
