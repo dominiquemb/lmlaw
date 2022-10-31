@@ -3,7 +3,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from "@mui/material/Box";
 import home_page_top_right from '../../assets/home_page_top_right.png';
-import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
 import {UsaMap} from "../locations/Map.js"
 
@@ -28,7 +27,7 @@ function HomeScreen() {
 	            </h2>
 
 
-              <h4 class="circle-h4 circle-text">
+              <h4 className="circle-h4 circle-text">
                 Deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
               </h4>
 

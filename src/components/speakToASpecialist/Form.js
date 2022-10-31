@@ -1,6 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const updateValue = (func, value) => {
@@ -8,6 +11,83 @@ const updateValue = (func, value) => {
       func(value);
     }
   };
+
+
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
+export  function CustomizedSnackbars(props) {
+  const [loading, setLoading] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [error, setError] = React.useState(false);
+
+
+  const handleClick = () => {
+    setLoading(true);
+    fetch("https://formsubmit.co/ajax/ks_cherfaoui@esi.dz", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name: props.name,
+          message: props.message,
+          email:props.email,
+          phone:props.phone,
+          company:props.company,
+          address:props.address
+      })
+  })
+      .then(response => {response.json();setLoading(false);})
+      .then(data => {setOpen(true) ; console.log(data)} )
+      .catch(error => {setError(true) ; console.log(error)})
+    
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  return (
+    <>
+    
+      <a>
+        { loading ?
+         <button className="round-button large-circle-button">
+          <CircularProgress style = {{color:"#ffffff"}} />
+        </button>
+        :
+        <button className="round-button large-circle-button" onClick={handleClick} >
+          Submit
+        </button>
+        }
+        
+      </a>
+
+
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Form was sent successfully
+        </Alert>
+      </Snackbar>
+
+      <Snackbar open={error} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+          An error ocurred while sending the form 
+        </Alert>
+      </Snackbar>
+      
+    </>
+
+  );
+}
   
 export default function FormTextFields() {
     const [firstName, setFirstName] = React.useState("");
@@ -15,8 +95,6 @@ export default function FormTextFields() {
     const [phone, setPhone] = React.useState("");
     const [company, setCompany] = React.useState("");
     const [address, setAddress] = React.useState("");
-    const [city, setCity] = React.useState("");
-    const [state, setState] = React.useState("");
     const [message, setMessage] = React.useState("");
 
 
@@ -27,17 +105,8 @@ export default function FormTextFields() {
       style={{backgroundColor:"#8bbafb" , width:"100%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}
 
     >
-            <form action="https://formsubmit.co/info@aaadeliveryservice.com" method="POST"> 
-            <input type="hidden" name="_captcha" value="false"></input>                 
-                  <div style={{display:"none"}}>
-                    <input type="hidden" name="name" value = {firstName} required/>
-                    <input type="text" name="phone" value = {phone} required/>
-                    <input type="hidden" name="company" value = {company} required/>
-                    <input type="hidden" name="address" value = {address} required/>
-                    <input type="hidden" name="message" value = {message} required/>
-                    <input type="email" name="email" value={email} placeholder="Email Address"/>
-                    <input type="hidden" name="_captcha" value="false"></input>
-                  </div>              
+            <div> 
+                       
                 <TextField
                   fullWidth 
                   id="first-name"
@@ -102,14 +171,8 @@ export default function FormTextFields() {
                   value={message}
                   onChange={(evt) => updateValue(setMessage, evt.target.value)}
                 />
-              
-                <a className="submit" href="#">
-                  <button className="round-button large-circle-button" type="submit" >
-                    Submit
-                  </button>
-                </a>
-              
-            </form>
+                <CustomizedSnackbars/>
+            </div>
     </Box>
   );
 }

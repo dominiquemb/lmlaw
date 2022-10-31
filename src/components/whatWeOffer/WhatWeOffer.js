@@ -242,7 +242,7 @@ shipments that require dedicated shipping</li>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video autoPlay controls style={{  borderRadius:10  , width:"80%"}}>
+              <video controls  autoPlay loop  muted style={{  borderRadius:10  , width:"80%"}}>
                 
                 <source
                   src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}
