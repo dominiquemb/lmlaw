@@ -10,7 +10,7 @@ function SpeakToASpecialist() {
 
  
   return <>
-  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:80 , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" , marginTop:80 , marginRight:80}}>
+  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" , marginTop:80 , marginRight:80}}>
       <Grid container>
           <Grid item xs={12} md={8} style={{padding:30 , height:"fit-content"}}>
           <Box  sx={{ display: { xs: 'none', md: 'block', lg: 'block' } }}  >

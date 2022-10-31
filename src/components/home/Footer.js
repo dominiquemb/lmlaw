@@ -14,10 +14,10 @@ function Footer() {
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
                             <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
                         </a>
-                        <div class="content" style={{textAlign:"left",fontSize:"1rem"}}>
+                        <div className="content" style={{textAlign:"left",fontSize:"1rem"}}>
                             In the world of logistics, where most situations require timeliness, AAA is a must-have option to stay ahead of the competition.
                         </div>
-                        <div class="column-footer">
+                        <div className="column-footer">
                             HIPPA COMPLIANT
                         </div>
                         <div>
@@ -30,7 +30,7 @@ function Footer() {
                                
                     </Grid>
                     <Grid item xs={12} sm={3} md = {2}  >
-                                <div class="footer-col-header">
+                                <div className="footer-col-header">
                                     Our services
                                 </div>
                                 <ul>
@@ -49,7 +49,7 @@ function Footer() {
                                 </ul>
                     </Grid>
                     <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
-                                <div class="footer-col-header">
+                                <div className="footer-col-header">
                                 Our Company
                                 </div>
                                 <ul>
@@ -63,12 +63,12 @@ function Footer() {
                                         Drive for us
                                     </li>
                                     <li>
-                                        <a href="/our-locations">Our locations</a>
+                                        <a href="/locations">Our locations</a>
                                     </li>
                                 </ul>
                     </Grid>
                     <Grid item xs={12} sm={3} md = {3} style={{padding:5}}>
-                                <div class="footer-col-header">
+                                <div className="footer-col-header">
                                     Contact Us
                                 </div>
                                 <ul>

@@ -6,18 +6,13 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Footer from './components/home/Footer';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 import './App.css';
 import HomeScreen from './components/home/HomeScreen';
 import SpeakToASpecialist from './components/speakToASpecialist/SpeakToASpecialist';
@@ -116,7 +111,7 @@ function App() {
           </Box>
 
           <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
-                  <button class="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
+                  <button className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
                     Online Portal
                   </button>
 
