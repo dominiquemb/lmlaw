@@ -26,7 +26,7 @@ export  function CustomizedSnackbars(props) {
 
   const handleClick = () => {
     setLoading(true);
-    fetch("https://formsubmit.co/ajax/ks_cherfaoui@esi.dz", {
+    fetch("https://formsubmit.co/ajax/info@aaadeliveryservice.com", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
