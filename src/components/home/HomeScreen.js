@@ -196,8 +196,7 @@ function HomeScreen() {
 
     <div className="screen screen-4" style={{height:"fit-content"}}>
         <div className="top-semicircle semicircle-blue">
-        <h1  className="circle-h2" style={{textAlign:"center" , padding:"0 10%" }}>Adapting to your business</h1>
-
+        <h2  className="circle-h2 schedule" style={{textAlign:"center"  }}>Adapting to your business</h2>
         </div>
 
         <Container maxWidth="xl" disableGutters style={{padding:30}}>

@@ -30,7 +30,7 @@ function WhatWeOffer() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
           <Grid item xs={12} lg={6} style={{ marginTop:"5%"}}  >
 
-          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA Reliable For Same-Day Delivery & Courier Service</h1>
+          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA For Reliable Same-Day Delivery & Courier Service</h1>
               <h2 className="circle-h2 circle-text" >
                 Knowing your deliveries are safe and in good hands with AAA
               </h2>
@@ -232,17 +232,10 @@ shipments that require dedicated shipping</li>
                   package tracking and instant delivery
                   confirmation, based on your preference
                 </div>
-                <div className="column-footer" style={{marginBottom:"10vh"}}>
-                  <a className="button-link" href="/speak-to-a-specialist">
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                </div>
               </Grid>
 
               <Grid item xs={12} md={6}>
-              <video controls  autoPlay loop  muted style={{  borderRadius:10  , width:"80%"}}>
+              <video controls  autoPlay loop  muted style={{  borderRadius:10  , width:"80%",marginBottom:100}}>
                 
                 <source
                   src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}
@@ -264,6 +257,25 @@ shipments that require dedicated shipping</li>
                   safe and in good hands with AAA. Providing
                   you peace of mind.
                 </div>
+              </Grid>
+            </Grid>
+            <Grid container>
+              <Grid item xs={12} md={3}  >
+                <Box sx={{display:{xs:"none",md:"block"} }}>
+                <div className="column-footer" style={{marginBottom:"10vh"}}>
+                  <a className="button-link" href="/speak-to-a-specialist">
+                    <button className="round-button round-button">
+                      Get Started
+                    </button>
+                  </a>
+                </div>
+                </Box>
+              </Grid>
+
+              <Grid item xs={12} md={6}>
+              </Grid>
+
+              <Grid item xs={12} md={3}>
                 <div className="column-footer">
                   <a
                     className="button-link speak-to-a-specialist-link"
@@ -276,6 +288,10 @@ shipments that require dedicated shipping</li>
                 </div>
               </Grid>
             </Grid>
+
+
+
+
           </Container>
         </div>
       </div>
