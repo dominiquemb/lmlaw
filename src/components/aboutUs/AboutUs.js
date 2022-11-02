@@ -84,11 +84,11 @@ export default function AboutUs(){
             </Grid>
             <Grid item xs={12} md={4} style={{padding:30}}>
             <h1>QUALITY POLICY</h1>
-            <p>
+            <div className="leftText">
                 We will continuously strive to delight our
                 customers with outstanding quality of
                 our courier and delivery service.
-            </p>
+            </div>
             <p>
                 In our endeavor to achieve this objective, we will;
             </p>
