@@ -27,6 +27,7 @@ import Healthcare from './components/healthcare/Healthcare';
 
 
 const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'}];
+const industries = [{label: 'Healthcare', url: '/healthcare'},{label: 'Freight', url: '/ground-transportation'},{label: 'Same day', url: '/same-day-delivery'}];
 
 function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -99,6 +100,7 @@ function App() {
                 <a style={{ width:"100%"}}href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
               </MenuItem>
             ))}
+            
             </Menu>
           </Box>
 
@@ -113,35 +115,45 @@ function App() {
               </Button>
               </a>
             ))}
+
+            <Box>
+              <Button
+                  onClick={handleOpenUserMenu}
+                  sx={{ my: 2, color: '#090B27', display: 'block' }}
+                >
+                  Industries
+                </Button>
+              <Menu
+                sx={{ mt: '45px' }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {industries.map((page, index) => (
+                  <MenuItem key={index} onClick={handleCloseUserMenu}>
+                    <a href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
+                  </MenuItem>
+                ))}
+              </Menu> 
+            </Box>
+
+
           </Box>
 
           <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
-                  <button className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
+                  <button  className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
                     Online Portal
                   </button>
-
-            {/* <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
           </Box>
         </Toolbar>
       {/* </Container> */}

@@ -813,6 +813,24 @@ body{
     font-size: 5vw !important;
   }
   
+  .MuiMenuItem-root{
+    font-size: 1vw !important;
+  }
+  .MuiSelect-select{
+    height: 2vw !important;
+  }
+  .MuiSelect-nativeInput{
+    font-size: 1vw !important;
+    line-height: 2vw !important;
+  }
+  #demo-simple-select-label{
+    top:-0.4vw !important;
+    font-size: 1vw !important;
+  }
+  #demo-simple-select{
+    line-height:2vw !important;
+    font-size: 1vw !important;
+  }
 }
 
 .big-title{

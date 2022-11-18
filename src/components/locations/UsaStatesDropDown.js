@@ -18,7 +18,7 @@ export default function UsaStatesSelect() {
   return (
     <Box sx={{ minWidth: 120 , Height : 300 }}  >
       
-      <FormControl fullWidth   >
+      <FormControl fullWidth  size="large"  >
         <InputLabel id="demo-simple-select-label" size='1vw'>State</InputLabel>
         <Select
           labelId="demo-simple-select-label"
