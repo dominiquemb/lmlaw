@@ -37,7 +37,6 @@ function SpeakToASpecialist() {
                   textAlign:"center"
                 }}>Ready To Speak To A Specialist?</h1>
                 <p style={{
-                  fontSize:20,
                   fontWeight:600,
                   color:"white"
                 }}>

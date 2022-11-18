@@ -21,6 +21,11 @@ import WhatWeOffer from './components/whatWeOffer/WhatWeOffer';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import Locations from './components/locations/Locations';
 import AboutUs from './components/aboutUs/AboutUs';
+import SameDayDelivery from './components/same-day-delivery/SameDayDelivery';
+import GroundTransportation from './components/ground-transportation/GroundTransportation';
+import Healthcare from './components/healthcare/Healthcare';
+
+
 const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'}];
 
 function App() {
@@ -151,6 +156,11 @@ function App() {
           <Route path='/how-it-works' element={<HowItWorks />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/locations' element={<Locations />}></Route>
+          <Route path='/same-day-delivery' element={<SameDayDelivery />}></Route>
+          <Route path='/ground-transportation' element={<GroundTransportation />}></Route>
+          <Route path='/healthcare' element={<Healthcare />}></Route>
+
+
         </Routes>
     </Router>
 

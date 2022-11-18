@@ -5,6 +5,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+
+
+
 export default function UsaStatesSelect() {
   const [state, setState] = React.useState('');
 
@@ -14,8 +17,9 @@ export default function UsaStatesSelect() {
 
   return (
     <Box sx={{ minWidth: 120 , Height : 300 }}  >
+      
       <FormControl fullWidth   >
-        <InputLabel id="demo-simple-select-label">State</InputLabel>
+        <InputLabel id="demo-simple-select-label" size='1vw'>State</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -25,6 +29,7 @@ export default function UsaStatesSelect() {
           MenuProps={{
             style: {
                maxHeight: 400,
+               fontSize: "1vw"
                   },
             }}
           

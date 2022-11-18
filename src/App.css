@@ -265,7 +265,7 @@ body .large-circle-button {
 .top-semicircle .circle-h2,
 .top-semicircle p {
   position: absolute;
-  bottom: 14px;
+  bottom: 0px;
   color: white;
   text-align: center;
   width: 100%;
@@ -295,6 +295,7 @@ body .large-circle-button {
 }
 
 .centered {
+  width: fit-content;
   margin: auto;
   display: flex;
 }
@@ -658,7 +659,7 @@ ul li {
 
 
 /* For small devices */
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 600px) {
   h1{
     font-size: 1.8em !important;
   }
@@ -743,16 +744,88 @@ body{
   font-weight: 600;
 }
 
-@media only screen and (min-width: 1400px) {
-  .top-semicircle .circle-h2{
-    font-size: 1.5rem;
-  }
 
+
+@media only screen and (min-width: 1400px) {
+  .top-semicircle{
+    height: 12vw;
+    margin-top: -6vw;
+  }
+  .top-semicircle .circle-h2{
+    font-size: 2vw;
+  }
   .schedule {
-    font-size: 2.5rem !important;
+    font-size: 2.5vw !important;
   }
   .transparency {
     font-size: 1.2rem !important;
   }
+  .round-button {
+    padding: 0.6vw 1vw;
+    font-size: 1.6vw;
+  }
+  .content{
+    font-size: 1.2vw;
+  }
+  .MuiContainer-root{
+    max-width: 90vw !important;
+  }
+  h1{
+    font-size: 3vw;
+  }
+  .circle-h1{
+    font-size: 2vw;
+  }
+  h2{
+    font-size:1.8vw;
+  }
+  .home{
+    margin-top: 3vh;
+  }
+  button{
+    font-size: 1vw !important;
+    margin: 0.5vw !important;
+  }
+
+  .small-circle.smallest{
+    width: 9vw;
+    height: 9vw;
+  }
+  #map-and-dropdown{
+    margin-top: 9vh;
+  }
+  p{
+    font-size: 1vw;
+  }
+  ul{
+    font-size: 1vw;
+  }
+  .leftText{
+    font-size: 1vw;
+  }
+  .about-us-cols h1{
+    font-size: 1.9vw;
+  }
+  .footer-col-header{
+    font-size: 1vw;
+  }
+  .big-title{
+    font-size: 5vw !important;
+  }
+  
+}
+
+.big-title{
+  font-size: 4vw;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.screen-3  {
+  color: white;
+}
+
+.MuiSelect-select{
+  height: 100%;
 }
 

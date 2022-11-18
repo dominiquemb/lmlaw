@@ -14,7 +14,7 @@ function HomeScreen() {
     <>
     <div className="home">
 
-    <Grid container  style={{marginBottom:"10vh" , paddingLeft:30,paddingRight:30}}>
+    <Grid container  style={{ paddingLeft:30,paddingRight:30}}>
           <Grid item xs={12} md={6}  >
 
             <div >
@@ -63,7 +63,7 @@ function HomeScreen() {
     <div className="screen screen-2" style={{height:'fit-content'}}>
 
 
-      <Container maxWidth="xl" disableGutters style={{padding:30}}>
+      <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
       <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Custom logistics. Indispensable service.</h1>
 
         <p className="subheading content">
@@ -134,7 +134,7 @@ function HomeScreen() {
           </div>
       </div>
 
-      <Container maxWidth="xl" disableGutters>
+      <Container  disableGutters>
         <p className="content" style={{width:"75%", margin:"auto"}}>
           We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
           your logistics needs. We have the experiences that make a difference to your business and your clients. We provide
@@ -199,7 +199,7 @@ function HomeScreen() {
         <h2  className="circle-h2 schedule" style={{textAlign:"center"  }}>Adapting to your business</h2>
         </div>
 
-        <Container maxWidth="xl" disableGutters style={{padding:30}}>
+        <Container   disableGutters style={{padding:30}}>
 
 
           <Grid container>
