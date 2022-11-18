@@ -16,7 +16,7 @@ function SameDayDelivery() {
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <h1 className="circle-h1 circle-text textLeft big-title"  style={{}}>At Home Same-Day Delivery</h1>
-          <p className="circle-text textLeft" >
+          <p className=" textLeft" >
             At AAA, we provide same-day, door-to door delivery, so your small business can save time and money while offering customers flexible, and competitive shipping options.
           </p>
         </Grid>
@@ -47,7 +47,7 @@ function SameDayDelivery() {
         </Grid>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}} order={{ xs: 1 , sm: 2 }} >
           <h2 className=" circle-text textLeft "  style={{}}>On-Demand Delivery</h2>
-          <p className="circle-text textLeft" >
+          <p className="textLeft" >
             We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. Click Here 
           </p>
         </Grid>
@@ -56,7 +56,7 @@ function SameDayDelivery() {
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <h2 className=" circle-text textLeft"  style={{}}>Get Same-Day Local Delivery</h2>
-          <p className="circle-text textLeft" >
+          <p className=" textLeft" >
             At AAA, we work with small and mid-size businesses, providing same-day deliveries from door-to-door, across town or across the country to enable an easy, cost-effective solution for urgent and same-day delivery, giving you more time to focus on running your business. Whether you need a primary delivery partner, or an occasional solution. AAA is an easy, flexible choice that’s as good for your customers, as it is for your bottom line.
           </p>
         </Grid>
@@ -88,7 +88,7 @@ function SameDayDelivery() {
 
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  order={{ xs: 1, sm: 2 }} >
           <h2 className=" circle-text textLeft"  style={{}}>Get one-on-one support</h2>
-          <p className="circle-text textLeft" >
+          <p className=" textLeft" >
             We assign and provide a centralized account specialists to your Business, providing your company, a single point of contact for your day-to-day deliveries, to ensure you are getting quality, performance, and exceptional customer care. We take a fundamental approach to eliminate wasted time and deliver urgent goods, right when you need them most, providing quality expedited services. To learn more, please follow the link. Register Here 
           </p>
         </Grid>
