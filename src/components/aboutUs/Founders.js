@@ -56,21 +56,22 @@ export default function TextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
         sx={{
           display: 'flex',
           alignItems: 'center',
-          height: 50,
+          height: "4vw",
           pl: 2,
           bgcolor: 'background.default',
+          fontSize:"1vw"
         }}
       >
-        <Typography>{steps[activeStep].label}</Typography>
+        <Typography style={{fontSize:"2vw"}}>{steps[activeStep].label}</Typography>
       </Paper>
-      <Box sx={{ height: 150, maxWidth: 400, width: '100%', p: 2  , backgroundColor:"#eeeeee"}}>
+      <Box sx={{  width: '100%', p: 2  , backgroundColor:"#eeeeee",fontSize:"2vw",height:"8vw"}}>
         {steps[activeStep].description}
       </Box>
       <MobileStepper
@@ -83,6 +84,7 @@ export default function TextMobileStepper() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
+
           >
             Next
             {theme.direction === 'rtl' ? (

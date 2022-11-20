@@ -747,6 +747,9 @@ body{
 
 
 @media only screen and (min-width: 1400px) {
+  .circle-h4{
+    font-size: 1.1vw;
+  } 
   .top-semicircle{
     height: 12vw;
     margin-top: -6vw;
@@ -830,6 +833,13 @@ body{
   #demo-simple-select{
     line-height:2vw !important;
     font-size: 1vw !important;
+  }
+  .css-1x1xx5k{
+    max-width: 100%;
+  }
+  .css-89caog{
+    max-width: 100%;
+    width: 100%;
   }
 }
 
