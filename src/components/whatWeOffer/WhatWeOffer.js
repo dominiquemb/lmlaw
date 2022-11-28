@@ -8,21 +8,6 @@ import home_page_top_right from '../../assets/blue-column.png';
 
 
 function WhatWeOffer() {
-  const [firstName, setFirstName] = React.useState("");
-  const [lastName, setLastName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [phone, setPhone] = React.useState("");
-  const [company, setCompany] = React.useState("");
-  const [address, setAddress] = React.useState("");
-  const [city, setCity] = React.useState("");
-  const [state, setState] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-  const updateValue = (func, value) => {
-    if (func) {
-      func(value);
-    }
-  };
 
   return (
     <>
@@ -35,7 +20,7 @@ function WhatWeOffer() {
                 Knowing your deliveries are safe and in good hands with AAA
               </h2>
             
-          
+
               
           </Grid>
           <Grid item xs={0} lg={6} >
