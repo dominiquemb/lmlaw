@@ -642,7 +642,7 @@ p{
   width:80%;
 }
 ul li {
-  padding:4px;
+  padding:0.3vw 4px;
 }
 
 .checked li{
@@ -744,11 +744,18 @@ body{
   font-weight: 600;
 }
 
+img{
+  display: flex;
+}
 
+.bold-inline{
+  font-weight: 700;
+  font-family: sans-serif;
+}
 
 @media only screen and (min-width: 1400px) {
   .circle-h4{
-    font-size: 1.1vw;
+    font-size: 1.6vw;
   } 
   .top-semicircle{
     height: 12vw;
@@ -777,7 +784,7 @@ body{
     font-size: 3vw;
   }
   .circle-h1{
-    font-size: 2vw;
+    font-size: 4vw;
   }
   h2{
     font-size:1.8vw;
@@ -798,13 +805,13 @@ body{
     margin-top: 9vh;
   }
   p{
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
   ul{
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
   .leftText{
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
   .about-us-cols h1{
     font-size: 1.9vw;
