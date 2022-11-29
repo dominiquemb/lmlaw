@@ -300,7 +300,7 @@ function HomeScreen() {
         </Grid>           
       </Grid>
 
-      </div>
+    </div>
 
   
   </div>
