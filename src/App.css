@@ -355,6 +355,7 @@ body .large-circle-button {
  background-color: #367bdc;
 }
 
+
 .home .screen-4 {
   background-color: #fff;
   height: 700px;
@@ -452,6 +453,7 @@ ul {
   color: #fff;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-top: 3vw;
 }
 
 .footer .content {

@@ -9,6 +9,7 @@ import UsaStatesSelect from "./UsaStatesDropDown";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
 import BeforeFooter from "../BeforeFooter.js";
+import PathMap from "../animated-path-map";
 
 function Locations() {
   const [firstName, setFirstName] = React.useState("");
@@ -87,24 +88,35 @@ function Locations() {
         Flexibility! Adaptability! Quality! Responsibility!
     </h1>
 
-          <BeforeFooter></BeforeFooter>
-
-
         </Container>
-        <div className="column-footer" style={{display:"block", marginBottom:150,width:"100%" }}>
-                  <a className="button-link" href="/speak-to-a-specialist"  style={{marginLeft:"8%" , marginRight:0}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-                  <a className="button-link" href="/speak-to-a-specialist" style={{float:"right",marginRight:"8%" , marginLeft:0}}>
-                    <button className="round-button round-button">
-                      Get Started
-                    </button>
-                  </a>
-        </div>
+     
 
       </div>
+      <div className="screen screen-4" style={{height:"fit-content"}}>
+
+
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+<Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+<Box  style={{margin:"auto"}} >
+    <h2>Order Tracking In Real-Time</h2>
+      <div className="content textLeft" >
+        Gain visibility on every single shipment and delivery, GPS tracking in real-time, on a live map through the entire process and accurate ETA. Automatic order alerts and updates via text or email, POD for each order and actual arrival time. 
+      </div>
+</Box>
+<Box  style={{margin:"auto"}} >
+    <h2>Transparency & Visibility</h2>
+      <div className="content textLeft" >
+        We breathe transparency into every single shipment and delivery through innovative technologies. Our software allows our customers to keep all their shipments and deliveries information at their fingertips.
+      </div>
+</Box>
+</Grid>
+<Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+  <PathMap></PathMap>
+</Grid>           
+</Grid>
+
+</div>
+
 
       </div>
 
