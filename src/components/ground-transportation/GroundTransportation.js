@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-
+import PathMap from "../animated-path-map"
 
 function SameDayDelivery() {
 
@@ -191,11 +191,7 @@ function SameDayDelivery() {
         </Box>
         </Grid>
         <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <img style = {{
-            width:"100%",
-            margin:"auto"
-
-          }} src={require('../../assets/map-image.png')} alt="image of a path on a map" />
+              <PathMap></PathMap>
         </Grid>           
       </Grid>
 
