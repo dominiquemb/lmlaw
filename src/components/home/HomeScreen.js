@@ -131,7 +131,7 @@ function HomeScreen() {
 
       <div style={{maxWidth:"80vw",margin:"auto"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} sm={6} >
+        <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>
 
            <img style={{
@@ -143,7 +143,7 @@ function HomeScreen() {
            </div>
         </Grid>
 
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <div className="content checked">
                     <ul>
                       <li> Reliability, experience, delivery always on time, no excuses</li>
@@ -162,7 +162,7 @@ function HomeScreen() {
         </Grid>
       </Grid>
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <div className="content checked">
             <ul>
               <li> Reliability, experience, delivery always on time, no excuses</li>
@@ -181,7 +181,7 @@ function HomeScreen() {
             </ul>
           </div>
         </Grid>
-        <Grid justifyContent="center" item xs={12} sm={6} >
+        <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>
             <CircleMapPath></CircleMapPath>
            </div>
@@ -189,7 +189,7 @@ function HomeScreen() {
 
       </Grid>
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} sm={6} >
+        <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>
 
            <img style={{
@@ -201,7 +201,7 @@ function HomeScreen() {
            </div>
         </Grid>
 
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <h2 class="  textLeft">One-On-One Support</h2>
           <p className=" textLeft" >
             We assign and provide a centralized account specialists alongside our dedicated
@@ -215,7 +215,7 @@ function HomeScreen() {
         </Grid>
       </Grid>
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <h2 className="  textLeft"  style={{}}>Adapting To Your Business</h2>
           <p className=" textLeft" >
             AAA is here to help and ready to step right in, whether you need to expand or
@@ -226,7 +226,7 @@ function HomeScreen() {
             propelling your same-day delivery capabilities forward. Get Started.
           </p>
         </Grid>
-        <Grid justifyContent="center" item xs={12} sm={6} >
+        <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>
 
            <img style={{
@@ -246,7 +246,7 @@ function HomeScreen() {
 
     </div>
     <Grid container>
-      <Grid item xs={12} sm={4}>
+      <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
       <img style={{
             display:'block',
             width:"80%",
@@ -254,14 +254,14 @@ function HomeScreen() {
            }} src={require('../../assets/home/home8.png')} alt="delivery signature" />
       </Grid>
       
-      <Grid item xs={12} sm={4}>
+      <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
       <img style={{
             display:'block',
             width:"80%",
             margin:"auto"
            }} src={require('../../assets/home/home9.png')} alt="delivery signature" />
       </Grid>
-      <Grid item xs={12} sm={4}>
+      <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} >
       <img style={{
             display:'block',
             width:"80%",
@@ -274,11 +274,11 @@ function HomeScreen() {
 
         
     </div>
+    <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
+
 
     <div className="screen screen-4" style={{height:"fit-content"}}>
-        <div className="top-semicircle semicircle-blue">
-        <h2  className="circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
-        </div>
+
 
         <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >

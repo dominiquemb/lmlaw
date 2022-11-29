@@ -634,6 +634,17 @@ p{
   font-size: 1.6em;
 }
 
+.bottom-blue-semicircle{
+  
+  text-align: center;
+  background-color: #367bdc;
+  margin-top: 0;
+  border-radius: 0 0 100% 100%;
+  width: 100%;
+  padding-bottom: 3vw;
+  padding-top: 1vw;
+  color: white !important;
+}
 
 .subheading{
   margin: auto;
