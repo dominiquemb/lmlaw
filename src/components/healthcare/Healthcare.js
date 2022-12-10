@@ -84,107 +84,151 @@ function SameDayDelivery() {
     </div>
 </div>
 
+<div className="screen screen-3" style={{height:"fit-content"}}>
 
-<Container maxWidth="xl" disableGutters style={{padding:40}}>
+
+<div style={{maxWidth:"80vw",margin:"auto"}} >
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+  <Grid justifyContent="center" item xs={12} md={6} >
+    <div style={{width: '100%'}}>
+
+     <img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/healthcare-images/healthcare4.png')} alt="delivery signature" />
+
+     </div>
+  </Grid>
+
+  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 class="  textLeft">Medical Laboratories</h2>
+    <p className=" textLeft" >
+      We serve medical laboratories throughout the United States with our same-day, on-
+      demand delivery services. Our couriers are trained and meet all necessary
+      requirements in the proper handling and transportation of ambient, refrigerated,
+      and frozen specimens. Our Couriers are in compliant with HIPPA guidelines and
+      OSHA certified. Our couriers are equipped with Bio-hazardous coolers for ambient,
+      refrigerated, and frozen specimens, spill kits, barcode scanner, GPS, mobile data
+      units, and identification badges. Learn More.
+    </p>
+  </Grid>
+</Grid>
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+<Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 class="  textLeft">Hospitals & Health Systems</h2>
+    <p className=" textLeft" >
+        Whether you need medical specimens, medical supplies, medical devices, health
+    care equipment, prescription medications, x-rays, or any other exclusive equipment
+    transported, with our fleet and extensive network, we can tailor a solution around
+    your needs. We strengthen communities and enhance lives by delivering the things
+    that matter, providing you with responsive, flexible service keeping you focused on
+    your core business. To learn more, please follow the link. Speak To A Specialist.
+    </p>
+  </Grid>
+  <Grid justifyContent="center" item xs={12} md={6} >
+    <div style={{width: '100%'}}>
+
+    <img style={{
+    display:'block',
+    width:"80%",
+    margin:"auto"
+    }} src={require('../../assets/healthcare-images/healthcare5.png')} alt="delivery signature" />
+
+    </div>
+  </Grid>
+
+</Grid>
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+  <Grid justifyContent="center" item xs={12} md={6} >
+    <div style={{width: '100%'}}>
+
+     <img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/healthcare-images/healthcare6.png')} alt="delivery signature" />
+
+     </div>
+  </Grid>
+
+  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 class="  textLeft">Pharmacy Companies</h2>
+    <p className=" textLeft" >
+      We take a customer-first approach to tailor a solution for your pharmacy, providing
+      on-demand, same-day delivery and route services to enhance customer satisfaction
+      and increase customer convenience through our same-day delivery services. We
+      strengthen communities and enhance lives by delivering the things that matter.
+      Providing faster, safer, on-time, deliveries from door-to-door, across town or across
+      the country. What We Offer.
+    </p>
+  </Grid>
+</Grid>
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 className="  textLeft"  style={{}}>Get one-on-one support</h2>
+    <p className=" textLeft" >
+      We assign and provide a centralized account specialists alongside our dedicated
+      dispatchers and fully vetted couriers to your laboratory. Providing your company,
+      a single point of contact for your day-to-day delivery needs, to ensure you are
+      getting quality, performance, and exceptional customer care. We take a
+      fundamental approach to eliminate wasted time and deliver urgent goods, right
+      when you need them most, providing you peace of mind. To learn more, please
+      follow the link. Get Started.
+    </p>
+  </Grid>
+  <Grid justifyContent="center" item xs={12} md={6} >
+    <div style={{width: '100%'}}>
+
+     <img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/healthcare-images/healthcare7.png')} alt="delivery signature" />
+
+     </div>
+  </Grid>
+
+</Grid>
+<p className="subheading content">
+  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
+  when, our team of specialists are always available to assist you. To learn more. Register Here
+</p>
+
+</div>
+<Grid container>
+<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+<img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/home/home8.png')} alt="delivery signature" />
+</Grid>
+
+<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+<img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/home/home9.png')} alt="delivery signature" />
+</Grid>
+<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} >
+<img style={{
+      display:'block',
+      width:"80%",
+      margin:"auto"
+     }} src={require('../../assets/home/home10.png')} alt="delivery signature" />
+</Grid>
+
+
+</Grid>
 
   
-<h1  style={{ width :"80%", margin:"auto",textAlign:"center",paddingBottom:40 }}>Healthcare Businesses We Serve</h1>
-
-<div >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h1 className="circle-h1  textLeft big-title"  style={{}}>At Home Same-Day Delivery</h1>
-          <p className=" textLeft" >
-            At AAA, we provide same-day, door-to door delivery, so your small business can save time and money while offering customers flexible, and competitive shipping options.
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/same-day-images/same-day1.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}> 
-        <Grid justifyContent="center" item xs={12} sm={4} order={{ xs: 2 , sm: 1 }}>
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/same-day-images/same-day2.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-        <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}} order={{ xs: 1 , sm: 2 }} >
-          <h2 className="  textLeft "  style={{}}>On-Demand Delivery</h2>
-          <p className=" textLeft" >
-            We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. Click Here 
-          </p>
-        </Grid>
-
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 className="  textLeft"  style={{}}>Get Same-Day Local Delivery</h2>
-          <p className="textLeft" >
-            At AAA, we work with small and mid-size businesses, providing same-day deliveries from door-to-door, across town or across the country to enable an easy, cost-effective solution for urgent and same-day delivery, giving you more time to focus on running your business. Whether you need a primary delivery partner, or an occasional solution. AAA is an easy, flexible choice that’s as good for your customers, as it is for your bottom line.
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/same-day-images/same-day3.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} sm={4} order={{ xs: 2, sm: 1 }} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/same-day-images/same-day1.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-        <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  order={{ xs: 1, sm: 2 }} >
-          <h2 className="  textLeft"  style={{}}>Get one-on-one support</h2>
-          <p className=" textLeft" >
-            We assign and provide a centralized account specialists to your Business, providing your company, a single point of contact for your day-to-day deliveries, to ensure you are getting quality, performance, and exceptional customer care. We take a fundamental approach to eliminate wasted time and deliver urgent goods, right when you need them most, providing quality expedited services. To learn more, please follow the link. Register Here 
-          </p>
-        </Grid>
-      </Grid>
-    </div>
-
-</Container>
-
-
+</div>
       </div>
-        <div className="screen screen-4" style={{height:"fit-content" , paddingBottom:'10vh'}}>
-          
-          <div className="top-semicircle semicircle-blue">
-        <h2  className="circle-h2 schedule" style={{textAlign:"center",  padding: "0 20vw"  }}>Reliability! Flexibility! Availability! Scalability!</h2>
+      <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
 
-        </div>
-
-        </div>
+        
       </div>
 
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>

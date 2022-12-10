@@ -90,8 +90,15 @@ function Footer() {
                                 </ul>
                     </Grid>
                 </Grid>
+                <hr style={{color:"white"}}></hr>
+
+            <div style={{color:"white",fontSize:"1.5vw",display:"flex",justifyContent:"center"}}>
+                Copyright 2021 AAA Delivery Service. All Rights Reserved.
+             </div>
             </Container>
+
         </div>
+
     </>
   );
 }

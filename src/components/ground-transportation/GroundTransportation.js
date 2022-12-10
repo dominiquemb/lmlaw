@@ -164,15 +164,26 @@ function SameDayDelivery() {
     We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link. Register Here 
   </p>
 
+  <Grid container>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/ground-images/ground4.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4}>
+        <img  style={{width:"100%"  }} src={require('../../assets/ground-images/ground5.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/ground-images/ground3.png')} alt="Blue Logo" />
+      </Grid>
+
+    </Grid>
+
 </Container>
 
 
       </div>
-      <div className="top-semicircle semicircle-blue" style={{borderRadius:"0px 0px 100% 100%"}}>
-  
-  <h1  className="circle-h2 schedule" style={{padding : " 0 50px" ,  textAlign:"center" }}>Reliability! Safety! Transparency! Visibility! </h1>
+      <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Reliability! Safety! Transparency! Visibility!</h2>
 
-  </div>
+
       </div>
 
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>

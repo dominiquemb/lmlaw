@@ -5,47 +5,37 @@ import Grid from "@mui/material/Grid";
 import FormTextFields from "./Form";
 import BeforeFooter from "../BeforeFooter";
 import home_page_top_right from "../../assets/blue-column.png"
+import OrderTracking from "../order-tracking";
+
+
 
 function SpeakToASpecialist() {
 
  
   return <>
-  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  60%" , marginTop:80 , marginRight:80}}>
-      <Grid container>
-          <Grid item xs={12} md={8} style={{padding:30 , height:"fit-content"}}>
-          <Box  sx={{ display: { xs: 'none', md: 'block', lg: 'block' } }}  >
+  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , marginTop:80 , marginRight:80}}>
+      <Grid container
+>
+          <Grid item 
+                  direction="column"
+                  alignItems="center"
+                  justifyContent="center"
+          xs={12} md={6} style={{padding:30 , height:"fit-content"}}>
 
-            <div style={{
-              background:"#367bdc" , 
-              borderRadius:"50%" , 
-              width:"100%" , 
-              position:"relative",
-              left:"-10vw",
-              aspectRatio:1}}>
-                <div style={{
-                  position:"relative",
-                  top:"20%",
-                  left:"20%",
-                  width:"60%",
-                  right:0,
 
-                }}>
                 <h1  class = "circle-h1" style={{
-                  color:"white",
                   letterSpacing:3,
                   fontWeight:500,
                   textAlign:"center"
                 }}>Ready To Speak To A Specialist?</h1>
                 <p style={{
                   fontWeight:600,
-                  color:"white"
                 }}>
                   Provide us with some basic information so we can learn more about
                   your business delivery needs, so one of our logistics specialists
                   can craft and customize a solution for your business.
                 </p>
 
-                <Box  sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }}  >
 
                 <div  style={{width:"80%" , margin:"auto" , borderWidth:20 , borderRadius:10 }}>
                   <video
@@ -62,15 +52,10 @@ function SpeakToASpecialist() {
 
                   </video>
                 </div>
-              </Box  >
 
-
-               </div>               
-            </div>
-            </Box>
           </Grid>
 
-        <Grid item xs={12} md={4} >
+        <Grid item xs={12} md={6} >
         <div  >
         <div  style={{margin:"10%"}}>
             <FormTextFields />
@@ -254,25 +239,37 @@ function SpeakToASpecialist() {
 
   <div>
 
-<div style={{width:"100%", backgroundColor:"#367bdc" }}>
+  <div style={{width:"100%", backgroundColor:"#367bdc" }}>
   
-<div className="top-semicircle semicircle-white" style={{borderRadius:"0px 0px 100% 100%"}}>
+    <div className="top-semicircle semicircle-white" style={{borderRadius:"0px 0px 100% 100%"}}>
+    </div>
 
-          </div>
-  <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
+    <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
           Our goal is to provide our customers with the utmost reliable, dependable and
           professionalism on every delivery, keeping you focus on your core business.
           Knowing your deliveries are in good hands with AAA.
           <br /><br />
     </div>
-</div>
-  <div className="top-semicircle semicircle-blue" style={{borderRadius:"0px 0px 100% 100%"}}>
-  
-        <h1  className="circle-h2 schedule" style={{padding : " 0 50px" ,  textAlign:"center" }}>Delivery Always On Time! Every Time! No Excuses!</h1>
 
-        </div>
+    <Grid container>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak1.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4}>
+        <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak2.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak3.png')} alt="Blue Logo" />
+      </Grid>
 
-    <BeforeFooter/>
+    </Grid>
+
+  </div>
+
+  <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
+
+
+    <OrderTracking/>
   </div>
 
 

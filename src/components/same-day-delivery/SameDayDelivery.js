@@ -108,7 +108,7 @@ function SameDayDelivery() {
 <Container maxWidth="xl" disableGutters style={{padding:40}}>
 
   
-<h1  style={{ width :"80%", margin:"auto",textAlign:"center",paddingBottom:40 }}>At Home Same-Day Deliveries</h1>
+<h1  style={{ width :"80%", margin:"auto",textAlign:"center",paddingBottom:40 }}>Why Choose AAA?</h1>
 
  
 
@@ -171,6 +171,20 @@ function SameDayDelivery() {
   We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link. Register Here 
 
   </p>
+
+  
+  <Grid container>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/same-day-images/same-day6.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4}>
+        <img  style={{width:"100%"  }} src={require('../../assets/same-day-images/same-day8.png')} alt="Blue Logo" />
+      </Grid>
+      <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
+        <img  style={{width:"100%"  }} src={require('../../assets/same-day-images/same-day7.png')} alt="Blue Logo" />
+      </Grid>
+
+    </Grid>
 
 </Container>
 
