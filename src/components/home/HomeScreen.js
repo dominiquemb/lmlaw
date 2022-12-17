@@ -129,7 +129,7 @@ function HomeScreen() {
         Providing you with:
       </p>
 
-      <div style={{maxWidth:"80vw",margin:"auto"}} >
+      <div style={{maxWidth:"90vw",margin:"auto"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>
@@ -182,7 +182,7 @@ function HomeScreen() {
           </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
+          <div style={{width: '80%'}}>
             <CircleMapPath></CircleMapPath>
            </div>
         </Grid>

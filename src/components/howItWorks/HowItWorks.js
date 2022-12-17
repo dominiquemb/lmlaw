@@ -79,7 +79,7 @@ function HowItWorks() {
   any-device. View signature or photo-based PODs for each order and actual arrival time.
 </p>
 
-<div style={{maxWidth:"80vw",margin:"auto"}} >
+<div style={{maxWidth:"90vw",margin:"auto"}} >
 <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
   <Grid justifyContent="center" item xs={12} md={6} >
     <div style={{width: '100%'}}>

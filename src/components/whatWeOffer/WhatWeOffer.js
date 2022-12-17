@@ -19,7 +19,7 @@ function WhatWeOffer() {
           <Grid item xs={12} lg={6} style={{ marginTop:"5%"}}  >
 
           <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA For Reliable Same-Day Delivery & Courier Service</h1>
-              <h2 className="circle-h2 circle-text" >
+              <h2 className="circle-h2 circle-text" style={{width:"90%",margin:"auto" }}>
                 Knowing your deliveries are safe and in good hands with AAA
               </h2>
             
@@ -142,18 +142,18 @@ function WhatWeOffer() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2">
-          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Why We Stand Out Above The Rest</h1>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Fleet Optimization</h1>
 
           </div>
       </div>
       <p className="subheading content">
-        We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
-        your logistics needs. We have the experiences that makes a difference to your business and your clients. We provide
-        on-demand, reliable same-day delivery & courier service, on time critical transportation to all 48 states nationwide.
-        Providing you with:
+        We understand how time consuming and expensive it is to own, operate, and manage a fleet of vehicles, not to
+        mention, the cost of insurance due to accidents is an expensive undertaking. Partner with AAA, our specialists
+        will take on these responsibilities for you, we can help control cost and save you money without the added
+        stress of managing each delivery and improve inter office productivity.
       </p>
 
-      <div style={{maxWidth:"80vw",margin:"auto"}} >
+      <div style={{maxWidth:"90vw",margin:"auto"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid justifyContent="center" item xs={12} md={6} >
           <div style={{width: '100%'}}>

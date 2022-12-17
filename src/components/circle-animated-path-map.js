@@ -11,7 +11,7 @@ export  default function MapPath(){
     const [status,setStatus] = useState("road-map image" )
     return <>
         <AnimationOnScroll initiallyVisible={true} animateIn="fade" afterAnimatedIn={() => setStatus("road-map image active")}>
-            <svg className= { status } style={{boxShadow:"none"}} width="100%" viewBox="0 0 667 398" xmlns="http://www.w3.org/2000/svg">
+            <svg className= { status } style={{boxShadow:"none"}} width="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <rect id="path-1" x="0" y="0" width="667" height="398" rx="24"></rect>
                                         <filter x="-8.4%" y="-11.6%" width="116.8%" height="128.1%" filterUnits="objectBoundingBox" id="filter-3">
@@ -66,9 +66,9 @@ export  default function MapPath(){
                                         </filter>
                                     </defs>
                                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <image href={require('../assets/circle-background-map.png')} x="0" y="0" height="398" width="667"></image>
+                                        <image href={require('../assets/circle-background-map.png')} x="0" y="0" height="auto" width="100%"></image>
 
-                                        <g id="Artboard" style={{transform:"scale(0.5,0.5)" , transformOrigin:"center"}}>
+                                        <g id="Artboard" style={{transform:"scale(0.6,0.6)" , transformOrigin:"center"}}>
 
                                             <path className="road-map__road" id="road" stroke="url(#linearGradient-5)" stroke-width="7" d="M93,205 L114.838866,246.385673 C119.858626,255.898354 129.731052,261.851405 140.486937,261.851405 L264.192061,261.851405 C273.932649,261.851405 283.02262,256.961343 288.390705,248.833446 L291.779876,243.701852 C297.238581,235.436746 306.538137,230.529329 316.441893,230.687595 L467.862449,233.10736 C479.26753,233.289618 488.777172,241.884263 490.108398,253.212851 C491.380222,264.035925 501.185074,271.778744 512.008148,270.50692 C512.071254,270.499504 512.134325,270.491784 512.197357,270.483759 L580,261.851405 L580,261.851405"></path>
                                             <g id="Group-41" transform="translate(50, 158)">

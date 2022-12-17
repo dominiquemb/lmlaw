@@ -24,10 +24,13 @@ import AboutUs from './components/aboutUs/AboutUs';
 import SameDayDelivery from './components/same-day-delivery/SameDayDelivery';
 import GroundTransportation from './components/ground-transportation/GroundTransportation';
 import Healthcare from './components/healthcare/Healthcare';
+import IndustriesWeServe from './components/industries-we-serve/Industries';
 
 
-const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'}];
-const industries = [{label: 'Healthcare', url: '/healthcare'},{label: 'Freight', url: '/ground-transportation'},{label: 'Same day', url: '/same-day-delivery'}];
+const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'Carrier ', url: '/carrier'}];
+const industries = [{ label: 'Industries', url: '/industries-we-serve'},{ label: 'Healthcare', url: '/healthcare'},{label: 'Freight', url: '/ground-transportation'},{label: 'Same day', url: '/same-day-delivery'}];
+const links = pages.concat(industries)
+
 
 function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -95,7 +98,7 @@ function App() {
               onClose={handleCloseNavMenu}
             >
 
-            {pages.map((page, index) => (
+            {links.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
                 <a style={{ width:"100%"}}href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
               </MenuItem>
@@ -166,12 +169,12 @@ function App() {
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
           <Route path='/what-we-offer' element={<WhatWeOffer />} />
           <Route path='/how-it-works' element={<HowItWorks />} />
-          <Route path='/about-us' element={<AboutUs />} />
+          <Route path='/carrier' element={<AboutUs />} />
           <Route path='/locations' element={<Locations />}></Route>
           <Route path='/same-day-delivery' element={<SameDayDelivery />}></Route>
           <Route path='/ground-transportation' element={<GroundTransportation />}></Route>
           <Route path='/healthcare' element={<Healthcare />}></Route>
-
+          <Route path='/industries-we-serve' element={<IndustriesWeServe/>}></Route>
 
         </Routes>
     </Router>
