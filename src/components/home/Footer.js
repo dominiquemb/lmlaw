@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer" style={{height:"fit-content" , paddingBottom:20}}>
             <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
                 <Grid container spacing={1} alignContent="center">
-                    <Grid item xs={12} sm={12} md = {3} alignItems="center" style={{ padding:10}}>
+                    <Grid item xs={12} sm={12} md = {2.5} alignItems="center" style={{ padding:10}}>
                         
                         <a className="logo" href="https://www.aaadeliveryservice.com/">
                             <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
@@ -24,12 +24,12 @@ function Footer() {
                             <img src={require('../../assets/medical.svg').default}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
                     </Grid>
-                    <Grid item xs={0} sm={0} md={1}  >
+                    <Grid item xs={0} sm={0} md={0.5} sx={{display:{sm:'none',md:'block'}}}  >
                                 <div style={{width:"100%"}}>
                                 </div>
                                
                     </Grid>
-                    <Grid item xs={12} sm={3} md = {2}  >
+                    <Grid item xs={12} sm={6} md = {2}  >
                                 <div className="footer-col-header">
                                     Our services
                                 </div>
@@ -52,7 +52,7 @@ function Footer() {
                                     
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3} md = {2}  >
+                    <Grid item xs={12} sm={6} md = {2}  >
                                 <div className="footer-col-header">
                                     Industries
                                 </div>
@@ -69,7 +69,7 @@ function Footer() {
 
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
+                    <Grid item xs={12} sm={6} md = {2} style={{padding:5}}>
                                 <div className="footer-col-header">
                                 Our Company
                                 </div>
@@ -88,7 +88,7 @@ function Footer() {
                                     </li>
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
+                    <Grid item xs={12} sm={6} md = {3} style={{padding:5}}>
                                 <div className="footer-col-header">
                                     Contact Us
                                 </div>
