@@ -24,7 +24,7 @@ function Footer() {
                             <img src={require('../../assets/medical.svg').default}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
                     </Grid>
-                    <Grid item xs={0} sm={0} md={2}  >
+                    <Grid item xs={0} sm={0} md={1}  >
                                 <div style={{width:"100%"}}>
                                 </div>
                                
@@ -44,8 +44,29 @@ function Footer() {
                                     <a href="/how-it-works">How it works</a>
                                     </li>
                                     <li>
+                                    <a href="/industries-we-serve">Industries</a>
+                                    </li>
+                                    <li>
                                     <a href="/locations">Our locations</a>
                                     </li>
+                                    
+                                </ul>
+                    </Grid>
+                    <Grid item xs={12} sm={3} md = {2}  >
+                                <div className="footer-col-header">
+                                    Industries
+                                </div>
+                                <ul>
+                                    <li>
+                                    <a href="/healthcare">Healthcare</a>
+                                    </li>
+                                    <li>
+                                    <a href="/ground-transportation">Freight</a>
+                                    </li>
+                                    <li>
+                                    <a href="/same-day-delivery">At home</a>
+                                    </li>
+
                                 </ul>
                     </Grid>
                     <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
@@ -67,7 +88,7 @@ function Footer() {
                                     </li>
                                 </ul>
                     </Grid>
-                    <Grid item xs={12} sm={3} md = {3} style={{padding:5}}>
+                    <Grid item xs={12} sm={3} md = {2} style={{padding:5}}>
                                 <div className="footer-col-header">
                                     Contact Us
                                 </div>
