@@ -876,3 +876,67 @@ img{
   height: 100%;
 }
 
+.red-link{
+  color:#dd0000;
+  text-decoration: underline;
+}
+
+#specialist-form input[type=text] {
+  width: 100%;
+  padding: 1vw 0.5vw;
+  margin: 1vw 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  font-size: 1.2vw;
+}
+#specialist-form textarea {
+  width: 100%;
+  padding: 1vw 0.5vw;
+  margin: 1vw 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  font-size: 1.2vw;
+  resize: none;
+}
+#specialist-form label{
+  font-size: 1.2vw;
+  margin: 1vw 0.5vw;
+
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 1vw ;
+  top: 100%;
+  width: max-content;
+  text-align: left;
+  left: 0;
+
+}
+.dropdown-content div a{
+  color: #000;
+
+}
+.dropdown-content div {
+  padding: 0.2vw 0.4vw 0.4vw 0.4vw;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 1vw ;
+  padding: 1vw;
+
+}
+

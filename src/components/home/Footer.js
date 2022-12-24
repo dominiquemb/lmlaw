@@ -93,6 +93,8 @@ function Footer() {
                 <hr style={{color:"white"}}></hr>
 
             <div style={{color:"white",fontSize:"1.5vw",display:"flex",justifyContent:"center"}}>
+            <img src={require('../../assets/planet.png')}  style={{width:"2vw" ,display:"inline-block" }}></img>
+
                 Copyright 2021 AAA Delivery Service. All Rights Reserved.
              </div>
             </Container>

@@ -105,72 +105,32 @@ export default function FormTextFields() {
       style={{backgroundColor:"#8bbafb" , width:"100%" , margin:"auto" , borderWidth:20 , borderStyle:"solid" , borderColor:"#8bbafb" , borderRadius:10 }}
 
     >
-            <div> 
-                       
-                <TextField
-                  fullWidth 
-                  id="first-name"
-                  label="First and last name "
-                  value={firstName}
-                  sx={{ margin: "5px" }}
-                  onChange={(evt) =>
-                    updateValue(setFirstName, evt.target.value)
-                  }
-                />
-              
-              
-              
-                <TextField
-                  fullWidth 
-                  id="email"
-                  label="Email"
-                  sx={{ margin: "5px" }}
-                  value={email}
-                  onChange={(evt) => updateValue(setEmail, evt.target.value)}
-                />
-              
-              
-                <TextField
-                  fullWidth 
-                  id="phone"
-                  label="Phone"
-                  sx={{ margin: "5px" }}
-                  value={phone}
-                  onChange={(evt) => updateValue(setPhone, evt.target.value)}
-                />
-              
-              
-                <TextField
-                  fullWidth 
-                  id="company"
-                  sx={{ margin: "5px" }}
-                  label="Company"
-                  value={company}
-                  onChange={(evt) => updateValue(setCompany, evt.target.value)}
-                />
-              
-              
-                <TextField
-                  fullWidth 
-                  id="address"
-                  label="Full address"
-                  sx={{ margin: "5px" }}
-                  value={address}
-                  onChange={(evt) => updateValue(setAddress, evt.target.value)}
-                />
-              
-              
+            <div id="specialist-form">
 
-                <TextField
-                  fullWidth 
-                  id="message"
-                  sx={{ margin: "5px", marginBottom: "20px" }}
-                  multiline
-                  rows={4}
-                  label="Message"
-                  value={message}
-                  onChange={(evt) => updateValue(setMessage, evt.target.value)}
-                />
+            <input type="text" id="name" name="name" placeholder="First and last name" value={firstName} onChange={(evt) =>
+                    updateValue(setFirstName, evt.target.value)
+                  }></input>
+
+            <input type="text" id="mail" name="mail" placeholder="Email address.." value={email} onChange={(evt) =>
+                    updateValue(setEmail, evt.target.value)
+                  }></input>
+
+            <input type="text" id="phone" name="phone" placeholder="Phone number.." value={phone} onChange={(evt) =>
+                    updateValue(setPhone, evt.target.value)
+                  }></input>
+
+            <input type="text" id="company" name="firstname" placeholder="Company name .." value={company} onChange={(evt) =>
+                    updateValue(setCompany, evt.target.value)
+                  }></input>
+                  
+            <input type="text" id="fname" name="addr" placeholder="Full address.." value={address} onChange={(evt) =>
+                    updateValue(setAddress, evt.target.value)
+                  }></input>
+            <textarea type="text"  rows="5" id="fname" name="msg" placeholder="Message.." value={message} onChange={(evt) =>
+                    updateValue(setMessage, evt.target.value)
+                  }></textarea>
+
+              
                 <CustomizedSnackbars/>
             </div>
     </Box>

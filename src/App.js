@@ -120,34 +120,17 @@ function App() {
             ))}
 
             <Box>
-              <Button
-                  onClick={handleOpenUserMenu}
-                  sx={{ my: 2, color: '#090B27', display: 'block' }}
+              <Button className="dropdown"
+                  sx={{ my: 2, color: '#090B27' }}
                 >
                   Industries
-                </Button>
-              <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {industries.map((page, index) => (
-                  <MenuItem key={index} onClick={handleCloseUserMenu}>
-                    <a href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
-                  </MenuItem>
+                <div className="dropdown-content">
+              {industries.map((page, index) => (
+                    <div><a href={page.url}>{page.label}</a></div>
                 ))}
-              </Menu> 
+                </div>
+                </Button>
+
             </Box>
 
 

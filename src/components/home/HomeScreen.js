@@ -125,7 +125,7 @@ function HomeScreen() {
       <p className="subheading content">
         We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
         your logistics needs. We have the experiences that makes a difference to your business and your clients. We provide
-        on-demand, reliable same-day delivery & courier service, on time critical transportation to all 48 states nationwide.
+        on-demand, reliable same-day delivery & courier service, on time critical transportation to <a className='red-link' href='/locations'>all 48 states nationwide.</a>
         Providing you with:
       </p>
 
