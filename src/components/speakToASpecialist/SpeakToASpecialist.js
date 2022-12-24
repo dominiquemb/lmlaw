@@ -161,10 +161,10 @@ function SpeakToASpecialist() {
       </div>
   </div>
 
-  <div className="screen screen-2" style={{height:"fit-content"}}>
+  <div className="screen screen-2" style={{height:"fit-content",marginBottom:"3vw"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"black" }}>Why choose Us</h1>
+          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"black"  }}>Why choose Us</h1>
 
           </div>
       </div>
