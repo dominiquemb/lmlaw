@@ -175,7 +175,7 @@ function WhatWeOffer() {
             company, so we can continuously augment your fleet. Our team of specialists
             and fleet are ready to help you ramp up your operations and make deliveries
             as needed, so you can meet the growing demands of your business. To learn
-            more, please follow the link. Register Here.
+            more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>.
           </p>
         </Grid>
       </Grid>
@@ -188,7 +188,7 @@ function WhatWeOffer() {
             provides you with advanced technology. live tracking, proof of delivery, and the
             fastest, reliable delivery option in the industry. Giving you more time to focus
             on the things that matters most for your business. . To learn more, please
-            follow the link. Get Started
+            follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started</a>
           </p>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >
@@ -225,7 +225,7 @@ function WhatWeOffer() {
             minute-to-minute operational delivery needs. We provide you with upfront pricing,
             accurate ETA on every pickup and delivery, real-time package tracking and instant
             delivery confirmation, based on your preference. To learn more, please follow the
-            link. Register Here.
+            link.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>.
           </p>
         </Grid>
       </Grid>
@@ -238,7 +238,7 @@ function WhatWeOffer() {
             requirements of your customers. Simply place and track orders all in one central
             hub, reduce costs, save money, and improve inter office productivity, knowing your
             deliveries are safe and well cared for with AAA, Providing you peace of mind. To
-            learn more, please follow the link. Get Started.
+            learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started</a>.
           </p>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >
@@ -256,7 +256,7 @@ function WhatWeOffer() {
       </Grid>
       <p className="subheading content">
         We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-        when, our team of specialists are always available to assist you. To learn more. Register Here
+        when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
       </p>
 
     </div>

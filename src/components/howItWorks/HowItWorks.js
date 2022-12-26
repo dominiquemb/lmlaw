@@ -99,7 +99,7 @@ function HowItWorks() {
       Professionalism on every delivery, with our fully vetted couriers by
       uniform, identification badges and marked vehicles. Pickup and
       delivery confirmation in real-time. Delivery always on time, no
-      excuses. To learn more, please follow the link. Register Here.
+      excuses. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
     </p>
   </Grid>
 </Grid>
@@ -110,7 +110,7 @@ function HowItWorks() {
       Visibility on every pick-up and delivery, GPS tracking in real-time, on
       a live map through the entire process. Automatic order alerts and
       updates via text or email, PODs for each order and actual arrival
-      time. To learn more, please follow the link. Get Started.
+      time. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -138,7 +138,7 @@ function HowItWorks() {
     <p className=" textLeft" >
       API / EDI integrations,. In-depth order tracking, signature or photo-based
       PODs capture for each order. Customize how you receive order
-      confirmation. To learn more, please follow the link. Register Here.
+      confirmation. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
     </p>
   </Grid>
 </Grid>
@@ -149,7 +149,7 @@ function HowItWorks() {
       Let us know how we are doing, because we are committed to continue
       being the leading logistics solutions provider to our customers. Constantly
       improving & implementing quality management to achieve it. To learn
-      more, please follow the link. Get Started.
+      more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -167,7 +167,7 @@ function HowItWorks() {
 </Grid>
 <p className="subheading content">
   We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-  when, our team of specialists are always available to assist you. To learn more. Register Here
+  when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
 </p>
 
 </div>

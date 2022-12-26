@@ -88,6 +88,8 @@ function SameDayDelivery() {
 
 
 <div style={{maxWidth:"90vw",margin:"auto"}} >
+<h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Why Choose AAA?</h2>
+
 <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
   <Grid justifyContent="center" item xs={12} md={6} >
     <div style={{width: '100%'}}>
@@ -110,8 +112,7 @@ function SameDayDelivery() {
       and frozen specimens. Our Couriers are in compliant with HIPPA guidelines and
       OSHA certified. Our couriers are equipped with Bio-hazardous coolers for ambient,
       refrigerated, and frozen specimens, spill kits, barcode scanner, GPS, mobile data
-      units, and identification badges. Learn More.
-    </p>
+      units, and identification badges.  <a className='red-link' href='/how-it-works'>Learn more.</a>    </p>
   </Grid>
 </Grid>
 <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
@@ -123,7 +124,7 @@ function SameDayDelivery() {
     transported, with our fleet and extensive network, we can tailor a solution around
     your needs. We strengthen communities and enhance lives by delivering the things
     that matter, providing you with responsive, flexible service keeping you focused on
-    your core business. To learn more, please follow the link. Speak To A Specialist.
+    your core business. To learn more, please follow the link. <a className='red-link' href='/speak-to-a-specialist'>Speak To A Specialist.</a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -160,7 +161,7 @@ function SameDayDelivery() {
       and increase customer convenience through our same-day delivery services. We
       strengthen communities and enhance lives by delivering the things that matter.
       Providing faster, safer, on-time, deliveries from door-to-door, across town or across
-      the country. What We Offer.
+      the country.  <a className='red-link' href='/what-we-offer'> What We Offer.</a>
     </p>
   </Grid>
 </Grid>
@@ -174,7 +175,7 @@ function SameDayDelivery() {
       getting quality, performance, and exceptional customer care. We take a
       fundamental approach to eliminate wasted time and deliver urgent goods, right
       when you need them most, providing you peace of mind. To learn more, please
-      follow the link. Get Started.
+      follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started. </a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -192,7 +193,7 @@ function SameDayDelivery() {
 </Grid>
 <p className="subheading content">
   We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-  when, our team of specialists are always available to assist you. To learn more. Register Here
+  when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
 </p>
 
 </div>

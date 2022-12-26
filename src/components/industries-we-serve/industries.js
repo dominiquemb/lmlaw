@@ -34,6 +34,7 @@ function IndustriesWeServe() {
         </Grid>
 
       </Grid>
+      <h1  className="circle-h2 schedule big-title" style={{textAlign:"center"  }}>Time Critical Specialists</h1>
 
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
 
@@ -46,7 +47,7 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={require('../../assets/industries-we-serve/industries1.png')} alt="delivery signature" />
 
-            <h2 className="centered">Medical Laboratories</h2>
+            <a href="/same-day" class="black-link"><h2 className="centered">At Home</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >
@@ -57,7 +58,7 @@ function IndustriesWeServe() {
             width:"80%",
             margin:"4vh auto"
            }} src={require('../../assets/industries-we-serve/industries2.png')} alt="delivery signature" />
-            <h2 className="centered">Hospitals & Health Systems</h2>
+            <a href="/healthcare" class="black-link"><h2 className="centered">Healthcare</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >
@@ -69,11 +70,11 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={require('../../assets/industries-we-serve/industries3.png')} alt="delivery signature" />
 
-            <h2 className="centered">Pharmacies</h2>
+            <a href="/ground-transportation" class="black-link"><h2 className="centered">Freight</h2></a>
 
            </div>
         </Grid>
-
+        
       </Grid>
 
 
@@ -114,7 +115,7 @@ function IndustriesWeServe() {
       Every day, we provide our customers with a full spectrum of quality same-day delivery
       services, where packages reach its destination in a fraction of time. We partner with
       hundreds of couriers available all over the United States to deliver fast, safely, and
-      efficiently, regardless of where points A and B might be. What We Offer.
+      efficiently, regardless of where points A and B might be.  <a className='red-link' href='/what-we-offer'>What we offer.</a>
     </p>
   </Grid>
 </Grid>
@@ -127,7 +128,7 @@ function IndustriesWeServe() {
       the entire prosses, by gaining visibility over the shipments journey. Our team of
       specialists are ready to help you ramp up your operations, so you can meet the
       growing demands of your business, propelling your same-day capabilities
-      forward. How It Works.
+      forward.  <a className='red-link' href='/how-it-works'>How It Works.</a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -164,14 +165,14 @@ function IndustriesWeServe() {
       a single point of contact for your day-to-day delivery needs, to ensure you are
       getting quality, performance, and exceptional customer care. We take a
       fundamental approach to eliminate wasted time and deliver urgent goods, right
-      when you need them most, providing you peace of mind. To learn more, please follow the link. Get Started.
+      when you need them most, providing you peace of mind. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
     </p>
   </Grid>
 </Grid>
 
 <p className="subheading content">
   We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-  when, our team of specialists are always available to assist you. To learn more. Register Here
+  when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
 </p>
 
 </div>

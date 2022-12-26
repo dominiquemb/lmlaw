@@ -49,7 +49,7 @@ function SameDayDelivery() {
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}} order={{ xs: 1 , sm: 2 }} >
           <h2 className=" circle-text textLeft "  style={{}}>On-Demand Delivery</h2>
           <p className="textLeft" >
-            We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. Click Here 
+            We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. <a className='red-link' href='/how-it-works'>Click Here.</a> 
           </p>
         </Grid>
 
@@ -90,7 +90,14 @@ function SameDayDelivery() {
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  order={{ xs: 1, sm: 2 }} >
           <h2 className=" circle-text textLeft"  style={{}}>Get one-on-one support</h2>
           <p className=" textLeft" >
-            We assign and provide a centralized account specialists to your Business, providing your company, a single point of contact for your day-to-day deliveries, to ensure you are getting quality, performance, and exceptional customer care. We take a fundamental approach to eliminate wasted time and deliver urgent goods, right when you need them most, providing quality expedited services. To learn more, please follow the link. Register Here 
+            We assign and provide a centralized account specialists 
+            to your Business, providing your company, a single point 
+            of contact for your day-to-day deliveries, to ensure you 
+            are getting quality, performance, and exceptional customer 
+            care. We take a fundamental approach to eliminate wasted time 
+            and deliver urgent goods, right when you need them most, providing 
+            quality expedited services. To learn more, please follow the link.  
+            <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
           </p>
         </Grid>
       </Grid>
@@ -129,7 +136,7 @@ function SameDayDelivery() {
       </Grid>
       <Grid container className="" style={{margin:"auto"}} >
         <Grid item xs={2} md={2}>
-          <img  style={{width:"60%"}} src={require('../../assets/head-images/head2.png')} alt="Blue Logo" />
+          <img  style={{width:"60%"}} src={require('../../assets/head-images/head3.png')} alt="Blue Logo" />
         </Grid>
         <Grid item xs={10} md={10}>
           <h2>Our Technology</h2>
@@ -143,7 +150,7 @@ function SameDayDelivery() {
  
  <Grid container className="" style={{margin:"auto"}} >
    <Grid item xs={2} md={2}>
-   <img  style={{width:"60%"}} src={require('../../assets/head-images/head3.png')} alt="Blue Logo" />
+   <img  style={{width:"60%"}} src={require('../../assets/head-images/head2.png')} alt="Blue Logo" />
    </Grid>
    <Grid item xs={10} md={10}>
      <h2>Dedicated Couriers</h2>
@@ -159,7 +166,15 @@ function SameDayDelivery() {
    <Grid item xs={10} md={10}>
      <h2>Our Portal</h2>
      <div className="content textLeft" >
-       Our online portal is easy and convenient to use, seamlessly place and track orders all in one central hub. Schedule and customize a pickup from anywhere with accurate ETA, available from any-device. Get the visibility and insights you need with order tracking and reporting functionality. Auto-verified addresses to ensure delivery accuracy. Piece-level and invoice reference tracking and detailed notes available. View signature or photo-based PODs for each order and actual arrival time. Online Portal
+       Our online portal is easy and convenient to use, 
+       seamlessly place and track orders all in one central hub. 
+       Schedule and customize a pickup from anywhere with accurate ETA, 
+       available from any-device. Get the visibility and insights you need 
+       with order tracking and reporting functionality. 
+       Auto-verified addresses to ensure delivery accuracy. 
+       Piece-level and invoice reference tracking and detailed notes available. 
+       View signature or photo-based PODs for each order and actual arrival time. 
+       <a className='red-link' href='/speak-to-a-specialist'> Online Portal .</a>
      </div>
    </Grid>
  </Grid>
@@ -168,7 +183,7 @@ function SameDayDelivery() {
   </Grid>
 
   <p className="content" style={{marin:"auto",width:"70%"}}>
-  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link. Register Here 
+  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
 
   </p>
 

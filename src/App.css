@@ -714,8 +714,9 @@ ul li {
       padding: 0;
       font-size: 1.6em;
   }
+
   .top-semicircle  h2 {
-    padding: 0px 30px;
+    padding: 0px 50px;
 
 }
 
@@ -802,7 +803,7 @@ img{
     font-size:1.8vw;
   }
   .home{
-    margin-top: 3vh;
+    margin-top: 9vh;
   }
   button{
     font-size: 1vw !important;
@@ -940,3 +941,12 @@ img{
 
 }
 
+.black-link h2{
+  color: black;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #357ADC;
+  padding: 1vw 3vw;
+  border-radius:  3vw;
+  border-width: 0.1vw;
+}

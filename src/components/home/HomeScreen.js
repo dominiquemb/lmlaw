@@ -210,7 +210,7 @@ function HomeScreen() {
             getting quality, performance, and exceptional customer care. We take a
             fundamental approach to eliminate wasted time and deliver urgent goods, right
             when you need them most, providing you peace of mind. To learn more, please
-            follow the link. Register Here.
+            follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
           </p>
         </Grid>
       </Grid>
@@ -223,7 +223,7 @@ function HomeScreen() {
             operations, so you can meet the growing demands of your business. Partner with
             us, let us become an extension of your company. We can help control cost and save
             you money, by supplementing or replacing your fleet with AAA fleet replacement,
-            propelling your same-day delivery capabilities forward. Get Started.
+            propelling your same-day delivery capabilities forward.<a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
           </p>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >
@@ -241,7 +241,7 @@ function HomeScreen() {
       </Grid>
       <p className="subheading content">
         We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-        when, our team of specialists are always available to assist you. To learn more. Register Here
+        when, our team of specialists are always available to assist you. To learn more. <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
       </p>
 
     </div>
