@@ -3,15 +3,24 @@ import Grid from "@mui/material/Grid";
 import AnimationOnScroll from 'react-animate-on-scroll';
 import "../assets/animate.css";
 import Box from "@mui/material/Box";
-import { useState } from "react";
+import { useState , useEffect ,useRef} from "react";
 import '../assets/animate-path.css'
 
 
-export  default function MapPath(){
-    const [status,setStatus] = useState("road-map image" )
+
+
+export   function MapPath(){
+
+
+    const [start,setStart] = useState(false)
+    const delay = "3s"
+ 
+
+
+
     return <>
-        <AnimationOnScroll initiallyVisible={true} animateIn="fade" afterAnimatedIn={() => setStatus("road-map image active")}>
-            <svg className= { status } width="100%" viewBox="0 0 667 398" xmlns="http://www.w3.org/2000/svg">
+        <AnimationOnScroll initiallyVisible={true} animateIn="fade" afterAnimatedIn={() => setStart(true) }>
+            <svg className= { start ? "road-map image active" : "road-map image" } width="100%" viewBox="0 0 667 398" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <rect id="path-1" x="0" y="0" width="667" height="398" rx="24"></rect>
                                         <filter x="-8.4%" y="-11.6%" width="116.8%" height="128.1%" filterUnits="objectBoundingBox" id="filter-3">
@@ -82,6 +91,10 @@ export  default function MapPath(){
                                                     </text>
                                                 </g>
                                             </g>
+                                            <animateMotion id="motionTrack" xlinkHref="#Group-41" dur="12s"  begin="0" fill="remove" keyPoints="1;0" keyTimes="0;1" repeatCount="1">
+                                                <mpath xlinkHref="#road"></mpath>
+                                            </animateMotion>
+
                                             <g id="Group-37" transform="translate(545, 214)">
                                                 <g className="road-map__tooltip-delivery">
                                                     <g id="Rectangle">
@@ -107,12 +120,11 @@ export  default function MapPath(){
                                                 <circle stroke="#FFFFFF" stroke-width="3" fill="#09B4AF" fill-rule="evenodd" cx="588" cy="259" r="10"></circle>
                                             </g>
 
-                                            <animateMotion id="motionTrackTooltip" href="#track-tooltip" dur="7s" begin="indefinite" fill="remove" keyPoints="1;0" keyTimes="0;1" repeatCount="1">
-                                                <mpath href="#road"></mpath>
-                                            </animateMotion>
+                                         
+
 
                                             <g id="track-tooltip" className="road-map__track-tooltip">
-                                                <g transform="translate(-82, -119)">
+                                                <g >
                                                     <use fill="black" fill-opacity="1" filter="url(#filter-17)" href="#path-16"></use>
                                                     <use fill="#FFFFFF" fill-rule="evenodd" href="#path-16"></use>
                                                     <text fill="#2C2C2C">
@@ -136,12 +148,10 @@ export  default function MapPath(){
                                                 </g>
                                             </g>
 
-                                            <animateMotion id="motionTrack" href="#track" dur="7s" begin="indefinite" fill="remove" keyPoints="1;0" keyTimes="0;1" repeatCount="1">
-                                                <mpath href="#road"></mpath>
-                                            </animateMotion>
+
 
                                             <g id="track" className="road-map__track">
-                                                <g transform="translate(-20, -20)">
+                                                <g>
                                                     <use fill="black" fill-opacity="1" filter="url(#filter-15)" href="#path-14"></use>
                                                     <use stroke="#03A4C9" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" href="#path-14"></use>
                                                     <path d="M30.7123847,19.2776021 C30.7065212,19.2136011 30.6893467,19.1511485 30.6616601,19.0931489 C30.6561265,19.0820817 30.6616601,19.06917 30.6515152,19.0581028 L28.8309618,16.0247694 C28.5378181,15.5376116 28.0115045,15.2389592 27.4429513,15.2371542 L23.7538867,15.2371542 L23.7538867,14.6837945 C23.7518535,13.2020587 22.5509063,12.0015241 21.06917,12 L12.0180501,12 C10.5348745,12.0015269 9.33333333,13.2043072 9.33333333,14.6874835 L9.33333333,25.2575758 C9.33333333,25.4043359 9.39163356,25.5450851 9.49540863,25.6488601 C9.5991837,25.7526352 9.7399329,25.8109354 9.88669302,25.8109354 L11.6039526,25.8109354 C11.8628477,26.9797763 12.899207,27.8117028 14.0963768,27.8117028 C15.2935466,27.8117028 16.3299059,26.9797763 16.5888011,25.8109354 L24.1956522,25.8109354 C24.4568819,26.9763341 25.491453,27.8046736 26.6857708,27.8046736 C27.8800885,27.8046736 28.9146596,26.9763341 29.1758893,25.8109354 L30.1765481,25.8109354 C30.3233082,25.8109354 30.4640574,25.7526352 30.5678325,25.6488601 C30.6716075,25.5450851 30.7299078,25.4043359 30.7299078,25.2575758 L30.7299078,19.3550725 C30.725998,19.3288498 30.7201408,19.3029547 30.7123847,19.2776021 Z M15.5457181,25.2631094 C15.5416507,26.0435161 14.9067844,26.6734386 14.1263697,26.6714099 C13.345955,26.6693713 12.7143802,26.0361486 12.7143802,25.2557312 C12.7143802,24.4753139 13.345955,23.8420912 14.1263697,23.8400526 C14.9067844,23.8380238 15.5416507,24.4679463 15.5457181,25.2483531 L15.5457181,25.2566535 L15.5457181,25.2631094 Z M22.6471673,15.7905138 L22.6471673,24.7042161 L16.5906456,24.7042161 C16.3333116,23.5329066 15.295621,22.6984461 14.0963768,22.6984461 C12.8971326,22.6984461 11.859442,23.5329066 11.602108,24.7042161 L10.4400527,24.7042161 L10.4400527,14.6874835 C10.4410691,13.8169104 11.1465546,13.1114249 12.0171278,13.1104084 L21.072859,13.1104084 C21.9434322,13.1114249 22.6489177,13.8169104 22.6499341,14.6874835 L22.6471673,15.7905138 Z M23.7538867,16.3438735 L27.4429513,16.3438735 C27.6227345,16.344497 27.7891591,16.4388975 27.8819499,16.5928854 L29.198946,18.7897233 L23.7575758,18.7897233 L23.7538867,16.3438735 Z M26.6839262,26.7055336 C25.8859534,26.7024913 25.2402513,26.055553 25.2387352,25.2575758 L25.2387352,25.2575758 C25.2392445,24.4569923 25.8885684,23.8083563 26.689152,23.8086956 C27.4897356,23.8090352 28.1385092,24.4582216 28.1383396,25.2588053 C28.1381699,26.0593889 27.4891212,26.7083004 26.6885375,26.7083004 L26.6839262,26.7055336 Z M29.6231884,24.7042161 L29.1888011,24.7042161 C28.929684,23.5334975 27.8917389,22.7001631 26.6926877,22.7001631 C25.4936366,22.7001631 24.4556915,23.5334975 24.1965744,24.7042161 L23.7575758,24.7042161 L23.7575758,19.9001318 L29.6231884,19.9001318 L29.6231884,24.7042161 Z" id="Shape" stroke="#00A8CD" stroke-width="0.5" fill="#04A5C9"></path>
@@ -150,6 +160,19 @@ export  default function MapPath(){
                                         </g>
                                     </g>
             </svg>
+
+          
+
         </AnimationOnScroll>
 </>
+}
+
+export default function VideoMapPath(){
+    return <>
+                <video   autoPlay loop  muted style={{borderRadius:"5%"  , width:"100%"  }}>
+                <source src={require('../assets/map.mp4')}  type="video/mp4" />
+
+                        Your browser does not support the video tag.
+            </video>
+    </>
 }
