@@ -9,7 +9,7 @@ function SameDayDelivery() {
 
   return (
     <>
-    <div style={{ marginTop:"5%",padding:"0 5vw"}} >
+    <div style={{ marginTop:"5%",padding:"0 5vw", paddingBottom:"10vh"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={7} style={{ marginTop:"5%"}}  >
           <h1 className="circle-h1  textLeft big-title"  >Ground Transportation</h1>
