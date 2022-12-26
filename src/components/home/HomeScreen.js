@@ -14,7 +14,7 @@ function HomeScreen() {
     <>
     <div className="home">
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
-          <Grid item xs={12} lg={6} style={{ marginTop:"5%" , paddingLeft:"5%",paddingRight:"5%"}}  >
+          <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
           <h1 className="circle-h1 circle-text"  >
                 Reliable Same-Day Delivery & Courier Service 
