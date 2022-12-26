@@ -164,7 +164,7 @@ function SpeakToASpecialist() {
   <div className="screen screen-2" style={{height:"fit-content",marginBottom:"3vw"}}>
   <div className="top-semicircle semicircle-white">
           <div className="circle-h2" >
-          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"black"  }}>Why choose Us</h1>
+          <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , color:"black"  }}>Why choose AAA?</h1>
 
           </div>
       </div>
@@ -251,15 +251,20 @@ function SpeakToASpecialist() {
           <br /><br />
     </div>
 
-    <Grid container>
+    <Grid container className="screen-3">
       <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
         <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak1.png')} alt="Blue Logo" />
+        <h2 className="centered" >Medical Laboratories</h2>
       </Grid>
       <Grid item xs={12} md={4}>
         <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak2.png')} alt="Blue Logo" />
+        <h2 className="centered" >Hospitals & Health Systems</h2>
+
       </Grid>
       <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
         <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak3.png')} alt="Blue Logo" />
+        <h2 className="centered" >Pharmacies</h2>
+
       </Grid>
 
     </Grid>
