@@ -96,8 +96,7 @@ function SameDayDelivery() {
             are getting quality, performance, and exceptional customer 
             care. We take a fundamental approach to eliminate wasted time 
             and deliver urgent goods, right when you need them most, providing 
-            quality expedited services. To learn more, please follow the link.  
-            <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
+            quality expedited services. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
           </p>
         </Grid>
       </Grid>
