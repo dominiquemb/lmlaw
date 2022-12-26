@@ -5,12 +5,14 @@ import "../assets/animate.css";
 import Box from "@mui/material/Box";
 import { useState } from "react";
 import '../assets/animate-path.css'
+import circle_map_image from '../assets/circle-background-map.png';
+
 
 
 export  default function MapPath(){
     const [status,setStatus] = useState("road-map image" )
     return <>
-        <AnimationOnScroll initiallyVisible={true} animateIn="fade" afterAnimatedIn={() => setStatus("road-map image active")}>
+        <AnimationOnScroll style={{   backgroundImage: `url(${circle_map_image})`  , backgroundSize: "100%", backgroundRepeat: "no-repeat"}} initiallyVisible={true} animateIn="fade" afterAnimatedIn={() => setStatus("road-map image active")}>
             <svg className= { status } style={{boxShadow:"none"}} width="100%" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <rect id="path-1" x="0" y="0" width="667" height="398" rx="24"></rect>
@@ -66,7 +68,6 @@ export  default function MapPath(){
                                         </filter>
                                     </defs>
                                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <image href={require('../assets/circle-background-map.png')} x="0" y="0" height="auto" width="100%"></image>
 
                                         <g id="Artboard" style={{transform:"scale(0.6,0.6)" , transformOrigin:"center"}}>
 
