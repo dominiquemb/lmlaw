@@ -24,7 +24,7 @@ import AboutUs from './components/aboutUs/AboutUs';
 import SameDayDelivery from './components/same-day-delivery/SameDayDelivery';
 import GroundTransportation from './components/ground-transportation/GroundTransportation';
 import Healthcare from './components/healthcare/Healthcare';
-import IndustriesWeServe from './components/industries-we-serve/Industries';
+import IndustriesWeServe from './components/industries-we-serve/industries';
 
 
 const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'Carrier ', url: '/carrier'}];
