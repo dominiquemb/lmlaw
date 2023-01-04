@@ -137,8 +137,10 @@ function HowItWorks() {
     <h2 class="  textLeft">Customize Your Order Confirmation</h2>
     <p className=" textLeft" >
       API / EDI integrations,. In-depth order tracking, signature or photo-based
-      PODs capture for each order. Customize how you receive order
-      confirmation. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
+      PODs capture for each order. Auto-verified addresses to ensure delivery
+      accuracy. Piece-level and invoice reference tracking and detailed notes
+      available. Customize how you receive order confirmation. To learn more,
+      please follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
     </p>
   </Grid>
 </Grid>
@@ -146,10 +148,10 @@ function HowItWorks() {
   <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
     <h2 className="  textLeft"  style={{}}>Rate Your Experience</h2>
     <p className=" textLeft" >
-      Let us know how we are doing, because we are committed to continue
-      being the leading logistics solutions provider to our customers. Constantly
-      improving & implementing quality management to achieve it. To learn
-      more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
+    Let us know how we are doing, because we are committed to continue
+    being the leading logistics solutions provider to our customers. We are
+    constantly improving and implementing customized solutions alongside
+    quality management to achieve it. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
     </p>
   </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
@@ -200,7 +202,7 @@ function HowItWorks() {
 
   
 </div>
-<h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
+<h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Transparency! Visibility! Safety! Professionalism!</h2>
 
 
 <div className="screen screen-4" style={{height:"fit-content"}}>

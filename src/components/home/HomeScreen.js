@@ -21,7 +21,7 @@ function HomeScreen() {
 	            </h1>
 
               <h4 className="circle-h4 circle-text">
-                Deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
+                At AAA, we deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
               </h4>
 
               
@@ -48,10 +48,11 @@ function HomeScreen() {
 
 
       <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
-      <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Guaranteed On-Time Delivery. Custom Logistics. Indispensable Service.</h1>
+      <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Guaranteed On-Time Delivery. Custom Logistics. Shipping Nationwide.</h1>
 
         <p className="subheading content">
-          We understand every business is different and can change from day-to-day, that’s why we customize our logistics to fit and adapt to your business needs.
+        We understand every business is different and can change from day-to-day, minute-to-minute, which is why 
+        we customize our logistics to fit and adapt to your business needs.
         </p>
 
         <Grid container>
@@ -64,10 +65,13 @@ function HomeScreen() {
                 Reliability
               </div>
               <div className="content textLeft">
-                We provide on-demand, reliable same-day delivery service, delivering medical specimens,
-                supplies, interoffice mail, and x-rays. Our drivers are in compliant with HIPPA guidelines
-                and OSHA certified. Providing on-the-ground insights, streamlined PODs, tracking in real-time,
-                 geofencing to ensure driver is at delivery location. <bold className="bold-inline">“You See What We See”</bold>.
+                We provide on-demand, same-day delivery services, delivering
+                medical supplies, medical devices, health care equipment, 
+                prescription medications, x-rays, or any other exclusive 
+                equipment needed. Our drivers are in compliant with FMCSA, 
+                TSA, HIPAA regulations and OSHA certified. Providing on-the-ground 
+                insights, streamlined PODs, tracking in real-time, and geofencing to 
+                ensure driver is at delivery location. <bold className="bold-inline">“You See What We See”</bold>.
               </div>
               <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
@@ -97,12 +101,13 @@ function HomeScreen() {
                 Transparency
               </div>
               <div className="content textLeft" >
-                We blend advanced technologies with a network of carriers to
-                move your freight-simply and reliably. Put the power of AAA
-                behind your shipments, with a partner that’s here to meet the
-                demands of today, and help you navigate the road ahead.
-                We’re always there to help you propel your capabilities
-                forward. <bold className="bold-inline">“Learn why so many companies choose AAA”.</bold>
+                We blend advanced technologies with a network of 
+                carriers to move your packages or freight-simply 
+                and reliably. Put the power of AAA behind your 
+                shipments and deliveries, with a partner that’s here 
+                to meet the demands of today, and help you navigate the 
+                road ahead. We’re always there to help you propel your 
+                same-day delivery capabilities forward. <bold className="bold-inline"> “Learn why so many companies choose AAA”.</bold>
               </div>
               <div className="column-footer" style={{marginBottom:150}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
@@ -123,10 +128,10 @@ function HomeScreen() {
           </div>
       </div>
       <p className="subheading content">
-        We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet
-        your logistics needs. We have the experiences that makes a difference to your business and your clients. We provide
-        on-demand, reliable same-day delivery & courier service, on time critical transportation to <a className='red-link' href='/locations'>all 48 states nationwide.</a>
-        Providing you with:
+        We have the couriers, the vehicles, and technology alongside our massive fleet and 
+        partner carrier network to meet your logistics needs. We have the experiences that makes 
+        a difference to your business and your clients. We provide on-demand, reliable same-day 
+        delivery & courier service, on time critical transportation to <a className='red-link' href='/locations'>all 48 states nationwide.</a> Providing you with:
       </p>
 
       <div style={{maxWidth:"90vw",margin:"auto"}} >
@@ -164,21 +169,20 @@ function HomeScreen() {
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
           <div className="content checked">
-            <ul>
-              <li> Reliability, experience, delivery always on time, no excuses</li>
-              <li>
-                Order tracking & geofencing in real-time dashboard
-              </li>
-              <li>
-                On-demand, and same-day door-to-door delivery
-              </li>
-              <li>
-                Dependable service you can always count on
-              </li>
-              <li>
-                 Customer support around the clock 24/7/365
-              </li>
-            </ul>
+          <ul>
+                      <li> Dedicated, fully vetted couriers by uniform</li>
+                      <li>
+                        Custom logistics to fit and adapt to your business
+                      </li>
+                      <li>
+                        Professionalism on every delivery
+                      </li>
+                      <li>
+                        Transparency and visibility into every single shipment
+                      </li>
+                      <li>Custom notification of package delivery status, based on your preference</li>
+                    </ul>
+
           </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >
@@ -223,7 +227,7 @@ function HomeScreen() {
             operations, so you can meet the growing demands of your business. Partner with
             us, let us become an extension of your company. We can help control cost and save
             you money, by supplementing or replacing your fleet with AAA fleet replacement,
-            propelling your same-day delivery capabilities forward.<a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
+            propelling your same-day delivery capabilities forward. <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
           </p>
         </Grid>
         <Grid justifyContent="center" item xs={12} md={6} >

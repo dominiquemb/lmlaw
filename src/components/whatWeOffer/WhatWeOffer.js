@@ -81,6 +81,9 @@ function WhatWeOffer() {
                       <li>
                         Schedule a pickup, available from anywhere with any-device
                       </li>
+                      <li>
+                        Custom notification of package delivery status
+                      </li>
                     </ul>
               </div>
 

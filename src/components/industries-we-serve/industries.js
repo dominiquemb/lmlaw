@@ -121,16 +121,30 @@ function IndustriesWeServe() {
 </Grid>
 <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
 <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-    <h2 class="  textLeft">How It Works</h2>
+    <h2 class="  textLeft">Scalability</h2>
     <p className=" textLeft" >
-      Contact us to discuss your needs, review options and provide feedback. Get your
-      custom solutions, track your shipments and deliveries in real-time throughout
-      the entire prosses, by gaining visibility over the shipments journey. Our team of
-      specialists are ready to help you ramp up your operations, so you can meet the
-      growing demands of your business, propelling your same-day capabilities
-      forward.  <a className='red-link' href='/how-it-works'>How It Works.</a>
+      Our national presence, alongside our massive fleet and partner carrier network, 
+      allows you to grow your business without the added stress, extra restrictions or 
+      capital expenses associated with smaller or in-house fleet. We actively apply our 
+      combined 100+ years of experiences and advanced technologies to create a custom, 
+      optimized, and cost-efficient courier model to improve your company and support growth. 
+      To learn more, please follow the link. <a className='red-link' href='/about-us'>Learn more.</a>
     </p>
   </Grid>
+  <Grid justifyContent="center" item xs={12} md={6} >
+    <div style={{width: '100%'}}>
+
+    <img style={{
+    display:'block',
+    width:"80%",
+    margin:"auto"
+    }} src={require('../../assets/industries-we-serve/industries9.png')} alt="delivery signature" />
+
+    </div>
+  </Grid>
+
+</Grid>
+<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
   <Grid justifyContent="center" item xs={12} md={6} >
     <div style={{width: '100%'}}>
 
@@ -142,9 +156,33 @@ function IndustriesWeServe() {
 
     </div>
   </Grid>
+  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 class="  textLeft">How It Works</h2>
+    <p className=" textLeft" >
+      Contact us to discuss your needs, review options and provide feedback. Get your
+      custom solutions, track your shipments and deliveries in real-time throughout
+      the entire prosses, by gaining visibility over the shipments journey. Our team of
+      specialists are ready to help you ramp up your operations, so you can meet the
+      growing demands of your business, propelling your same-day capabilities
+      forward.  <a className='red-link' href='/how-it-works'>How It Works.</a>
+    </p>
+  </Grid>
 
 </Grid>
+
 <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+
+<Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+    <h2 class="  textLeft">Get one-on-one support</h2>
+    <p className=" textLeft" >
+      We assign and provide a centralized account specialists alongside our dedicated
+      dispatchers and fully vetted couriers to your business. Providing your company,
+      a single point of contact for your day-to-day delivery needs, to ensure you are
+      getting quality, performance, and exceptional customer care. We take a
+      fundamental approach to eliminate wasted time and deliver urgent goods, right
+      when you need them most, providing you peace of mind. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
+    </p>
+  </Grid>
   <Grid justifyContent="center" item xs={12} md={6} >
     <div style={{width: '100%'}}>
 
@@ -157,17 +195,7 @@ function IndustriesWeServe() {
      </div>
   </Grid>
 
-  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-    <h2 class="  textLeft">Get one-on-one support</h2>
-    <p className=" textLeft" >
-      We assign and provide a centralized account specialists alongside our dedicated
-      dispatchers and fully vetted couriers to your business. Providing your company,
-      a single point of contact for your day-to-day delivery needs, to ensure you are
-      getting quality, performance, and exceptional customer care. We take a
-      fundamental approach to eliminate wasted time and deliver urgent goods, right
-      when you need them most, providing you peace of mind. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
-    </p>
-  </Grid>
+
 </Grid>
 
 <p className="subheading content">

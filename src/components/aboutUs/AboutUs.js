@@ -17,33 +17,39 @@ export default function AboutUs(){
                     </h1>
                 <Box sx={{ display: { xs: 'none', md: 'block'} }} style={{fontWeight:"bold"  }}  >         
                     <p style={{fontWeight:"bold" , fontFamily:"sans-serif" }}>
-                            AAA Delivery Service specializes in customer satisfaction, reliability, and professionalism on every
-                            delivery. We consistently inspire our team members to stay focused on safety, and the highest
-                            ethical and professional standards, and the needs of our customers and communities. Providing
-                            customers with on-demand, express, reliable same-day delivery & courier service, on-time
-                            critical transportation to all 48 states nationwide. Expediting packages, any size shipments
-                            delivered within your city or across the country, same-day door-to-door delivery.
+                        AAA Delivery Service specializes in customer satisfaction, reliability, and professionalism on every delivery. 
+                        We consistently inspire our team members to stay focused on safety, and the highest ethical and professional 
+                        standards, and the needs of our customers and communities. Providing customers with on-demand, express, reliable 
+                        same-day delivery & courier service, on-time critical transportation to all 48 states nationwide. 
+                        Expediting packages, any size shipments delivered within your city or across the country, 
+                        and same-day door-to-door delivery.
+                    </p>
+
+                    <p>
+                        Customer obsession is the main focus of our organization because we believe that our future lies in the hands 
+                        of our valued customers. Our leaders start with the customer and work backwards. We work vigorously to earn and 
+                        keep customer trust. Although our leaders pay attention to our competitors, they obsess over customers. We are 
+                        all about the long term, delivering value through customer focus leadership. We measure our success in this area 
+                        through improvements in our net promoter score.
+                    </p>
+
+                    <p>
+                        As a people led organization, we are guided by the purpose of moving our communities forward 
+                        by delivering what matters. We are modernizing our strong values-based culture and encouraging 
+                        our employees, drivers and sub-contractors to bring their energetic selves to work – making AAA 
+                        a place they enthusiastically recommend to friends and family. We measure our success on this 
+                        strategic initiative through improvements in likelihood to recommend.
+
                     </p>
                     <p>
-                        Customer obsession is the main focus of our organization because we believe that our future lies in the hands
-                        of our valued customers. Our leaders start with the customer and work backwards. We work vigorously to earn
-                        and keep customer trust. Although our leaders pay attention to our competitors, they obsess over customers.
-                        We are all about the long term, delivering value through customer focus leadership. We measure our success
-                        in this area through improvements in our net promoter score.
-                    </p>
-                    <p>
-                        As a people led organization, we are guided by the purpose of moving our communities forward by delivering
-                        what matters. We are modernizing our strong values-based culture and encouraging our employees, drivers
-                        and sub-contractors to bring their energetic selves to work – making AAA a place they enthusiastically
-                        recommend to friends and family. We measure our success on this strategic initiative through improvements in
-                        likelihood to recommend.
-                    </p>
-                    <p>
-                        Our dedicated innovation team help support and encourage idea sharing throughout our organization. Our
-                        Introduction idea sharing platform brings our employees, drivers and sub-contractors together to share,
-                        collaborate and generate ideas, whether in-person or virtually, as well to submit their ideas, to comment and
-                        vote on ideas from other people. Our idea screening processes is in place so our employees, drivers and subcontractors know that their ideas are being considered. Our team of advocates inspires change throughout our
-                        organization, asking questions, supporting ideas, and demanding radical changes.
+                        Our dedicated innovation team help support and encourage idea sharing throughout our organization. 
+                        Our Introduction idea sharing platform brings our employees, drivers and sub-contractors together 
+                        to share, collaborate and generate ideas, whether in-person or virtually, as well to submit their 
+                        ideas, to comment and vote on ideas from other people. Our idea screening processes is in place, 
+                        so our employees, drivers and sub-contractors know that their ideas are being considered. Our team 
+                        of advocates inspires change throughout our organization, asking questions, supporting ideas, and 
+                        demanding radical changes.
+
                     </p>
                 </Box>
             </Grid>

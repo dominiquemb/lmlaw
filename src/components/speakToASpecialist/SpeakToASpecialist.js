@@ -97,7 +97,7 @@ function SpeakToASpecialist() {
                 <h2>
                 Things you can do from our portal:
                 </h2>
-                <ul style={{listStyleType:"square"}}>
+                <ul  className="checked">
                     <li >
                       Place and track orders all in one central hub.
                     </li>
@@ -117,7 +117,7 @@ function SpeakToASpecialist() {
                       View signature or photo-base PODs for each order.
                     </li>
                     <li >
-                      reate and maintain a private address book.
+                      Create and maintain a private address book.
                     </li>
                     <li >
                       View, customize and print reports of your shipping history.
@@ -182,11 +182,11 @@ function SpeakToASpecialist() {
         <Grid container >
             <Grid item xs={12} md={4}>
                 <div className="content" style={{width:"90%" }}>
-                    <ul>
+                    <ul className="checked">
                       <li>  Reliability, experience, one-to-one approach, delivery always on time, no excuses</li>
                       <li>   Order tracking & geofencing in real-time dashboard</li>
                       <li>   On-demand, and express same-day door-to-door delivery</li>
-                      <li>   Dependable service you can always count on,and professionalism on every delivery.</li>
+                      <li>   Dependable service you can always count on.</li>
                       <li>   Customer support around the clock 24/7/365</li>
                     </ul>
                 </div>
@@ -204,11 +204,11 @@ function SpeakToASpecialist() {
 
             <Grid item xs={12} md={4} >
                 <div className="content" style={{width:"90%" }}>
-                    <ul>
+                    <ul className="checked">
                       <li>  Dedicated, fully vetted couriers by uniform</li>
                       <li>  Custom logistics to fit and adapt to your business</li>
-                      <li>  Cost-efficient LTL shipping services, FTL services for large shipments that require dedicated shipping</li>
-                      <li>  Transparency and visibility into every single shipment through cutting-edge technology</li>
+                      <li>  Professionalism on every delivery</li>
+                      <li>  Transparency and visibility into every single shipment</li>
                       <li>  Custom notification of package delivery status, based on your preference</li>
                     </ul>
                 </div>
@@ -246,7 +246,7 @@ function SpeakToASpecialist() {
 
     <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
           Our goal is to provide our customers with the utmost reliable, dependable and
-          professionalism on every delivery, keeping you focus on your core business.
+          professionalism on every delivery, keeping your focus on your core business.
           Knowing your deliveries are in good hands with AAA.
           <br /><br />
     </div>
