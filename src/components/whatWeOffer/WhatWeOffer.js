@@ -68,7 +68,7 @@ function WhatWeOffer() {
               <div className="content checked">
                     <ul>
                       <li>
-                         FMCSA, HIPPA compliant, and OSHA certified</li>
+                         FMCSA, TSA, HIPPA compliant, and OSHA certified</li>
                       <li>
                         Cost-efficient LTL delivery services
                       </li>

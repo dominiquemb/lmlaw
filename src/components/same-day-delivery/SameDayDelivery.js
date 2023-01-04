@@ -173,7 +173,7 @@ function SameDayDelivery() {
        Auto-verified addresses to ensure delivery accuracy. 
        Piece-level and invoice reference tracking and detailed notes available. 
        View signature or photo-based PODs for each order and actual arrival time. 
-       <a className='red-link' href='/speak-to-a-specialist'> Online Portal .</a>
+       <a className='red-link' href='https://aaa.e-courier.com/aaa/home/index.asp'> Online Portal .</a>
      </div>
    </Grid>
  </Grid>

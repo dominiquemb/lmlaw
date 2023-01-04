@@ -137,7 +137,7 @@ export default function AboutUs(){
                 customers, present and future. These solutions can
                 be combined and configured to meet changing
                 needs and requirements. To learn more, please
-                follow the link. <a style={{fontWeight:"bolder"}} href="/portal">Online Portal</a>
+                follow the link. <a style={{fontWeight:"bolder"}} href="https://aaa.e-courier.com/aaa/home/index.asp">Online Portal</a>
             </div>
             <div>
             <TextMobileStepper/>
