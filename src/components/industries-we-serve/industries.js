@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import PathMap from "../animated-path-map"
+import home_page_top_right from '../../assets/home_page_top_right.png';
 
 
 function IndustriesWeServe() {
@@ -12,7 +13,7 @@ function IndustriesWeServe() {
     <>
     <div style={{ marginTop:"5%",padding:"0 5vw"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={7} style={{ marginTop:"5%"}}  >
+        <Grid item xs={12} md={6} style={{ marginTop:"5%"}}  >
           <h1 className="circle-h1  textLeft big-title"  >Industries We Serve</h1>
           <p className="circle-text textLeft" >
             We provide instant competitive advantage, beginning with cost-
@@ -21,17 +22,20 @@ function IndustriesWeServe() {
             experience, and technology to enable your company to thrive.
           </p>
         </Grid>
-        <Grid justifyContent="center" item xs={12} sm={5} >
-          <div style={{width: '100%'}}>
+        <Grid item xs={0} md={6} >
+          <Box className="content" sx={{ display: { xs: 'none', md: 'block', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"50px 0"}} >
 
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/industries-we-serve/industries2.png')} alt="delivery signature" />
+          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
+            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
+                      <source  src={require('../../assets/videos/aaalogistics 1-1080p-221014.mp4')}  type="video/mp4" />
+                        Your browser does not support the video tag.
+            </video>
+          </div>
 
-           </div>
-        </Grid>
+          </Box  >
+
+              
+          </Grid>
 
       </Grid>
       <h1  className="circle-h2 schedule big-title" style={{textAlign:"center"  }}>Time Critical Specialists</h1>
@@ -47,7 +51,7 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={require('../../assets/industries-we-serve/industries1.png')} alt="delivery signature" />
 
-            <a href="/same-day-delivery" class="black-link"><h2 className="centered">At Home</h2></a>
+            <a href="/same-day" class="black-link"><h2 className="centered">At Home</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >
