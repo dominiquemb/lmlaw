@@ -24,7 +24,7 @@ function SameDayDelivery() {
             display:'block',
             width:"80%",
             margin:" auto"
-           }} src={require('../../assets/Mv3.png')} alt="delivery signature" />
+           }} src={require('../../assets/ground-images/ground6.png')} alt="delivery signature" />
 
            </div>
         </Grid>
@@ -164,7 +164,7 @@ function SameDayDelivery() {
       with order tracking and reporting functionality. Auto-verified addresses 
       to ensure delivery accuracy. Piece-level and invoice reference tracking 
       and detailed notes available. View signature or photo-based PODs for each 
-      order and actual arrival time. <a className='red-link' href='/speak-to-a-specialist'> Online Portal .</a>
+      order and actual arrival time. <a className='red-link' href='https://aaa.e-courier.com/aaa/home/index.asp'> Online Portal .</a>
      </div>
    </Grid>
  </Grid>
