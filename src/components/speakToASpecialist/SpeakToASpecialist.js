@@ -197,7 +197,7 @@ function SpeakToASpecialist() {
             <Grid item xs={0} md={4} >
             <Box component="span" sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
 >
-            <img  style={{width:"100%"  }} src={require('../../assets/Mv3.png')} alt="Blue Logo" />
+            <img  style={{width:"100%"  }} src={require('../../assets/speak-to-a-specialist/speak4.png')} alt="Blue Logo" />
 
             </Box>
             </Grid>

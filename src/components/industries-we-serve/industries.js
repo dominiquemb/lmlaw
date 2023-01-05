@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import PathMap from "../animated-path-map"
-import home_page_top_right from '../../assets/home_page_top_right.png';
+import home_page_top_right from '../../assets/blue-column.png';
 
 
 function IndustriesWeServe() {
@@ -51,7 +51,7 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={require('../../assets/industries-we-serve/industries1.png')} alt="delivery signature" />
 
-            <a href="/same-day" class="black-link"><h2 className="centered">At Home</h2></a>
+            <a href="/same-day-delivery" class="black-link"><h2 className="centered">At Home</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >

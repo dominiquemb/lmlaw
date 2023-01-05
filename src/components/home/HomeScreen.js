@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from "@mui/material/Box";
-import home_page_top_right from '../../assets/home_page_top_right.png';
+import home_page_top_right from '../../assets/blue-column.png';
 import "../../assets/animate.css";
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
