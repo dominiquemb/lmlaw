@@ -100,7 +100,7 @@ function SameDayDelivery() {
         <img  style={{width:"60%"}} src={require('../../assets/head-images/head1.png')} alt="Blue Logo" />
         </Grid>
         <Grid item xs={10} md={10}>
-          <h2>Specialized Networkk</h2>
+          <h2>Specialized Network</h2>
           <div className="content textLeft" >
             We have the couriers, the vehicles, and technology alongside our massive fleet and partner carrier network to meet your logistics need. We have the experiences that are effective to your business and your customers. We provide a set of ground transportation services, same-day, expedite, and less than truck load, providing transparency and visibility into every single shipment and delivery.
           </div>
