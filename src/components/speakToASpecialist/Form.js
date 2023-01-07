@@ -38,7 +38,8 @@ export  function CustomizedSnackbars(props) {
           email:props.email,
           phone:props.phone,
           company:props.company,
-          address:props.address
+          address:props.address,
+          _cc:"roger@aaadeliveryservice.com"
       })
   })
       .then(response => {response.json();setLoading(false);})
@@ -131,7 +132,7 @@ export default function FormTextFields() {
                   }></textarea>
 
               
-                <CustomizedSnackbars/>
+              <CustomizedSnackbars name = {firstName} email = {email} phone = {phone} company={company} address={address} message={message} />
             </div>
     </Box>
   );
