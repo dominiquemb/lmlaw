@@ -49,9 +49,9 @@ collections:
         widget: "list"
         summary: '{{fields.title}}'
         fields:
-          - label: "paragraph with image"
+          - label: "paragraphs with image"
             name: "pgimg"
-            widget: object
+            widget: "object"
             fields:
               - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
               - {label: "Paragraph Title" , name: "title", widget: "string"}
