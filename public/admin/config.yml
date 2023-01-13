@@ -18,7 +18,33 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Middle Title", name: "middle title", widget: "string"}
       - {label: "Middle Subtitle", name: "middle subtitle", widget: "string"}
-      - label: "Paragraph with image"
+
+      #---------------------------------
+
+      - {label: "Screen 2 Left image", name: "l2img", widget: "image"}
+      - {label: "Screen 2 Left Title", name: "l2title", widget: "string"}
+      - {label: "Screen 2 Left Subtitle", name: "l2sbtitle", widget: "string"}
+      - {label: "Screen 2 Left Content", name: "l2content", widget: "markdown"}
+
+
+      - {label: "Screen 2 Center image", name: "c2img", widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", widget: "string"}
+      - {label: "Screen 2 Center Subtitle", name: "c2sbtitle", widget: "string"}
+      - {label: "Screen 2 Center Content", name: "c2content", widget: "markdown"}
+
+
+      - {label: "Screen 2 Right image", name: "r2img", widget: "image"}
+      - {label: "Screen 2 Right Title", name: "r2title", widget: "string"}
+      - {label: "Screen 2 Right Subtitle", name: "r2sbtitle", widget: "string"}
+      - {label: "Screen 2 Right Content", name: "r2content", widget: "markdown"}
+
+
+      #---------------------------------
+
+      - {label: "Top Semi circle text", name: "topsmtext", widget: "string"}
+
+
+      - label: "Paragraph with image" 
         name: "paragraphs"
         widget: "list"
         summary: '{{fields.title}}'
@@ -26,8 +52,12 @@ collections:
           - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
           - {label: "Paragraph Title" , name: "title", widget: "string"}
           - {label: "Paragraph Content" , name: "content", widget: "markdown" }
-          - label: "Checked Content"
-            name: "checkList"
-            widget: "list"
-            fields:
-              - {label: "item", name: "item", widget: "string" }
+
+        - {label: "Bottom text", name: "bottomtext", widget: "markdown"}
+
+          - {label: "Botttom Left Image", name: "blimage", widget: "image"}
+          - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
+          - {label: "Botttom Right Image", name: "brimage", widget: "image"}
+
+
+        - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
