@@ -8,14 +8,26 @@ media_folder: "public/images" # Media files will be stored in the repo under sta
 public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog Posts" # Used in the UI
-    folder: "content" # The path to the folder where the documents are stored
+  - name: "Home" # Used in routes, e.g., /admin/collections/blog
+    label: "Home page" # Used in the UI
+    folder: "home" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Middle Title", name: "middle title", widget: "string"}
+      - {label: "Middle Subtitle", name: "middle subtitle", widget: "string"}
+      - label: "Paragraph with image"
+        name: "paragraphs"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
+          - {label: "Paragraph Title" , name: "title", widget: "string"}
+          - {label: "Paragraph Content" , name: "content", widget: "markdown" }
+          - label: "Checked Content"
+            name: "checkList"
+            widget: "list"
+            fields:
+              - {label: "item", name: "item", widget: "string" }
