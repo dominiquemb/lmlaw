@@ -57,11 +57,11 @@ collections:
               - {label: "Paragraph Title" , name: "title", widget: "string"}
               - {label: "Paragraph Content" , name: "content", widget: "markdown" }
 
-        - {label: "Bottom text", name: "bottomtext", widget: "markdown"}
+      - {label: "Bottom text", name: "bottomtext", widget: "markdown"}
 
-        - {label: "Botttom Left Image", name: "blimage", widget: "image"}
-        - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
-        - {label: "Botttom Right Image", name: "brimage", widget: "image"}
+      - {label: "Botttom Left Image", name: "blimage", widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", widget: "image"}
 
 
-        - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
