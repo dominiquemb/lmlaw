@@ -23,7 +23,7 @@ function SpeakToASpecialist() {
           xs={12} md={6} style={{padding:30 , height:"fit-content"}}>
 
 
-                <h1  class = "circle-h1" style={{
+                <h1  className = "circle-h1" style={{
                   letterSpacing:3,
                   fontWeight:500,
                   textAlign:"center"

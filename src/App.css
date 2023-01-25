@@ -677,7 +677,7 @@ ul li {
   }
 
   .logo-1{
-    width: 70%;
+    width: 12%;
   }
 
   .subheading{
@@ -809,6 +809,10 @@ img{
     font-size: 1vw !important;
     margin: 0.5vw !important;
   }
+  .logo-text{
+    font-size: 1.8vw !important;
+    margin: 0.5vw !important;
+  }
 
   .small-circle.smallest{
     width: 9vw;
@@ -860,6 +864,10 @@ img{
   .css-89caog{
     max-width: 100%;
     width: 100%;
+  }
+
+  .logo-1{
+    width: 3vw;
   }
 }
 
@@ -950,3 +958,7 @@ img{
   border-width: 0.1vw;
 }
 
+.logo-text{
+
+  color: rgb(54, 123, 220);
+}
