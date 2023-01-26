@@ -24,13 +24,13 @@ function HowItWorks() {
 
           <h1 className="circle-h1 circle-text"  style={{ marginTop:"5vh"}}>How It Works</h1>
               <h2 className="circle-h2 circle-text">
-                Seamlessly Place and Track Orders All In One Place
+              Partner With AAA For Reliable Same-Day Delivery
               </h2>
               <img style={{width:"50%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
               <h2 className="circle-h3 circle-text"  style={{textAlign:"left", color:"black",marginLeft:"1vw"}} >Get Started Here</h2>
-              <p className=" circle-text" style={{textAlign:"left", color:"black",marginLeft:"1vw"}}>
+              <p className=" circle-text" style={{textAlign:"left", color:"black",marginLeft:"1vw",textJustify:"none"}}>
                 Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
-                today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery. 
+                today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery 
                 without the added stress of managing each delivery, giving you more time to focus on your core business.
               </p>
           

@@ -70,7 +70,7 @@ function HomeScreen() {
                 prescription medications, x-rays, or any other exclusive 
                 equipment needed. Our drivers are in compliant with FMCSA, 
                 TSA, HIPAA regulations and OSHA certified. Providing on-the-ground 
-                insights, streamlined PODs, tracking in real-time, and geofencing to 
+                insights,  tracking in real-time, and geofencing to 
                 ensure driver is at delivery location. <bold className="bold-inline">“You See What We See”</bold>.
               </div>
               <div className="column-footer" style={{marginBottom:30}}>

@@ -30,10 +30,21 @@ function SpeakToASpecialist() {
                 }}>Ready To Speak To A Specialist?</h1>
                 <p style={{
                   fontWeight:600,
+                  textJustify: "none",
+                  
                 }}>
-                  Provide us with some basic information so we can learn more about
-                  your business delivery needs, so one of our logistics specialists
-                  can craft and customize a solution for your business.
+                  <div>
+                    Provide us with some basic information so we can learn more about
+                    your business delivery needs, so one of our logistics specialists
+                    can craft and customize a solution for your business.
+                  </div>
+                  <br></br>
+                  <div>
+                    To get started, please fill out the form on the right with
+                    the requested information. One of our logistics specialists
+                    will review your information and contact you shortly to discuss
+                    the next steps and answer any questions you may have.
+                  </div>
                 </p>
 
 
@@ -184,7 +195,7 @@ function SpeakToASpecialist() {
                 <div className="content" style={{width:"90%" }}>
                     <ul className="checked">
                       <li>  Reliability, experience, one-to-one approach, delivery always on time, no excuses</li>
-                      <li>   Order tracking & geofencing in real-time dashboard</li>
+                      <li>   Professionalism on every delivery </li>
                       <li>   On-demand, and express same-day door-to-door delivery</li>
                       <li>   Dependable service you can always count on.</li>
                       <li>   Customer support around the clock 24/7/365</li>
@@ -207,7 +218,7 @@ function SpeakToASpecialist() {
                     <ul className="checked">
                       <li>  Dedicated, fully vetted couriers by uniform</li>
                       <li>  Custom logistics to fit and adapt to your business</li>
-                      <li>  Professionalism on every delivery</li>
+                      <li>  Order tracking & geofencing in real-time dashboard </li>
                       <li>  Transparency and visibility into every single shipment</li>
                       <li>  Custom notification of package delivery status, based on your preference</li>
                     </ul>
@@ -228,7 +239,12 @@ function SpeakToASpecialist() {
                   </a>
         </div>
 
-
+        <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",color:"black"}}>
+          Our goal is to provide our customers with the utmost reliable, dependable and
+          professionalism on every delivery, keeping your focus on your core business.
+          Knowing your deliveries are in good hands with AAA.
+          <br /><br />
+    </div>
 
       </Container>
 
@@ -244,12 +260,7 @@ function SpeakToASpecialist() {
     <div className="top-semicircle semicircle-white" style={{borderRadius:"0px 0px 100% 100%"}}>
     </div>
 
-    <div className="content" style={{width:"80%",margin:"auto",paddingTop:"3em",paddingBottom:150, color:"white"}}>
-          Our goal is to provide our customers with the utmost reliable, dependable and
-          professionalism on every delivery, keeping your focus on your core business.
-          Knowing your deliveries are in good hands with AAA.
-          <br /><br />
-    </div>
+
 
     <Grid container className="screen-3">
       <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >

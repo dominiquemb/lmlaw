@@ -50,7 +50,7 @@ function WhatWeOffer() {
           Custom Logistics-Indispensable Courier Services
         </h1>
 
-        <p className="subheading content">
+        <p className="subheading content" style={{textJustify:'none'}}>
           We understand how each business requirements can change from day-to-day, minute-to-minute,
           that’s why AAA DELIVERY SERVICE offers, indispensable custom logistics to fit and adapt to your
           business needs. Providing you peace of Mind.
