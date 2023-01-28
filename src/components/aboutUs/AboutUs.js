@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import TextMobileStepper from "./Founders";
 export default function AboutUs(){
-    return <>
+    return <div className="unjustified">
     <Container maxWidth="xl" disableGutters style={{maxWidth:"100%" , marginTop:50,padding:"1.5rem"}}>
         <Grid container>
             <Grid item xs={12} md={8} style={{padding:30}} >
@@ -148,5 +148,5 @@ export default function AboutUs(){
             </Grid>
         </Grid>
     </Container>
-    </>
+    </div>
 }

@@ -84,6 +84,9 @@ function Footer() {
                                         Drive for us
                                     </li>
                                     <li>
+                                        <a href="/carrier">Carriers</a>
+                                    </li>
+                                    <li>
                                         <a href="/locations">Our locations</a>
                                     </li>
                                 </ul>

@@ -37,7 +37,7 @@ const steps = [
     label: 'Ben Martinez',
     description: `Chief Technology Officer`,
   },  {
-    label: 'Melody Ryna',
+    label: 'Melody Reyna',
     description: `Chief Financial Officer `,
   },
 ];

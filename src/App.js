@@ -25,9 +25,10 @@ import SameDayDelivery from './components/same-day-delivery/SameDayDelivery';
 import GroundTransportation from './components/ground-transportation/GroundTransportation';
 import Healthcare from './components/healthcare/Healthcare';
 import IndustriesWeServe from './components/industries-we-serve/industries';
+import Carrier from './components/carrier/carrier';
+import CarrierRegistration from './components/carrier/carrier-registration';
 
-
-const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'Carrier ', url: '/carrier'}];
+const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'} , {label: 'Carriers', url: '/carriers'}];
 const industries = [{ label: 'Industries', url: '/industries-we-serve'},{ label: 'Healthcare', url: '/healthcare'},{label: 'Freight', url: '/ground-transportation'},{label: 'Same day', url: '/same-day-delivery'}];
 const links = pages.concat(industries)
 
@@ -56,16 +57,20 @@ function App() {
           justifyContent: 'space-between'
         }}
         disableGutters>
+
+
+          <Box sx={{ display: { xs: 'flex', lg: 'none' } , width:"100%"  }}> 
           <a href="https://www.aaadeliveryservice.com/" style={{
             width: "inherit",
             marginRight: 0,
-            display: 'flex'
+            flexGrow: 2,
+            maxWidth:"15%",
+            minWidth: "5cm",
+            alignSelf: "center"
             }}>
 
-            <img src={require('./assets/header-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
+            <img style={{width:"100%"}} src={require('./assets/new-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
-
-          <Box sx={{ display: { xs: 'flex', lg: 'none' } }}> 
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -73,7 +78,7 @@ function App() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              style =  {{color:"black" , padding:0}}
+              style =  {{color:"black" , padding:0,marginLeft:"auto"}}
             >
               <MenuIcon style =  {{color:"black" , padding:0}} />
             </IconButton>
@@ -102,8 +107,20 @@ function App() {
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
+            <a href="https://www.aaadeliveryservice.com/" style={{
+            width: "inherit",
+            marginRight: 0,
+            flexGrow: 2,
+            maxWidth:"15%",
+            alignSelf: "center"
+            }}>
+
+            <img style={{width:"100%"}} src={require('./assets/new-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
+          </a>
             {pages.map((page, index) => (
-              <a href={page.url}><Button
+              <a
+              style={{flexGrow:1 , alignSelf: 'center'}}
+               href={page.url}><Button
                 key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: '#090B27', display: 'block' }}
@@ -113,7 +130,7 @@ function App() {
               </a>
             ))}
 
-            <Box>
+            <Box style={{alignSelf:'center'}}> 
               <Button className="dropdown"
                   sx={{ my: 2, color: '#090B27' }}
                 >
@@ -126,17 +143,18 @@ function App() {
                 </Button>
 
             </Box>
-
-
-          </Box>
-
-          <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
+            <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
                   <a href="https://aaa.e-courier.com/aaa/home/index.asp">
                   <button  className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
                     Online Portal
                   </button>
                   </a>
           </Box>
+
+
+          </Box>
+
+
         </Toolbar>
       {/* </Container> */}
     </AppBar>
@@ -148,12 +166,14 @@ function App() {
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
           <Route path='/what-we-offer' element={<WhatWeOffer />} />
           <Route path='/how-it-works' element={<HowItWorks />} />
-          <Route path='/carrier' element={<AboutUs />} />
+          <Route path='/about-us' element={<AboutUs />} />
           <Route path='/locations' element={<Locations />}></Route>
           <Route path='/same-day-delivery' element={<SameDayDelivery />}></Route>
           <Route path='/ground-transportation' element={<GroundTransportation />}></Route>
           <Route path='/healthcare' element={<Healthcare />}></Route>
           <Route path='/industries-we-serve' element={<IndustriesWeServe/>}></Route>
+          <Route path='/carriers' element={<Carrier/>}></Route>
+          <Route path='/carrier-registration' element={<CarrierRegistration/>}></Route>
 
         </Routes>
     </Router>

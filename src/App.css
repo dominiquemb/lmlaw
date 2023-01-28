@@ -453,7 +453,6 @@ ul {
   color: #fff;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-top: 3vw;
 }
 
 .footer .content {
@@ -477,6 +476,11 @@ ul {
 
 .footer-col-header {
   font-size: 20px;
+}
+
+.carrier-grey-text{
+  font-size: 10px;
+
 }
 
 .speak-to-a-specialist-form {
@@ -596,7 +600,9 @@ overflow:hidden;
 
 }
 
-
+.unjustified p{
+  text-justify: none !important;
+}
 
 span.b {
  display: inline;
@@ -653,7 +659,7 @@ p{
   padding-bottom: 6rem;
   width:80%;
 }
-ul li {
+ul li , ol li{
   padding:0.3vw 4px;
 }
 
@@ -687,20 +693,14 @@ ul li {
     width:80%;
   }
 
-  
-  body{
-    margin-top: 2em;
-  }
+
     
   .content{
     font-size: 14px;
     width: 90%;
     margin: 50px auto !important;
   }
-  ul {
-    padding:0 !important;
 
-  }
 
   .circle-h1{
     font-size:1.8em;
@@ -738,9 +738,6 @@ ul li {
   }
 }
 
-body{
-  margin-top: 5em;
-}
 
 .footer li {
   margin-bottom: 10px;
@@ -824,7 +821,7 @@ img{
   p{
     font-size: 1.2vw;
   }
-  ul{
+  ul , ol{
     font-size: 1.2vw;
   }
   .leftText{
@@ -835,6 +832,10 @@ img{
   }
   .footer-col-header{
     font-size: 1vw;
+  }
+  .carrier-grey-text{
+    font-size: 1vw;
+  
   }
   .big-title{
     font-size: 5vw !important;
@@ -960,5 +961,8 @@ img{
 
 .logo-text{
 
+  color: rgb(54, 123, 220);
+}
+.blue-text{
   color: rgb(54, 123, 220);
 }
