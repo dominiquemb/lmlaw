@@ -9,11 +9,11 @@ function SameDayDelivery() {
 
 
   return (
-    <>
-    <div style={{ marginTop:"5%",padding:"0 5vw"}} >
+    <div className="home" >
+    <div style={{padding:"0 5vw" , paddingTop:"clamp(1cm,10vh,3cm)" }} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={7} style={{ marginTop:"5%"}}  >
-          <h1 className="circle-h1  textLeft big-title"  >Healthcare Courier Services</h1>
+        <Grid item xs={12} sm={7}   >
+          <h1 className="circle-h1  textLeft big-title" style={{ marginTop:0}} >Healthcare Courier Services</h1>
           <p className="circle-text textLeft" >
             We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries.
           </p>
@@ -23,9 +23,12 @@ function SameDayDelivery() {
 
            <img style={{
             display:'block',
-            width:"80%",
-            margin:" auto"
-           }} src={require('../../assets/healthcare-images/healthcare.png')} alt="delivery signature" />
+            width:"90%",
+            margin:" auto",
+            borderRadius:"clamp(10px,3%,50px)",
+            boxShadow:"1px 1px 6px -2px grey",
+
+           }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
 
            </div>
         </Grid>
@@ -252,7 +255,7 @@ function SameDayDelivery() {
         </Grid>           
       </Grid>
 
-    </>
+    </div>
   );
 }
 
