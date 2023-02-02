@@ -16,7 +16,7 @@ function HomeScreen() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
           <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-          <h1 className="circle-h1 circle-text"  >
+          <h1 className="circle-h1 circle-text" style={{marginTop:0, paddingTop:"clamp(1cm,10vh,3cm)",paddingRight:"5%"}}  >
                 Reliable Same-Day Delivery & Courier Service 
 	            </h1>
 
@@ -27,7 +27,7 @@ function HomeScreen() {
               
           </Grid>
           <Grid item xs={0} lg={6} >
-          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"50px 0"}} >
+          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"10vh 0 clamp(1cm,10vh,5cm)",backgroundOrigin:"border-box" , paddingTop:"clamp(1cm,10vh,3cm)" }} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>

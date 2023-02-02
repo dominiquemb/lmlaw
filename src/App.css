@@ -799,9 +799,6 @@ img{
   h2{
     font-size:1.8vw;
   }
-  .home{
-    margin-top: 9vh;
-  }
   button{
     font-size: 1vw !important;
     margin: 0.5vw !important;
@@ -870,6 +867,10 @@ img{
   .logo-1{
     width: 3vw;
   }
+}
+
+.home{
+  padding-top: clamp(1.5cm,10vh,5cm);
 }
 
 .big-title{
