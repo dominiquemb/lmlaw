@@ -260,7 +260,9 @@ function SpeakToASpecialist() {
     <div className="top-semicircle semicircle-white" style={{borderRadius:"0px 0px 100% 100%"}}>
     </div>
 
-
+    <p className="content screen-3" style={{marin:"auto",width:"70%"}}>
+      We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
+    </p>
 
     <Grid container className="screen-3">
       <Grid item xs={12} md={4} sx={{display:{xs:"none" , md:"block"}}} >
