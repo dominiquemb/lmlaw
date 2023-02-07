@@ -1,28 +1,29 @@
 import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-
+import CertificationsPopover from "./certifications"
 function Footer() {
 
   return (
     <>
         <div className="footer" style={{height:"fit-content" , paddingBottom:20}}>
+
             <Container maxWidth="xl" disableGutters  style={{ padding:30}}>
                 <Grid container spacing={1} alignContent="center">
                     <Grid item xs={12} sm={12} md = {2.5} alignItems="center" style={{ padding:10}}>
-                        
-                        <a className="logo" href="https://www.aaadeliveryservice.com/">
-                            <img src="https://www.aaadeliveryservice.com/wp-content/uploads/2021/12/aaadellogonbgwhtpblk-1.svg" alt="AAA Delivery Service" className="logo-1"  /> 
-                        </a>
-                        <div className="content" style={{textAlign:"left"}}>
-                            In the world of logistics, where most situations require timeliness, AAA is a must-have option to stay ahead of the competition.
-                        </div>
                         <div className="column-footer">
                             HIPPA COMPLIANT
                         </div>
                         <div>
                             <img src={require('../../assets/medical.svg').default}  style={{width:"20%" ,display:"block" , margin:"auto" , marginTop:10,marginBottom:50}}></img>
                         </div>
+                        <div className="content" style={{textAlign:"left"}}>
+                            In the world of logistics, where most situations require timeliness, AAA is a must-have option to stay ahead of the competition.
+                        </div>
+
+                        <CertificationsPopover></CertificationsPopover>
+
+                        
                     </Grid>
                     <Grid item xs={0} sm={0} md={0.5} sx={{display:{sm:'none',md:'block'}}}  >
                                 <div style={{width:"100%"}}>
