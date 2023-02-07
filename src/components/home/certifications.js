@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
+import { minHeight } from '@mui/system';
 function Certifications(){
     const [rotation , setRotation] = useState(100);
     const [color , setColor] = useState("#ffffff");
@@ -80,6 +81,7 @@ export default function CertificationsPopover() {
     };
   
     const open = Boolean(anchorEl);
+
     const id = open ? 'simple-popover' : undefined;
   
     return (
@@ -87,6 +89,7 @@ export default function CertificationsPopover() {
         <Box
           aria-haspopup="true"
           aria-describedby={id} variant="contained" onClick={handleClick}
+
 
           style={{
             width:"50%",
@@ -101,7 +104,7 @@ export default function CertificationsPopover() {
         anchorEl={anchorEl}
         onClose={handleClose}
         anchorOrigin={{
-            vertical: 'center',
+            vertical: 'top',
             horizontal: 'right',
           }}
         transformOrigin={{
@@ -110,7 +113,7 @@ export default function CertificationsPopover() {
           }}
       >
         <div 
-        style={{padding:"3vw",paddingTop:"0"}}
+        style={{padding:"1vw",paddingTop:"0"}}
         >
             <h2>Our certifications</h2>
             <IconButton
@@ -118,17 +121,19 @@ export default function CertificationsPopover() {
           onClick={handleClose}
           sx={{
             position: 'absolute',
-            right: "3vw",
+            right: "1vw",
             top: "0.5vw",
             color: (theme) => theme.palette.grey[500],
           }}
         >
-          <CloseIcon  style = {{ width:"3vw" , height:"3vw"}}/>
+          <CloseIcon  style = {{ width:"2vw" , height:"2vw"}}/>
         </IconButton>
        
             <img style = {{
-                width:"50vw",
-                minWidth:"300px",
+                height:"15vw",
+                minHeight:"150px",
+                maxWidth:"90vw",
+                aspectRatio:"2.5"
             }} src={require('../../assets/certifications/cert.png')} ></img>
 
         </div>
