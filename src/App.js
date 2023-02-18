@@ -28,9 +28,51 @@ import IndustriesWeServe from './components/industries-we-serve/industries';
 import Carrier from './components/carrier/carrier';
 import CarrierRegistration from './components/carrier/carrier-registration';
 
-const pages = [{label: 'Home', url: '/'}, {label: 'What We Offer', url: '/what-we-offer'}, {label: 'How It Works', url: '/how-it-works'}, {label: 'Locations', url: '/locations'} , {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} , {label: 'About us ', url: '/about-us'} , {label: 'Carriers', url: '/carriers'}];
-const industries = [{ label: 'Industries', url: '/industries-we-serve'},{ label: 'Healthcare', url: '/healthcare'},{label: 'Freight', url: '/ground-transportation'},{label: 'Same day', url: '/same-day-delivery'}];
-const links = pages.concat(industries)
+import Flexible from './components/services/flexible';
+import Schedule from './components/services/schedule';
+import Stat from './components/services/stat';
+
+const pages = [
+  {label: 'Home', url: '/'},
+  {label: 'What We Offer', url: '/what-we-offer'},
+  {label: 'How It Works', url: '/how-it-works'},
+  {label: 'Industries', url: '/industries-we-serve'},
+  {label: 'Locations', url: '/locations'} ,
+  {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} ,
+  {label: 'Delivery', url: '/'},
+  {label: 'Carriers', url: '/carriers'}];
+
+const industries = [
+  {label: 'Industries', url: '/industries-we-serve'},
+  {label: 'Healthcare', url: '/healthcare'},
+  {label: 'Freight', url: '/ground-transportation'},
+  {label: 'Same day', url: '/same-day-delivery'}];
+
+const delivery = [
+  {label: 'Stat' , url:'/stat-delivery-services'},
+  {label: 'Scheduled' , url:'/schedule-delivery'},
+  {label: 'Flexible' , url:'/flexible-delivery'},
+  
+
+]
+
+const links = [
+  {label: 'Stat' , url:'/stat-delivery-services'},
+  {label: 'Scheduled' , url:'/schedule-delivery'},
+  {label: 'Flexible' , url:'/flexible-delivery'},
+  {label: 'Industries', url: '/industries-we-serve'},
+  {label: 'Healthcare', url: '/healthcare'},
+  {label: 'Freight', url: '/ground-transportation'},
+  {label: 'Same day', url: '/same-day-delivery'},
+  {label: 'Home', url: '/'},
+  {label: 'What We Offer', url: '/what-we-offer'},
+  {label: 'How It Works', url: '/how-it-works'},
+  {label: 'Industries', url: '/industries-we-serve'},
+  {label: 'Locations', url: '/locations'} ,
+  {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} ,
+  {label: 'Carriers', url: '/carriers'}
+]
+
 
 
 function App() {
@@ -117,32 +159,30 @@ function App() {
 
             <img style={{width:"100%"}} src={require('./assets/new-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
-            {pages.map((page, index) => (
-              <a
-              style={{flexGrow:1 , alignSelf: 'center'}}
-               href={page.url}><Button
-                key={index}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#090B27', display: 'block' }}
-              >
-                {page.label}
-              </Button>
-              </a>
-            ))}
-
-            <Box style={{alignSelf:'center'}}> 
-              <Button className="dropdown"
-                  sx={{ my: 2, color: '#090B27' }}
+            {pages.map((page, index) => {
+              if(page.label ==="Industries"){
+                return <IndustriesDropdown></IndustriesDropdown>
+              }else if(page.label ==="Delivery"){
+                return <DeliveryDropdown></DeliveryDropdown>
+              }else{
+                return  <a
+                style={{flexGrow:1 , alignSelf: 'center'}}
+                 href={page.url}><Button
+                  key={index}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: '#090B27', display: 'block' }}
                 >
-                  Industries
-                <div className="dropdown-content">
-              {industries.map((page, index) => (
-                    <div><a href={page.url}>{page.label}</a></div>
-                ))}
-                </div>
+                  {page.label}
                 </Button>
+                </a>
+              }
 
-            </Box>
+
+
+              }
+            )}
+
+
             <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
                   <a href="https://aaa.e-courier.com/aaa/home/index.asp">
                   <button  className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
@@ -174,6 +214,10 @@ function App() {
           <Route path='/industries-we-serve' element={<IndustriesWeServe/>}></Route>
           <Route path='/carriers' element={<Carrier/>}></Route>
           <Route path='/carrier-registration' element={<CarrierRegistration/>}></Route>
+          <Route path='/schedule-delivery' element={<Schedule/>}></Route>
+          <Route path='/stat-delivery-services' element={<Stat/>}></Route>
+          <Route path='/flexible-delivery' element={<Flexible/>}></Route>
+
 
         </Routes>
     </Router>
@@ -184,3 +228,41 @@ function App() {
 }
 
 export default App;
+
+
+function IndustriesDropdown(){
+  return <>
+    <Box style={{alignSelf:'center'}}> 
+    <Button className="dropdown"
+        sx={{ my: 2, color: '#090B27' }}
+      >
+        Industries ▼
+      <div className="dropdown-content">
+    {industries.map((page, index) => (
+          <div><a href={page.url}>{page.label}</a></div>
+      ))}
+      </div>
+      </Button>
+
+    </Box>
+  </>
+}
+
+function DeliveryDropdown(){
+  return <>
+    <Box style={{alignSelf:'center'}}> 
+    <Button className="dropdown"
+        sx={{ my: 2, color: '#090B27' }}
+      >
+        Delivery ▼
+      <div className="dropdown-content">
+    {delivery.map((page, index) => (
+          <div><a href={page.url}>{page.label}</a></div>
+      ))}
+      </div>
+      </Button>
+
+    </Box>
+  </>
+}
+

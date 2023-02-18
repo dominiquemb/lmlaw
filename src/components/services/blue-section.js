@@ -1,88 +1,12 @@
-import React from "react";
+import React from 'react';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import PathMap from "../animated-path-map"
-import home_page_top_right from '../../assets/blue-circles.png';
 
 
-function IndustriesWeServe() {
-
-
-  return (
-    <>
-    <div style={{ marginTop:"5%",padding:"0 5vw"}} >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} md={6} style={{ marginTop:"5%"}}  >
-          <h1 className="circle-h1  textLeft"  >Industries We Serve</h1>
-          <p className="circle-text textLeft" >
-            We provide instant competitive advantage, beginning with cost-
-            effective instant delivery, in under two hours, our platform
-            combines advancements in same-day deliveries, customer
-            experience, and technology to enable your company to thrive.
-          </p>
-        </Grid>
-        <Grid item xs={0} md={6} >
-        <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
-
-          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
-            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source  src={require('../../assets/videos/aaalogistics 1-1080p-221014.mp4')}  type="video/mp4" />
-                        Your browser does not support the video tag.
-            </video>
-          </div>
-
-          </Box  >
-
-              
-          </Grid>
-
-      </Grid>
-      <h1  className="circle-h2 schedule " style={{textAlign:"center"  }}>Time Critical Specialists</h1>
-
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-        }} src={require('../../assets/industries-we-serve/industries1.png')} alt="delivery signature" />
-
-            <a href="/same-day-delivery" class="black-link"><h2 className="centered">At Home</h2></a>
-           </div>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-           }} src={require('../../assets/industries-we-serve/industries2.png')} alt="delivery signature" />
-            <a href="/healthcare" class="black-link"><h2 className="centered">Healthcare</h2></a>
-           </div>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-        }} src={require('../../assets/industries-we-serve/industries3.png')} alt="delivery signature" />
-
-            <a href="/ground-transportation" class="black-link"><h2 className="centered">Freight</h2></a>
-
-           </div>
-        </Grid>
-        
-      </Grid>
-
-
-    </div>
+export default function BlueSection(){
+    return <>
+    
     <div className="circle-container what-we-offer" id="circle-container">
       <div className="screen screen-3"  style={{height:"fit-content" , border:0}}>
 
@@ -242,29 +166,6 @@ function IndustriesWeServe() {
 
         
       </div>
-
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-        <Box  style={{margin:"auto"}} >
-            <h2>Order Tracking In Real-Time</h2>
-              <div className="content textLeft" >
-                Gain visibility on every single shipment and delivery, GPS tracking in real-time, on a live map through the entire process and accurate ETA. Automatic order alerts and updates via text or email, POD for each order and actual arrival time. 
-              </div>
-        </Box>
-        <Box  style={{margin:"auto"}} >
-            <h2>Transparency & Visibility</h2>
-              <div className="content textLeft" >
-                We breathe transparency into every single shipment and delivery through innovative technologies. Our software allows our customers to keep all their shipments and deliveries information at their fingertips.
-              </div>
-        </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <PathMap></PathMap>
-        </Grid>           
-      </Grid>
-
-    </>
-  );
+    
+        </>
 }
-
-export default IndustriesWeServe;

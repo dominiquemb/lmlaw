@@ -1,42 +1,36 @@
-import Container from "@mui/material/Container";
+import React from 'react';
 import Grid from "@mui/material/Grid";
-import ScrollAnimation from 'react-animate-on-scroll';
 import "../assets/animate.css";
+import PathMap from "./animated-path-map"
+
 import Box from "@mui/material/Box";
-
-
 export  default function BeforeFooter(){
-    return  <Container maxWidth="xl" disableGutters style={{maxWidth:"100%"}}>
-    <Grid container>
-    <Grid item xs={0} md={3.5}>
-          <Box sx = {{ display:{xs:'none' , md:'block'} }} >
-              <div className="content">
-                <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../assets/warehouse-left.jpg')} alt="Blue Logo" />
-              </div>
+    return  <>
+        <div className="screen screen-4" style={{height:"fit-content"}}>
+
+
+          <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+          <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+          <Box  style={{margin:"auto"}} >
+              <h2>Order Tracking In Real-Time</h2>
+                <div className="content textLeft" >
+                  Gain visibility on every single shipment and delivery, GPS tracking in real-time, on a live map through the entire process and accurate ETA. Automatic order alerts and updates via text or email, POD for each order and actual arrival time. 
+                </div>
           </Box>
-      </Grid>
+          <Box  style={{margin:"auto"}} >
+              <h2>Transparency & Visibility</h2>
+                <div className="content textLeft" >
+                  We breathe transparency into every single shipment and delivery through innovative technologies. Our software allows our customers to keep all their shipments and deliveries information at their fingertips.
+                </div>
+          </Box>
+          </Grid>
+          <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+            <PathMap></PathMap>
+          </Grid>           
+          </Grid>
+
+        </div>
 
 
-       
-        <Grid item xs={12} md={5}>
-        <ScrollAnimation animateIn='fadeIn zoomIn' delay={300}
-        animateOut='fadeOut'>
-          <div className="content">
-            <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../assets/plane.jpg')} alt="Blue Logo" />
-          </div>
-          </ScrollAnimation>
-        </Grid>
-      
-        
-        <Grid item xs={0} md={3.5}>
-        <Box sx = {{ display:{xs:'none' , md:'block'} }} >
-
-              <div className="content">
-                <img style={{width:"inherit", display:"block",margin:"auto"}}src={require('../assets/warehouse-right.jpg')} alt="Blue Logo" />
-              </div>
-        </Box>
-
-        </Grid>
-    </Grid>
-  </Container>
+    </>
 }

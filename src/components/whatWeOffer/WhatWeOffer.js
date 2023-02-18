@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import home_page_top_right from '../../assets/blue-column.png';
+import home_page_top_right from '../../assets/blue-circles.png';
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
@@ -27,7 +27,7 @@ function WhatWeOffer() {
               
           </Grid>
           <Grid item xs={0} lg={6} >
-          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"50px 0"}} >
+          <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>

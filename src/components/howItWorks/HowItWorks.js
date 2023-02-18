@@ -8,7 +8,7 @@ import BlueLogo from "../../assets/logo-blue.png"
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
 import BeforeFooter from "../BeforeFooter";
-import home_page_top_right from '../../assets/blue-column.png';
+import home_page_top_right from '../../assets/blue-circles.png';
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
@@ -24,7 +24,7 @@ function HowItWorks() {
 
           <h1 className="circle-h1 circle-text"  style={{ marginTop:"5vh"}}>How It Works</h1>
               <h2 className="circle-h2 circle-text">
-              Partner With AAA For Reliable Same-Day Delivery
+                Seamlessly Place And Track Orders All In One Central Hub
               </h2>
               <img style={{width:"50%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
               <h2 className="circle-h3 circle-text"  style={{textAlign:"left", color:"black",marginLeft:"1vw"}} >Get Started Here</h2>
@@ -37,7 +37,7 @@ function HowItWorks() {
               
           </Grid>
           <Grid item xs={0} md={6} >
-          <Box className="content" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{ marginTop:"20vh", backgroundImage: `url(${home_page_top_right})`  , backgroundRepeat:"no-repeat" , backgroundPosition:"right" , backgroundSize : "auto  100%" , padding:"50px 0"}} >
+          <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video

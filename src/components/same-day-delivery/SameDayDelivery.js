@@ -16,7 +16,7 @@ function SameDayDelivery() {
     <div >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h1 className="circle-h1 circle-text textLeft big-title"  style={{}}>At Home Same-Day Delivery</h1>
+          <h1 className="circle-h1 circle-text textLeft "  style={{}}>At Home Same-Day Delivery</h1>
           <p className=" textLeft" >
             At AAA, we provide same-day, door-to door delivery, so your small business can save time and money while offering customers flexible, and competitive shipping options.
           </p>
@@ -182,7 +182,7 @@ function SameDayDelivery() {
   </Grid>
 
   <p className="content" style={{marin:"auto",width:"70%"}}>
-  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
+  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, please follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
 
   </p>
 

@@ -601,7 +601,7 @@ overflow:hidden;
 }
 
 .unjustified p{
-  text-justify: none !important;
+  text-align: left !important;
 }
 
 span.b {
@@ -625,7 +625,7 @@ video {
 
 }
 p{
-  text-align: justify !important;
+  text-align: justify;
   text-justify: distribute;
 }
 
@@ -966,4 +966,34 @@ img{
 }
 .blue-text{
   color: rgb(54, 123, 220);
+}
+
+
+.MuiGrid-root .MuiGrid-item{
+  position: relative;
+}
+.MuiGrid-root .MuiGrid-item .column-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+.background-blue-circles{
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    background-size: auto 100%;
+    padding: 11% 0px;
+
+}
+
+.background-blue-circles .speak-to-a-specialist-form {
+  margin: auto;
 }

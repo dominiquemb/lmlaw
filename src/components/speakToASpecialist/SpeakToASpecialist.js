@@ -261,7 +261,7 @@ function SpeakToASpecialist() {
     </div>
 
     <p className="content screen-3" style={{marin:"auto",width:"70%"}}>
-      We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
+      We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
     </p>
 
     <Grid container className="screen-3">

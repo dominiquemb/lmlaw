@@ -12,7 +12,7 @@ function SameDayDelivery() {
     <div style={{ marginTop:"5%",padding:"0 5vw", paddingBottom:"10vh"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={7} style={{ marginTop:"5%"}}  >
-          <h1 className="circle-h1  textLeft big-title"  >Ground Transportation</h1>
+          <h1 className="circle-h1  textLeft"  >Ground Transportation</h1>
           <p className="circle-text textLeft" >
             We provide unique business solutions and educated decisions along a set of ground transportation services, expedite, same day, and less than truck load. Providing transparency and visibility into every single shipment and delivery. 
           </p>
@@ -173,7 +173,7 @@ function SameDayDelivery() {
   </Grid>
 
   <p className="content" style={{marin:"auto",width:"70%"}}>
-    We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, pleas follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
+    We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a> 
   </p>
 
   <Grid container>
