@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import PathMap from "../animated-path-map"
+import home_page_top_right from '../../assets/blue-circles.png';
 
 
 function SameDayDelivery() {
@@ -19,6 +20,8 @@ function SameDayDelivery() {
           </p>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={5} >
+        <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
+
           <div style={{width: '100%'}}>
 
            <img style={{
@@ -31,6 +34,7 @@ function SameDayDelivery() {
            }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
 
            </div>
+          </Box>
         </Grid>
 
       </Grid>
@@ -38,6 +42,7 @@ function SameDayDelivery() {
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
 
         <Grid justifyContent="center" item xs={12} sm={4} >
+          
           <div style={{width: '100%'}}>
 
            <img style={{
