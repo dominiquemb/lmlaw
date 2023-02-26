@@ -67,7 +67,7 @@ function Stat() {
             and developed an advanced logistics system to handle even the most urgent deliveries with ease. When you choose our STAT delivery services, you can
             trust that your packages are in good hands and will be delivered safely, quickly, and reliably. No matter how urgent your delivery needs may be, our
             team has the expertise and resources to get the job done, providing you with the peace of mind and confidence that your packages will arrive on time
-            and in perfect condition. Choose us for the best in speed and reliability.Speak To A Specialist.
+            and in perfect condition. Choose us for the best in speed and reliability. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
         </p>
 
         <Grid container>

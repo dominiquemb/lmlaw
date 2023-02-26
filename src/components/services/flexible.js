@@ -65,7 +65,7 @@ function Flexible() {
             With this type of service, customers have more control over the delivery process and can schedule their deliveries to fit their own schedule. This can 
             be especially useful for businesses that need to get a package to its destination quickly but don't necessarily need it to bedelivered on the same day 
             that it's shipped. Scheduled delivery can also be useful for businesses that want to schedule their deliveries in advance to ensure that they have a 
-            consistent and reliable delivery schedule. Speak To A Specialist.
+            consistent and reliable delivery schedule. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
         </p>
 
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
