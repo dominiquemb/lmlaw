@@ -20,12 +20,12 @@ function Stat() {
                 Stat Delivery Service
 	        </h1>
 
-              <h4 className="circle-h4 circle-text">
+              <p className="textLeft circle-text">
                 Our company provides fast and efficient STAT delivery services to meet the needs
                 of our customers. When you choose our STAT delivery option, you can trust that
                 your packages will be handled with the utmost care and attention, ensuring that
                 they are delivered safely, quickly, and reliably. Register Here.
-              </h4>
+              </p>
 
               
           </Grid>
@@ -33,10 +33,16 @@ function Stat() {
           <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
-            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source  src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}   type="video/mp4" />
-                        Your browser does not support the video tag.
-            </video>
+
+           <img style={{
+            display:'block',
+            width:"100%",
+            margin:" auto",
+            borderRadius:"clamp(10px,3%,50px)",
+            boxShadow:"1px 1px 6px -2px grey",
+
+           }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
+
           </div>
 
           </Box  >
@@ -45,6 +51,7 @@ function Stat() {
           </Grid>
 
     </Grid>
+    
 
     <div className="screen screen-2" style={{height:'fit-content'}}>
 

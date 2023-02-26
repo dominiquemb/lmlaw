@@ -20,12 +20,12 @@ function Flexible() {
                 Flexible Same-Day Delivery
 	        </h1>
 
-              <h4 className="circle-h4 circle-text">
+              <p className="textLeft circle-text">
                 At AAA DELIVERY SERVICE, we offer flexible same-day or scheduled delivery 
                 options for businesses. Whether you need to get a package to its destination 
                 quickly or have a more flexible timeline, we have the resources to meet your 
                 needs. Register Here.
-              </h4>
+              </p>
 
               
           </Grid>
@@ -33,10 +33,16 @@ function Flexible() {
           <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
-            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source  src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}   type="video/mp4" />
-                        Your browser does not support the video tag.
-            </video>
+
+           <img style={{
+            display:'block',
+            width:"100%",
+            margin:" auto",
+            borderRadius:"clamp(10px,3%,50px)",
+            boxShadow:"1px 1px 6px -2px grey",
+
+           }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
+
           </div>
 
           </Box  >

@@ -34,12 +34,12 @@ import Stat from './components/services/stat';
 
 const pages = [
   {label: 'Home', url: '/'},
+  {label: 'Delivery', url: '/'},
   {label: 'What We Offer', url: '/what-we-offer'},
   {label: 'How It Works', url: '/how-it-works'},
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Locations', url: '/locations'} ,
   {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} ,
-  {label: 'Delivery', url: '/'},
   {label: 'Carriers', url: '/carriers'}];
 
 const industries = [
@@ -49,9 +49,9 @@ const industries = [
   {label: 'Same day', url: '/same-day-delivery'}];
 
 const delivery = [
-  {label: 'Stat' , url:'/stat-delivery-services'},
-  {label: 'Scheduled' , url:'/schedule-delivery'},
-  {label: 'Flexible' , url:'/flexible-delivery'},
+  {label: 'Stat Delivery' , url:'/stat-delivery-services'},
+  {label: 'Scheduled Route Delivery' , url:'/schedule-delivery'},
+  {label: 'Flexible Same Day Delivery' , url:'/flexible-delivery'},
   
 
 ]
@@ -239,7 +239,8 @@ function IndustriesDropdown(){
         Industries ▼
       <div className="dropdown-content">
     {industries.map((page, index) => (
-          <div><a href={page.url}>{page.label}</a></div>
+      
+          <a href={page.url}>{page.label}</a>
       ))}
       </div>
       </Button>
@@ -257,7 +258,7 @@ function DeliveryDropdown(){
         Delivery ▼
       <div className="dropdown-content">
     {delivery.map((page, index) => (
-          <div><a href={page.url}>{page.label}</a></div>
+          <a href={page.url}>{page.label}</a>
       ))}
       </div>
       </Button>

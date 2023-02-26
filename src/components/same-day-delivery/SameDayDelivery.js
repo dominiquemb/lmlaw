@@ -12,7 +12,7 @@ function SameDayDelivery() {
 
 
   return (
-    <>
+    <div className="home">
     <div >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
@@ -234,7 +234,7 @@ function SameDayDelivery() {
         </Grid>           
       </Grid>
 
-    </>
+    </div>
   );
 }
 

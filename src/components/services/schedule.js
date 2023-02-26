@@ -21,13 +21,13 @@ function Schedule() {
                 Scheduled Route Delivery Services
             </h1>
 
-            <h4 className="circle-h4 circle-text">
+            <p className="textLeft circle-text">
                 Our route delivery service is a reliable solution for transporting packages to 
                 multiple locations on a regular basis. You can easily schedule a delivery through 
                 our convenient online portal, which is accessible from any device at any time. 
                 Our delivery times are precise, so you can trust that your package will arrive 
                 exactly when it is supposed to. Get Started.
-            </h4>
+            </p>
 
               
           </Grid>
@@ -35,10 +35,16 @@ function Schedule() {
           <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
-            <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source  src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}   type="video/mp4" />
-                        Your browser does not support the video tag.
-            </video>
+
+           <img style={{
+            display:'block',
+            width:"100%",
+            margin:" auto",
+            borderRadius:"clamp(10px,3%,50px)",
+            boxShadow:"1px 1px 6px -2px grey",
+
+           }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
+
           </div>
 
           </Box  >
