@@ -870,7 +870,7 @@ img{
 }
 
 .home{
-  padding-top: clamp(1.5cm,10vh,5cm);
+  padding-top: clamp(2.5cm,12vh,8cm);
 }
 
 .big-title{
@@ -934,12 +934,13 @@ img{
   left: 0;
 
 }
-.dropdown-content div a{
+.dropdown-content  a{
   color: #000;
 
 }
-.dropdown-content div {
+.dropdown-content a {
   padding: 1vw 1vw 1vw 1vw;
+  display: block;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 
 }
