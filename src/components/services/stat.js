@@ -41,7 +41,7 @@ function Stat() {
             borderRadius:"clamp(10px,3%,50px)",
             boxShadow:"1px 1px 6px -2px grey",
 
-           }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
+           }} src={require('../../assets/path-map-static.png')} alt="delivery signature" />
 
           </div>
 
