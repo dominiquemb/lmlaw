@@ -7,8 +7,16 @@ import "../../assets/animate.css";
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
+import Markdown from '../markdown.js'
+var data = require("../../pages.json");
+
+
+var home = data["home"]["reliable-same-day-delivery-courier-service.json"];
+
+
 
 function HomeScreen() {
+  console.log(data);
 
   return ( 
     <>
@@ -17,11 +25,11 @@ function HomeScreen() {
           <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
           <h1 className="circle-h1 circle-text" style={{marginTop:0, paddingTop:"clamp(1cm,10vh,3cm)",paddingRight:"5%"}}  >
-                Reliable Same-Day Delivery & Courier Service 
+                {home["title"]}
 	            </h1>
 
               <h4 className="circle-h4 circle-text">
-                At AAA, we deliver your packages and cargo faster, safer, on-time every time from door-to-door, across town or across the country
+                {home["subtitle"]}
               </h4>
 
               
@@ -48,30 +56,24 @@ function HomeScreen() {
 
 
       <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
-      <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>Guaranteed On-Time Delivery. Custom Logistics. Shipping Nationwide.</h1>
+      <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+        {home["middle title"]}</h1>
 
         <p className="subheading content">
-        We understand every business is different and can change from day-to-day, minute-to-minute, which is why 
-        we customize our logistics to fit and adapt to your business needs.
+          {home[ "middle subtitle"]}
         </p>
 
         <Grid container>
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
+              <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
-                Healthcare Industry
+                {home["l2title"]}
               </div>
               <div className="content middle-subheader">
-                Reliability
+                {home["l2sbtitle"]}
               </div>
               <div className="content textLeft">
-                We provide on-demand, same-day delivery services, delivering
-                medical supplies, medical devices, health care equipment, 
-                prescription medications, x-rays, or any other exclusive 
-                equipment needed. Our drivers are in compliant with FMCSA, 
-                TSA, HIPAA regulations and OSHA certified. Providing on-the-ground 
-                insights,  tracking in real-time, and geofencing to 
-                ensure driver is at delivery location. <bold className="bold-inline">“You See What We See”</bold>.
+               <Markdown content ={home["l2content"]}></Markdown>
               </div>
               <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
@@ -83,22 +85,21 @@ function HomeScreen() {
               <UsaMap/>
               <img src={require('../../assets/home/home2.png')}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
-                At Home
+                {home["c2title"]}
               </div>
               <div className="content middle-subheader">
-                Availability
+                {home["c2sbtitle"]}
               </div>
 
             </Grid>
 
             <Grid item xs={12} md={4}>
               <img src={require('../../assets/home/home3.png')}  style={{width:"80%",margin:"auto"}}></img>
-
               <div className="content middle bold-inline">
-                Freight Industry
+                {home["r2title"]}
               </div>
               <div className="content middle-subheader">
-                Transparency
+                {home["r2sbtitle"]}
               </div>
               <div className="content textLeft" >
                 We blend advanced technologies with a network of 
@@ -109,7 +110,7 @@ function HomeScreen() {
                 road ahead. We’re always there to help you propel your 
                 same-day delivery capabilities forward. <bold className="bold-inline"> “Learn why so many companies choose AAA”.</bold>
               </div>
-              <div className="column-footer" style={{marginBottom:150}}>
+              <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>

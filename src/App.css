@@ -758,6 +758,10 @@ img{
   display: flex;
 }
 
+strong{
+  font-weight: 700;
+  font-family: sans-serif;
+}
 .bold-inline{
   font-weight: 700;
   font-family: sans-serif;
