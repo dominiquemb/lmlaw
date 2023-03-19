@@ -12,7 +12,7 @@ function SameDayDelivery() {
     <div style={{ marginTop:"5%",padding:"0 5vw", paddingBottom:"10vh"}} >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} sm={7} style={{ marginTop:"5%"}}  >
-          <h1 className="circle-h1  textLeft"  >Ground Transportation</h1>
+          <h1 className="circle-h1  textLeft"  >Ground <br/>Transportation</h1>
           <p className="circle-text textLeft" >
             We provide unique business solutions and educated decisions along a set of ground transportation services, expedite, same day, and less than truck load. Providing transparency and visibility into every single shipment and delivery. 
           </p>
