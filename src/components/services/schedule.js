@@ -17,7 +17,7 @@ function Schedule() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{marginTop:0, paddingTop:"clamp(1cm,10vh,3cm)",paddingRight:"5%"}}  >
+            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
                 Scheduled Route Delivery Services
             </h1>
 
@@ -26,7 +26,7 @@ function Schedule() {
                 multiple locations on a regular basis. You can easily schedule a delivery through 
                 our convenient online portal, which is accessible from any device at any time. 
                 Our delivery times are precise, so you can trust that your package will arrive 
-                exactly when it is supposed to. Get Started.
+                exactly when it is supposed to. <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
             </p>
 
               
@@ -64,10 +64,10 @@ function Schedule() {
         </h1>
 
         <p className="subheading content">
-            A scheduled route delivery service is a type of delivery service in which packages are transported along a predetermined route on a regular basis. 
-            This type of delivery is typically used for businesses that have a high volume of deliveries to make to multiple locations. Route delivery can be more 
-            efficient and cost-effective compared to other types of delivery services, as it allows for the optimization of routes and schedules. In many cases, 
-            businesses will use a combination of different delivery services, including route delivery, to meet the needs of their customers. <a className='red-link' href='/how-it-works'> Learn more.</a>   
+        A scheduled route delivery service is a type of delivery service in which packages are 
+        transported along a predetermined route on a regular basis. Route delivery can be more 
+        efficient and cost-effective compared to other types of delivery services, as it allows 
+        for the optimization of routes and schedules. <a className='red-link' href='/how-it-works'> Learn more.</a>   
         </p>
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
             Advantages Of Scheduled Route Delivery Services
@@ -80,20 +80,17 @@ function Schedule() {
                     Flexibility
                 </div>
                 <div className="content">
-                    STAT delivery services offer a range of
-                    options, such as one hour or same-day
-                    delivery, which allows customers to
-                    choose the delivery speed that best
-                    meets their needs.
+                  Our scheduled route delivery services offer 
+                  the flexibility to customize routes and schedules 
+                  to meet the specific needs of your business.​
                 </div>
                 <div className="content middle bold-inline">
                     Cost-effectiveness
                 </div>
                 <div className="content ">
-                    By optimizing routes and schedules in 
-                    advance, scheduled route delivery can be a 
-                    cost-effective solution for businesses that 
-                    need to make multiple deliveries.
+                  Scheduling routes in advance allows for the optimization 
+                  of routes and schedules, which can result 
+                  in more efficient and cost-effective delivery.​
                 </div>
               <div className="column-footer" >
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>

@@ -162,7 +162,7 @@ export default function BlueSection(){
   
 </div>
       </div>
-      <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
+      <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Flexibility! Efficiency! Cost-Effective! Reliability!​</h2>
 
         
       </div>

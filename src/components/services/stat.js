@@ -16,15 +16,15 @@ function Stat() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{marginTop:0, paddingTop:"clamp(1cm,10vh,3cm)",paddingRight:"5%"}}  >
-                Stat Delivery Service
+            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
+                Stat Delivery <br/> Service
 	        </h1>
 
               <p className="textLeft circle-text">
                 Our company provides fast and efficient STAT delivery services to meet the needs
                 of our customers. When you choose our STAT delivery option, you can trust that
                 your packages will be handled with the utmost care and attention, ensuring that
-                they are delivered safely, quickly, and reliably. Register Here.
+                they are delivered safely, quickly, and reliably.  <a className='red-link' href='/speak-to-a-specialist'> Register here.</a>
               </p>
 
               
@@ -62,13 +62,14 @@ function Stat() {
         </h1>
 
         <p className="subheading content">
-            STAT delivery service is a type of delivery service that is designed to handle urgent or time-sensitive packages. At AAA Delivery Service, we understand
-            the importance of fast and reliable delivery, especially when it comes to time-sensitive packages. That is why we have put together a team of specialists
-            and developed an advanced logistics system to handle even the most urgent deliveries with ease. When you choose our STAT delivery services, you can
-            trust that your packages are in good hands and will be delivered safely, quickly, and reliably. No matter how urgent your delivery needs may be, our
-            team has the expertise and resources to get the job done, providing you with the peace of mind and confidence that your packages will arrive on time
-            and in perfect condition. Choose us for the best in speed and reliability. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
+        STAT delivery services is a type of delivery service that is designed to handle urgent or time-sensitive
+        packages, this service operates 24/7 and specializes in transporting critical medical items such as blood 
+        samples, lab specimens, and medical equipment. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
         </p>
+
+        <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
+            Advantages Of Stat Delivery <br/> Service?
+        </h1>
 
         <Grid container>
             <Grid item xs={12} md={4}>

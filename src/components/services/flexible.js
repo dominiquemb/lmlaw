@@ -16,8 +16,8 @@ function Flexible() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{marginTop:0, paddingTop:"clamp(1cm,10vh,3cm)",paddingRight:"5%"}}  >
-                Flexible Same-Day Delivery
+            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
+                Flexible Same-Day <br/> Delivery
 	        </h1>
 
               <p className="textLeft circle-text">
@@ -61,15 +61,14 @@ function Flexible() {
         </h1>
 
         <p className="subheading content">
-            Flexible same-day or scheduled delivery is a delivery service that allows customers to choose the date and time that their package will be delivered. 
-            With this type of service, customers have more control over the delivery process and can schedule their deliveries to fit their own schedule. This can 
-            be especially useful for businesses that need to get a package to its destination quickly but don't necessarily need it to bedelivered on the same day 
-            that it's shipped. Scheduled delivery can also be useful for businesses that want to schedule their deliveries in advance to ensure that they have a 
-            consistent and reliable delivery schedule. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
+        Flexible same-day or scheduled delivery is a delivery service that allows customers to 
+        choose the date and time that their package will be delivered. With this type of service, 
+        customers have more control 
+        over the delivery process and can schedule their deliveries to fit their own schedule.  <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
         </p>
 
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            Advantages Of Flexible Same-Day Or Scheduled Delivery
+            Advantages Of Flexible Same-Day Or Scheduled <br/> Delivery
         </h1>
 
         <Grid container>
