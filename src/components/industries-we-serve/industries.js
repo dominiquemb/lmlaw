@@ -15,10 +15,10 @@ function IndustriesWeServe() {
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} md={6} style={{ marginTop:"5%"}}  >
           <h1 className="circle-h1  textLeft"  >Industries We Serve</h1>
-          <p className="circle-text textLeft" >
-            We provide instant competitive advantage, beginning with cost-
-            effective instant delivery, in under two hours, our platform
-            combines advancements in same-day deliveries, customer
+          <p className="circle-text textLeft"  >
+            We provide instant competitive advantage, beginning with <br/> cost-
+            effective instant delivery, in under two hours, <br/> our platform
+            combines advancements in same-day deliveries, <br/> customer
             experience, and technology to enable your company to thrive.
           </p>
         </Grid>
