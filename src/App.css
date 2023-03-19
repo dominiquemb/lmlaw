@@ -1011,3 +1011,8 @@ strong{
   margin:auto;
   width:90%;
 }
+
+h1.circle-text.circle-h1 {
+  margin-top: 10vh;
+  padding-top: 11%;
+}
