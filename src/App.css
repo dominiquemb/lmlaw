@@ -736,6 +736,10 @@ ul li , ol li{
   .circle-h4{
     font-size: 1.2em;
   }
+
+  .root{
+    width:100%;
+  }
 }
 
 
@@ -817,7 +821,7 @@ strong{
     height: 9vw;
   }
   #map-and-dropdown{
-    margin-top: 9vh;
+    margin-top: 6vh;
   }
   p{
     font-size: 1.2vw;
@@ -1001,4 +1005,9 @@ strong{
 
 .background-blue-circles .speak-to-a-specialist-form {
   margin: auto;
+}
+
+.root{
+  margin:auto;
+  width:90%;
 }

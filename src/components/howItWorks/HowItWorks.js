@@ -18,26 +18,22 @@ function HowItWorks() {
   return (
     <>
 
-<div id='map-and-dropdown'>
-    <Grid container  style={{marginBottom:"10vh" , padding :"0px 20px"}}>
+<div id='map-and-dropdown' className="root">
+    <Grid container  style={{marginBottom:"1vh" , padding :"0px 20px"}}>
           <Grid item xs={12} md={6}  >
 
-          <h1 className="circle-h1 circle-text"  style={{ marginTop:"5vh"}}>How It Works</h1>
+          <h1 className="circle-h1 circle-text"
+            style={{ marginTop:"10vh",
+                    paddingTop: "11%"}}>How It Works</h1>
               <h2 className="circle-h2 circle-text">
                 Seamlessly Place And Track Orders All In One Central Hub
               </h2>
-              <img style={{width:"50%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
-              <h2 className="circle-h3 circle-text"  style={{textAlign:"left", color:"black",marginLeft:"1vw"}} >Get Started Here</h2>
-              <p className=" circle-text" style={{textAlign:"left", color:"black",marginLeft:"1vw",textJustify:"none"}}>
-                Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
-                today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery 
-                without the added stress of managing each delivery, giving you more time to focus on your core business.
-              </p>
-          
-              
+              <img style={{width:"25%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
+
+                      
           </Grid>
           <Grid item xs={0} md={6} >
-          <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
+          <Box className="content background-blue-circles"  sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{marginBottom:"0px",  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video
@@ -60,6 +56,12 @@ function HowItWorks() {
 
               
           </Grid>
+          <h2 className="circle-h3 "  style={{textAlign:"left", color:"black",marginLeft:"1vw",marginBottom:0}} >Get Started Here</h2>
+          <p  style={{textAlign:"left", color:"black",marginLeft:"1vw",textJustify:"none"}}>
+                Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
+                today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery 
+                without the added stress of managing each delivery, giving you more time to focus on your core business.
+              </p>
     </Grid>
 
 </div>
