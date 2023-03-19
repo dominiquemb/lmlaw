@@ -46,7 +46,7 @@ const industries = [
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Healthcare', url: '/healthcare'},
   {label: 'Freight', url: '/ground-transportation'},
-  {label: 'Same day', url: '/same-day-delivery'}];
+  {label: 'At Home', url: '/at-home'}];
 
 const delivery = [
   {label: 'Stat Delivery' , url:'/stat-delivery-services'},
@@ -63,7 +63,7 @@ const links = [
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Healthcare', url: '/healthcare'},
   {label: 'Freight', url: '/ground-transportation'},
-  {label: 'Same day', url: '/same-day-delivery'},
+  {label: 'At Home', url: '/at-home'},
   {label: 'Home', url: '/'},
   {label: 'What We Offer', url: '/what-we-offer'},
   {label: 'How It Works', url: '/how-it-works'},
@@ -208,7 +208,7 @@ function App() {
           <Route path='/how-it-works' element={<HowItWorks />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/locations' element={<Locations />}></Route>
-          <Route path='/same-day-delivery' element={<SameDayDelivery />}></Route>
+          <Route path='/at-home' element={<SameDayDelivery />}></Route>
           <Route path='/ground-transportation' element={<GroundTransportation />}></Route>
           <Route path='/healthcare' element={<Healthcare />}></Route>
           <Route path='/industries-we-serve' element={<IndustriesWeServe/>}></Route>
