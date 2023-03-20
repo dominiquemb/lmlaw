@@ -255,7 +255,7 @@ function DeliveryDropdown(){
     <Button className="dropdown"
         sx={{ my: 2, color: '#090B27' }}
       >
-        Delivery ▼
+        What We Offer ▼
       <div className="dropdown-content">
     {delivery.map((page, index) => (
           <a href={page.url}>{page.label}</a>
