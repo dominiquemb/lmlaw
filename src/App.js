@@ -35,7 +35,6 @@ import Stat from './components/services/stat';
 const pages = [
   {label: 'Home', url: '/'},
   {label: 'Delivery', url: '/'},
-  {label: 'What We Offer', url: '/what-we-offer'},
   {label: 'How It Works', url: '/how-it-works'},
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Locations', url: '/locations'} ,
@@ -65,12 +64,13 @@ const links = [
   {label: 'Freight', url: '/ground-transportation'},
   {label: 'At Home', url: '/at-home'},
   {label: 'Home', url: '/'},
-  {label: 'What We Offer', url: '/what-we-offer'},
   {label: 'How It Works', url: '/how-it-works'},
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Locations', url: '/locations'} ,
   {label: 'Speak to a specialist', url: '/speak-to-a-specialist'} ,
-  {label: 'Carriers', url: '/carriers'}
+  {label: 'Carriers', url: '/carriers'},
+  {label: 'What We Offer', url: '/what-we-offer'},
+
 ]
 
 
@@ -148,7 +148,7 @@ function App() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
+          <Box  sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}>
             <a href="https://www.aaadeliveryservice.com/" style={{
             width: "inherit",
             marginRight: 0,
@@ -159,6 +159,7 @@ function App() {
 
             <img style={{width:"100%"}} src={require('./assets/new-logo.png')}  alt="AAA Delivery Service" className="logo-1" /> 
           </a>
+          
             {pages.map((page, index) => {
               if(page.label ==="Industries"){
                 return <IndustriesDropdown></IndustriesDropdown>
@@ -167,7 +168,7 @@ function App() {
               }else{
                 return  <a
                 style={{flexGrow:1 , alignSelf: 'center'}}
-                 href={page.url}><Button
+                 href={page.url}><Button className="nav-btn" 
                   key={index}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: '#090B27', display: 'block' }}
@@ -185,7 +186,7 @@ function App() {
 
             <Box sx={{ flexGrow: 1  ,display: { xs: 'none', lg: 'flex' }}}>
                   <a href="https://aaa.e-courier.com/aaa/home/index.asp">
-                  <button  className="round-button " style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
+                  <button  className="round-button" id="online-portal-button"  style={{ width : "fit-content", marginLeft:"20%" , marginTop:10, marginBottom:10 , backgroundColor:"#367bdc"}}>
                     Online Portal
                   </button>
                   </a>
@@ -233,8 +234,8 @@ export default App;
 function IndustriesDropdown(){
   return <>
     <Box style={{alignSelf:'center'}}> 
-    <Button className="dropdown"
-        sx={{ my: 2, color: '#090B27' }}
+    <Button className="dropdown nav-btn"
+        sx={{ my: 2, color: '#090B27' }} 
       >
         Industries ▼
       <div className="dropdown-content">
@@ -252,10 +253,16 @@ function IndustriesDropdown(){
 function DeliveryDropdown(){
   return <>
     <Box style={{alignSelf:'center'}}> 
-    <Button className="dropdown"
+    <Button className="dropdown nav-btn"
         sx={{ my: 2, color: '#090B27' }}
       >
-        What We Offer ▼
+        <a
+                style={{flexGrow:1 , alignSelf: 'center',color:"black"}}
+                href='/what-we-offer'>
+                  What We Offer ▼
+                </a>
+
+                
       <div className="dropdown-content">
     {delivery.map((page, index) => (
           <a href={page.url}>{page.label}</a>

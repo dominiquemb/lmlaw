@@ -1016,3 +1016,12 @@ h1.circle-text.circle-h1 {
   margin-top: 10vh;
   padding-top: 11%;
 }
+
+.nav-btn {
+  font-size: 1.1vw !important;
+  margin: 0 auto !important;
+}
+
+#online-portal-button{
+  font-size: 1vw;
+}
