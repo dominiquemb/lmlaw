@@ -18,9 +18,9 @@ function HowItWorks() {
   return (
     <>
 
-<div id='map-and-dropdown' className="root">
-    <Grid container  style={{marginBottom:"1vh" , padding :"0px 20px"}}>
-          <Grid item xs={12} md={6}  >
+  <div id='map-and-dropdown' >
+    <Grid container  style={{marginBottom:"1vh" , padding :"0px 20px",paddingLeft :"5vw"}}>
+          <Grid item xs={12} md={6}   >
 
           <h1 className="circle-h1 circle-text"
             style={{ marginTop:"10vh",
@@ -56,12 +56,12 @@ function HowItWorks() {
 
               
           </Grid>
-          <h2 className="circle-h3 "  style={{textAlign:"left", color:"black",marginLeft:"1vw",marginBottom:0}} >Get Started Here</h2>
-          <p  style={{textAlign:"left", color:"black",marginLeft:"1vw",textJustify:"none"}}>
+          <p  className="industries-paragraph"  style={{maxWidth:"70%"}}>
+          <h2 className="circle-h3 "  style={{marginBottom:10}} >Get Started Here</h2>
                 Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
                 today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery 
                 without the added stress of managing each delivery, giving you more time to focus on your core business.
-              </p>
+          </p>
     </Grid>
 
 </div>

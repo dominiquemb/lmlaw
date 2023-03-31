@@ -14,10 +14,10 @@ function SameDayDelivery() {
   return (
     <div className="home">
     <div >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, marginTop:"5vh", height:"fit-content"}}>
         <Grid item xs={12} sm={8} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h1 className="circle-h1 circle-text textLeft "  style={{}}>At Home Same-Day Delivery</h1>
-          <p className=" textLeft" >
+          <h1 className="circle-h1   "  style={{}}>At Home Same-Day Delivery</h1>
+          <p style={{ textAlign:"justify"}}>
             At AAA, we provide same-day, door-to door delivery, so your small business can save time and money while offering customers flexible, and competitive shipping options.
           </p>
         </Grid>

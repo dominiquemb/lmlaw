@@ -11,78 +11,45 @@ function SameDayDelivery() {
 
   return (
     <div className="home" >
-    <div style={{padding:"0 5vw" , paddingTop:"clamp(1cm,10vh,3cm)" }} >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} sm={7}   >
-          <h1 className="circle-h1  textLeft" style={{ marginTop:0}} >Healthcare <br/> Courier Services</h1>
-          <p className="circle-text textLeft" >
-            We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries.
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={5} >
-        <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
+      <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
+        <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-          <div style={{width: '100%'}}>
+            <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
+              Healthcare <br/> Courier Services
+	          </h1>
+
+              <p className="industries-paragraph" >
+                We provide you with reliability, experience, 
+                and professionalism on every delivery. With our 
+                same-day courier services, you are guaranteed faster, 
+                safer, and on-time deliveries.
+              </p>
+
+              
+          </Grid>
+          <Grid item xs={0} lg={6} >
+          <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
+
+          <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
 
            <img style={{
             display:'block',
-            width:"90%",
+            width:"100%",
             margin:" auto",
             borderRadius:"clamp(10px,3%,50px)",
             boxShadow:"1px 1px 6px -2px grey",
 
            }} src={require('../../assets/healthcare-images/healthcare.jpg')} alt="delivery signature" />
 
-           </div>
-          </Box>
-        </Grid>
+          </div>
 
-      </Grid>
+          </Box  >
 
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+              
+          </Grid>
 
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          
-          <div style={{width: '100%'}}>
+    </Grid>
 
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-        }} src={require('../../assets/healthcare-images/healthcare1.png')} alt="delivery signature" />
-
-            <h2 className="centered">Medical Laboratories</h2>
-           </div>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-           }} src={require('../../assets/healthcare-images/healthcare2.png')} alt="delivery signature" />
-            <h2 className="centered">Hospitals & Health Systems</h2>
-           </div>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} sm={4} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"4vh auto"
-        }} src={require('../../assets/healthcare-images/healthcare3.png')} alt="delivery signature" />
-
-            <h2 className="centered">Pharmacies</h2>
-
-           </div>
-        </Grid>
-
-      </Grid>
-
-
-    </div>
     <div className="circle-container what-we-offer" id="circle-container">
       <div className="screen screen-3"  style={{height:"fit-content" , border:0}}>
 

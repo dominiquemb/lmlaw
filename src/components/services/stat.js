@@ -16,11 +16,11 @@ function Stat() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
+            <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
                 Stat Delivery <br/> Service
 	        </h1>
 
-              <p className="textLeft circle-text">
+              <p className="industries-paragraph" >
                 Our company provides fast and efficient STAT delivery services to meet the needs
                 of our customers. When you choose our STAT delivery option, you can trust that
                 your packages will be handled with the utmost care and attention, ensuring that

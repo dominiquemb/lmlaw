@@ -17,11 +17,11 @@ function Schedule() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
+            <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
                 Scheduled Route Delivery Services
             </h1>
 
-            <p className="textLeft circle-text">
+            <p  className="industries-paragraph">
                 Our route delivery service is a reliable solution for transporting packages to 
                 multiple locations on a regular basis. You can easily schedule a delivery through 
                 our convenient online portal, which is accessible from any device at any time. 

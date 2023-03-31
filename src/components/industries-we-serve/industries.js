@@ -11,19 +11,19 @@ function IndustriesWeServe() {
 
   return (
     <>
-    <div style={{ marginTop:"5%",padding:"0 5vw"}} >
+    <div className="home" >
       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} md={6} style={{ marginTop:"5%"}}  >
           <h1 className="circle-h1  textLeft"  >Industries We Serve</h1>
-          <p className="circle-text textLeft"  >
-            We provide instant competitive advantage, beginning with <br/> cost-
-            effective instant delivery, in under two hours, <br/> our platform
-            combines advancements in same-day deliveries, <br/> customer
+          <p className="industries-paragraph"  >
+            We provide instant competitive advantage, beginning with cost-
+            effective instant delivery, in under two hours, our platform
+            combines advancements in same-day deliveries, customer
             experience, and technology to enable your company to thrive.
           </p>
         </Grid>
         <Grid item xs={0} md={6} >
-        <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'none', lg: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
+        <Box className="content background-blue-circles" sx={{ display: { xs: 'none', md: 'block' } }} style={{  backgroundImage: `url(${home_page_top_right})`}} >
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>

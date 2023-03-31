@@ -484,7 +484,7 @@ ul {
 }
 
 .speak-to-a-specialist-form {
-  width:68% !important;
+  width:75% !important;
   z-index: 3;
 }
 
@@ -678,6 +678,9 @@ ul li , ol li{
 
 /* For small devices */
 @media only screen and (max-width: 600px) {
+  #root{
+    padding-top: 3vh;
+  }
   h1{
     font-size: 1.8em !important;
   }
@@ -875,10 +878,13 @@ strong{
   .logo-1{
     width: 3vw;
   }
+  .industries-paragraph{
+    width: 80%;
+  }
 }
 
 .home{
-  padding-top: clamp(2.5cm,12vh,8cm);
+  padding-top: clamp(1cm,3vh,4cm);
 }
 
 .big-title{
@@ -983,7 +989,7 @@ strong{
 }
 .MuiGrid-root .MuiGrid-item .column-footer{
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -1012,10 +1018,15 @@ strong{
   width:90%;
 }
 
+h1 {
+  line-height: 120%;
+}
 h1.circle-text.circle-h1 {
   margin-top: 10vh;
   padding-top: 11%;
 }
+
+
 
 .nav-btn {
   font-size: 1.1vw !important;
@@ -1024,4 +1035,20 @@ h1.circle-text.circle-h1 {
 
 #online-portal-button{
   font-size: 1vw;
+}
+
+
+.circle-h1.textLeft{
+  margin-left: 50px;
+  margin-top: 10vh;
+  padding-top: 11%;
+
+}
+.industries-paragraph{
+  margin-left: 50px;
+}
+
+.invert{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }

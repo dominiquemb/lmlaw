@@ -31,6 +31,7 @@ import CarrierRegistration from './components/carrier/carrier-registration';
 import Flexible from './components/services/flexible';
 import Schedule from './components/services/schedule';
 import Stat from './components/services/stat';
+import Overnight from './components/services/overnight';
 
 const pages = [
   {label: 'Home', url: '/'},
@@ -45,9 +46,11 @@ const industries = [
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Healthcare', url: '/healthcare'},
   {label: 'Freight', url: '/ground-transportation'},
+  {label: 'Overnight', url: '/overnight-deliveries'},  
   {label: 'At Home', url: '/at-home'}];
 
 const delivery = [
+  {label: 'What We Offer' , url:'/what-we-offer'},
   {label: 'Stat Delivery' , url:'/stat-delivery-services'},
   {label: 'Scheduled Route Delivery' , url:'/schedule-delivery'},
   {label: 'Flexible Same Day Delivery' , url:'/flexible-delivery'},
@@ -61,6 +64,7 @@ const links = [
   {label: 'Flexible' , url:'/flexible-delivery'},
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Healthcare', url: '/healthcare'},
+  {label: 'Overnight', url: '/overnight-deliveries'},  
   {label: 'Freight', url: '/ground-transportation'},
   {label: 'At Home', url: '/at-home'},
   {label: 'Home', url: '/'},
@@ -218,6 +222,8 @@ function App() {
           <Route path='/schedule-delivery' element={<Schedule/>}></Route>
           <Route path='/stat-delivery-services' element={<Stat/>}></Route>
           <Route path='/flexible-delivery' element={<Flexible/>}></Route>
+          <Route path='/overnight-deliveries' element={<Overnight/>}></Route>
+          
 
 
         </Routes>
@@ -256,13 +262,7 @@ function DeliveryDropdown(){
     <Button className="dropdown nav-btn"
         sx={{ my: 2, color: '#090B27' }}
       >
-        <a
-                style={{flexGrow:1 , alignSelf: 'center',color:"black"}}
-                href='/what-we-offer'>
-                  What We Offer ▼
-                </a>
-
-                
+        What We Offer ▼     
       <div className="dropdown-content">
     {delivery.map((page, index) => (
           <a href={page.url}>{page.label}</a>

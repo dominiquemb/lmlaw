@@ -16,11 +16,11 @@ function Flexible() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
-            <h1 className="circle-h1 circle-text" style={{paddingRight:"5%"}}  >
+            <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
                 Flexible Same-Day <br/> Delivery
 	        </h1>
 
-              <p className="textLeft circle-text">
+              <p className="industries-paragraph" >
                 At AAA DELIVERY SERVICE, we offer flexible same-day or scheduled delivery 
                 options for businesses. Whether you need to get a package to its destination 
                 quickly or have a more flexible timeline, we have the resources to meet your 
