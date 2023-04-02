@@ -20,7 +20,7 @@ function HomeScreen() {
 
   return ( 
     <>
-    <div className="home">
+    <div className="home" style={{marginTop:"5vh"}}>
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
           <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
