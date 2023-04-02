@@ -68,7 +68,7 @@ function Flexible() {
         </p>
 
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            Advantages Of Flexible Same-Day Or Scheduled <br/> Delivery
+            Advantages Of Flexible Same-Day Or <br/> Scheduled  Delivery
         </h1>
 
         <Grid container>
