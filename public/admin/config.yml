@@ -139,7 +139,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", required: false , widget: "string"}
-      - {label: "Top video" , name: "video" , required: false , widget: "file"}
+      - {label: "Top image" , name: "top-image" , required: false , widget: "image"}
       - {label: "Subtitle", name: "subtitle", required: false , widget: "string"}
       - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
       - {label: "Middle Subtitle", name: "middle subtitle", required: false , widget: "string"}
