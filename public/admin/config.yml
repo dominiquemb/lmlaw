@@ -16,34 +16,34 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Middle Title", name: "middle title", widget: "string"}
-      - {label: "Middle Subtitle", name: "middle subtitle", widget: "string"}
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "string"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      - {label: "Middle Subtitle", name: "middle subtitle", required: false , widget: "string"}
 
       #---------------------------------
 
-      - {label: "Screen 2 Left image", name: "l2img", widget: "image"}
-      - {label: "Screen 2 Left Title", name: "l2title", widget: "string"}
-      - {label: "Screen 2 Left Subtitle", name: "l2sbtitle", widget: "string"}
-      - {label: "Screen 2 Left Content", name: "l2content", widget: "markdown"}
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title", name: "l2title", required: false , widget: "string"}
+      - {label: "Screen 2 Left Subtitle", name: "l2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Left Content", name: "l2content", required: false , widget: "markdown"}
 
 
-      - {label: "Screen 2 Center image", name: "c2img", widget: "image"}
-      - {label: "Screen 2 Center Title", name: "c2title", widget: "string"}
-      - {label: "Screen 2 Center Subtitle", name: "c2sbtitle", widget: "string"}
-      - {label: "Screen 2 Center Content", name: "c2content", widget: "markdown"}
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+      - {label: "Screen 2 Center Subtitle", name: "c2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Center Content", name: "c2content", required: false , widget: "markdown"}
 
 
-      - {label: "Screen 2 Right image", name: "r2img", widget: "image"}
-      - {label: "Screen 2 Right Title", name: "r2title", widget: "string"}
-      - {label: "Screen 2 Right Subtitle", name: "r2sbtitle", widget: "string"}
-      - {label: "Screen 2 Right Content", name: "r2content", widget: "markdown"}
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title", name: "r2title", required: false , widget: "string"}
+      - {label: "Screen 2 Right Subtitle", name: "r2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Right Content", name: "r2content", required: false , widget: "markdown"}
 
 
       #---------------------------------
 
-      - {label: "Top Semi circle text", name: "topsmtext", widget: "string"}
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
 
 
       - label: "Paragraph with image" 
@@ -55,16 +55,16 @@ collections:
             name: "pgimg"
             widget: "object"
             fields:
-              - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
-              - {label: "Paragraph Title" , name: "title", widget: "string"}
-              - {label: "Paragraph Content" , name: "content", widget: "markdown" }
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
 
-      - {label: "Bottom text", name: "bottomtext", widget: "markdown"}
+      - {label: "Bottom text", name: "bottomtext", required: false , widget: "markdown"}
 
-      - {label: "Botttom Left Image", name: "blimage", widget: "image"}
-      - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
-      - {label: "Botttom Right Image", name: "brimage", widget: "image"}
-      - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
   
   - name: "What-we-offer" # Used in routes, e.g., /admin/collections/blog
     extension : "json"
@@ -74,37 +74,37 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Middle Title", name: "middle title", widget: "string"}
-      - {label: "Middle Subtitle", name: "middle subtitle", widget: "string"}
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "string"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      - {label: "Middle Subtitle", name: "middle subtitle", required: false , widget: "string"}
       
       #---------------------------------
 
-      - {label: "Screen 2 Left image", name: "l2img", widget: "image"}
-      - {label: "Screen 2 Left Title", name: "l2title", widget: "string"}
-      - {label: "Screen 2 Left Subtitle", name: "l2sbtitle", widget: "string"}
-      - {label: "Screen 2 Left Content", name: "l2content", widget: "markdown"}
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title", name: "l2title", required: false , widget: "string"}
+      - {label: "Screen 2 Left Subtitle", name: "l2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Left Content", name: "l2content", required: false , widget: "markdown"}
 
 
-      - {label: "Screen 2 Center image", name: "c2img", widget: "image"}
-      - {label: "Screen 2 Center Title", name: "c2title", widget: "string"}
-      - {label: "Screen 2 Center Subtitle", name: "c2sbtitle", widget: "string"}
-      - {label: "Screen 2 Center Content", name: "c2content", widget: "markdown"}
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+      - {label: "Screen 2 Center Subtitle", name: "c2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Center Content", name: "c2content", required: false , widget: "markdown"}
 
 
-      - {label: "Screen 2 Right image", name: "r2img", widget: "image"}
-      - {label: "Screen 2 Right Title", name: "r2title", widget: "string"}
-      - {label: "Screen 2 Right Subtitle", name: "r2sbtitle", widget: "string"}
-      - {label: "Screen 2 Right Content", name: "r2content", widget: "markdown"}
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title", name: "r2title", required: false , widget: "string"}
+      - {label: "Screen 2 Right Subtitle", name: "r2sbtitle", required: false , widget: "string"}
+      - {label: "Screen 2 Right Content", name: "r2content", required: false , widget: "markdown"}
 
 
       #---------------------------------
 
-      - {label: "Top Semi circle text", name: "topsmtext", widget: "string"}
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
       
       #---------------------------------
-      - {label: "Blue zone top text", name: "blueTopText", widget: "markdown"}
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
       - label: "Paragraph with image" 
         name: "paragraphs"
         widget: "list"
@@ -114,14 +114,14 @@ collections:
             name: "pgimg"
             widget: "object"
             fields:
-              - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
-              - {label: "Paragraph Title" , name: "title", widget: "string"}
-              - {label: "Paragraph Content" , name: "content", widget: "markdown" }
-      - {label: "Blue zone bottom text", name: "blueBottomText", widget: "markdown"}
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
 
-      - {label: "Botttom Left Image", name: "blimage", widget: "image"}
-      - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
-      - {label: "Botttom Right Image", name: "brimage", widget: "image"}
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
 
-      - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
   
