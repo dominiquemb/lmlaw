@@ -117,9 +117,11 @@ collections:
               - {label: "Paragraph Image", name: "thumbnail", widget: "image"}
               - {label: "Paragraph Title" , name: "title", widget: "string"}
               - {label: "Paragraph Content" , name: "content", widget: "markdown" }
-      - {label: "Blue zone bottom text", name: "blueTopText", widget: "markdown"}
+      - {label: "Blue zone bottom text", name: "blueBottomText", widget: "markdown"}
+
       - {label: "Botttom Left Image", name: "blimage", widget: "image"}
       - {label: "Botttom Center Image", name: "bcimage", widget: "image"}
       - {label: "Botttom Right Image", name: "brimage", widget: "image"}
+
       - {label: "Bottom Semi circle text", name: "bottomsmtext", widget: "string"}
   
