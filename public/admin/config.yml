@@ -234,4 +234,222 @@ collections:
       - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
 
       - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+
+  #----------------------------------------------------------------------------------------
+  - name: "Industries" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Industries" # Used in the UI
+    folder: "pages/Industries" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Top video" , name: "top-video" , required: false , widget: "file"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "markdown"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      
+      #---------------------------------
+      
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title 1", name: "l2title1", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title 1", name: "r2title1", required: false , widget: "string"}
+
+
+      #---------------------------------
+
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
+      
+      #---------------------------------
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
+      - label: "Paragraph with image" 
+        name: "paragraphs"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "pgimg"
+            widget: "object"
+            fields:
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
+
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
   
+  #--------------------------------------------
+  - name: "Healthcare" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Healthcare" # Used in the UI
+    folder: "pages/Healthcare" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Top image" , name: "top-image" , required: false , widget: "image"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "markdown"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      
+      #---------------------------------
+      
+
+
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
+      
+      #---------------------------------
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
+      - label: "Paragraph with image" 
+        name: "paragraphs"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "pgimg"
+            widget: "object"
+            fields:
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
+
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+  
+#----------------------------------------------------------------------------------------
+  - name: "Freight" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Freight" # Used in the UI
+    folder: "pages/Freight" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Top Image" , name: "top-image" , required: false , widget: "image"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "markdown"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      
+      #---------------------------------
+      
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title 1", name: "l2title1", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title 1", name: "r2title1", required: false , widget: "string"}
+
+
+      #---------------------------------
+
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
+      
+      #---------------------------------
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
+      - label: "Paragraph with image" 
+        name: "paragraphs"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "pgimg"
+            widget: "object"
+            fields:
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
+
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+
+
+#----------------------------------------------------------------------------------------
+  - name: "Freight" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Freight" # Used in the UI
+    folder: "pages/Freight" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+      - {label: "Title", name: "title", required: false , widget: "string"}
+
+      - label: "Paragraph with image top" 
+        name: "paragraphs top"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image top"
+            name: "paragraphs-with-image-top"
+            widget: "object"
+            fields:
+              - {label: "Paragraph Image top", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title top" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content top" , name: "content", required: false , widget: "markdown" }
+      
+      #---------------------------------
+      
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title 1", name: "l2title1", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+
+
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title 1", name: "r2title1", required: false , widget: "string"}
+
+
+      #---------------------------------
+
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
+      
+      #---------------------------------
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
+      - label: "Paragraph with image" 
+        name: "paragraphs"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "pgimg"
+            widget: "object"
+            fields:
+              - {label: "Paragraph Image", name: "thumbnail", required: false , widget: "image"}
+              - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+              - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
+
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
