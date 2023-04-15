@@ -453,3 +453,96 @@ collections:
       - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
 
       - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+
+
+  #----------------------------------------------------------------------------------------
+  - name: "Locations" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Locations" # Used in the UI
+    folder: "pages/Locations" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Middle Title", name: "middle title", required: false , widget: "string"}
+      
+      #---------------------------------
+      - {label: "Screen 2 Left image", name: "l2img", required: false , widget: "image"}
+      - {label: "Screen 2 Left Title 1", name: "l2title1", required: false , widget: "string"}
+      - {label: "Screen 2 Left Content 1", name: "l2content1", required: false , widget: "markdown"}
+      - {label: "Screen 2 Left Title 2", name: "l2title2", required: false , widget: "string"}
+      - {label: "Screen 2 Left Content 2", name: "l2content2", required: false , widget: "markdown"}
+
+
+      - {label: "Screen 2 Center image", name: "c2img", required: false , widget: "image"}
+      - {label: "Screen 2 Center Title", name: "c2title", required: false , widget: "string"}
+      - {label: "Screen 2 Center Content", name: "c2content", required: false , widget: "markdown"}
+
+
+      - {label: "Screen 2 Right image", name: "r2img", required: false , widget: "image"}
+      - {label: "Screen 2 Right Title 1", name: "r2title1", required: false , widget: "string"}
+      - {label: "Screen 2 Right Content 1", name: "r2content1", required: false , widget: "markdown"}
+      - {label: "Screen 2 Right Title 2", name: "r2title2", required: false , widget: "string"}
+      - {label: "Screen 2 Right Content 2", name: "r2content2", required: false , widget: "markdown"}
+
+
+      #---------------------------------
+
+      
+      #---------------------------------
+      - {label: "Paragraph Image Right", name: "image-right", required: false , widget: "image"}
+      - {label: "Paragraph Image Left", name: "image-left", required: false , widget: "image"}
+      - {label: "Paragraph Title" , name: "title", required: false , widget: "string"}
+      - {label: "Paragraph Content" , name: "content", required: false , widget: "markdown" }
+      - {label: "Paragraph Content 2" , name: "content 2", required: false , widget: "markdown" }
+
+
+      #-----------------------------------------------------------------------
+      - {label: "Blue zone bottom text", name: "blueBottomText", required: false , widget: "markdown"}
+
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+  
+  - name: "Speak-to-a-specialist" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Speak to a specialist" # Used in the UI
+    folder: "pages/speak-to-a-specialist" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Top video" , name: "top-image" , required: false , widget: "file"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "markdown"}
+      
+
+      #---------------------------------
+      - {label: "Top Semi circle text", name: "topsmtext", required: false , widget: "string"}
+      - {label: "Blue zone top text", name: "blueTopText", required: false , widget: "markdown"}
+      - {label: "Blue zone title", name: "blueTitle", required: false , widget: "markdown"}
+      - {label: "Blue zone content", name: "blueContent", required: false , widget: "markdown"}
+      - {label: "Blue zone video" , name: "bluevideo" , required: false , widget: "file"}
+
+
+      #-----------------------------------------
+      - {label: "Screen 3 Top Semi circle text", name: "s3topsmtext", required: false , widget: "string"}
+      - {label: "Screen 3  top text", name: "s3TopText", required: false , widget: "markdown"}
+      - {label: "Screen 3 Left Content ", name: "s3l2content1", required: false , widget: "markdown"}
+      - {label: "Screen 3 Center image", name: "s3c2img", required: false , widget: "image"}
+      - {label: "Screen 3 Right Content", name: "s3r2content1", required: false , widget: "markdown"}
+      - {label: "Screen 3  bottom text", name: "s3BottomText", required: false , widget: "markdown"}
+
+
+      #---------------------------------
+      - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
+      - {label: "Botttom Left subtitle", name: "blueTitleLeft", required: false , widget: "markdown"}
+      - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
+      - {label: "Botttom Center subtitle", name: "blueTitleCenter", required: false , widget: "markdown"}
+      - {label: "Botttom Right Image", name: "brimage", required: false , widget: "image"}
+      - {label: "Botttom Center subtitle", name: "blueTitleRight", required: false , widget: "markdown"}
+
+      - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
