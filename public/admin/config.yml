@@ -572,8 +572,8 @@ collections:
       - {label: "Top image", name: "timage", required: false , widget: "image"}
       - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
       - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
-      - {label: "Pagrgraph 3", name: "p2", required: false , widget: "markdown"}
-      - {label: "Pagrgraph 4", name: "p2", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 3", name: "p3", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 4", name: "p4", required: false , widget: "markdown"}
     #------------------------------------------
       - {label: "underlined title", name: "ut", required: false , widget: "string"}
       - {label: "title 1", name: "t1", required: false , widget: "markdown"}
@@ -583,7 +583,7 @@ collections:
       - {label: "title 3", name: "t3", required: false , widget: "markdown"}
       - {label: "paragraph  title 3", name: "pt3", required: false , widget: "markdown"}
       - {label: "title 4", name: "t4", required: false , widget: "markdown"}
-      - {label: "paragraph  title 4", name: "pt5", required: false , widget: "markdown"}
+      - {label: "paragraph  title 4", name: "pt4", required: false , widget: "markdown"}
     #---------------------------------------------------
       - label: "Founders list" 
         name: "founders"
