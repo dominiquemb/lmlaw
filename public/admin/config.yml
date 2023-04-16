@@ -546,3 +546,67 @@ collections:
       - {label: "Botttom Center subtitle", name: "blueTitleRight", required: false , widget: "markdown"}
 
       - {label: "Bottom Semi circle text", name: "bottomsmtext", required: false , widget: "string"}
+  - name: "carriers" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Carriers" # Used in the UI
+    folder: "pages/carriers" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Subtitle", name: "subtitle", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
+      - {label: "Title 2", name: "title2", required: false , widget: "string"}
+      - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
+  
+  - name: "about-us" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "About us" # Used in the UI
+    folder: "pages/about-us" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", required: false , widget: "string"}
+      - {label: "Top image", name: "timage", required: false , widget: "image"}
+      - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 3", name: "p2", required: false , widget: "markdown"}
+      - {label: "Pagrgraph 4", name: "p2", required: false , widget: "markdown"}
+    #------------------------------------------
+      - {label: "underlined title", name: "ut", required: false , widget: "string"}
+      - {label: "title 1", name: "t1", required: false , widget: "markdown"}
+      - {label: "paragraph  title 1", name: "pt1", required: false , widget: "markdown"}
+      - {label: "title 2", name: "t2", required: false , widget: "markdown"}
+      - {label: "paragraph  title 2", name: "pt2", required: false , widget: "markdown"}
+      - {label: "title 3", name: "t3", required: false , widget: "markdown"}
+      - {label: "paragraph  title 3", name: "pt3", required: false , widget: "markdown"}
+      - {label: "title 4", name: "t4", required: false , widget: "markdown"}
+      - {label: "paragraph  title 4", name: "pt5", required: false , widget: "markdown"}
+    #---------------------------------------------------
+      - label: "Founders list" 
+        name: "founders"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "pgimg"
+            widget: "object"
+            fields:
+              - {label: "Founder name" , name: "name", required: false , widget: "string"}
+              - {label: "Founder job" , name: "job", required: false , widget: "string" }
+
+  - name: "footer" # Used in routes, e.g., /admin/collections/blog
+    extension : "json"
+    format : "json" 
+    label: "Footer" # Used in the UI
+    folder: "pages/footer" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title 1", name: "title1", required: false , widget: "string"}
+      - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
+      - {label: "Title 2", name: "title2", required: false , widget: "string"}
+      - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
+      - {label: "Top image", name: "timage", required: false , widget: "image"}
