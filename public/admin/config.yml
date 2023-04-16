@@ -610,4 +610,4 @@ collections:
       - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
       - {label: "Title 2", name: "title2", required: false , widget: "string"}
       - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
-      - {label: "Top image", name: "timage", required: false , widget: "image"}
+      - {label: "Top video", name: "tvideo", required: false , widget: "file"}
