@@ -538,7 +538,8 @@ collections:
 
 
       #---------------------------------
-      - {label: "blue Top Semi circle text", name: "bluetopsmtext", required: false , widget: "string"}
+      - {label: "blue Top  text screen 4", name: "s4bluetoptext", required: false , widget: "markdown"}
+
       - {label: "Botttom Left Image", name: "blimage", required: false , widget: "image"}
       - {label: "Botttom Left subtitle", name: "blueTitleLeft", required: false , widget: "markdown"}
       - {label: "Botttom Center Image", name: "bcimage", required: false , widget: "image"}
