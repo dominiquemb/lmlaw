@@ -8,6 +8,8 @@ import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
 import Markdown from '../markdown.js'
+import {BlueZone} from '../markdown.js'
+
 var data = require("../../pages.json");
 
 
@@ -65,7 +67,7 @@ function HomeScreen() {
 
         <Grid container>
             <Grid item xs={12} md={4}>
-              <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
+              <img src= {home["l2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
                 {home["l2title"]}
               </div>
@@ -102,13 +104,7 @@ function HomeScreen() {
                 {home["r2sbtitle"]}
               </div>
               <div className="content textLeft" >
-                We blend advanced technologies with a network of 
-                carriers to move your packages or freight-simply 
-                and reliably. Put the power of AAA behind your 
-                shipments and deliveries, with a partner that’s here 
-                to meet the demands of today, and help you navigate the 
-                road ahead. We’re always there to help you propel your 
-                same-day delivery capabilities forward. <bold className="bold-inline"> “Learn why so many companies choose AAA”.</bold>
+                <Markdown content ={home["r2content"]}></Markdown>
               </div>
               <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
@@ -122,131 +118,22 @@ function HomeScreen() {
 
     <div className="screen screen-3" style={{height:"fit-content"}}>
 
+
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2">
-          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Why We Stand Out Above The Rest</h1>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>{home["topsmtext"]}</h1>
 
           </div>
       </div>
       <p className="subheading content">
-        We have the couriers, the vehicles, and technology alongside our massive fleet and 
-        partner carrier network to meet your logistics needs. We have the experiences that makes 
-        a difference to your business and your clients. We provide on-demand, reliable same-day 
-        delivery & courier service, on time critical transportation to <a className='red-link' href='/locations'>all 48 states nationwide.</a> Providing you with:
+        <Markdown   content = {home["blueTopText"]} ></Markdown>
       </p>
 
       <div style={{maxWidth:"90vw",margin:"auto"}} >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
+      <BlueZone content = {home["paragraphs"]}></BlueZone>
 
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/home/home4.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <div className="content checked">
-                    <ul>
-                      <li> Reliability, experience, delivery always on time, no excuses</li>
-                      <li>
-                        Order tracking & geofencing in real-time dashboard
-                      </li>
-                      <li>
-                        On-demand, and same-day door-to-door delivery
-                      </li>
-                      <li>
-                        Dependable service you can always count on
-                      </li>
-                      <li> Customer support around the clock 24/7/365</li>
-                    </ul>
-          </div>
-        </Grid>
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <div className="content checked">
-          <ul>
-                      <li> Dedicated, fully vetted couriers by uniform</li>
-                      <li>
-                        Custom logistics to fit and adapt to your business
-                      </li>
-                      <li>
-                        Professionalism on every delivery
-                      </li>
-                      <li>
-                        Transparency and visibility into every single shipment
-                      </li>
-                      <li>Custom notification of package delivery status, based on your preference</li>
-                    </ul>
-
-          </div>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '80%'}}>
-            <CircleMapPath></CircleMapPath>
-           </div>
-        </Grid>
-
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/home/home6.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 class="  textLeft">One-On-One Support</h2>
-          <p className=" textLeft" >
-            We assign and provide a centralized account specialists alongside our dedicated
-            dispatchers and fully vetted couriers to your business. Providing your company,
-            a single point of contact for your day-to-day delivery needs, to ensure you are
-            getting quality, performance, and exceptional customer care. We take a
-            fundamental approach to eliminate wasted time and deliver urgent goods, right
-            when you need them most, providing you peace of mind. To learn more, please
-            follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
-          </p>
-        </Grid>
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 className="  textLeft"  style={{}}>Adapting To Your Business</h2>
-          <p className=" textLeft" >
-            AAA is here to help and ready to step right in, whether you need to expand or
-            supplement your fleet. Our team of specialists are ready to help you ramp up your
-            operations, so you can meet the growing demands of your business. Partner with
-            us, let us become an extension of your company. We can help control cost and save
-            you money, by supplementing or replacing your fleet with AAA fleet replacement,
-            propelling your same-day delivery capabilities forward. <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/home/home7.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-      </Grid>
       <p className="subheading content">
-        We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-        when, our team of specialists are always available to assist you. To learn more. <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
+        <Markdown   content = {home["bottomtext"]} ></Markdown>
       </p>
 
     </div>
@@ -256,7 +143,7 @@ function HomeScreen() {
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home8.png')} alt="delivery signature" />
+           }} src={home["blimage"]} alt="delivery signature" />
       </Grid>
       
       <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
@@ -264,14 +151,14 @@ function HomeScreen() {
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home9.png')} alt="delivery signature" />
+           }} src={home["bcimage"]} alt="delivery signature" />
       </Grid>
       <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} >
       <img style={{
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home10.png')} alt="delivery signature" />
+           }} src={home["brimage"]} alt="delivery signature" />
       </Grid>
       
 
@@ -279,7 +166,7 @@ function HomeScreen() {
 
         
     </div>
-    <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Delivery Always On Time! Every Time! No Excuses!</h2>
+    <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}> {home["bottomsmtext"]}</h2>
 
 
     <div className="screen screen-4" style={{height:"fit-content"}}>
