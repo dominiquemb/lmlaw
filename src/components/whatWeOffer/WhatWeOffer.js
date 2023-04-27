@@ -8,6 +8,11 @@ import home_page_top_right from '../../assets/blue-circles.png';
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
+import Markdown from '../markdown.js'
+import {BlueZone} from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["WhatWeOffer"]["hello-world.json"];
 
 
 function WhatWeOffer() {
@@ -18,9 +23,9 @@ function WhatWeOffer() {
     <Grid container  style={{ marginBottom:0, height:"fit-content"}}>
           <Grid item xs={12} lg={6} style={{ marginTop:"5%"}}  >
 
-          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>Partner With AAA For Reliable Same-Day Delivery & Courier Service</h1>
+          <h1 className="circle-h1 circle-text"  style={{width:"75%",margin:"auto" }}>{page["title"]}</h1>
               <h2 className="circle-h2 circle-text" style={{width:"90%",margin:"auto" }}>
-                Knowing your deliveries are safe and in good hands with AAA
+                {page["subtitle"]}
               </h2>
             
           
@@ -31,7 +36,7 @@ function WhatWeOffer() {
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source src={require('../../assets/videos/aaa 2-1080p-221014.mp4')}  type="video/mp4" />
+                      <source src={page["video"]}  type="video/mp4" />
                         Your browser does not support the video tag.
             </video>
           </div>
@@ -47,91 +52,52 @@ function WhatWeOffer() {
     <div className="screen screen-2" style={{height:'fit-content'}}>
       <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-          Custom Logistics-Indispensable Courier Services
+          {page["middle title"]}
         </h1>
 
         <p className="subheading content" style={{textJustify:'none'}}>
-          We understand how each business requirements can change from day-to-day, minute-to-minute,
-          that’s why AAA DELIVERY SERVICE offers, indispensable custom logistics to fit and adapt to your
-          business needs. Providing you peace of Mind.
+          <Markdown content ={page["middle subtitle"]}></Markdown>
         </p>
 
         <Grid container>
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
+                <img src={page["l2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
-                Healthcare Industry
+                {page["l2title"]}
               </div>
               <div className="content middle-subheader">
-                Reliability
+                {page["l2sbtitle"]} 
               </div>
               <div className="content checked">
-                    <ul>
-                      <li>
-                         FMCSA, TSA, HIPPA compliant, and OSHA certified</li>
-                      <li>
-                        Cost-efficient LTL delivery services
-                      </li>
-                      <li>
-                        Place and track shipments all in one central hub
-                      </li>
-                      <li>
-                        GPS tracking in real-time, on a live map
-                      </li>
-                      <li>
-                        Schedule a pickup, available from anywhere with any-device
-                      </li>
-                      <li>
-                        Custom notification of package delivery status
-                      </li>
-                    </ul>
+                  <Markdown content={page["l2content"]} />
               </div>
 
             </Grid>
 
 
+
             <Grid item xs={12} md={4}>
-              <UsaMap/>
-              <img src={require('../../assets/home/home2.png')}  style={{width:"80%",margin:"auto"}}></img>
+              <UsaMap></UsaMap>
+                <img src={page["c2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
-                At Home
+                {page["c2title"]}
               </div>
               <div className="content middle-subheader">
-                Availability
+                {page["c2sbtitle"]} 
               </div>
-
             </Grid>
 
-            <Grid item xs={12} md={4}>
-              <img src={require('../../assets/home/home3.png')}  style={{width:"80%",margin:"auto"}}></img>
 
+            <Grid item xs={12} md={4}>
+                <img src={page["r2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
-                Freight Industry
+                {page["r2title"]}
               </div>
               <div className="content middle-subheader">
-                Transparency
+                {page["r2sbtitle"]} 
               </div>
               <div className="content checked">
-                    <ul>
-                      <li>
-                        Transparency and visibility into every single shipment
-                      </li>
-                      <li>
-                        On-demand, same-day door-to-door delivery service
-                      </li>
-                      <li>
-                        Delivery always on-time, every time, on excuses
-                      </li>
-                      <li>
-                        Reliability, flexibility, and professionalism on every delivery
-                      </li>
-                      <li>
-                        API / EDI Integrations for order updates
-                      </li>
-                      <li>
-                        Customer support around the clock 24/7/365
-                      </li>
-                    </ul>
+                  <Markdown content={page["r2content"]} />
               </div>
 
             </Grid>
@@ -145,121 +111,18 @@ function WhatWeOffer() {
 
       <div className="top-semicircle semicircle-white">
           <div className="circle-h2">
-          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Fleet Optimization</h1>
+          <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>{page["topsmtext"]}</h1>
 
           </div>
       </div>
       <p className="subheading content">
-        We understand how time consuming and expensive it is to own, operate, and manage a fleet of vehicles, not to
-        mention, the cost of insurance due to accidents is an expensive undertaking. Partner with AAA, our specialists
-        will take on these responsibilities for you, we can help control cost and save you money without the added
-        stress of managing each delivery and improve inter office productivity.
+        <Markdown content={page["blueTopText"] } ></Markdown>
       </p>
 
       <div style={{maxWidth:"90vw",margin:"auto"}} >
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/what-we-offer/image4.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 class="  textLeft">Augment Your Fleet</h2>
-          <p className=" textLeft" >
-            AAA is here and ready to step right in, on-demand, or same-day to help you
-            deliver your shipments. Partner with us, let us become an extension of your
-            company, so we can continuously augment your fleet. Our team of specialists
-            and fleet are ready to help you ramp up your operations and make deliveries
-            as needed, so you can meet the growing demands of your business. To learn
-            more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>.
-          </p>
-        </Grid>
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-      <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 class="  textLeft">Replace Your Fleet</h2>
-          <p className=" textLeft" >
-            Supplement your fleet to a team of specialists to ensure you meet the
-            demands of your customers. We have the couriers, the right vehicles, and AAA
-            provides you with advanced technology. live tracking, proof of delivery, and the
-            fastest, reliable delivery option in the industry. Giving you more time to focus
-            on the things that matters most for your business. . To learn more, please
-            follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started</a>
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-          <img style={{
-          display:'block',
-          width:"80%",
-          margin:"auto"
-          }} src={require('../../assets/what-we-offer/image5.png')} alt="delivery signature" />
-
-          </div>
-        </Grid>
-
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/what-we-offer/image6.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 class="  textLeft">Schedule On-Demand Or Recurring Deliveries</h2>
-          <p className=" textLeft" >
-            Our portal is easy and convenient to use, whether it’s on-demand or on a recurring
-            scheduling. We customize and adapt our logistics services for your day-to-day,
-            minute-to-minute operational delivery needs. We provide you with upfront pricing,
-            accurate ETA on every pickup and delivery, real-time package tracking and instant
-            delivery confirmation, based on your preference. To learn more, please follow the
-            link.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>.
-          </p>
-        </Grid>
-      </Grid>
-      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-        <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-          <h2 className="  textLeft"  style={{}}>Adapting To Your Business</h2>
-          <p className=" textLeft" >
-            We give you total control over the sending and receiving of your packages, without
-            the added stress of managing each delivery, we ensure your deliveries meet the
-            requirements of your customers. Simply place and track orders all in one central
-            hub, reduce costs, save money, and improve inter office productivity, knowing your
-            deliveries are safe and well cared for with AAA, Providing you peace of mind. To
-            learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started</a>.
-          </p>
-        </Grid>
-        <Grid justifyContent="center" item xs={12} md={6} >
-          <div style={{width: '100%'}}>
-
-           <img style={{
-            display:'block',
-            width:"80%",
-            margin:"auto"
-           }} src={require('../../assets/what-we-offer/image7.png')} alt="delivery signature" />
-
-           </div>
-        </Grid>
-
-      </Grid>
+        <BlueZone content = {page["paragraphs"]}></BlueZone>
       <p className="subheading content">
-        We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-        when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register here.</a>
+        <Markdown content = {page["blueBottomText"]} ></Markdown>
       </p>
 
     </div>
@@ -269,7 +132,7 @@ function WhatWeOffer() {
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home8.png')} alt="delivery signature" />
+           }} src={page["blimage"]} alt="delivery signature" />
       </Grid>
       
       <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
@@ -277,14 +140,14 @@ function WhatWeOffer() {
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home9.png')} alt="delivery signature" />
+           }} src={page["bcimage"]} alt="delivery signature" />
       </Grid>
       <Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} >
       <img style={{
             display:'block',
             width:"80%",
             margin:"auto"
-           }} src={require('../../assets/home/home10.png')} alt="delivery signature" />
+           }} src={page["brimage"]} alt="delivery signature" />
       </Grid>
       
 
@@ -292,7 +155,7 @@ function WhatWeOffer() {
 
         
     </div>
-    <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Reliability! Flexibility! Availability! Scalability!</h2>
+    <h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>{page["bottomsmtext"]}</h2>
 
 
     <div className="screen screen-4" style={{height:"fit-content"}}>

@@ -610,7 +610,7 @@ span.b {
 
 }
 
-p{
+p , .blue-paragraph{
   margin-bottom: 2rem
 }
 
@@ -624,7 +624,7 @@ video {
   border-radius: 10px;
 
 }
-p{
+.justify-text , .industries-paragraph{
   text-align: justify;
   text-justify: distribute;
 }
@@ -826,7 +826,7 @@ strong{
   #map-and-dropdown{
     margin-top: 6vh;
   }
-  p{
+  p , .blue-paragraph{
     font-size: 1.2vw;
   }
   ul , ol{
@@ -1051,4 +1051,12 @@ h1.circle-text.circle-h1 {
 .invert{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+h1 , h2 {
+  white-space: pre-line;
+}
+
+.square-list li{
+  list-style: square;
 }

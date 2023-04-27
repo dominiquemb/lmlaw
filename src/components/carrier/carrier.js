@@ -7,6 +7,11 @@ import home_page_top_right from '../../assets/blue-column.png';
 import {Link} from "react-router-dom";
 
 import background_carrier from '../../assets/carrier/mountain-background.png';
+import BeforeFooter from "../BeforeFooter";
+import Markdown from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["carriers"]["become-a-carrier.json"];
 
 export default function Carrier(){
     return <>
@@ -35,17 +40,13 @@ export default function Carrier(){
                 }}
             >
                 <h1 style={{width: "80%", margin: "30px auto", textAlign: "center"}}>
-                    BECOME A CARRIER
+                    {page["title"]}
                 </h1>
                 <h1 class="circle-h1 circle-text blue-text">
-                    Your Success Is Our Success.
+                {page["subtitle"]}
                 </h1>
                 <h4 className="circle-h4 circle-text">
-                    It is quite simple. In order to provide the best service for our customers, 
-                    we need to partner with the best carriers. We are all about the long term,
-                    delivering value through customer focus leadership. If that makes sense to you,
-                    let’s get started and meet the demands of today, to help navigate the road ahead,
-                    and enable your company to thrive, propelling your delivery capabilities forward.
+                    <Markdown content = {page["p1"]}></Markdown>
                 </h4>
                 <Link to="/carrier-registration" class="black-link">
                     <h2 className="centered"

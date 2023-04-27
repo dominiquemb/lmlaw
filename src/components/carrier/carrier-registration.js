@@ -1,9 +1,16 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import background_carrier from '../../assets/carrier/mountain-background.png';
 
 import {Link} from "react-router-dom";
 
-import background_carrier from '../../assets/carrier/mountain-background.png';
+import BeforeFooter from "../BeforeFooter";
+import Markdown from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["carriers"]["become-a-carrier.json"];
+
+
 
 export default function Carrier(){
     return <>
@@ -29,29 +36,10 @@ export default function Carrier(){
                 }}
             >
                 <h2 className="bold-inline" >
-                    Welcome! Thank you for your interest in becoming an approved carrier for AAA. We look forward to working with you.
+                    {page["title2"]}
                 </h2>
-                <ol>
-                    <li>Provide your MC/MX# or DOT# to begin registration. Intrastate carriers without a DOT# may provide an applicable state registration number to begin registration.</li>
-                    <li>Supply your company contact information.</li>
-                    <li>Submit an electronic W9 (have your Tax-ID available).</li>
-                    <li>Complete the Carrier Profile.</li>
-                    <li>Read and ACCEPT the Agreement(s).</li>
-                    <li>Certificate of Insurance with AAA Delivery Service LLC as Certificate Holder:</li>
-                    <li>Provide a Certificate of Insurance that meets the insurance minimum requirements below. Certificates must be submitted from your insurance producer (agent) </li>
-                        <ul>
-                            <li>$100,000 Cargo Coverage</li>
-                            <li>$1,000,000 Auto Coverage</li>
-                        </ul>
-                    <li>If RMIS does not already have a copy of your certificate on file, we will request one for you from your insurance agent (producer).</li>
-                    <li>You will be required to meet the following requirements:</li>
-                    <li>Active Common or Contract Authority.</li>
-                        <ul>
-                            <li>Safety Rating must be Satisfactory, Conditional or None.</li>
-                            <li>Authority active for at least 90 days.</li>
-                        </ul>
+                <Markdown content = {page["p2"]}></Markdown>
 
-                </ol>
                 <Link to="/carrier-registration" class="black-link">
                     <h2 className="centered"
                         style={{

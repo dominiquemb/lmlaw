@@ -13,6 +13,14 @@ import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
 import PathMap from "../animated-path-map"
 
+import BlueSection from '../services/blue-section.js';
+
+import Markdown from '../markdown.js'
+import {BlueZone} from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["HowItWorks"]["how-it-works.json"];
+
 
 function HowItWorks() {
   return (
@@ -24,11 +32,11 @@ function HowItWorks() {
 
           <h1 className="circle-h1 circle-text"
             style={{ marginTop:"10vh",
-                    paddingTop: "11%"}}>How It Works</h1>
+                    paddingTop: "11%"}}>{page["title"]}</h1>
               <h2 className="circle-h2 circle-text">
-                Seamlessly Place And Track Orders All In One Central Hub
+                {page["subtitle"]}
               </h2>
-              <img style={{width:"25%" , display:"block",margin:"auto"}}src={require('../../assets/logo-blue.png')} alt="Blue Logo" />
+              <img style={{width:"25%" , display:"block",margin:"auto"}}src={page["top-image"]} alt="Blue Logo" />
 
                       
           </Grid>
@@ -45,7 +53,7 @@ function HowItWorks() {
               controls
             >
               <source
-                src={require('../../assets/videos/AAA 3-1080p-221015.mp4')} 
+                src={page["top-video"]} 
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -57,180 +65,17 @@ function HowItWorks() {
               
           </Grid>
           <p  className="industries-paragraph"  style={{maxWidth:"70%"}}>
-          <h2 className="circle-h3 "  style={{marginBottom:10}} >Get Started Here</h2>
-                Put the power of AAA behind your shipments and deliveries, with a partner that’s here to meet the demands of
-                today, and help you navigate the road ahead. At AAA, we make it easy and convenient on every delivery 
-                without the added stress of managing each delivery, giving you more time to focus on your core business.
+          <h2 className="circle-h3 "  style={{marginBottom:10}} >{page["middle title"] }</h2>
+            <Markdown content = {page["middle subtitle"]  } ></Markdown>
           </p>
     </Grid>
 
 </div>
 
+<BlueSection page = {page}></BlueSection>
 
-<div className="screen screen-3" style={{height:"fit-content"}}>
+<BeforeFooter></BeforeFooter>
 
-<div className="top-semicircle semicircle-white">
-    <div className="circle-h2">
-    <h1 style={{width :"80%", margin:"auto",textAlign:"center" }}>Schedule And Customize A Delivery</h1>
-
-    </div>
-</div>
-<p className="subheading content">
-  Our online portal is easy and convenient to use, seamlessly place and track orders all in one
-  place. Schedule and customize a pickup from anywhere with accurate ETA, available from
-  any-device. View signature or photo-based PODs for each order and actual arrival time.
-</p>
-
-<div style={{maxWidth:"90vw",margin:"auto"}} >
-<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-  <Grid justifyContent="center" item xs={12} md={6} >
-    <div style={{width: '100%'}}>
-
-     <img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/how-it-works/image1.png')} alt="delivery signature" />
-
-     </div>
-  </Grid>
-
-  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-  <h2 className="  textLeft"  style={{}}>What To Expect On Every Pickup</h2>
-    <p className=" textLeft" >
-      Professionalism on every delivery, with our fully vetted couriers by
-      uniform, identification badges and marked vehicles. Pickup and
-      delivery confirmation in real-time. Delivery always on time, no
-      excuses. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
-    </p>
-  </Grid>
-</Grid>
-<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-  <h2 className="  textLeft"  style={{}}>Order Tracking In Real-Time</h2>
-    <p className=" textLeft" >
-      Visibility on every pick-up and delivery, GPS tracking in real-time, on
-      a live map through the entire process. Automatic order alerts and
-      updates via text or email, PODs for each order and actual arrival
-      time. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
-    </p>
-  </Grid>
-  <Grid justifyContent="center" item xs={12} md={6} >
-    <div style={{width: '100%'}}>
-      <CircleMapPath></CircleMapPath>
-     </div>
-  </Grid>
-
-</Grid>
-<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-  <Grid justifyContent="center" item xs={12} md={6} >
-    <div style={{width: '100%'}}>
-
-     <img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/how-it-works/image2.png')} alt="delivery signature" />
-
-     </div>
-  </Grid>
-
-  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-    <h2 class="  textLeft">Customize Your Order Confirmation</h2>
-    <p className=" textLeft" >
-      API / EDI integrations,. In-depth order tracking, signature or photo-based
-      PODs capture for each order. Auto-verified addresses to ensure delivery
-      accuracy. Piece-level and invoice reference tracking and detailed notes
-      available. Customize how you receive order confirmation. To learn more,
-      please follow the link. <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
-    </p>
-  </Grid>
-</Grid>
-<Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-  <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-    <h2 className="  textLeft"  style={{}}>Rate Your Experience</h2>
-    <p className=" textLeft" >
-    Let us know how we are doing, because we are committed to continue
-    being the leading logistics solutions provider to our customers. We are
-    constantly improving and implementing customized solutions alongside
-    quality management to achieve it. To learn more, please follow the link.  <a className='red-link' href='/speak-to-a-specialist'>Get Started.</a>
-    </p>
-  </Grid>
-  <Grid justifyContent="center" item xs={12} md={6} >
-    <div style={{width: '100%'}}>
-
-     <img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/how-it-works/image3.png')} alt="delivery signature" />
-
-     </div>
-  </Grid>
-
-</Grid>
-<p className="subheading content">
-  We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter
-  when, our team of specialists are always available to assist you. To learn more.  <a className='red-link' href='/speak-to-a-specialist'>Register Here.</a>
-</p>
-
-</div>
-<Grid container>
-<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
-<img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/home/home8.png')} alt="delivery signature" />
-</Grid>
-
-<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
-<img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/home/home9.png')} alt="delivery signature" />
-</Grid>
-<Grid item xs={12} sm={4}  sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} >
-<img style={{
-      display:'block',
-      width:"80%",
-      margin:"auto"
-     }} src={require('../../assets/home/home10.png')} alt="delivery signature" />
-</Grid>
-
-
-</Grid>
-
-  
-</div>
-<h2  className=" bottom-blue-semicircle circle-h2 schedule" style={{textAlign:"center"  }}>Transparency! Visibility! Safety! Professionalism!</h2>
-
-
-<div className="screen screen-4" style={{height:"fit-content"}}>
-
-
-  <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
-  <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-  <Box  style={{margin:"auto"}} >
-      <h2>Order Tracking In Real-Time</h2>
-        <div className="content textLeft" >
-          Gain visibility on every single shipment and delivery, GPS tracking in real-time, on a live map through the entire process and accurate ETA. Automatic order alerts and updates via text or email, POD for each order and actual arrival time. 
-        </div>
-  </Box>
-  <Box  style={{margin:"auto"}} >
-      <h2>Transparency & Visibility</h2>
-        <div className="content textLeft" >
-          We breathe transparency into every single shipment and delivery through innovative technologies. Our software allows our customers to keep all their shipments and deliveries information at their fingertips.
-        </div>
-  </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-    <PathMap></PathMap>
-  </Grid>           
-</Grid>
-
-</div>
 
 
     </>

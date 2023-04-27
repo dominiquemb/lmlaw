@@ -1,5 +1,8 @@
 import JsxParser from 'react-jsx-parser';
 import {Link} from 'react-router-dom';
+import CircleMapPath from "./circle-animated-path-map";
+import Grid from '@mui/material/Grid';
+
 var MarkdownIt = require('markdown-it');
 
 function markDownBold(str){
@@ -40,12 +43,11 @@ function markdownlinks(mdContents){
 function markdownToHtml(mdContents){
     var md = new MarkdownIt(); 
     var el = ( md.render(mdContents)
+    
     .replaceAll("&lt;","<")
     .replaceAll("&gt;",">"))
     .replaceAll("<a href=","<Link  class='red-link' to=" )
-    .replaceAll("</a>","</Link>")
-    .replace(/<\/p>\n$/g,"")
-    .replace(/^(<p>)/,"");
+    .replaceAll("</a>","</Link>");
     return  el;
 }
 
@@ -54,8 +56,92 @@ export default function MyComponent(props) {
         <JsxParser
         components={{Link}}
         jsx={markdownToHtml(props.content)}
+        className={props.className}
         ></JsxParser>
   )
 }
 
 
+export function BlueZone(props){
+    const content = props.content;
+    return <>
+    
+            {content.map((element, index) => (
+                      <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
+                        { index % 2 == 1 && <>
+                            <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+                                <h2 class="textLeft">{element.pgimg.title}</h2>
+                                <JsxParser
+                                    components={{Link}}
+                                    jsx={markdownToHtml(element.pgimg.content)}
+                                    className="checked blue-paragraph"
+                                    >
+                                </JsxParser>
+                            </Grid> </>
+                        }
+                      <Grid justifyContent="center" item xs={12} md={6} >
+        
+                        { ( element.pgimg.thumbnail == "/animated-svg-circle-map" || element.pgimg.thumbnail == null )   && <div style={{width: '80%'}}>
+                          <CircleMapPath></CircleMapPath>
+                         </div>
+                         }
+                        { ( element.pgimg.thumbnail != "/animated-svg-circle-map" && element.pgimg.thumbnail != null )   && <div style={{width: '100%'}}>
+
+                            <img style={{
+                            display:'block',
+                            width:"80%",
+                            margin:"auto"
+                            }} src={ element.pgimg.thumbnail } alt="delivery signature" />
+
+                            </div>
+                         }
+                      </Grid>
+                      { index % 2 == 0 && <>
+                            <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
+                                <h2 class="textLeft">{element.pgimg.title}</h2>
+                                <JsxParser
+                                    components={{Link}}
+                                    jsx={markdownToHtml(element.pgimg.content)}
+                                    className="checked  blue-paragraph"
+                                    >
+                                </JsxParser>
+                            </Grid> </>
+                        }
+              
+                    </Grid>
+            ))}
+        
+    </>
+
+}
+
+export function BlueZone2(props){
+    const content = props.content;
+    return <>
+            <Grid container>
+                {content.map((element, index) => (
+                            <Grid item xs={12} md={6}>
+                        
+                            <Grid container className="" style={{margin:"auto"}} >
+                                <Grid item xs={2} md={2}>
+                                <img  style={{width:"60%"}} src={ element.pgimg.thumbnail } alt="Blue Logo" />
+                                </Grid>
+                                <Grid item xs={10} md={10}>
+                                    <h2 class="textLeft">{element.pgimg.title}</h2>
+                                <JsxParser
+                                    components={{Link}}
+                                    jsx={markdownToHtml(element.pgimg.content)}
+                                    className="checked blue-paragraph"
+                                    >
+                                </JsxParser>
+                                </Grid>
+                            </Grid>
+                        
+                            </Grid>
+
+                ))}
+            </Grid>
+        
+    </>
+
+}

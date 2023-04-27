@@ -8,6 +8,13 @@ import {UsaMap} from "../locations/Map.js"
 
 import BlueSection from './blue-section.js';
 import BeforeFooter from '../BeforeFooter';
+import Markdown from '../markdown.js'
+import {BlueZone} from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["Delivery"]["overnight-delivery-services.json"];
+
+
 function Overnight() {
 
   return ( 
@@ -17,17 +24,11 @@ function Overnight() {
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
             <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
-            Overnight <br/> Delivery Services
+                {page["title"] }
 	        </h1>
-
-            <p className="industries-paragraph" >
-              We offer overnight courier services that assure timely 
-              delivery of your urgent shipments on the very next day. 
-              Our team of couriers and advanced technology enables us 
-              to cater to any logistics requirement with ease. In addition, 
-              our 24/7 customer service, renowned for its excellence, is always 
-              ready to support you throughout the entire process. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
-            </p>
+              <p className="industries-paragraph" >
+                <Markdown content = {page["subtitle"]} ></Markdown>
+              </p>
 
               
           </Grid>
@@ -43,7 +44,7 @@ function Overnight() {
             borderRadius:"clamp(10px,3%,50px)",
             boxShadow:"1px 1px 6px -2px grey",
 
-           }} src={require('../../assets/path-map-static.png')} alt="delivery signature" />
+           }} src={page["top-image"]} alt="delivery signature" />
 
           </div>
 
@@ -53,98 +54,69 @@ function Overnight() {
           </Grid>
 
     </Grid>
+    
 
     <div className="screen screen-2" style={{height:'fit-content'}}>
 
 
       <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            What Is Overnight Delivery Services?
+            {page["middle title"]}
         </h1>
 
         <p className="subheading content">
-            Our overnight shipping service ensures that customers 
-            receive their orders on the very next business day. 
-            We specialize in providing high-quality shipping services 
-            to companies during their busiest seasons, and we're committed 
-            to delivering exceptional customer service, particularly when demand 
-            is at its peak. <a className='red-link' href='/how-it-works'>Learn more.</a>    
+          <Markdown content = {page["middle subtitle"]} ></Markdown>
         </p>
 
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            Advantages Of Overnight <br/> Delivery Services
+            {page["middle title2"]}
         </h1>
 
         <Grid container>
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Reliability
-                </div>
-                <div className="content ">
-                    Overnight/next-day delivery services 
-                    come with guaranteed delivery times, 
-                    giving you peace of mind that your 
-                    package will arrive when you need it to.
-                </div>
-                <div className="content middle bold-inline">
-                    Increased Efficiency
-                </div>
-                <div className="content">
-                    This shipping option can help businesses 
-                    increase efficiency by allowing them to 
-                    quickly deliver products to customers 
-                    and minimize delays in their supply chain.
-
-                </div>
-              <div className="column-footer" >
+              <img src= {page["l2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["l2title1"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["l2content1"]}></Markdown>
+              </div>
+              <div className="content middle bold-inline">
+                {page["l2title2"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["l2content2"]}></Markdown>
+              </div>
+              <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
-
-
             <Grid item xs={12} md={4}>
-                <UsaMap/>
-                <img src={require('../../assets/home/home2.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Fast Delivery
-
-                </div>
-                <div className="content ">
-                    Overnight/next-day delivery is the 
-                    fastest shipping option available, 
-                    which makes it ideal for urgent or 
-                    time-sensitive deliveries.
-
-                </div>
-
+              <UsaMap/>
+              <img src= {page["c2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["c2title"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["c2content"]}></Markdown>
+              </div>
             </Grid>
-
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home3.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Convenience
-                </div>
-                <div className="content ">
-                    This service is convenient for 
-                    both the sender and the recipient, 
-                    as it saves time and reduces the 
-                    need for physical transportation.
-
-                </div>
-                <div className="content middle bold-inline">
-                    Competitive advantage
-                </div>
-                <div className="content ">
-                    Offering overnight/next-day delivery 
-                    as a shipping option can give businesses 
-                    a competitive advantage, as it can help 
-                    them stand out from their competitors 
-                    and attract more customers.
-
-                </div>
-
-              <div className="column-footer">
+              
+              <img src= {page["r2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["r2title1"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["r2content1"]}></Markdown>
+              </div>
+              <div className="content middle bold-inline">
+                {page["r2title2"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["r2content2"]}></Markdown>
+              </div>
+              <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
@@ -154,7 +126,9 @@ function Overnight() {
      
     </div>
 
-    <BlueSection></BlueSection>
+    <BlueSection page = {page}></BlueSection>
+
+
     <BeforeFooter></BeforeFooter>
     
 

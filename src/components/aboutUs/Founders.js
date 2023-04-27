@@ -8,39 +8,16 @@ import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
-const steps = [
-  {
-    label: 'Roger Sepulveda ',
-    description: `Founder & Chief Executive Officer`,
-  }, 
-  {
-    label: 'Joshua Sepulveda',
-    description: `General Manager`,
-  },
-  {
-    label: 'Aaron Thompson ',
-    description: 'Director Of Logistics ',
-  },
-  {
-    label: 'Leticia Gonzalez',
-    description: `Director Of People Operations`,
-  },
-  {
-    label: 'Jordan Kincaid ',
-    description: 'Director Of Marketing',
-  },
-  {
-    label: 'Ashley leery',
-    description: `Chief Marketing Officer`,
-  },
- {
-    label: 'Ben Martinez',
-    description: `Chief Technology Officer`,
-  },  {
-    label: 'Melody Reyna',
-    description: `Chief Financial Officer `,
-  },
-];
+var data = require("../../pages.json");
+var page = data["about-us"]["customer-obsession-people-led-innovation-driven.json"];
+
+const steps = page["founders"].map((element, index) => {
+  return   {
+    label: element.pgimg.name,
+    description:  element.pgimg.job,
+  } 
+});
+
 
 export default function TextMobileStepper() {
   const theme = useTheme();

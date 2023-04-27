@@ -8,6 +8,14 @@ import {UsaMap} from "../locations/Map.js"
 
 import BlueSection from './blue-section.js';
 import BeforeFooter from '../BeforeFooter';
+
+
+import Markdown from '../markdown.js'
+import {BlueZone} from '../markdown.js'
+
+var data = require("../../pages.json");
+var page = data["Delivery"]["stat-delivery-service.json"];
+
 function Stat() {
 
   return ( 
@@ -17,14 +25,10 @@ function Stat() {
         <Grid item xs={12} lg={6} style={{ paddingLeft:"5%",paddingRight:"5%"}}  >
 
             <h1 className="circle-h1 textLeft" style={{paddingRight:"5%"}}  >
-                Stat Delivery <br/> Service
+                {page["title"] }
 	        </h1>
-
               <p className="industries-paragraph" >
-                Our company provides fast and efficient STAT delivery services to meet the needs
-                of our customers. When you choose our STAT delivery option, you can trust that
-                your packages will be handled with the utmost care and attention, ensuring that
-                they are delivered safely, quickly, and reliably.  <a className='red-link' href='/speak-to-a-specialist'> Register here.</a>
+                <Markdown content = {page["subtitle"]} ></Markdown>
               </p>
 
               
@@ -41,7 +45,7 @@ function Stat() {
             borderRadius:"clamp(10px,3%,50px)",
             boxShadow:"1px 1px 6px -2px grey",
 
-           }} src={require('../../assets/path-map-static.png')} alt="delivery signature" />
+           }} src={page["top-image"]} alt="delivery signature" />
 
           </div>
 
@@ -58,84 +62,62 @@ function Stat() {
 
       <Container  disableGutters style={{padding:30,maxWidth:"90vw"}}>
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            What Is Stat Delivery Service?
+            {page["middle title"]}
         </h1>
 
         <p className="subheading content">
-        STAT delivery services is a type of delivery service that is designed to handle urgent or time-sensitive
-        packages, this service operates 24/7 and specializes in transporting critical medical items such as blood 
-        samples, lab specimens, and medical equipment. <a className='red-link' href='/speak-to-a-specialist'> Speak To A Specialist.</a>
+          <Markdown content = {page["middle subtitle"]} ></Markdown>
         </p>
 
         <h1 style={{ width :"80%", margin:"auto",textAlign:"center" , marginTop:30,marginBottom:30}}>
-            Advantages Of Stat Delivery <br/> Service?
+            {page["middle title2"]}
         </h1>
 
         <Grid container>
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home1.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Speed
-                </div>
-                <div className="content ">
-                    The primary benefit of STAT delivery is the
-                    speed at which packages and other items
-                    are delivered. This is especially important
-                    in emergency or critical care situations.
-                </div>
-                <div className="content middle bold-inline">
-                    Flexibility
-                </div>
-                <div className="content">
-                    STAT delivery services offer a range of
-                    options, such as one hour or same-day
-                    delivery, which allows customers to
-                    choose the delivery speed that best
-                    meets their needs.
-                </div>
-              <div className="column-footer" >
+              <img src= {page["l2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["l2title1"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["l2content1"]}></Markdown>
+              </div>
+              <div className="content middle bold-inline">
+                {page["l2title2"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["l2content2"]}></Markdown>
+              </div>
+              <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
-
-
             <Grid item xs={12} md={4}>
-                <UsaMap/>
-                <img src={require('../../assets/home/home2.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Reliability
-                </div>
-                <div className="content ">
-                    STAT delivery services are very reliable, as
-                    they prioritize speed and efficiency in order
-                    to get packages to their destination as
-                    quickly as possible. 
-                </div>
-
+              <UsaMap/>
+              <img src= {page["c2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["c2title"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["c2content"]}></Markdown>
+              </div>
             </Grid>
-
             <Grid item xs={12} md={4}>
-                <img src={require('../../assets/home/home3.png')}  style={{width:"80%",margin:"auto"}}></img>
-                <div className="content middle bold-inline">
-                    Convenience
-                </div>
-                <div className="content ">
-                    STAT delivery is often more convenient for
-                    customers, as it allows them to receive
-                    their packages faster than with standard
-                    delivery options.
-                </div>
-                <div className="content middle bold-inline">
-                    Customer Satisfaction
-                </div>
-                <div className="content ">
-                    Stat delivery can help to improve
-                    customer satisfaction by ensuring
-                    timely and reliable delivery of
-                    packages.
-                </div>
-
-              <div className="column-footer">
+              
+              <img src= {page["r2img"]}  style={{width:"80%",margin:"auto"}}></img>
+              <div className="content middle bold-inline">
+                {page["r2title1"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["r2content1"]}></Markdown>
+              </div>
+              <div className="content middle bold-inline">
+                {page["r2title2"]}
+              </div>
+              <div className="content ">
+               <Markdown content ={page["r2content2"]}></Markdown>
+              </div>
+              <div className="column-footer" style={{marginBottom:30}}>
                 <a className="button-link speak-to-a-specialist-link" href="/speak-to-a-specialist"><button className="round-button round-button-blue">Learn More</button></a>
               </div>
             </Grid>
@@ -145,7 +127,9 @@ function Stat() {
      
     </div>
 
-    <BlueSection></BlueSection>
+    <BlueSection page = {page}></BlueSection>
+
+
     <BeforeFooter></BeforeFooter>
     
 
