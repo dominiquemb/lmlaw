@@ -19,7 +19,7 @@ export default function AboutUs(){
         <Grid container>
             <Grid item xs={12} md={8} style={{padding:30}} >
                     <h1 style={{fontSize:"3rem" , fontWeight:"heaboldvy" ,margin:"auto",marginBottom:"5rem"}}>
-                       {page["title"]}
+                       {page["title"]} 
                     </h1>
                 <Box sx={{ display: { xs: 'none', md: 'block'} }} style={{fontWeight:"bold"  }}  >         
                     <p style={{fontWeight:"bold" , fontFamily:"sans-serif" }}>

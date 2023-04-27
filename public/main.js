@@ -23,7 +23,9 @@ for (let dir_index  in directories ) {
 
     dir_json = {}
     for ( let files_index in files ) { 
-        var page_json = JSON.parse(fs.readFileSync(`${dir_path}/${files[files_index]}`).toString());
+        var file_string = fs.readFileSync(`${dir_path}/${files[files_index]}`).toString();
+        file_string = file_string.replace(/\\\\n/g,"\\n");
+        var page_json = JSON.parse(file_string);
         dir_json[files[files_index]] = page_json
     }
     complete_json[directories[dir_index]] = dir_json

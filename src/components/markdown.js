@@ -46,8 +46,7 @@ function markdownToHtml(mdContents){
     
     .replaceAll("&lt;","<")
     .replaceAll("&gt;",">"))
-    .replaceAll("<a href=","<Link  class='red-link' to=" )
-    .replaceAll("</a>","</Link>");
+    .replace(/<a\b(?![^>]*\bhttp)([^>]*)>(.*?)<\/a>/gi, '<Link $1>$2</Link>');
     return  el;
 }
 
