@@ -1060,3 +1060,7 @@ h1 , h2 {
 .square-list li{
   list-style: square;
 }
+
+li p {
+  margin:0;
+}
