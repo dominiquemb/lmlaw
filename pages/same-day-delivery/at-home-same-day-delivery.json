@@ -33,7 +33,7 @@
   "brimage": "/images/home10.png",
   "blimage": "/images/home8.png",
   "bottomsmtext": "Reliability! Flexibility! Availability! Scalability!",
-  "blueBottomText": "We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, please follow the link. [Register Here.](http://localhost:3000/speak-to-a-specialist)",
+  "blueBottomText": "We are always available 24/7/365 at any time of the day, during weekends, and all holidays. No matter when, our team of specialists are always available to assist you. To learn more, please follow the link. [Register Here.](/speak-to-a-specialist)",
   "title": "At Home Same-Day Delivery",
   "bcimage": "/images/industries6.png",
   "paragraphs top": [
@@ -48,7 +48,7 @@
       "paragraphs-with-image-top": {
         "title": "On-Demand Delivery",
         "thumbnail": "/images/home2.png",
-        "content": "We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. Click Here."
+        "content": "We provide you with reliability, experience, and professionalism on every delivery. With our same-day courier services, you are guaranteed faster, safer, and on-time deliveries. Simply place and track orders all in one place, reduce costs, save money, and improve inter office productivity, knowing your deliveries are in good hands with AAA, Providing you peace of mind. To learn more, please follow the link. [Click Here.](/how-it-works)"
       }
     },
     {
@@ -61,7 +61,7 @@
     {
       "paragraphs-with-image-top": {
         "title": "Get one-on-one support",
-        "content": "We assign and provide a centralized account specialists to your Business, providing your company, a single point of contact for your day-to-day deliveries, to ensure you are getting quality, performance, and exceptional customer care. We take a fundamental approach to eliminate wasted time and deliver urgent goods, right when you need them most, providing quality expedited services. To learn more, please follow the link. [Register Here.](http://localhost:3000/speak-to-a-specialist)",
+        "content": "We assign and provide a centralized account specialists to your Business, providing your company, a single point of contact for your day-to-day deliveries, to ensure you are getting quality, performance, and exceptional customer care. We take a fundamental approach to eliminate wasted time and deliver urgent goods, right when you need them most, providing quality expedited services. To learn more, please follow the link. [Register Here.](/speak-to-a-specialist)",
         "thumbnail": "/images/same-day1.png"
       }
     }
