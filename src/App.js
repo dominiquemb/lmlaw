@@ -47,12 +47,12 @@ const industries = [
   {label: 'Industries', url: '/industries-we-serve'},
   {label: 'Healthcare', url: '/healthcare'},
   {label: 'Freight', url: '/ground-transportation'},
-  {label: 'Overnight', url: '/overnight-deliveries'},  
   {label: 'At Home', url: '/at-home'}];
 
 const delivery = [
   {label: 'What We Offer' , url:'/what-we-offer'},
   {label: 'Stat Delivery' , url:'/stat-delivery-services'},
+  {label: 'Overnight', url: '/overnight-deliveries'},  
   {label: 'Scheduled Route Delivery' , url:'/schedule-delivery'},
   {label: 'Flexible Same Day Delivery' , url:'/flexible-delivery'},
   
