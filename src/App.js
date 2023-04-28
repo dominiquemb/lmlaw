@@ -32,6 +32,7 @@ import Flexible from './components/services/flexible';
 import Schedule from './components/services/schedule';
 import Stat from './components/services/stat';
 import Overnight from './components/services/overnight';
+import {Link} from "react-router-dom"
 
 const pages = [
   {label: 'Home', url: '/'},
@@ -94,6 +95,8 @@ function App() {
 
   return (
     <>
+        <Router>
+
     <AppBar position="fixed" style={{backgroundColor:"white"}}>
       {/* <Container maxWidth="xl"> */}
         <Toolbar 
@@ -144,8 +147,8 @@ function App() {
             >
 
             {links.map((page, index) => (
-                <MenuItem key={index} onClick={handleCloseNavMenu}>
-                <a style={{ width:"100%"}}href={page.url}><Typography textAlign="center">{page.label}</Typography></a>
+                <MenuItem key={index}>
+                <Link  to={page.url}> {page.label}</Link>
               </MenuItem>
             ))}
             
@@ -170,16 +173,16 @@ function App() {
               }else if(page.label ==="Delivery"){
                 return <DeliveryDropdown></DeliveryDropdown>
               }else{
-                return  <a
+                return  <Link
                 style={{flexGrow:1 , alignSelf: 'center'}}
-                 href={page.url}><Button className="nav-btn" 
+                 to={page.url}><Button className="nav-btn" 
                   key={index}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: '#090B27', display: 'block' }}
                 >
                   {page.label}
                 </Button>
-                </a>
+                </Link>
               }
 
 
@@ -205,7 +208,6 @@ function App() {
     </AppBar>
 
 
-    <Router>
         <Routes>
           <Route path='/' element={<HomeScreen/>} />
           <Route path='/speak-to-a-specialist' element={<SpeakToASpecialist/>} />
@@ -247,7 +249,7 @@ function IndustriesDropdown(){
       <div className="dropdown-content">
     {industries.map((page, index) => (
       
-          <a href={page.url}>{page.label}</a>
+          <Link to={page.url}>{page.label}</Link>
       ))}
       </div>
       </Button>
@@ -265,7 +267,7 @@ function DeliveryDropdown(){
         What We Offer ▼     
       <div className="dropdown-content">
     {delivery.map((page, index) => (
-          <a href={page.url}>{page.label}</a>
+          <Link to={page.url}>{page.label}</Link>
       ))}
       </div>
       </Button>

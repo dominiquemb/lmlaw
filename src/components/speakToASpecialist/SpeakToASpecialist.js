@@ -4,7 +4,6 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import FormTextFields from "./Form";
 import home_page_top_right from "../../assets/blue-column.png"
-import OrderTracking from "../order-tracking";
 
 
 import {BlueSection2} from '../services/blue-section.js';
@@ -121,7 +120,7 @@ function SpeakToASpecialist() {
                     controls
                   >
                     <source
-                        src={require('../../assets/videos/aaa4-1080p-221016.mp4')}
+                        src={page["top-image"]}
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.

@@ -11,7 +11,6 @@ import BeforeFooter from "../BeforeFooter";
 import home_page_top_right from '../../assets/blue-circles.png';
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
-import PathMap from "../animated-path-map"
 
 import BlueSection from '../services/blue-section.js';
 

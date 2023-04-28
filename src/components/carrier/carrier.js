@@ -42,13 +42,13 @@ export default function Carrier(){
                 <h1 style={{width: "80%", margin: "30px auto", textAlign: "center"}}>
                     {page["title"]}
                 </h1>
-                <h1 class="circle-h1 circle-text blue-text">
+                <h1 className="circle-h1 circle-text blue-text">
                 {page["subtitle"]}
                 </h1>
                 <h4 className="circle-h4 circle-text">
                     <Markdown content = {page["p1"]}></Markdown>
                 </h4>
-                <Link to="/carrier-registration" class="black-link">
+                <Link to="/carrier-registration" className="black-link">
                     <h2 className="centered"
                         style={{
                             backgroundColor: 'white',

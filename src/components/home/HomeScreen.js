@@ -6,7 +6,6 @@ import home_page_top_right from '../../assets/blue-column.png';
 import "../../assets/animate.css";
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
-import PathMap from "../animated-path-map"
 import Markdown from '../markdown.js'
 import {BlueZone} from '../markdown.js'
 import BeforeFooter from '../BeforeFooter';
@@ -42,7 +41,7 @@ function HomeScreen() {
 
           <div className="speak-to-a-specialist-form rounded-corners box-shadow" style={{width:"80%" }}>
             <video  controls    autoPlay loop  muted style={{borderRadius:10  , width:"100%"  }}>
-                      <source  src={require('../../assets/videos/AAADeliveryService-Final-V2.mp4')}   type="video/mp4" />
+                      <source  src={home["video"]}   type="video/mp4" />
                         Your browser does not support the video tag.
             </video>
           </div>
@@ -86,7 +85,7 @@ function HomeScreen() {
 
             <Grid item xs={12} md={4}>
               <UsaMap/>
-              <img src={require('../../assets/home/home2.png')}  style={{width:"80%",margin:"auto"}}></img>
+              <img src={home["c2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
                 {home["c2title"]}
               </div>
@@ -97,7 +96,7 @@ function HomeScreen() {
             </Grid>
 
             <Grid item xs={12} md={4}>
-              <img src={require('../../assets/home/home3.png')}  style={{width:"80%",margin:"auto"}}></img>
+              <img src={home["r2img"]}  style={{width:"80%",margin:"auto"}}></img>
               <div className="content middle bold-inline">
                 {home["r2title"]}
               </div>

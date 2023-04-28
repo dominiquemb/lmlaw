@@ -8,7 +8,6 @@ import {UsaMap} from "./Map.js"
 import UsaStatesSelect from "./UsaStatesDropDown";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "../../assets/animate.css";
-import OrderTracking from "../order-tracking";
 
 import {BlueSection2} from '../services/blue-section.js';
 import BeforeFooter from '../BeforeFooter';

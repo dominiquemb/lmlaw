@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from "@mui/material/Box";
-import PathMap from "../animated-path-map"
 import Markdown from '../markdown.js'
 import {BlueZone2 , BlueZone} from '../markdown.js'
 

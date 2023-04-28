@@ -2,7 +2,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import PathMap from "../animated-path-map"
 import home_page_top_right from '../../assets/blue-circles.png';
 import BlueSection from '../services/blue-section.js';
 import BeforeFooter from '../BeforeFooter';
@@ -55,7 +54,7 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={page["l2img"]} alt="delivery signature" />
 
-            <a href="/same-day-delivery" class="black-link"><h2 className="centered">{page["l2title1"]}</h2></a>
+            <a href="/same-day-delivery" className="black-link"><h2 className="centered">{page["l2title1"]}</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >
@@ -66,7 +65,7 @@ function IndustriesWeServe() {
             width:"80%",
             margin:"4vh auto"
            }} src={page["c2img"]} alt="delivery signature" />
-            <a href="/healthcare" class="black-link"><h2 className="centered">{page["c2title"]}</h2></a>
+            <a href="/healthcare" className="black-link"><h2 className="centered">{page["c2title"]}</h2></a>
            </div>
         </Grid>
         <Grid justifyContent="center" item xs={12} sm={4} >
@@ -78,7 +77,7 @@ function IndustriesWeServe() {
             margin:"4vh auto"
         }} src={page["r2img"]} alt="delivery signature" />
 
-            <a href="/ground-transportation" class="black-link"><h2 className="centered">{page["r2title1"]}</h2></a>
+            <a href="/ground-transportation" className="black-link"><h2 className="centered">{page["r2title1"]}</h2></a>
 
            </div>
         </Grid>

@@ -2,7 +2,6 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import PathMap from "../animated-path-map"
 import home_page_top_right from '../../assets/blue-circles.png';
 
 import BlueSection from '../services/blue-section.js';

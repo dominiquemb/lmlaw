@@ -6,7 +6,6 @@ import home_page_top_right from '../../assets/blue-circles.png';
 import "../../assets/animate.css";
 import {UsaMap} from "../locations/Map.js"
 import CircleMapPath from "../circle-animated-path-map";
-import PathMap from "../animated-path-map"
 import BlueSection from './blue-section.js';
 import BeforeFooter from '../BeforeFooter';
 import Markdown from '../markdown.js'

@@ -5,7 +5,6 @@ import FormControl from "@mui/material/FormControl";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import home_page_top_right from '../../assets/blue-column.png';
-import PathMap from "../animated-path-map"
 
 
 import {BlueSection2} from '../services/blue-section.js';

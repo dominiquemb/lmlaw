@@ -40,7 +40,7 @@ export default function Carrier(){
                 </h2>
                 <Markdown content = {page["p2"]}></Markdown>
 
-                <Link to="/carrier-registration" class="black-link">
+                <Link to="/carrier-registration" className="black-link">
                     <h2 className="centered"
                         style={{
                             backgroundColor: 'white',

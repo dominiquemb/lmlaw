@@ -71,7 +71,7 @@ export function BlueZone(props){
                       <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
                         { index % 2 == 1 && <>
                             <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-                                <h2 class="textLeft">{element.pgimg.title}</h2>
+                                <h2 className="textLeft">{element.pgimg.title}</h2>
                                 <JsxParser
                                     components={{Link}}
                                     jsx={markdownToHtml(element.pgimg.content)}
@@ -99,7 +99,7 @@ export function BlueZone(props){
                       </Grid>
                       { index % 2 == 0 && <>
                             <Grid item xs={12} md={6} style={{ marginTop:"5%",padding:"0 5vw"}}  >
-                                <h2 class="textLeft">{element.pgimg.title}</h2>
+                                <h2 className="textLeft">{element.pgimg.title}</h2>
                                 <JsxParser
                                     components={{Link}}
                                     jsx={markdownToHtml(element.pgimg.content)}
@@ -128,7 +128,7 @@ export function BlueZone2(props){
                                 <img  style={{width:"60%"}} src={ element.pgimg.thumbnail } alt="Blue Logo" />
                                 </Grid>
                                 <Grid item xs={10} md={10}>
-                                    <h2 class="textLeft">{element.pgimg.title}</h2>
+                                    <h2 className="textLeft">{element.pgimg.title}</h2>
                                 <JsxParser
                                     components={{Link}}
                                     jsx={markdownToHtml(element.pgimg.content)}
