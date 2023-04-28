@@ -54,7 +54,46 @@ function SameDayDelivery() {
 
     </Grid>
 
+    <Grid container  justifyContent="flex-end" style={{ marginBottom:0, height:"fit-content"}}>
 
+<Grid justifyContent="center" item xs={12} sm={4} >
+  <div style={{width: '100%'}}>
+
+   <img style={{
+    display:'block',
+    width:"80%",
+    margin:"4vh auto"
+}} src={page["l2img"]} alt="delivery signature" />
+
+    <h2 className="centered">{page["l2title1"]}</h2>
+   </div>
+</Grid>
+<Grid justifyContent="center" item xs={12} sm={4} >
+  <div style={{width: '100%'}}>
+
+   <img style={{
+    display:'block',
+    width:"80%",
+    margin:"4vh auto"
+   }} src={page["c2img"]} alt="delivery signature" />
+    <h2 className="centered">{page["c2title"]}</h2>
+   </div>
+</Grid>
+<Grid justifyContent="center" item xs={12} sm={4} >
+  <div style={{width: '100%'}}>
+
+   <img style={{
+    display:'block',
+    width:"80%",
+    margin:"4vh auto"
+}} src={page["r2img"]} alt="delivery signature" />
+
+    <h2 className="centered">{page["r2title1"]}</h2>
+
+   </div>
+</Grid>
+
+</Grid>
 
     <BlueSection page = {page}></BlueSection>
 
