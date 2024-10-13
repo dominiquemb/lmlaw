@@ -87,7 +87,7 @@ function Footer() {
               <div className="footer-col-header">About Us</div>
               <ul>
                 <li>
-                  <a href="/about-us">Our Team</a>
+                  <a href="/">Our Team</a>
                 </li>
                 {/* <li>Careers</li>
                 <li>Drive for us</li>
