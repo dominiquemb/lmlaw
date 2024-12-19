@@ -1,9 +1,9 @@
 {
   "t4": "OUR OBJECTIVES",
-  "p1": "placeholder",
-  "p2": "placeholder",
-  "p3": "placeholder",
-  "p4": "placeholder",
+  "p1": "Paragraph 1",
+  "p2": "Paragraph 2",
+  "p3": "Paragraph 3",
+  "p4": "Paragraph 4",
   "founders": [
     {
       "pgimg": {
@@ -13,25 +13,43 @@
     },
     {
       "pgimg": {
-        "name": "Placeholder",
-        "job": "Placeholder"
+        "name": "placeholder",
+        "job": "placeholder"
       }
     },
     {
       "pgimg": {
-        "name": "Placeholder",
-        "job": "Placeholder"
+        "name": "placeholder",
+        "job": "placeholder"
+      }
+    },
+    {
+      "pgimg": {
+        "name": "placeholder",
+        "job": "placeholder"
+      }
+    },
+    {
+      "pgimg": {
+        "job": "placeholder",
+        "name": "placeholder"
+      }
+    },
+    {
+      "pgimg": {
+        "job": "placeholder",
+        "name": "placeholder"
       }
     }
   ],
   "timage": "",
-  "pt1": "placeholder",
-  "pt2": "text here",
-  "pt3": "text here",
-  "pt4": "text here",
-  "title": "UNDERLINED TITLE HERE",
+  "pt1": "Text here",
+  "pt2": "Text here",
+  "pt3": "T﻿ext here",
+  "pt4": "T﻿ext here",
+  "title": "Our team",
   "t1": "MISSION",
-  "t2": "VISION",
-  "t3": "TITLE HERE",
-  "ut": "MISSION & VISION"
+  "t2": "Text here",
+  "t3": "PLACEHOLDER TITLE",
+  "ut": "TITLE HERE"
 }
