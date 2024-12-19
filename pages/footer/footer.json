@@ -1,16 +1,17 @@
 {
-    "title": "Footer",
-    "testimonialstitle": "Testimonials",
-    "email": "lopez.lmlawgroup@gmail.com",
-    "phone": "(210) 914-6860",
-    "address1": "2806 Fredericksburg Rd.,",
-    "address2": "Suite 102",
-    "testimonials": [
-        {
-            "image": "",
-            "testimonial": {
-              "image": "/images/testimonial.png"
-            }
-          }
-    ]
-  }
+  "title": "Footer",
+  "testimonialstitle": "Testimonials",
+  "email": "lopez.lmlawgroup@gmail.com",
+  "phone": "(210) 914-6860",
+  "address1": "2806 Fredericksburg Rd.,",
+  "address2": "Suite 102",
+  "testimonials": [
+    {
+      "image": "",
+      "testimonial": {
+        "image": "/images/testimonial.png"
+      }
+    }
+  ],
+  "Title": "Footer"
+}
