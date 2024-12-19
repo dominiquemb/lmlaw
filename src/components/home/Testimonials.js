@@ -30,18 +30,20 @@ export default function Testimonials() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <div style={{ marginTop: "30px" }}>
-        <img
-          src={steps[activeStep].testimonial.image}
-          style={{
-            width: "100%",
-            display: "block",
-            margin: "auto",
-            marginBottom: 50,
-            marginTop: "-13px",
-          }}
-        ></img>
-      </div>
+      {steps.map((_element, index) => (
+        <div style={{ marginTop: "30px" }}>
+          <img
+            src={steps[index].testimonial.image}
+            style={{
+              width: "100%",
+              display: "block",
+              margin: "auto",
+              marginBottom: 50,
+              marginTop: "-13px",
+            }}
+          ></img>
+        </div>
+      ))}
       {/* <MobileStepper
         variant="text"
         steps={maxSteps}
