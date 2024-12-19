@@ -1,0 +1,37 @@
+{
+  "t4": "OUR OBJECTIVES",
+  "p1": "placeholder",
+  "p2": "placeholder",
+  "p3": "placeholder",
+  "p4": "placeholder",
+  "founders": [
+    {
+      "pgimg": {
+        "name": "David Lopez",
+        "job": "Founder & Lead Attorney"
+      }
+    },
+    {
+      "pgimg": {
+        "name": "Placeholder",
+        "job": "Placeholder"
+      }
+    },
+    {
+      "pgimg": {
+        "name": "Placeholder",
+        "job": "Placeholder"
+      }
+    }
+  ],
+  "timage": "",
+  "pt1": "placeholder",
+  "pt2": "text here",
+  "pt3": "text here",
+  "pt4": "text here",
+  "title": "UNDERLINED TITLE HERE",
+  "t1": "MISSION",
+  "t2": "VISION",
+  "t3": "TITLE HERE",
+  "ut": "MISSION & VISION"
+}

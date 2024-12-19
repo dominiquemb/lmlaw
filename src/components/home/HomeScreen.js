@@ -12,11 +12,9 @@ import BeforeFooter from "../BeforeFooter";
 
 var data = require("../../pages.json");
 
-var home = data["home"]["reliable-same-day-delivery-courier-service.json"];
+var home = data["home"]["home.json"];
 
 function HomeScreen() {
-  console.log(data);
-
   return (
     <>
       <div className="home" style={{ marginTop: "100px" }}>

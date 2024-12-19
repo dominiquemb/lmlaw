@@ -1,23 +1,22 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import { useTheme } from '@mui/material/styles';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import { useTheme } from "@mui/material/styles";
+import MobileStepper from "@mui/material/MobileStepper";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
 var data = require("../../pages.json");
-var page = data["about-us"]["customer-obsession-people-led-innovation-driven.json"];
+var page = data["about-us"]["about-us.json"];
 
 const steps = page["founders"].map((element, index) => {
-  return   {
+  return {
     label: element.pgimg.name,
-    description:  element.pgimg.job,
-  } 
+    description: element.pgimg.job,
+  };
 });
-
 
 export default function TextMobileStepper() {
   const theme = useTheme();
@@ -38,17 +37,27 @@ export default function TextMobileStepper() {
         square
         elevation={0}
         sx={{
-          display: 'flex',
-          alignItems: 'center',
+          display: "flex",
+          alignItems: "center",
           height: "4vw",
           pl: 2,
-          bgcolor: 'background.default',
-          fontSize:"1vw"
+          bgcolor: "background.default",
+          fontSize: "1vw",
         }}
       >
-        <Typography style={{fontSize:"2vw"}}>{steps[activeStep].label}</Typography>
+        <Typography style={{ fontSize: "2vw" }}>
+          {steps[activeStep].label}
+        </Typography>
       </Paper>
-      <Box sx={{  width: '100%', p: 2  , backgroundColor:"#eeeeee",fontSize:"2vw",height:"8vw"}}>
+      <Box
+        sx={{
+          width: "100%",
+          p: 2,
+          backgroundColor: "#eeeeee",
+          fontSize: "2vw",
+          height: "8vw",
+        }}
+      >
         {steps[activeStep].description}
       </Box>
       <MobileStepper
@@ -61,10 +70,9 @@ export default function TextMobileStepper() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-
           >
             Next
-            {theme.direction === 'rtl' ? (
+            {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
               <KeyboardArrowRight />
@@ -73,7 +81,7 @@ export default function TextMobileStepper() {
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
+            {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
               <KeyboardArrowLeft />
