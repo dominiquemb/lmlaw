@@ -11,8 +11,7 @@ var page = data["footer"]["footer.json"];
 
 const steps = page["testimonials"].map((element, index) => {
   return {
-    label: element.pgimg.name,
-    description: element.pgimg.job,
+    testimonial: element.testimonial,
   };
 });
 

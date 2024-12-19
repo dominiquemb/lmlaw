@@ -24,7 +24,7 @@ function Footer() {
               style={{ padding: 10 }}
             >
               <div className="footer-col-header">
-                {data["testimonialstitle"]}
+                {page["testimonialstitle"]}
               </div>
               <Testimonials />
               {/* <p className="content" style={{ textAlign: "left" }}>
@@ -98,15 +98,15 @@ function Footer() {
               <div className="footer-col-header">Contact Us</div>
               <ul>
                 <li>
-                  <a href={`mailto:${data["email"]}`}>{data["email"]}</a>
+                  <a href={`mailto:${page["email"]}`}>{page["email"]}</a>
                 </li>
                 <li>
-                  <a href={`tel:${data["phone"]}`}>{data["phone"]}</a>
+                  <a href={`tel:${page["phone"]}`}>{page["phone"]}</a>
                 </li>
                 <li>
-                  {data["address1"]}
+                  {page["address1"]}
                   <br />
-                  {data["address2"]}
+                  {page["address2"]}
                 </li>
               </ul>
             </Grid>
