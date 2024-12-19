@@ -1,7 +1,11 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import CertificationsPopover from "./certifications";
+import Testimonials from "./Testimonials";
+
+var data = require("../../pages.json");
+var page = data["footer"]["footer.json"];
+
 function Footer() {
   return (
     <>
@@ -20,18 +24,7 @@ function Footer() {
               style={{ padding: 10 }}
             >
               <div className="footer-col-header">Testimonials</div>
-              <div style={{ marginTop: "30px" }}>
-                <img
-                  src={require("../../assets/testimonial.png")}
-                  style={{
-                    width: "100%",
-                    display: "block",
-                    margin: "auto",
-                    marginBottom: 50,
-                    marginTop: "-13px",
-                  }}
-                ></img>
-              </div>
+              <Testimonials />
               {/* <p className="content" style={{ textAlign: "left" }}>
                " In the world of logistics, where most situations require
                 timeliness, AAA is a must-have option to stay ahead of the
@@ -103,17 +96,15 @@ function Footer() {
               <div className="footer-col-header">Contact Us</div>
               <ul>
                 <li>
-                  <a href="mailto:lopez.lmlawgroup@gmail.com">
-                    lopez.lmlawgroup@gmail.com
-                  </a>
+                  <a href={`mailto:${data["email"]}`}>{data["email"]}</a>
                 </li>
                 <li>
-                  <a href="tel:(210) 914-6860">(210) 914-6860</a>
+                  <a href={`tel:${data["phone"]}`}>{data["phone"]}</a>
                 </li>
                 <li>
-                  2806 Fredericksburg Rd., Suite 102
+                  {data["address1"]}
                   <br />
-                  San Antonio, TX 78201
+                  {data["address2"]}
                 </li>
               </ul>
             </Grid>

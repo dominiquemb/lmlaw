@@ -155,8 +155,17 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", required: false , widget: "string"}
-      - {label: "Pagrgraph 1", name: "p1", required: false , widget: "markdown"}
-      - {label: "Title 2", name: "title2", required: false , widget: "string"}
-      - {label: "Pagrgraph 2", name: "p2", required: false , widget: "markdown"}
-      - {label: "Top video", name: "tvideo", required: false , widget: "file"}
+      - {label: "Contact email", name: "email", required: false , widget: "string"}
+      - {label: "Contact phone" , name: "phone" , required: false , widget: "string"}
+      - {label: "Address line 1", name: "address1", required: false , widget: "string"}
+      - {label: "Address line 2", name: "address2", required: false , widget: "string"}
+      - label: "Testimonials list" 
+        name: "testimonials"
+        widget: "list"
+        summary: '{{fields.title}}'
+        fields:
+          - label: "paragraphs with image"
+            name: "testimonial"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "image", required: false, widget: "image"}
