@@ -155,6 +155,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "title", name: "Title", required: false , widget: "string"}
+      - {label: "Testimonials title", name: "testimonialstitle", required: false , widget: "string"}
       - {label: "Contact email", name: "email", required: false , widget: "string"}
       - {label: "Contact phone" , name: "phone" , required: false , widget: "string"}
       - {label: "Address line 1", name: "address1", required: false , widget: "string"}

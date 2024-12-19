@@ -23,7 +23,9 @@ function Footer() {
               alignItems="center"
               style={{ padding: 10 }}
             >
-              <div className="footer-col-header">Testimonials</div>
+              <div className="footer-col-header">
+                {data["testimonialstitle"]}
+              </div>
               <Testimonials />
               {/* <p className="content" style={{ textAlign: "left" }}>
                " In the world of logistics, where most situations require
