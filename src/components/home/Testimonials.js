@@ -42,7 +42,7 @@ export default function Testimonials() {
           }}
         ></img>
       </div>
-      <MobileStepper
+      {/* <MobileStepper
         variant="text"
         steps={maxSteps}
         position="static"
@@ -71,7 +71,7 @@ export default function Testimonials() {
             Back
           </Button>
         }
-      />
+      /> */}
     </Box>
   );
 }
