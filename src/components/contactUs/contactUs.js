@@ -2,17 +2,17 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import FormTextFields from "./Form";
+import FormTextFields from "./Form.js";
 import home_page_top_right from "../../assets/blue-column.png";
 
 import { BlueSection2 } from "../services/blue-section.js";
-import BeforeFooter from "../BeforeFooter";
+import BeforeFooter from "../BeforeFooter.js";
 import Markdown from "../markdown.js";
 
 var data = require("../../pages.json");
-var page = data["speak-to-a-specialist"]["ready-to-speak-to-a-specialist.json"];
+var page = data["contact-us-container"]["contact-us.json"];
 
-function SpeakToASpecialist() {
+function ContactUs() {
   return (
     <>
       <Container
@@ -90,4 +90,4 @@ function SpeakToASpecialist() {
   );
 }
 
-export default SpeakToASpecialist;
+export default ContactUs;

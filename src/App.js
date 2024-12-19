@@ -12,7 +12,7 @@ import Footer from "./components/home/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import HomeScreen from "./components/home/HomeScreen";
-import SpeakToASpecialist from "./components/speakToASpecialist/SpeakToASpecialist";
+import ContactUs from "./components/contactUs/contactUs";
 import WhatWeOffer from "./components/whatWeOffer/WhatWeOffer";
 
 import HowItWorks from "./components/howItWorks/HowItWorks";
@@ -244,7 +244,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />
-          <Route path="/contact-us" element={<SpeakToASpecialist />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/what-we-offer" element={<WhatWeOffer />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/about-us" element={<AboutUs />} />
