@@ -10,7 +10,7 @@ import BeforeFooter from "../BeforeFooter.js";
 import Markdown from "../markdown.js";
 
 var data = require("../../pages.json");
-var page = data["contact-us-container"]["contact-us.json"];
+var page = data["contact-us"]["contact-us.json"];
 
 function ContactUs() {
   return (
