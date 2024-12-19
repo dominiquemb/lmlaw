@@ -11,6 +11,11 @@
       "testimonial": {
         "image": "/images/testimonial.png"
       }
+    },
+    {
+      "testimonial": {
+        "image": "/images/testimonial.png"
+      }
     }
   ],
   "Title": "Footer"
