@@ -220,7 +220,7 @@ function App() {
                 }}
               >
                 {/* <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}> */}
-                <a href="/speak-to-a-specialist">
+                <a href="/contact-us">
                   <button
                     className="round-button"
                     id="online-portal-button"
@@ -244,10 +244,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />
-          <Route
-            path="/speak-to-a-specialist"
-            element={<SpeakToASpecialist />}
-          />
+          <Route path="/contact-us" element={<SpeakToASpecialist />} />
           <Route path="/what-we-offer" element={<WhatWeOffer />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/about-us" element={<AboutUs />} />
